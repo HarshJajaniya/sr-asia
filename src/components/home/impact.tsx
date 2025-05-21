@@ -4,7 +4,7 @@ export default function NewsletterImpactSection() {
   return (
     <div className="w-full">
       {/* Newsletter Section */}
-      <div className="bg-[#0a4a3c] text-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-8">
+      <div className="mt-4 mb-4 py-4 border-t border-b border-gray-200 shadow-2xl text-[#537D5D] p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full max-w-[250px]">
           <Image
             src="/9.png"
@@ -61,28 +61,28 @@ export default function NewsletterImpactSection() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#0a4a3c] mb-3">Ready to Make an Impact?</h2>
-          <p className="text-[#0a4a3c] mb-8 md:mb-12">
+          <p className="text-[#537D5D] mb-8 md:mb-12">
             Collaborate with us to build a more sustainable and inclusive future.
           </p>
 
           <div className="flex flex-col items-center">
             {/* First button - centered */}
             <div className="w-full max-w-xs mb-8">
-              <button className="w-full bg-[#0a4a3c] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
                 Partner With Us
               </button>
             </div>
 
             {/* Second button - offset to right */}
             <div className="w-full max-w-xs mb-8 self-center ml-16">
-              <button className="w-full bg-[#0a4a3c] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
                 Volunteer
               </button>
             </div>
 
             {/* Third button - offset further to right */}
             <div className="w-full max-w-xs self-center ml-32">
-              <button className="w-full bg-[#0a4a3c] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
                 Get Involved
               </button>
             </div>

@@ -5,11 +5,11 @@ export default function ServicesSection() {
     <div className="w-full">
       {/* Key Services Section */}
       <div className="py-10 px-4 bg-white">
-        <h2 className="text-center text-3xl font-semibold text-[#005540] mb-8">Key Services</h2>
+        <h2 className="text-center text-3xl font-semibold text-[#004D40] mb-8">Key Services</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {/* Service Card 1 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/research.png"
@@ -19,7 +19,7 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">
+            <p className="text-[#004D40] text-center font-medium text-base">
               Research & Desk
               <br />
               Studies
@@ -27,7 +27,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Service Card 2 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/third-party.png"
@@ -37,7 +37,7 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">
+            <p className="text-[#004D40] text-center font-medium text-base">
               Third-Party
               <br />
               Evaluations
@@ -45,7 +45,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Service Card 3 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/esg.png"
@@ -55,11 +55,11 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">ESG Reporting</p>
+            <p className="text-[#004D40] text-center font-medium text-base">ESG Reporting</p>
           </div>
 
           {/* Service Card 4 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/socio.png"
@@ -69,7 +69,7 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">
+            <p className="text-[#004D40] text-center font-medium text-base">
               Socio-Economic
               <br />
               Studies
@@ -77,7 +77,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Service Card 5 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/skill-development.png"
@@ -87,11 +87,11 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">Skill Development</p>
+            <p className="text-[#004D40] text-center font-medium text-base">Skill Development</p>
           </div>
 
           {/* Service Card 6 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/land.png"
@@ -101,11 +101,11 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">Land Acquisition</p>
+            <p className="text-[#004D40] text-center font-medium text-base">Land Acquisition</p>
           </div>
 
           {/* Service Card 7 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/policy.png"
@@ -115,14 +115,14 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">
+            <p className="text-[#004D40] text-center font-medium text-base">
               Govt. policy &<br />
               programs
             </p>
           </div>
 
           {/* Service Card 8 */}
-          <div className="bg-[#fdf9e2] p-6 flex flex-col items-center justify-center aspect-square">
+          <div className="bg-[#FDFCD6] p-6 flex flex-col items-center justify-center aspect-square">
             <div className="w-16 h-16 flex items-center justify-center mb-2">
               <Image
                 src="/icons/pmc.png"
@@ -132,13 +132,13 @@ export default function ServicesSection() {
                 className="w-12 h-12"
               />
             </div>
-            <p className="text-[#005540] text-center font-medium text-sm">PMC & advisory</p>
+            <p className="text-[#004D40] text-center font-medium text-base">PMC & advisory</p>
           </div>
         </div>
       </div>
 
       {/* Our Focus Areas Section */}
-      <div className="py-10 px-4 bg-[#005540] border-t-4 border-b-4 border-[#0099cc]">
+      <div className="py-10 px-4 bg-[#537D5D]">
         <h2 className="text-center text-3xl font-semibold text-white mb-8">Our Focus Areas</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8">
@@ -180,11 +180,11 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <button className="bg-[#3c8c40] hover:bg-[#2d6b30] text-white font-medium py-3 px-8 rounded transition-colors">
-            Explore Our Work
-          </button>
-        </div>
+         <div className="flex justify-center mt-10 px-4">
+  <button className="w-full max-w-[300px] h-[44px] flex justify-center items-center text-[#537D5D] bg-[#FDFCD6] font-bold text-[18px] leading-[100%] hover:bg-[#155c35] transition-colors">
+    Explore Our Work
+  </button>
+</div>
       </div>
     </div>
   )

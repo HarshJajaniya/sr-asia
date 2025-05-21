@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function AboutUsSection() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 bg-gray-50">
+    <div className="py-12 bg-gray-50">
       {/* About Us Header */}
       <div className="flex items-center mb-8">
         <div className="w-4 h-4 rounded-full bg-green-800"></div>
@@ -23,15 +23,15 @@ export default function AboutUsSection() {
             className="object-contain"
           />
         </div>
-        <div className="md:w-2/3">
-          <p className="text-gray-700 mb-4 leading-relaxed">
+        <div className="px-6 mr-4 md:w-2/3">
+          <p className="text-gray-700 px-4 mr-2 mb-4 leading-relaxed">
             We are an international, not-for-profit organization registered in 2012 and ISO 9001 certified. SR Asia is a
             leading consulting firm with expertise in CSR impact assessment, ESG and sustainability reporting,
             socio-economic studies, and policy research. With over 10 years of experience, we have supported
             corporations, public sector units (PSUs), and government bodies in evaluating the effectiveness of their CSR
             initiatives.
           </p>
-          <div className="flex justify-end">
+          <div className="mt-2 pr-4 flex justify-end">
             <Link href="#" className="text-blue-600 font-medium flex items-center hover:underline">
               Read more <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
@@ -40,14 +40,23 @@ export default function AboutUsSection() {
       </div>
 
       {/* Countries Section */}
-      <div className="mb-12">
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-2xl font-bold text-green-800">Countries We Operate in</h2>
-          <div className="flex items-center">
-            <div className="w-4 h-4 rounded-full bg-green-800"></div>
-            <div className="h-px bg-green-800 w-44 ml-2"></div>
-          </div>
-        </div>
+    <div className="mb-12">
+    <div className="relative flex items-center mb-10 max-w-screen-xl mx-auto px-4">
+    <h2 className="text-2xl font-bold text-[#004D40] mx-auto bg-white px-4 z-10">
+    Countries We Operate in
+    </h2>
+    <div
+    className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center space-x-2"
+    style={{ width: '30vw', minWidth: '150px' }} // Ensure line container has width
+    >
+     <div className="w-4 h-4 rounded-full bg-[#004D40] z-20"></div>
+     <div className="h-px bg-[#004D40] flex-grow"></div>
+  </div>
+</div>
+
+
+
+
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
           {/* India */}
@@ -137,7 +146,7 @@ export default function AboutUsSection() {
       </div>
 
       {/* Divider */}
-      <div className="w-full max-w-md mx-auto h-px bg-gray-300"></div>
+      <div className="w-full max-w-md mx-auto h-px bg-[#004D40]"></div>
     </div>
   )
 }

@@ -18,13 +18,16 @@ import Link from 'next/link'
             <p className="text-lg md:text-xl opacity-90 mb-6">
               Advancing environmental governance, CSR excellence, and inclusive development across the Asian continent.
             </p>
-            <Link
-              href="/explore"
-              className="inline-block bg-[#2e8b57] hover:bg-[#1e6e41] text-white font-medium py-3 px-8 rounded-md transition-colors"
-            >
-              Explore More
-            </Link>
+           
           </div>
+    <div className="flex justify-center mt-10 px-4">
+  <button className="w-full max-w-[300px] h-[44px] flex justify-center items-center text-white bg-[#2E7D32] font-bold text-[18px] leading-[100%] hover:bg-[#155c35] transition-colors">
+    Explore More
+  </button>
+</div>
+
+
+
         </div>
       </section></div>
     )

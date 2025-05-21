@@ -10,20 +10,20 @@ export default function Page() {
           <Image src="/Star.png" alt="Decorative star" width={100} height={100}/>
         </div>
 
-        <h2 className="text-3xl font-medium text-center text-green-800 mb-24">Memberships &amp; Global Alliances</h2>
+        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-24">Memberships &amp; Global Alliances</h2>
 
         {/* Insights & Events Section */}
         <div className="relative mb-16">
           <div className="flex items-center justify-center mb-6">
             <div className="flex-1 hidden md:block"></div>
-            <h2 className="text-4xl font-medium text-green-800 text-center mx-4">Insights &amp; Events</h2>
+            <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4">Insights &amp; Events</h2>
             <div className="flex-1 flex items-center">
-              <div className="h-4 w-4 rounded-full bg-green-800"></div>
-              <div className="h-0.5 flex-1 bg-green-800"></div>
+              <div className="h-4 w-4 rounded-full bg-[#537D5D]"></div>
+              <div className="h-0.5 flex-1 bg-[#537D5D]"></div>
             </div>
           </div>
 
-          <p className="text-lg text-green-700 mb-12 text-center">
+          <p className="text-lg text-[#9EBC8A] mb-12 text-center">
             Explore our latest resources and stay updated on what&apos;s coming next.
           </p>
 
@@ -40,7 +40,7 @@ export default function Page() {
                     className="object-cover"
                   />
                 </div>
-                <div className="bg-green-800 text-white p-3">
+                <div className="bg-[#537D5D] text-white p-3">
                   <h3 className="text-base font-medium mb-1">International Conference Responsible Business Co...</h3>
                   <p className="text-xs">
                     Social Responsibility Asia (SR Asia) is a professional network of SR professionals based in ...
@@ -58,7 +58,7 @@ export default function Page() {
                     className="object-cover"
                   />
                 </div>
-                <div className="bg-green-800 text-white p-3">
+                <div className="bg-[#537D5D] text-white p-3">
                   <h3 className="text-base font-medium mb-1">International Conference on Socially...</h3>
                   <p className="text-xs">
                     Social Responsibility is an important facet of corporate strategy. Various reports of economic ...
@@ -76,7 +76,7 @@ export default function Page() {
                     className="object-cover"
                   />
                 </div>
-                <div className="bg-green-800 text-white p-3">
+                <div className="bg-[#537D5D] text-white p-3">
                   <h3 className="text-base font-medium mb-1">Conference on creating buy-in for social respon...</h3>
                   <p className="text-xs">
                     Socially responsible products and services have always been in demands from developed world...
