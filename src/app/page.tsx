@@ -6,7 +6,8 @@ import Service from "@/components/home/services"
 import Work from "@/components/home/work"
 import Stats from "@/components/home/stats"
 import Insights from "@/components/home/insights"
-
+import Impact from "@/components/home/impact"
+import Footer from "@/components/footer/footer"
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <Work/>
       <Stats/>
       <Insights/>
+      <Impact/>
+      <Footer/>
     </>
   );
 }
