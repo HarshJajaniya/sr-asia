@@ -1,62 +1,62 @@
 "use client";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+import Image from "next/image";
+
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function NewsletterImpactSection() {
-  const newsletterRef = useRef(null);
-  const impactRef = useRef(null);
+  // const newsletterRef = useRef(null);
+  // const impactRef = useRef(null);
 
-  useEffect(() => {
-    if (newsletterRef.current) {
-      gsap.fromTo(
-        newsletterRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 4,
-          delay: 0.5,
-          stagger: 0.5,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: newsletterRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
+  // useEffect(() => {
+  //   if (newsletterRef.current) {
+  //     gsap.fromTo(
+  //       newsletterRef.current,
+  //       { opacity: 0, y: 50 },
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 4,
+  //         delay: 0.5,
+  //         stagger: 0.5,
+  //         ease: "power3.out",
+  //         scrollTrigger: {
+  //           trigger: newsletterRef.current,
+  //           start: "top 80%",
+  //           toggleActions: "play none none none",
+  //         },
+  //       }
+  //     );
+  //   }
 
-    if (impactRef.current) {
-      gsap.fromTo(
-        impactRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 4,
-          delay: 1,
-          stagger: 0.5,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: impactRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
-  }, []);
+  //   if (impactRef.current) {
+  //     gsap.fromTo(
+  //       impactRef.current,
+  //       { opacity: 0, y: 50 },
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 4,
+  //         delay: 1,
+  //         stagger: 0.5,
+  //         ease: "power3.out",
+  //         scrollTrigger: {
+  //           trigger: impactRef.current,
+  //           start: "top 80%",
+  //           toggleActions: "play none none none",
+  //         },
+  //       }
+  //     );
+  //   }
+  // }, []);
 
   return (
     <div className="w-full">
       {/* Newsletter Section */}
       <div
-        ref={newsletterRef}
+        // ref={newsletterRef}
         className="mt-4 mb-4 py-4 border-t border-b border-gray-200 shadow-2xl text-[#537D5D] p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-8"
       >
         <div className="w-full max-w-[250px]">
@@ -93,7 +93,7 @@ export default function NewsletterImpactSection() {
 
       {/* Impact Section */}
       <div
-        ref={impactRef}
+        // ref={impactRef}
         className="bg-gray-50 mb-2 py-32 md:py-20 px-8 relative overflow-hidden"
       >
         {/* Left decorative illustration */}
