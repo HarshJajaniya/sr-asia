@@ -19,11 +19,6 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
       cardsRef.current.push(el);
     }
   };
-  const addToImagesRef = (el: HTMLDivElement | null) => {
-    if (el && !imagesRef.current.includes(el)) {
-      imagesRef.current.push(el);
-    }
-  };
 
   useEffect(() => {
     // Animate each card with ScrollTrigger
@@ -46,25 +41,7 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
         }
       );
     });
-     imagesRef.current.forEach((image) => {
-      gsap.fromTo(
-        image,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          stagger: 0.5,
-          delay: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: image,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    });
+     
 
     // Cleanup ScrollTriggers on unmount
     return () => {
@@ -249,7 +226,7 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto mb-8">
-          <div  ref={addToImagesRef} className="aspect-square overflow-hidden">
+          <div  className="aspect-square overflow-hidden">
             <Image
               src="/3.png"
               alt="People in a meeting discussing charts"
@@ -258,7 +235,7 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
               className="w-full h-full object-cover"
             />
           </div>
-          <div  ref={addToImagesRef} className="aspect-square overflow-hidden">
+          <div  className="aspect-square overflow-hidden">
             <Image
               src="/4.png"
               alt="People reviewing documents"
@@ -267,7 +244,7 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
               className="w-full h-full object-cover"
             />
           </div>
-          <div ref={addToImagesRef} className="aspect-square overflow-hidden">
+          <div className="aspect-square overflow-hidden">
             <Image
               src="/5.png"
               alt="People working with digital devices"
@@ -276,7 +253,7 @@ const imagesRef = useRef<HTMLDivElement[]>([]);
               className="w-full h-full object-cover"
             />
           </div>
-          <div  ref={addToImagesRef} className="aspect-square overflow-hidden">
+          <div className="aspect-square overflow-hidden">
             <Image
               src="/6.png"
               alt="Skills development whiteboard"
