@@ -117,8 +117,8 @@ export default function NewsletterImpactSection() {
             className="object-contain"
           />
         </div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
+        
+        <div className="max-w-4xl mx-auto text-left relative z-10">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-[#0a4a3c] mb-3">
             Ready to Make an Impact?
           </h2>
@@ -127,18 +127,18 @@ export default function NewsletterImpactSection() {
           </p>
 
           <div className="flex flex-col items-center">
-            <div className="w-full max-w-xs mb-8">
-              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+            <div className="w-full max-w-xs mb-8 self-start">
+              <button className="w-full bg-[#537D5D] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white py-3 px-6 rounded transition-colors">
                 Partner With Us
               </button>
             </div>
             <div className="w-full max-w-xs mb-8 self-center ml-16">
-              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+              <button className="w-full bg-[#537D5D] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white py-3 px-6 rounded transition-colors">
                 Volunteer
               </button>
             </div>
-            <div className="w-full max-w-xs self-center ml-32">
-              <button className="w-full bg-[#537D5D] hover:bg-[#083a30] text-white py-3 px-6 rounded transition-colors">
+            <div className="w-full max-w-xs self-end ml-32">
+              <button className="w-full bg-[#537D5D] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white py-3 px-6 rounded transition-colors">
                 Get Involved
               </button>
             </div>
