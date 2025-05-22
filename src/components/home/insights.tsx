@@ -10,9 +10,7 @@ import { Map } from "./india-map"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Page() {
-  const headingRef = useRef(null)
-  const subHeadingRef = useRef(null)
-  const cardRefs = useRef<HTMLDivElement[]>([])
+ 
   const mapContainerRef = useRef(null)
 
   // Add state management for the map
@@ -26,59 +24,7 @@ export default function Page() {
     setActiveState(null)
   }
 
-  useEffect(() => {
-    // Heading animation
-    gsap.from(headingRef.current, {
-      opacity: 0,
-      y: -30,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: headingRef.current,
-        start: "top 80%",
-      },
-    })
 
-    // Subheading animation
-    gsap.from(subHeadingRef.current, {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: subHeadingRef.current,
-        start: "top 85%",
-      },
-    })
-
-    // Map animation
-    gsap.from(mapContainerRef.current, {
-      opacity: 0,
-      scale: 0.9,
-      duration: 1.2,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: mapContainerRef.current,
-        start: "top 75%",
-      },
-    })
-
-    // Cards animation
-    cardRefs.current.forEach((card, index) => {
-      gsap.from(card, {
-        opacity: 0,
-        y: 40,
-        duration: 3,
-        delay: index * 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 85%",
-        },
-      })
-    })
-  }, [])
 
   return (
     <div className="w-full bg-white">
@@ -89,7 +35,7 @@ export default function Page() {
           <Image src="/Star.png" alt="Decorative star" width={100} height={100} />
         </div>
 
-        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" ref={headingRef}>
+        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" >
           Memberships &amp; Global Alliances
         </h2>
 
@@ -110,7 +56,7 @@ export default function Page() {
         <div className="relative mb-16">
           <div className="flex items-center justify-center mb-6">
             <div className="flex-1 hidden md:block"></div>
-            <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4" ref={subHeadingRef}>
+            <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4" >
               Insights &amp; Events
             </h2>
             <div className="flex-1 flex items-center">
@@ -146,9 +92,7 @@ export default function Page() {
                 <div
                   key={index}
                   className="border border-teal-800 overflow-hidden"
-                  ref={(el) => {
-                    if (el) cardRefs.current[index] = el
-                  }}
+                 
                 >
                   <div className="h-40 relative">
                     <Image src={`${item.img}?height=200&width=400`} alt={item.title} fill className="object-cover" />
