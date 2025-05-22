@@ -46,7 +46,7 @@ const SrAsiaWork = () => {
               </p>
               <Link
                 href="#"
-                className="block text-center py-2 px-4 bg-green-700 hover:bg-green-800 text-white rounded-md font-medium"
+                className="block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white  font-medium"
               >
                 Read more
               </Link>
@@ -74,7 +74,7 @@ const SrAsiaWork = () => {
               </p>
               <Link
                 href="#"
-                className="block text-center py-2 px-4 bg-green-800 hover:bg-green-900 text-white rounded-md font-medium"
+                className="block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white font-medium"
               >
                 Read more
               </Link>

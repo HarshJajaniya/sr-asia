@@ -68,15 +68,16 @@ export default function AboutUsSection() {
   return (
     <div className="py-12 bg-gray-50">
       {/* About Us Header */}
-      <div className="flex items-center mb-8" ref={aboutHeaderRef}>
-        <div className="w-4 h-4 rounded-full bg-green-800"></div>
-        <div className="h-px bg-green-800 w-44"></div>
-        <h2 className="text-2xl font-bold text-green-800 ml-4">About Us</h2>
-      </div>
+     <div className="flex items-center mb-8" ref={aboutHeaderRef}>
+  <div className="h-px bg-green-800 w-44"></div>
+  <div className="w-4 h-4 rounded-full bg-green-800 ml-2"></div>
+  <h2 className="text-2xl font-bold text-green-800 ml-4">About Us</h2>
+</div>
 
       {/* About Us Content */}
-      <div className="flex flex-col md:flex-row gap-8 mb-16">
-        <div className="md:w-1/3 flex justify-center">
+      <div className="w-[1155px] mx-auto">
+      <div className="flex flex-col md:flex-row gap-0 mb-16">
+        <div className="flex justify-center mx-auto">
           <Image
             src="/sr-asia-logo.png"
             alt="SR Asia Logo"
@@ -100,6 +101,7 @@ export default function AboutUsSection() {
           </div>
         </div>
       </div>
+      </div>
 
       {/* Countries Section */}
       <div className="mb-12">
@@ -116,6 +118,9 @@ export default function AboutUsSection() {
           </div>
         </div>
 
+        <div className="w-[1155px] mx-auto">
+
+        
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
           {[
             { country: "India", flag: "india.png" },
@@ -146,7 +151,7 @@ export default function AboutUsSection() {
           ))}
         </div>
       </div>
-
+        </div>
       {/* Divider */}
       <div className="w-full max-w-md mx-auto h-px bg-[#004D40]"></div>
     </div>
