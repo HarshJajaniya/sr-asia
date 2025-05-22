@@ -69,9 +69,9 @@ export default function Page() {
             Explore our latest resources and stay updated on what&apos;s coming next.
           </p>
 
-          {/* Conference Cards */}
-          <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Conference Cards - Horizontal Scroll */}
+          <div className="overflow-x-auto">
+            <div className="flex gap-6 px-4 md:px-8 lg:px-16 justify-center">
               {[
                 {
                   img: "/insights/1.png",
@@ -97,9 +97,16 @@ export default function Page() {
                   <div className="h-40 relative">
                     <Image src={`${item.img}?height=200&width=400`} alt={item.title} fill className="object-cover" />
                   </div>
-                  <div className="bg-[#537D5D] text-white p-3">
-                    <h3 className="text-base font-medium mb-1">{item.title}</h3>
-                    <p className="text-xs">{item.desc}</p>
+                  <div className="bg-[#537D5D] text-white p-4 flex flex-col justify-between h-full relative">
+                    <div>
+                      <h3 className="text-base font-medium mb-1">{item.title}</h3>
+                      <p className="text-xs mb-4">{item.desc}</p>
+                    </div>
+                    <button
+                      className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 bg-[#F5F5DC] text-[#537D5D] text-sm px-3 py-1 rounded transition-opacity duration-300"
+                    >
+                      Register Now
+                    </button>
                   </div>
                 </div>
               ))}

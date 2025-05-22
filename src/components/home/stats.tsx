@@ -4,9 +4,16 @@ export default function StatsSection() {
   return (
     <div className="relative w-full py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
       {/* World Map Background */}
-      <div className="absolute inset-0 z-0">
-        <Image src="/world-map.png" alt="World Map Background" fill className="object-contain opacity-15" priority />
-      </div>
+      <div className="absolute w-[1000] h-[690px] inset-0 z-0">
+  <Image
+    src="/12.png"
+    alt="World Map Background"
+    fill
+    className="object-contain  opacity-50"
+    priority
+  />
+</div>
+
 
       {/* Stats Grid */}
       <div className="relative z-10 max-w-7xl mx-auto">
