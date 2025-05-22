@@ -1,59 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-
-gsap.registerPlugin(ScrollTrigger)
 
 export default function Page() {
-  const headingRef = useRef(null)
-  const subHeadingRef = useRef(null)
-  const cardRefs = useRef<HTMLDivElement[]>([])
-
-  useEffect(() => {
-    // Heading animation
-    gsap.from(headingRef.current, {
-      opacity: 0,
-      y: -30,
-      duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: headingRef.current,
-        start: "top 80%",
-      },
-    })
-
-    // Subheading animation
-    gsap.from(subHeadingRef.current, {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: subHeadingRef.current,
-        start: "top 85%",
-      },
-    })
-
-    // Cards animation
-    cardRefs.current.forEach((card, index) => {
-      gsap.from(card, {
-        opacity: 0,
-        y: 40,
-        duration: 3,
-        delay: index * 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 85%",
-        },
-      })
-    })
-  }, [])
-
   return (
     <div className="w-full bg-white">
       {/* Memberships & Global Alliances Section */}
@@ -63,10 +12,7 @@ export default function Page() {
           <Image src="/Star.png" alt="Decorative star" width={100} height={100} />
         </div>
 
-        <h2
-          className="text-3xl font-medium text-center text-[#537D5D] mb-24"
-          ref={headingRef}
-        >
+        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-24">
           Memberships &amp; Global Alliances
         </h2>
 
@@ -74,10 +20,7 @@ export default function Page() {
         <div className="relative mb-16">
           <div className="flex items-center justify-center mb-6">
             <div className="flex-1 hidden md:block"></div>
-            <h2
-              className="text-4xl font-medium text-[#537D5D] text-center mx-4"
-              ref={subHeadingRef}
-            >
+            <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4">
               Insights &amp; Events
             </h2>
             <div className="flex-1 flex items-center">
@@ -90,9 +33,9 @@ export default function Page() {
             Explore our latest resources and stay updated on what&apos;s coming next.
           </p>
 
-          {/* Conference Cards */}
-          <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Conference Cards - Horizontal Scroll */}
+          <div className="overflow-x-auto">
+            <div className="flex gap-6 px-4 md:px-8 lg:px-16 justify-center">
               {[
                 {
                   img: "/insights/1.png",
@@ -115,22 +58,26 @@ export default function Page() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="border border-teal-800 overflow-hidden"
-                  ref={(el) => {
-                    if (el) cardRefs.current[index] = el
-                  }}
+                  className="group transition-all duration-300 border border-teal-800 overflow-hidden relative w-[335px] hover:w-[508px] flex-shrink-0"
                 >
                   <div className="h-40 relative">
                     <Image
                       src={`${item.img}?height=200&width=400`}
-                      alt={item.title}
+                      alt={`Banner for ${item.title}`}
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <div className="bg-[#537D5D] text-white p-3">
-                    <h3 className="text-base font-medium mb-1">{item.title}</h3>
-                    <p className="text-xs">{item.desc}</p>
+                  <div className="bg-[#537D5D] text-white p-4 flex flex-col justify-between h-full relative">
+                    <div>
+                      <h3 className="text-base font-medium mb-1">{item.title}</h3>
+                      <p className="text-xs mb-4">{item.desc}</p>
+                    </div>
+                    <button
+                      className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 bg-[#F5F5DC] text-[#537D5D] text-sm px-3 py-1 rounded transition-opacity duration-300"
+                    >
+                      Register Now
+                    </button>
                   </div>
                 </div>
               ))}
