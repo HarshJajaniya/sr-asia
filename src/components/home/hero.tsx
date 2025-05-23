@@ -4,13 +4,10 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Particles from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import type { Engine } from '@tsparticles/engine'
+
 
 const Hero = () => {
-  const particlesInit = async (engine: Engine) => {
-    await loadFull(engine)
-  }
+ 
 
   return (
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
@@ -40,7 +37,7 @@ const Hero = () => {
       {/* Leaf particles */}
       <Particles
         id="tsparticles"
-        init={particlesInit}
+      
         options={{
           fullScreen: { enable: false },
           particles: {
