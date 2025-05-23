@@ -14,7 +14,7 @@ export function Map({ activeState, onStateHover, onStateLeave }: MapProps) {
   return (
     <div className="relative w-full h-full">
       {/* The map image */}
-      <Image src="/map.png" alt="Map of India" fill className="object-contain" priority />
+      <Image src="/mpp.png" alt="Map of India" fill className="object-contain" priority />
 
       {/* SVG overlay with interactive regions */}
       <svg
