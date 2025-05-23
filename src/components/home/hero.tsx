@@ -5,15 +5,15 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
+import type { Engine } from 'tsparticles-engine'
 
 const Hero = () => {
-  const particlesInit = async (main: any) => {
+  const particlesInit = async (main: Engine) => {
     await loadFull(main)
   }
 
   return (
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
-
       {/* Static Background */}
       <Image
         src="/hero.png"
@@ -25,7 +25,7 @@ const Hero = () => {
 
       {/* Rotating globe in center */}
       <motion.div
-        className="absolute ml-4 left-1/2 top-1/2 md:w-[450px] md:h-[450px] z-10 -translate-x-1/2 -translate-y-1/2"
+        className="absolute left-1/2 top-1/2 md:w-[450px] md:h-[450px] z-10 -translate-x-1/2 -translate-y-1/2 relative"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
       >
@@ -60,7 +60,7 @@ const Hero = () => {
           },
           detectRetina: true,
         }}
-        className="absolute w-full h-full z-5"
+        style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 5 }}
       />
 
       {/* Foreground content */}
