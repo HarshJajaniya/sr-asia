@@ -197,7 +197,7 @@ export const stateData: Record<string, StateData> = {
   westBengal: {
     id: "westBengal",
     name: "West Bengal",
-    path: "M720,370 L700,400 L710,450 L740,470 L760,450 L750,400 L720,370 Z",
+    path: "M720,370 L700,400 L710,450 L741,470 L760,450 L750,400 L720,370 Z",
     clientFeedback: [
       {
         client: "Kolkata Heritage Trust",
