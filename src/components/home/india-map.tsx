@@ -53,7 +53,7 @@ export function Map({ activeState, onStateHover, onStateLeave }: MapProps) {
     <div className="relative w-full h-[600px]">
       {/* Background map image */}
       <Image
-        src="/map.png"
+        src="/mpp.png"
         alt="Map of India"
         fill
         className="object-contain"
