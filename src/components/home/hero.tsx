@@ -5,11 +5,11 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import type { Engine } from 'tsparticles-engine'
+import type { Engine } from '@tsparticles/engine'
 
 const Hero = () => {
-  const particlesInit = async (main: Engine) => {
-    await loadFull(main)
+  const particlesInit = async (engine: Engine) => {
+    await loadFull(engine)
   }
 
   return (
