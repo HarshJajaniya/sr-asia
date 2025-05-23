@@ -16,16 +16,16 @@ const Hero = () => {
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
       {/* Static Background */}
       <Image
-        src="/hero.png"
+        src="/bg.jpg"
         alt="Background"
         fill
         priority
-        className="object-cover z-0"
+        className="object-cover object-center z-0"
       />
 
       {/* Rotating globe in center */}
       <motion.div
-        className="absolute left-1/2 top-1/2 md:w-[450px] md:h-[450px] z-10 -translate-x-1/2 -translate-y-1/2 relative"
+  className="absolute left-1/2 top-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] z-10 -translate-x-1/2 -translate-y-1/2 relative shadow-2xl rounded-full"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
       >
