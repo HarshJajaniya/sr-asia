@@ -16,7 +16,7 @@ export const stateData: Record<string, StateData> = {
   jammuKashmir: {
     id: "jammuKashmir",
     name: "Jammu & Kashmir",
-    path: "M250,120 L220,140 L200,180 L230,200 L270,190 L290,160 L280,130 L250,120 Z",
+    path: "M350,80 L320,100 L300,140 L330,160 L370,150 L390,120 L380,90 L350,80 Z",
     clientFeedback: [
       {
         client: "Kashmir Handicrafts",
@@ -62,7 +62,7 @@ export const stateData: Record<string, StateData> = {
   uttarakhand: {
     id: "uttarakhand",
     name: "Uttarakhand",
-    path: "M310,230 L290,250 L300,280 L330,290 L350,270 L340,240 L310,230 Z",
+    path: "M410,210 L390,230 L400,260 L430,270 L450,250 L440,220 L410,210 Z",
     clientFeedback: [
       {
         client: "Dehradun Tourism",
@@ -77,7 +77,7 @@ export const stateData: Record<string, StateData> = {
   haryana: {
     id: "haryana",
     name: "Haryana",
-    path: "M240,270 L220,290 L230,320 L260,330 L280,310 L270,280 L240,270 Z",
+    path: "M320,270 L300,290 L310,320 L340,330 L360,310 L350,280 L320,270 Z",
     clientFeedback: [
       {
         client: "Gurgaon Tech Solutions",
@@ -107,7 +107,7 @@ export const stateData: Record<string, StateData> = {
   rajasthan: {
     id: "rajasthan",
     name: "Rajasthan",
-    path: "M150,280 L120,310 L130,370 L180,400 L230,380 L250,330 L220,290 L150,280 Z",
+    path: "M190,280 L160,310 L170,370 L220,400 L270,380 L290,330 L260,290 L190,280 Z",
     clientFeedback: [
       {
         client: "Jaipur Tourism Board",
@@ -122,7 +122,7 @@ export const stateData: Record<string, StateData> = {
   uttarPradesh: {
     id: "uttarPradesh",
     name: "Uttar Pradesh",
-    path: "M320,280 L290,310 L300,370 L350,400 L400,380 L410,320 L380,290 L320,280 Z",
+    path: "M400,280 L370,310 L380,370 L430,400 L480,380 L490,320 L460,290 L400,280 Z",
     clientFeedback: [
       {
         client: "Lucknow Heritage Foundation",
@@ -137,7 +137,7 @@ export const stateData: Record<string, StateData> = {
   bihar: {
     id: "bihar",
     name: "Bihar",
-    path: "M420,320 L400,340 L410,380 L440,390 L460,370 L450,330 L420,320 Z",
+    path: "M580,320 L560,340 L570,380 L600,390 L620,370 L610,330 L580,320 Z",
     clientFeedback: [
       {
         client: "Patna Agricultural Cooperative",
@@ -167,7 +167,7 @@ export const stateData: Record<string, StateData> = {
   madhyaPradesh: {
     id: "madhyaPradesh",
     name: "Madhya Pradesh",
-    path: "M220,380 L190,410 L210,470 L270,490 L330,470 L350,410 L320,380 L220,380 Z",
+    path: "M340,380 L310,410 L330,470 L390,490 L450,470 L470,410 L440,380 L340,380 Z",
     clientFeedback: [
       {
         client: "Bhopal Tourism Development",
@@ -197,7 +197,7 @@ export const stateData: Record<string, StateData> = {
   westBengal: {
     id: "westBengal",
     name: "West Bengal",
-    path: "M470,370 L450,400 L460,450 L490,470 L510,450 L500,400 L470,370 Z",
+    path: "M720,370 L700,400 L710,450 L740,470 L760,450 L750,400 L720,370 Z",
     clientFeedback: [
       {
         client: "Kolkata Heritage Trust",
@@ -212,7 +212,7 @@ export const stateData: Record<string, StateData> = {
   maharashtra: {
     id: "maharashtra",
     name: "Maharashtra",
-    path: "M180,440 L150,470 L170,530 L230,550 L290,530 L310,470 L280,440 L180,440 Z",
+    path: "M290,520 L180,550 L200,610 L260,630 L320,610 L340,550 L310,520 L210,520 Z",
     clientFeedback: [
       {
         client: "Mumbai Financial Services",
@@ -242,7 +242,7 @@ export const stateData: Record<string, StateData> = {
   odisha: {
     id: "odisha",
     name: "Odisha",
-    path: "M380,450 L360,480 L370,530 L410,550 L440,530 L450,480 L420,450 L380,450 Z",
+    path: "M500,450 L480,480 L490,530 L530,550 L560,530 L570,480 L540,450 L500,450 Z",
     clientFeedback: [
       {
         client: "Bhubaneswar Urban Development",
@@ -257,7 +257,7 @@ export const stateData: Record<string, StateData> = {
   karnataka: {
     id: "karnataka",
     name: "Karnataka",
-    path: "M220,550 L190,580 L210,640 L270,660 L320,640 L340,580 L310,550 L220,550 Z",
+    path: "M250,670 L220,700 L240,760 L300,780 L350,760 L370,700 L340,670 L250,670 Z",
     clientFeedback: [
       {
         client: "Bangalore Tech Innovation Hub",
@@ -288,7 +288,7 @@ export const stateData: Record<string, StateData> = {
   tamilnadu: {
     id: "tamilnadu",
     name: "Tamil Nadu",
-    path: "M290,640 L270,670 L290,720 L340,740 L380,720 L390,670 L360,640 L290,640 Z",
+    path: "M290,790 L270,820 L290,870 L340,890 L380,870 L390,820 L360,790 L290,790 Z",
     clientFeedback: [
       {
         client: "Chennai Manufacturing Association",

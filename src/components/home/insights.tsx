@@ -2,12 +2,11 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useRef } from "react"
+
 import { Map } from "./india-map"
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 export default function Page() {
  

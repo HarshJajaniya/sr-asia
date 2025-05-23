@@ -1,0 +1,12 @@
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.05);
+  }
+}
+
+.animate-rotateSlow {
+  animation: rotateSlow 120s linear infinite;
+}
