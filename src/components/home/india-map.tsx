@@ -12,22 +12,10 @@ interface MapProps {
 }
 
 export function Map({ activeState, onStateHover, onStateLeave }: MapProps) {
-  return (
-    <div className="relative w-full h-full">
-      {/* The map image */}
-      <Image src="/map.png" alt="Map of India" fill className="object-contain" priority />
-
-      {/* SVG overlay with interactive regions */}
-      <svg
-        viewBox="0 0 800 1000"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 w-full h-full"
-        style={{ pointerEvents: "none" }}
-      >
-        {Object.keys(stateData).map((stateId) => {
-          const state = stateData[stateId]
-          const isActive = activeState === stateId
+  const statePaths = useMemo(() => {
+    return Object.keys(stateData).map((stateId) => {
+      const state = stateData[stateId]
+      const isActive = activeState === stateId
 
       return (
         <motion.path
@@ -62,7 +50,7 @@ export function Map({ activeState, onStateHover, onStateLeave }: MapProps) {
   const activeStateData = activeState ? stateData[activeState] : null
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-[600px]">
       {/* Background map image */}
       <Image
         src="/map.png"
