@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes realistic-fall {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    5% {
+      opacity: var(--max-opacity, 0.3);
+    }
+    15% {
+      transform: translateY(calc(var(--end-y, 120vh) * 0.2)) translateX(2px) rotate(5deg);
+    }
+    30% {
+      transform: translateY(calc(var(--end-y, 120vh) * 0.4)) translateX(-1px) rotate(-3deg);
+    }
+    50% {
+      transform: translateY(calc(var(--end-y, 120vh) * 0.6)) translateX(3px) rotate(8deg);
+    }
+    70% {
+      transform: translateY(calc(var(--end-y, 120vh) * 0.8)) translateX(-2px) rotate(-5deg);
+    }
+    95% {
+      opacity: var(--max-opacity, 0.3);
+    }
+    100% {
+      transform: translateY(var(--end-y, 120vh)) translateX(0px) rotate(10deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes gentle-float {
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(-8px) translateX(3px);
+    }
+    50% {
+      transform: translateY(-5px) translateX(-2px);
+    }
+    75% {
+      transform: translateY(-12px) translateX(1px);
+    }
+    90% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes subtle-drift {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(var(--end-y, 110vh)) translateX(10px) rotate(15deg);
+      opacity: 0;
+    }
+  }
+
+  .animate-realistic-fall {
+    animation: realistic-fall linear infinite;
+  }
+
+  .animate-gentle-float {
+    animation: gentle-float ease-in-out infinite;
+  }
+
+  .animate-subtle-drift {
+    animation: subtle-drift linear infinite;
+  }
+}
