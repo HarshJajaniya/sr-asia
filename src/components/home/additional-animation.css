@@ -1,0 +1,29 @@
+@keyframes varied-fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: var(--max-opacity, 0.3);
+  }
+  20% {
+    transform: translateY(calc(var(--travel-distance, 100vh) * 0.25)) translateX(1px) rotate(3deg);
+  }
+  40% {
+    transform: translateY(calc(var(--travel-distance, 100vh) * 0.5)) translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateY(calc(var(--travel-distance, 100vh) * 0.75)) translateX(2px) rotate(5deg);
+  }
+  85% {
+    opacity: var(--max-opacity, 0.3);
+  }
+  100% {
+    transform: translateY(var(--travel-distance, 100vh)) translateX(0px) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+.animate-varied-fall {
+  animation: varied-fall linear infinite;
+}
