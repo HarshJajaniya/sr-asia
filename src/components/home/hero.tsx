@@ -24,7 +24,7 @@ const Hero = () => {
       />
 
       {/* Rotating globe in center */}
-      <motion.div
+      {/* <motion.div
   className="absolute left-1/2 top-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[450px] md:h-[450px] z-10 -translate-x-1/2 -translate-y-1/2 relative shadow-2xl rounded-full"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
@@ -35,7 +35,7 @@ const Hero = () => {
           fill
           className="object-contain"
         />
-      </motion.div>
+      // </motion.div> */}
 
       {/* Leaf particles */}
       <Particles
