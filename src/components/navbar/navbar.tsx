@@ -90,39 +90,50 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
   return (
     <>
       {/* Navigation */}
-      <nav className="bg-white flex items-center justify-between px-4 md:px-8 py-3 border-b border-gray-100">
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src="/srasia_logo.png"
-              alt="Sustainable Asia Logo"
-              width={50}
-              height={50}
-              className="h-10 w-auto"
-            />
-          </Link>
-        </div>
+      <nav className="relative bg-white flex items-center justify-between px-4 md:px-8 py-3 border-b border-gray-100">
+  {/* Logo and Badge Container */}
+  <div className="absolute -top-4 -left-[-1] z-40">
+    <Image
+      src="/badge.svg"
+      alt="SR Asia 2025 Certification Badge"
+      width={60}
+      height={60}
+      className="w-16 h-auto"
+    />
+  </div>
+  <div className="flex left-20 items-center space-x-4 relative">
+    <Link href="/">
+      <Image
+        src="/srasia_logo.png"
+        alt="Sustainable Asia Logo"
+        width={50}
+        height={50}
+        className="h-10 w-auto"
+      />
+    </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6">
-          {["About", "Our Work", "Resources", "Connect"].map((route, index) => (
-            <Link
-              key={route}
-              href={`/${route.toLowerCase().replace(" ", "")}`}
-              className={linkStyle}
-         ref={(el) => { desktopNavLinksRef.current[index] = el; }}
+  </div>
 
-            >
-              {route}
-            </Link>
-          ))}
-        </div>
+  {/* Desktop Links */}
+  <div className="hidden md:flex space-x-6">
+    {["About", "Our Work", "Resources", "Connect"].map((route, index) => (
+      <Link
+        key={route}
+        href={`/${route.toLowerCase().replace(" ", "")}`}
+        className={linkStyle}
+        ref={(el) => { desktopNavLinksRef.current[index] = el; }}
+      >
+        {route}
+      </Link>
+    ))}
+  </div>
 
-        {/* Hamburger Icon */}
-        <button onClick={toggleSidebar} className="md:hidden text-[#537D5D] focus:outline-none">
-          <Menu className="w-6 h-6" />
-        </button>
-      </nav>
+  {/* Hamburger Icon */}
+  <button onClick={toggleSidebar} className="md:hidden text-[#537D5D] focus:outline-none">
+    <Menu className="w-6 h-6" />
+  </button>
+</nav>
+
 
       {/* Sidebar for Mobile */}
       {isSidebarOpen && (
