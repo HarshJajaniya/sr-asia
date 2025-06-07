@@ -1,11 +1,18 @@
 "use client"
-
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Pdf from "@/components/about/pdf"
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -77,7 +84,17 @@ export default function AboutUsSection() {
     <h2 className="text-xl md:text-2xl font-bold text-green-800 ml-4">About Us</h2>
   </div>
 
-
+<div className="max-w-screen-xl mx-auto px-16 md:px-32 mb-12">
+  <Carousel>
+  <CarouselContent>
+    <CarouselItem><Image src="/about.png" alt="About Us Hero" width={1193} height={81} className="object-cover w-full h-full" /></CarouselItem>
+    <CarouselItem><Image src="/about.png" alt="About Us Hero" width={1193} height={81} className="object-cover w-full h-full" /></CarouselItem>
+    <CarouselItem><Image src="/about.png" alt="About Us Hero" width={1193} height={81} className="object-cover w-full h-full" /></CarouselItem>
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+</div>
 
   {/* About Us Content */}
   <div className="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -113,6 +130,9 @@ export default function AboutUsSection() {
 </div>
 
 
+<div>
+    <Pdf/>
+</div>
       {/* Countries Section */}
       <div className="mb-12">
   {/* Title Row */}
@@ -175,3 +195,4 @@ export default function AboutUsSection() {
     </div>
   )
 }
+
