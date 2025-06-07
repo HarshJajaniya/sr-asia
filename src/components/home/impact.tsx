@@ -97,15 +97,16 @@ export default function NewsletterImpactSection() {
         className="bg-gray-50 mb-2 py-32 md:py-20 px-8 relative overflow-hidden"
       >
         {/* Left decorative illustration */}
-        <div className="absolute left-0 bottom-10 w-[150px] h-[250px] md:w-[200px] md:h-[250px] opacity-90">
-          <Image
-            src="/11.png?height=200&width=200"
-            alt="People illustration"
-            width={200}
-            height={200}
-            className="object-contain"
-          />
-        </div>
+        <div className="absolute left-[-50px] bottom-[-50px] w-[500px] h-[500px] md:w-[200px] md:h-[250px] opacity-90">
+      <Image
+        src="/20.png"
+        alt="People illustration"
+        width={500}
+        height={500}
+        className="object-contain rounded-[500px] shadow-lg"
+        />
+      </div>
+
 
         {/* Right decorative illustration */}
         <div className="absolute right-0 top-0 w-[200px] h-[200px] md:w-[250px] md:h-[250px] opacity-90">

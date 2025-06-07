@@ -81,7 +81,7 @@ const Hero = () => {
               animationDelay: `${particle.delay}s`,
               opacity: particle.opacity,
             }}
-          >
+            >
             <div
               className="bg-gradient-to-br from-green-300/40 to-green-500/60 rounded-full"
               style={{
