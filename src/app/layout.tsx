@@ -5,7 +5,7 @@ import { Karla } from 'next/font/google';
 
 const karla = Karla({
   subsets: ['latin'],
-  weight: ['700'],
+  weight: ['500'],
 });
 
 

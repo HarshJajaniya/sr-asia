@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Component() {
   return (
@@ -30,13 +30,19 @@ export default function Component() {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-medium" size="lg">
-            View All Projects
-          </Button>
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-medium" size="lg">
-            Read Case Studies
-          </Button>
+        <div className="p-8 pl-16 pr-16 w-full flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+                href="#"
+                className=" w-2xl block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white  font-medium"
+              >
+                View All Projects
+              </Link>
+               <Link
+                href="#"
+                className="w-2xl block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white  font-medium"
+              >
+                Read Case Studies
+              </Link>
         </div>
       </div>
     </div>

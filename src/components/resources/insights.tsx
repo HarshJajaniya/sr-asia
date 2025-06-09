@@ -1,47 +1,11 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
-import { useRef } from "react"
-
-import Map from "./india-map"
-
-// gsap.registerPlugin(ScrollTrigger)
-
 export default function Page() {
- 
-  const mapContainerRef = useRef(null)
-
-  // Add state management for the map
-  const [activeState, setActiveState] = useState<string | null>(null)
-
-  const handleStateHover = (stateId: string) => {
-    setActiveState(stateId)
-  }
-
-  const handleStateLeave = () => {
-    setActiveState(null)
-  }
-
-
 
   return (
     <div className="w-full bg-white">
-      {/* Memberships & Global Alliances Section */}
-      <div className="relative">
-        {/* Half star decoration */}
-        <div className="absolute left-0 top-12">
-          <Image src="/Star.png" alt="Decorative star" width={100} height={100} />
-        </div>
 
-        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" >
-          Memberships &amp; Global Alliances
-        </h2>
-
-        {/* Map container with proper dimensions and animation */}
-        <div ref={mapContainerRef} className="relative w-full max-w-4xl ml-100 h-auto">
-          <Map/>
-        </div>
 
         {/* Insights & Events Section */}
         <div className="relative mb-16">
@@ -56,9 +20,7 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-lg text-[#9EBC8A] mb-12 text-center">
-            Explore our latest resources and stay updated on what&apos;s coming next.
-          </p>
+         
 
           {/* Conference Cards - Horizontal Scroll */}
           <div className="overflow-x-auto">
@@ -105,7 +67,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </div>
+    
   )
 }
 
