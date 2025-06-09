@@ -7,50 +7,7 @@ import Image from "next/image";
 // gsap.registerPlugin(ScrollTrigger);
 
 export default function NewsletterImpactSection() {
-  // const newsletterRef = useRef(null);
-  // const impactRef = useRef(null);
-
-  // useEffect(() => {
-  //   if (newsletterRef.current) {
-  //     gsap.fromTo(
-  //       newsletterRef.current,
-  //       { opacity: 0, y: 50 },
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         duration: 4,
-  //         delay: 0.5,
-  //         stagger: 0.5,
-  //         ease: "power3.out",
-  //         scrollTrigger: {
-  //           trigger: newsletterRef.current,
-  //           start: "top 80%",
-  //           toggleActions: "play none none none",
-  //         },
-  //       }
-  //     );
-  //   }
-
-  //   if (impactRef.current) {
-  //     gsap.fromTo(
-  //       impactRef.current,
-  //       { opacity: 0, y: 50 },
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         duration: 4,
-  //         delay: 1,
-  //         stagger: 0.5,
-  //         ease: "power3.out",
-  //         scrollTrigger: {
-  //           trigger: impactRef.current,
-  //           start: "top 80%",
-  //           toggleActions: "play none none none",
-  //         },
-  //       }
-  //     );
-  //   }
-  // }, []);
+  
 
   return (
     <div className="w-full">
