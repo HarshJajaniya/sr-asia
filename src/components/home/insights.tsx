@@ -29,10 +29,6 @@ export default function Page() {
     <div className="w-full bg-white">
       {/* Memberships & Global Alliances Section */}
       <div className="relative">
-        {/* Half star decoration */}
-        <div className="absolute left-0 top-12">
-          <Image src="/Star.png" alt="Decorative star" width={100} height={100} />
-        </div>
 
         <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" >
           Memberships &amp; Global Alliances
