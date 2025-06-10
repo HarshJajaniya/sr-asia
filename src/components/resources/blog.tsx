@@ -41,11 +41,12 @@ export default function BlogsSection() {
             from the field, internal research insights, and partner
             contributions.
           </p>
-          <Link href="/blogs" className="block">
-            <button className="w-full py-4 bg-[#3d7a3d] hover:bg-[#3e6536] text-white font-medium transition-colors">
-              Read Our Blogs
-            </button>
-          </Link>
+         <Link href="/blogs" className="block">
+           <button className="w-full py-4 bg-[#3d7a3d] hover:bg-[#3e6536] text-white font-medium transition-colors">
+           Read Our Blogs
+        </button>
+         </Link>
+
         </div>
       </div>
     </div>
