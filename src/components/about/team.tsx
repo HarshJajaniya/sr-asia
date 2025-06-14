@@ -9,44 +9,40 @@ export default function TeamDisplay() {
 
   const teamMembers = [
     {
-      id: "ameya-aatman",
-      name: "Ameya Aatman",
-      title: "Project Manager",
-      image: "/team/1.png",
-      about:
-        "Ameya is a postgraduate in International Development from University of Nottingham. She has experience in the fields of Strategy, Policymaking, Human Centric Innovation, Design Thinking, and Sustainable Development. She has worked across multiple NGOs. She is an experienced professional with a demonstrated history of working in the non-profit organization management industry.",
+      id: "Shruti-Sharma",
+      name: "Shruti Sharma",
+      title: "HR Executive",
+      image: "/team/1.jpeg",
     },
     {
-      id: "arvind-raturi",
-      name: "Arvind Raturi",
-      title: "Accountant",
-      image: "/team/2.png",
-      about:
-        "Arvind is a postgraduate in International Development from University of Nottingham. He has worked with several non-profit organizations and has experience in budgeting and financial analysis.",
+      id: "Rameen-Anjum ",
+      name: "Rameen Anjum ",
+      title: "Sr. Research Analyst",
+      image: "/team/3.jpeg",
+        },
+    {
+      id: "Kalash-Kesharwani ",
+      name: "Kalash Kesharwani ",
+      title: "Salesforce Admin",
+      image: "/team/2.jpeg",
     },
     {
-      id: "team-member-3",
-      name: "Team Member 3",
-      title: "Designer",
-      image: "/team/3.png",
-      about:
-        "Creative and experienced designer specializing in branding, web, and UX design.",
+      id: "Jaya-Yadav ",
+      name: "Jaya Yadav ",
+      title: "Research Analyst",
+      image: "/team/4.jpeg",
+        },
+    {
+      id: "Sanjukta-Tirkey",
+      name: "Sanjukta Tirkey",
+      title: "Research Analyst",
+      image: "/team/5.jpeg",
     },
     {
-      id: "team-member-4",
-      name: "Team Member 4",
-      title: "Developer",
-      image: "/team/4.png",
-      about:
-        "Full-stack developer with expertise in React, Node.js, and cloud architecture.",
-    },
-    {
-      id: "team-member-5",
-      name: "Team Member 5",
-      title: "Coordinator",
-      image: "/team/5.png",
-      about:
-        "Efficient project coordinator with strong communication and team management skills.",
+      id: "Tanu-Akolia",
+      name: "Tanu Akolia",
+      title: "HR Generalist",
+      image: "/team/6.jpeg",
     },
   ]
 
@@ -86,9 +82,6 @@ export default function TeamDisplay() {
                   overflow-hidden max-h-[60px] group-hover:max-h-[400px]
                 `}
               >
-                <p className="line-clamp-3 group-hover:line-clamp-none">
-                  {member.about}
-                </p>
               </div>
             </div>
           </Card>
