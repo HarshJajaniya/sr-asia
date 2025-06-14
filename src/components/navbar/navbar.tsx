@@ -98,7 +98,7 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
       alt="SR Asia 2025 Certification Badge"
       width={60}
       height={60}
-      className="w-16 h-auto"
+      className="w-16 mt-4 h-auto"
     />
   </div>
   <div className="flex left-20 items-center space-x-4 relative">
