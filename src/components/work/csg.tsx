@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function CSRConsultingPage() {
   return (
@@ -58,9 +59,11 @@ export default function CSRConsultingPage() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <Button className="bg-[#00966E] hover:bg-teal-700 w-lg h-10 pl-8 text-white px-8 py-3 text-xl font-large">
-                Consult With Us
-              </Button>
+              <Link href="/connect">
+                <Button className="bg-[#00966E] hover:bg-teal-700 w-lg h-10 pl-8 text-white px-8 py-3 text-xl font-large">
+                  Consult With Us
+                </Button>
+              </Link>
             </div>
           </div>
 
