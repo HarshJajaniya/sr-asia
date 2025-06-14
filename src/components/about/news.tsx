@@ -28,11 +28,13 @@ const SrAsiaWork = () => {
             alt: "People reviewing documents",
             title: "Ganga Express Way: Land acquisition will be done after the survey of SR Asia...",
             desc: "The administration is making all efforts for the Ganga Expressway. But in Meerut district, 28 hectares of land out of 181 hectares could not be purchased due to disputes with farmers...",
+            link: "https://www.jagran.com/uttar-pradesh/meerut-city-ganga-express-way-after-the-survey-of-sr-asia-land-acquisition-will-be-done-agency-has-been-selected-21977488.html" 
           }, {
             img: "/25.png",
             alt: "Hands joining together with green leaves",
             title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity...",
             desc: "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources...",
+            link: "https://www.tbsnews.net/economy/corporates/ashshash-project-social-responsibility-sr-asia-pledges-solidarity-survivors-human"
           }].map((item, i) => (
             <div key={i} className="bg-white shadow-md md:shadow-lg border border-gray-200 overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-lg md:hover:shadow-xl rounded-xl">
               <div className="overflow-hidden h-48 sm:h-40 md:h-48 lg:h-56 xl:h-64">
@@ -52,7 +54,8 @@ const SrAsiaWork = () => {
                   {item.desc}
                 </p>
                 <Link
-                  href="#"
+                  href={item.link}
+                   target="_blank"
                   className="block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white text-sm md:text-base font-medium rounded"
                 >
                   Read more
