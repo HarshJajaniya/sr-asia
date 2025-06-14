@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
-import Image from "next/image"
-import { useEffect, useState } from "react"
-import axios from "axios"
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 interface EventType {
   _id: string
@@ -16,19 +16,19 @@ export default function Page() {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/events")
+      const res = await axios.get('http://localhost:5000/api/events')
       setEvents(res.data)
     } catch (err) {
-      console.error("Axios fetch failed:", err)
+      console.error('Axios fetch failed:', err)
     }
   }
 
   const deleteEvent = async (id: string) => {
     try {
       await axios.delete(`http://localhost:5000/api/events/${id}`)
-      fetchEvents() // refresh events after deletion
+      fetchEvents()
     } catch (err) {
-      console.error("Delete failed:", err)
+      console.error('Delete failed:', err)
     }
   }
 
@@ -57,10 +57,10 @@ export default function Page() {
             {events.map((event) => (
               <div
                 key={event._id}
-                className="border border-teal-800 overflow-hidden w-[320px] min-w-[280px] group relative rounded"
+                className="w-[320px] min-w-[280px] group relative rounded overflow-hidden bg-[#537D5D] text-white"
               >
                 {/* Image */}
-                <div className="h-40 relative bg-gray-200">
+                <div className="h-40 relative">
                   <Image
                     src={`http://localhost:5000${event.image}`}
                     alt={event.title}
@@ -70,13 +70,9 @@ export default function Page() {
                 </div>
 
                 {/* Info Section */}
-                <div className="bg-[#537D5D] text-white p-4 relative">
-                  <h3 className="text-base font-medium mb-1">{event.title}</h3>
-                  <p className="text-xs mb-4">{event.description}</p>
-
-                  
-
-                  
+                <div className="p-4 h-[200px] flex flex-col justify-between">
+                  <h3 className="text-base font-semibold mb-1">{event.title}</h3>
+                  <p className="text-xs line-clamp-5">{event.description}</p>
                 </div>
               </div>
             ))}

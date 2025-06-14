@@ -23,55 +23,7 @@ export default function AboutUsSection() {
   const countriesTitleRef = useRef(null)
   const flagRefs = useRef<HTMLDivElement[]>([])
 
-  useEffect(() => {
-    gsap.from(aboutHeaderRef.current, {
-      scrollTrigger: {
-        trigger: aboutHeaderRef.current,
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: -20,
-      duration: 1,
-      ease: "power3.out",
-    })
 
-    gsap.from(aboutTextRef.current, {
-      scrollTrigger: {
-        trigger: aboutTextRef.current,
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 20,
-      duration: 1,
-      ease: "power3.out",
-    })
-
-    gsap.from(countriesTitleRef.current, {
-      scrollTrigger: {
-        trigger: countriesTitleRef.current,
-        start: "top 85%",
-      },
-      opacity: 0,
-      y: -20,
-      duration: 1,
-      ease: "power3.out",
-    })
-
-    flagRefs.current.forEach((ref, index) => {
-      if (!ref) return
-      gsap.from(ref, {
-        scrollTrigger: {
-          trigger: ref,
-          start: "top 90%",
-        },
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        delay: index * 0.2,
-        ease: "power3.out",
-      })
-    })
-  }, [])
 
   return (
   <div className="py-8 md:py-12 bg-gray-50">

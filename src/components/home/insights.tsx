@@ -35,9 +35,14 @@ export default function Page() {
         </h2>
 
         {/* Map container with proper dimensions and animation */}
-        <div ref={mapContainerRef} className="relative w-full max-w-4xl ml-100 h-auto">
-          <Map/>
-        </div>
+        <div
+  ref={mapContainerRef}
+  className="relative w-full max-w-4xl h-auto mx-auto"
+>
+  <Map />
+</div>
+
+        {/* Description */}
 
         {/* Insights & Events Section */}
         <div className="relative mb-16">

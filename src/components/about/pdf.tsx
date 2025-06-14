@@ -13,7 +13,7 @@ export default function Component() {
 
   const handleDownload = (filename: string) => {
     const link = document.createElement("a")
-    link.href = `/${filename}` // Serves from public folder
+    link.href = `/brochures/${filename}` // Serves from public folder
     link.setAttribute("download", filename)
     document.body.appendChild(link)
     link.click()

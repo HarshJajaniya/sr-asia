@@ -178,11 +178,17 @@ export default function InteractiveIndiaMap() {
   const [hoveredState, setHoveredState] = useState<string | null>(null)
   const [selectedState, setSelectedState] = useState<string | null>(null)
 
+
+   const selected = states.find((s) => s.id === selectedState)
+  const hovered  = states.find((s) => s.id === hoveredState)
+
   return (
-    <div className="">
+
+    <div className="flex flex-col md:flex-row gap-6">
+      {/* ────────────── MAP ────────────── */}
       <svg
-        viewBox="0 0 1000 1000" // Use your SVG's real viewBox here
-        className=""
+        viewBox="0 0 1000 1000"               /* ← your real viewBox      */
+        className="w-full md:w-2/3 lg:w-3/4"   /* grow/shrink nicely       */
         xmlns="http://www.w3.org/2000/svg"
       >
         {states.map(({ id, name, path }) => (
@@ -191,14 +197,14 @@ export default function InteractiveIndiaMap() {
             d={path}
             fill={
               selectedState === id
-                ? "#537D5D" // blue if selected
+                ? "#537D5D"
                 : hoveredState === id
-                ? "#537D5D" // lighter blue on hover
-                : "#D1D5DB" // gray normally
+                ? "#7DA88A"   /* a tad lighter on hover */
+                : "#D1D5DB"
             }
             stroke="#374151"
-            strokeWidth={1}
-            style={{ cursor: "pointer", transition: "fill 0.3s ease" }}
+            strokeWidth={0.5}
+            style={{ cursor: "pointer", transition: "fill 0.2s ease" }}
             onMouseEnter={() => setHoveredState(id)}
             onMouseLeave={() => setHoveredState(null)}
             onClick={() => setSelectedState(id)}
@@ -206,18 +212,30 @@ export default function InteractiveIndiaMap() {
         ))}
       </svg>
 
-      {/* Tooltip or Info Box */}
-      {hoveredState && (
-        <div className="text-center text-lg font-semibold text-gray-700">
-          {states.find((s) => s.id === hoveredState)?.name}
-        </div>
-      )}
+      {/* ────────────── INFO PANEL ────────────── */}
+      <aside className="mt-8 w-full md:w-1/3 lg:w-1/4 space-y-4">
+        {/* Hover info (optional) */}
+        {hovered && (
+          <div className="text-center text-base font-medium text-gray-600">
+            Hovering: {hovered.name}
+          </div>
+        )}
 
-      {selectedState && (
-        <div className="text-center text-lg text-gray-500">
-          Selected State: {states.find((s) => s.id === selectedState)?.name}
-        </div>
-      )}
+        {/* Selected‑state info */}
+        {selected ? (
+          <div className="mt-12 p-4 bg-gray-50 border rounded shadow-sm">
+            <h3 className="text-lg font-semibold text-[#537D5D] mb-2">
+              {selected.name}
+            </h3>
+            {/* You can expand this area with more data, images, etc. */}
+            
+          </div>
+        ) : (
+          <p className="text-center text-gray-500">
+            Click on a state to see details.
+          </p>
+        )}
+      </aside>
     </div>
   )
 }
