@@ -32,13 +32,15 @@ export default function Component() {
         {/* Action Buttons */}
         <div className="p-8 pl-16 pr-16 w-full flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-                href="#"
+                 href="/downlaods/projects.docx"  /* <‑‑ put your real file path */
+        download  
                 className=" w-2xl block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white  font-medium"
               >
                 View All Projects
               </Link>
                <Link
-                href="#"
+                 href="/downlaods/case-studies.docx"  /* <‑‑ put your real file path */
+        download
                 className="w-2xl block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white  font-medium"
               >
                 Read Case Studies
