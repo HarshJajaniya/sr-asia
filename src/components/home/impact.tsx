@@ -54,7 +54,7 @@ export default function NewsletterImpactSection() {
         className="bg-gray-50 mb-2 py-32 md:py-20 px-8 relative overflow-hidden"
       >
         {/* Left decorative illustration */}
-        <div className="absolute left-[-50px] bottom-[-50px] w-[500px] h-[500px] md:w-[200px] md:h-[250px] opacity-90">
+        <div className="absolute left-[-50px] bottom-[-50px] w-[250px] h-[250px] md:w-[200px] md:h-[250px] opacity-90">
       <Image
         src="/20.png"
         alt="People illustration"

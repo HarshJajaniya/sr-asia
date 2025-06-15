@@ -3,7 +3,6 @@ import Navbar from '@/components/navbar/navbar';
 import Footer from '@/components/footer/footer';   
 import Work from '@/components/work/hero';
 import Csg from '@/components/work/csg';
-import Esg from '@/components/work/esg';
 
 const page = () => {
   return (
@@ -11,7 +10,6 @@ const page = () => {
         <Navbar/>
         <Work/>
         <Csg/>
-        <Esg/>
         <Footer/>
     </div>
   )
