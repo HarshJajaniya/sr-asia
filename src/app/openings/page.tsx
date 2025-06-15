@@ -30,7 +30,7 @@ export default function OpeningsPage() {
   const fetchOpenings = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/jobs${type ? `?type=${type}` : ''}`,
+        `https://srasia-backend.onrender.com/api/jobs${type ? `?type=${type}` : ''}`,
       )
       setOpenings(res.data)
     } catch (err) {
@@ -73,7 +73,7 @@ export default function OpeningsPage() {
       fd.append('ctc', form.ctc)
       if (form.resume) fd.append('resume', form.resume)
 
-      await axios.post('http://localhost:5000/api/apply', fd, {
+      await axios.post('https://srasia-backend.onrender.com/api/apply', fd, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
 

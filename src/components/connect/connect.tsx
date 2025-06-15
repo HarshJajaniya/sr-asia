@@ -24,7 +24,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:5000/api/contact", formData)
+      await axios.post("https://srasia-backend.onrender.com/api/contact", formData)
       alert("Message sent successfully!")
       setFormData({
         name: "",
