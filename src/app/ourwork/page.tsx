@@ -11,7 +11,6 @@ const page = () => {
         <Navbar/>
         <Work/>
         <Csg/>
-        <Esg/>
         <Footer/>
     </div>
   )
