@@ -23,62 +23,50 @@ export default function Page() {
     }
   }
 
-  const deleteEvent = async (id: string) => {
-    try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`)
-      fetchEvents()
-    } catch (err) {
-      console.error('Delete failed:', err)
-    }
-  }
-
   useEffect(() => {
     fetchEvents()
   }, [])
 
   return (
-    <div className="w-full bg-white">
-      <div className="relative mb-16">
+    <section className="bg-white py-12 px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-center mb-6">
-          <div className="flex-1 hidden md:block"></div>
-          <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-[#537D5D] text-center md:text-left">
             Insights &amp; Events
           </h2>
-          <div className="flex-1 flex items-center">
+          <div className="hidden md:flex items-center gap-2 flex-1">
             <div className="h-4 w-4 rounded-full bg-[#537D5D]"></div>
-            <div className="h-0.5 flex-1 bg-[#537D5D]"></div>
+            <div className="h-0.5 w-full bg-[#537D5D]"></div>
           </div>
         </div>
 
-        {/* Event Cards */}
-        <div className="overflow-x-auto">
-          <div className="flex gap-6 px-4 md:px-8 lg:px-16 justify-center">
-            {events.map((event) => (
-              <div
-                key={event._id}
-                className="w-[320px] min-w-[280px] group relative rounded overflow-hidden bg-[#537D5D] text-white"
-              >
-                {/* Image */}
-                <div className="h-40 relative">
-                  <Image
-                    src={`http://localhost:5000${event.image}`}
-                    alt={event.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Info Section */}
-                <div className="p-4 h-[200px] flex flex-col justify-between">
-                  <h3 className="text-base font-semibold mb-1">{event.title}</h3>
-                  <p className="text-xs line-clamp-5">{event.description}</p>
-                </div>
+        {/* Event Cards Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+          {events.map((event) => (
+            <div
+              key={event._id}
+              className="bg-[#537D5D] text-white rounded shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="relative h-48">
+                <Image
+                  src={`http://localhost:5000${event.image}`}
+                  alt={event.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
-            ))}
-          </div>
+
+              {/* Info */}
+              <div className="p-4 flex flex-col justify-between h-[220px]">
+                <h3 className="text-lg font-semibold mb-2">{event.title}</h3>
+                <p className="text-sm line-clamp-5">{event.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
