@@ -46,7 +46,7 @@ export default function Page() {
 
         {/* Insights & Events Section */}
         <div className="relative mb-16">
-          <div className="flex items-center justify-center mb-6">
+          <div className="flex items-center justify-center mb-4">
             <div className="flex-1 hidden md:block"></div>
             <h2 className="text-4xl font-medium text-[#537D5D] text-center mx-4" >
               Insights &amp; Events
@@ -57,7 +57,7 @@ export default function Page() {
             </div>
           </div>
 
-          <p className="text-lg text-[#9EBC8A] mb-12 text-center">
+          <p className="italic text-lg text-[#2E7D32] mb-12 text-center">
             Explore our latest resources and stay updated on what&apos;s coming next.
           </p>
 
@@ -90,8 +90,8 @@ export default function Page() {
         </div>
         <div className="bg-[#537D5D] text-white p-4 flex flex-col justify-between h-full relative group">
           <div>
-            <h3 className="text-base font-medium mb-1">{item.title}</h3>
-            <p className="text-xs mb-4">{item.desc}</p>
+            <h3 className="text-18px font-bold mb-4">{item.title}</h3>
+            <p className="text-s mb-4">{item.desc}</p>
           </div>
           <button
             className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 bg-[#F5F5DC] text-[#537D5D] text-sm px-3 py-1 rounded transition-opacity duration-300"
