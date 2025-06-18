@@ -30,7 +30,7 @@ export default function Component() {
               className="flex items-center space-x-2 text-[#14444D] hover:text-blue-700 transition-colors"
             >
               <MapPin className="w-4 h-4" />
-              <span className="font-medium">Allianz Contacts</span>
+              <span className="font-medium">SR Asia Contacts</span>
             </Link>
 
             {/* Language Selector */}

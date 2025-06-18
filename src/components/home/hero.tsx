@@ -36,7 +36,7 @@ const Hero = () => {
 
   return (
     <section className="relative h-[500px] md:h-[600px] overflow-hidden">
-      <Image src="/bg.jpg" alt="Background" fill priority className="object-cover object-center z-0" />
+      <Image src="/group.png" alt="Background" fill priority className="object-cover w-full " />
 
       {/* Realistic Water Droplets */}
       <div className="absolute inset-0 z-5">

@@ -10,53 +10,53 @@ import "swiper/css/pagination";
 
 const workCards = [
   {
-    title: "Need‑Assessment of IREDA's CSR initiative, Himachal",
+    title: "Strategic Impact Services for Sustainable Development",
     description:
-      "Advisory, monitoring & evaluation (M&E) – impact assessment for renewable‑energy initiatives in mountain regions.",
-    image: "/work1.png",
+      "At SR Asia, we drive purpose-led transformation through end-to-end solutions in CSR, sustainability, and compliance. From need assessments to impact evaluation, we align your projects with national laws and global standards—delivering measurable results, meaningful engagement, and lasting value.",
+    image: "/workk/1.jpg",
   },
   {
-    title: "Skill Development & Women Empowerment, Bihar",
+    title: "Enabling Responsible Land Development",
     description:
-      "Rural women artisans trained in sustainable crafts and market linkages established for income generation.",
-    image: "/work2.png",
+      "At SR Asia, we offer end-to-end land acquisition and impact assessment services under the RTFCLARR Act—spanning Land Survey, SIA, ESIA, EIA, and R&R. We blend precision, legal compliance, and community engagement to support development that is inclusive, sustainable, and conflict-free.",
+    image: "/workk/2.jpg",
   },
   {
-    title: "Project Jal‑Suraksha, Rajasthan",
+    title: "Insight-Driven Research for Smarter Decisions",
     description:
-      "Ensuring safe drinking water via solar‑powered filtration systems across desert districts.",
-    image: "/work3.png",
+      "At SR Asia, we deliver high-impact Behavioral and Market Surveys powered by AI-ML, advanced analytics, and data visualization. From understanding human behavior to decoding market dynamics, our research unlocks actionable insights that help organizations innovate, compete, and grow with confidence.",
+    image: "/workk/3.jpg",
   },
   {
-    title: "Green Schools Programme, Delhi‑NCR",
+    title: "Policy Intelligence for Impactful Governance",
     description:
-      "Eco‑clubs, waste segregation drives and rooftop solar install in 25 government schools.",
-    image: "/work4.png",
+      "At SR Asia, we empower governments and organizations with data-driven insights, strategic policy research, and on-ground implementation support. From evaluating flagship programs like PMAY and NRLM to crafting actionable briefs and ensuring compliance, we turn policy into performance—delivering change that matters.",
+    image: "/workk/5.jpg",
   },
-  {
-    title: "Healthcare on Wheels, Odisha",
-    description:
-      "Mobile diagnostic vans delivering primary healthcare to tribal villages in Koraput district.",
-    image: "/work5.png",
-  },
-  {
-    title: "Agri‑Tech for Small Farmers, Uttar Pradesh",
-    description:
-      "IoT soil‑sensor deployment & advisory app boosting crop yield by 18% in pilot clusters.",
-    image: "/work6.png",
-  },
-  {
-    title: "River Rejuvenation Campaign, Madhya Pradesh",
-    description:
-      "Community‑led desilting and afforestation restoring perennial flow in 42 km stretch.",
-    image: "/work7.png",
-  },
-  {
-    title: "Renewable Micro‑grids, North‑East",
-    description:
-      "Off‑grid solar micro‑plants electrifying 600+ households in remote hills.",
-    image: "/work8.png",
-  },
+  // {
+  //   title: "Transparency That Inspires Trust",
+  //   description:
+  //     "From ESG and sustainability disclosures to third-party assurances and regulatory reporting, SR Asia delivers end-to-end solutions that turn data into credibility. We help organizations lead with transparency, compliance, and strategic impact.",
+  //   image: "/workk/5.png",
+  // },
+  // {
+  //   title: "Driving Impact Through Effective Implementation",
+  //   description:
+  //     "At SR Asia, we turn vision into action—delivering end-to-end implementation for CSR, development projects, and R&R programs. With strategic planning, stakeholder engagement, and impact-focused execution, we ensure every initiative is inclusive, measurable, and built to last.",
+  //   image: "/workk/6.png",
+  // },
+  // {
+  //   title: "Expert Advisory for Project Success",
+  //   description:
+  //     "At SR Asia, we deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning. With deep sectoral insight and robust execution support, we ensure your projects are viable, future-ready, and aligned for long-term impact.",
+  //   image: "/workk/7.png",
+  // },
+  // {
+  //   title: "Precision Mapping for Smarter Decisions",
+  //   description:
+  //     "OAt SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights. From environmental monitoring to infrastructure planning, our geospatial solutions empower organizations to visualize, analyze, and act with clarity and confidence.",
+  //   image: "/workk/8.png",
+  // },
 ];
 
 // ----------------------------------------------------
@@ -70,15 +70,14 @@ export default function SrAsiaWorkCarousel() {
         {/* 🔖 Section Header */}
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
-            <h2 className="text-2xl font-bold text-[#004D40] mx-auto bg-white px-4 z-10">
-              Our Work on the Ground
+            <h2 className="text-2xl font-bold text-[#14444D] mx-auto bg-white px-4 z-10">
+              Our Approach
             </h2>
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-2"
               style={{ width: "25vw", minWidth: "150px" }}
             >
-              <div className="w-4 h-4 rounded-full bg-[#004D40] z-20" />
-              <div className="h-px bg-[#004D40] flex-grow" />
+              
             </div>
           </div>
         </div>
@@ -134,24 +133,26 @@ export default function SrAsiaWorkCarousel() {
         </Swiper>
 
         {/* 📄 View All Projects Button */}
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <Link
             href="#"
             className="py-3 px-8 bg-[#537D5D] hover:bg-green-950 text-white text-lg font-medium transition rounded"
           >
             View All Projects
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* 🗺️ The SR Asia Footprint */}
       <div className="relative mt-16">
         <div className="flex items-center px-4 md:px-6">
           <div className="relative mr-4">
-            <div className="ml-[40vw] w-5 h-5 rounded-full bg-[#004D40] z-10 relative" />
-            <div className="absolute top-1/2 right-5 h-0.5 bg-[#004D40] w-[100vw]" />
+            
           </div>
-          <h2 className="text-2xl font-semibold text-[#004D40]">The SR Asia Footprint</h2>
+         <div className="w-full text-center">
+  <h2 className="text-2xl font-semibold text-[#14444D]">The SR Asia Footprint</h2>
+</div>
+
         </div>
       </div>
     </section>
