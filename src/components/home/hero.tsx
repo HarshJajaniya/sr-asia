@@ -9,12 +9,12 @@ import { motion } from "framer-motion"
 const Hero = () => {
   // Generate realistic droplets with varied starting and ending positions
   const droplets = useMemo(() => {
-    return Array.from({ length: 15 }, (_, i) => ({
+    return Array.from({ length: 40 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       startY: Math.random() * 40 - 20, // Start from different Y positions
       endY: Math.random() * 60 + 80, // Stop at different positions (80vh to 140vh)
-      size: Math.random() * 6 + 3,
+      size: Math.random() * 8 + 5,
       duration: Math.random() * 4 + 6, // Slower, more realistic
       delay: Math.random() * 8,
       maxOpacity: Math.random() * 0.4 + 0.2, // Lower opacity for realism
@@ -35,8 +35,17 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="relative h-[500px] md:h-[600px] overflow-hidden">
-      <Image src="/group.png" alt="Background" fill priority className="object-cover w-full " />
+   <section className="relative h-[600px] md:h-[600px] overflow-hidden">
+  <div className="relative w-full h-[600px]"> {/* Relative added here */}
+    <Image
+      src="/group.png"
+      alt="Background"
+      fill
+      priority
+      className="object-cover object-top" // Aligns image to top
+    />
+  </div>
+
 
       {/* Realistic Water Droplets */}
       <div className="absolute inset-0 z-5">
@@ -101,10 +110,17 @@ const Hero = () => {
           transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
           className="bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-lg max-w-2xl text-white"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Building a Sustainable Future for Asia</h1>
+          <div className="flex items-center mb-6">
+            <div> <h1 className="text-4xl md:text-5xl font-bold mb-2">Building a Sustainable Future for Asia</h1>
           <p className="text-lg md:text-xl opacity-90 mb-6">
             Advancing environmental governance, CSR excellence, and inclusive development across the Asian continent.
-          </p>
+          </p></div>
+         <div>  
+          <Image src={"/badge.svg"} alt="SR Asia Logo" width={150} height={150} className="mx-auto mb-4" />
+         </div>
+        </div>
+        
+        
         </motion.div>
 
         <div className="flex justify-center mt-10 px-4">

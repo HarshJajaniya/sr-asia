@@ -6,10 +6,11 @@ import Service from "@/components/home/services"
 import Work from "@/components/home/work"
 import Stats from "@/components/home/stats"
 import Insights from "@/components/home/insights"
-import Impact from "@/components/home/impact"
+
 import Footer from "@/components/footer/footer"
 import Header from "@/components/navbar/header"
 import PartnerLogosScroll from "@/components/home/logos"
+import Vision from "@/components/home/vision"
 
 export default function Home() {
   return (
@@ -18,12 +19,13 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <AboutUs/>
+      <Vision/>
       {/* <Service/> */}
       <Work/>
       <Stats/>
       <Insights/>
       <PartnerLogosScroll/>
-      <Impact/>
+      
       <Footer/>
     </>
   );

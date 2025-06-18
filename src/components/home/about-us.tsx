@@ -93,9 +93,9 @@ export default function AboutUsSection() {
 
 
   return (
-    <div className="py-12 ">
+    <div className="py-4 ">
       {/* About Us Header */}
-    <div className="py-12 ">
+    <div className=" ">
   {/* About Us Header */}
   <div className="flex items-center mb-8 px-4 md:px-8" ref={aboutHeaderRef}>
    
