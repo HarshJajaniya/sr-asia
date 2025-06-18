@@ -85,37 +85,14 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
   }, []);
 
   const linkStyle =
-    "text-[#537D5D] font-bold text-[18px] leading-[100%] hover:text-[#155c35] transition-colors";
+    "text-[#14444D] font-bold text-[18px] leading-[100%] hover:text-blue-700 transition-colors";
 
   return (
     <>
       {/* Navigation */}
-      <nav className="relative bg-white flex items-center justify-between px-4 md:px-8 py-3 border-b border-gray-100">
-  {/* Logo and Badge Container */}
-  <div className="absolute -top-4 -left-[-1] z-40">
-    <Image
-      src="/badge.svg"
-      alt="SR Asia 2025 Certification Badge"
-      width={60}
-      height={60}
-      className="w-16 mt-4 h-auto"
-    />
-  </div>
-  <div className="flex left-20 items-center space-x-4 relative">
-    <Link href="/">
-      <Image
-        src="/srasia_logo.png"
-        alt="Sustainable Asia Logo"
-        width={50}
-        height={50}
-        className="h-10 w-auto"
-      />
-    </Link>
-
-  </div>
-
+      <nav className="relative bg-[#EEFAFE] flex items-center justify-center px-4 md:px-8 py-3 border-b border-gray-100">
   {/* Desktop Links */}
-  <div className="hidden md:flex space-x-6">
+  <div className="p-4 hidden md:flex space-x-6">
     {["About", "Our Work", "Resources", "Connect"].map((route, index) => (
       <Link
         key={route}
@@ -129,7 +106,7 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
   </div>
 
   {/* Hamburger Icon */}
-  <button onClick={toggleSidebar} className="md:hidden text-[#537D5D] focus:outline-none">
+  <button onClick={toggleSidebar} className="md:hidden text-[#14444D] focus:outline-none">
     <Menu className="w-6 h-6" />
   </button>
 </nav>
@@ -148,14 +125,8 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-6">
-              <Image
-                src="/srasia_logo.png"
-                alt="Sustainable Asia Logo"
-                width={40}
-                height={40}
-              />
               <button onClick={closeSidebar}>
-                <X className="w-6 h-6 text-[#537D5D]" />
+                <X className="w-6 h-6 text-[#14444D]" />
               </button>
             </div>
             <nav className="flex flex-col space-y-6">

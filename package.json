@@ -28,6 +28,7 @@
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-tsparticles": "^2.12.2",
+    "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.0",
     "winston": "^3.17.0"
   },

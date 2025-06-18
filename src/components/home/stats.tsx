@@ -18,15 +18,9 @@ export default function StatsSection() {
       {/* Stats Grid */}
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#004D40]">12+</h2>
-            <p className="text-sm text-[#004D40] mt-2">Years of Experience</p>
-          </div>
+        
 
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#004D40]">26+</h2>
-            <p className="text-sm text-[#004D40] mt-2">States Covered in India</p>
-          </div>
+        
 
           <div className="text-center">
             <h2 className="text-4xl font-bold text-[#004D40]">120+</h2>
@@ -40,10 +34,7 @@ export default function StatsSection() {
             <p className="text-sm text-[#004D40] mt-2">Beneficiaries Reached</p>
           </div>
 
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#004D40]">30+</h2>
-            <p className="text-sm text-[#004D40] mt-2">Government & PSU Collaborations</p>
-          </div>
+        
 
           <div className="text-center">
             <h2 className="text-4xl font-bold text-[#004D40]">80+</h2>

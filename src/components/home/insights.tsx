@@ -30,17 +30,17 @@ export default function Page() {
       {/* Memberships & Global Alliances Section */}
       <div className="relative">
 
-        <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" >
+        {/* <h2 className="text-3xl font-medium text-center text-[#537D5D] mb-12" >
           Memberships &amp; Global Alliances
-        </h2>
+        </h2> */}
 
         {/* Map container with proper dimensions and animation */}
-        <div
+        {/* <div
   ref={mapContainerRef}
   className="relative w-full max-w-4xl h-auto mx-auto"
 >
   <Map />
-</div>
+</div> */}
 
         {/* Description */}
 

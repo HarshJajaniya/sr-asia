@@ -8,14 +8,16 @@ import Stats from "@/components/home/stats"
 import Insights from "@/components/home/insights"
 import Impact from "@/components/home/impact"
 import Footer from "@/components/footer/footer"
+import Header from "@/components/navbar/header"
 
 export default function Home() {
   return (
     <>
+    <Header/>
       <Navbar/>
       <Hero/>
       <AboutUs/>
-      <Service/>
+      {/* <Service/> */}
       <Work/>
       <Stats/>
       <Insights/>

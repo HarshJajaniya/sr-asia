@@ -93,9 +93,9 @@ export default function AboutUsSection() {
 
 
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-12 ">
       {/* About Us Header */}
-    <div className="py-12 bg-gray-50">
+    <div className="py-12 ">
   {/* About Us Header */}
   <div className="flex items-center mb-8 px-4 md:px-8" ref={aboutHeaderRef}>
     <div className="h-px bg-green-800 w-20 md:w-44"></div>
@@ -107,61 +107,62 @@ export default function AboutUsSection() {
 
   {/* About Us Content */}
   <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-16">
-      {/* Logo */}
-      <div className="flex justify-center md:justify-start w-full md:w-auto">
-        <Image
-          src="/sr-asia-logo.png"
-          alt="SR Asia Logo"
-          width={180}
-          height={180}
-          className="object-contain"
-        />
-      </div>
+    {/* Outer Blue Box */}
+<div className="bg-[#EEFAFE] p-6 rounded-xl w-full">
+  {/* Inner White Box */}
+  <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+    {/* Logo */}
+    <div className="flex justify-center md:justify-start w-full md:w-auto">
+      <Image
+        src="/sr-asia-logo.png"
+        alt="SR Asia Logo"
+        width={180}
+        height={180}
+        className="object-contain"
+      />
+    </div>
 
-      {/* Text */}
-      <div className="w-full md:w-2/3" ref={aboutTextRef}>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          We are an international, not-for-profit organization registered in 2012 and ISO 9001 certified. SR Asia is a
-          leading consulting firm with expertise in CSR impact assessment, ESG and sustainability reporting,
-          socio-economic studies, and policy research. With over 10 years of experience, we have supported
-          corporations, public sector units (PSUs), and government bodies in evaluating the effectiveness of their CSR
-          initiatives.
-        </p>
-        <div className="mt-2 flex justify-end">
-          <Link href="#" className="text-blue-600 font-medium flex items-center hover:underline">
-            Read more <ArrowRight className="ml-1 h-4 w-4" />
-          </Link>
-        </div>
+    {/* Text */}
+    <div className="w-full md:w-2/3" ref={aboutTextRef}>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        We are an international, not-for-profit organization registered in 2012 and ISO 9001 certified. SR Asia is a leading consulting firm with expertise in CSR impact assessment, ESG and sustainability reporting, socio-economic studies, and policy research. With over 10 years of experience, we have supported corporations, public sector units (PSUs), and government bodies in evaluating the effectiveness of their CSR initiatives.
+      </p>
+      <div className="mt-2 flex justify-end">
+        <Link href="#" className="text-[#14444D] font-medium flex items-center hover:underline">
+          Read more <ArrowRight className="ml-1 h-4 w-4" />
+        </Link>
       </div>
     </div>
   </div>
 </div>
 
+  </div>
+</div>
+
 
       {/* Countries Section */}
-      <div className="mb-12">
+      {/* <div className="mb-12"> */}
   {/* Title Row */}
-  <div
+  {/* <div
     className="relative flex items-center mb-10 max-w-screen-xl mx-auto px-4"
     ref={countriesTitleRef}
   >
     <h2 className="text-xl md:text-2xl font-bold text-[#004D40] mx-auto bg-white px-4 z-10 text-center">
       Countries We Operate in
-    </h2>
+    </h2> */}
 
     {/* Line and Dot - hidden on small screens */}
-    <div
+    {/* <div
       className="absolute right-0 top-1/2 transform -translate-y-1/2 items-center space-x-2 hidden sm:flex"
       style={{ width: '30vw', minWidth: '150px' }}
     >
       <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#004D40] z-20"></div>
       <div className="h-px bg-[#004D40] flex-grow"></div>
     </div>
-  </div>
+  </div> */}
 
   {/* Flag Grid */}
-  <div className="max-w-screen-xl mx-auto px-4">
+  {/* <div className="max-w-screen-xl mx-auto px-4">
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
       {[
         { country: "India", flag: "india.png" },
@@ -194,7 +195,7 @@ export default function AboutUsSection() {
       ))}
     </div>
   </div>
-</div>
+</div> */}
 
       {/* Divider */}
       <div className="w-full max-w-md mx-auto h-px bg-[#004D40]"></div>

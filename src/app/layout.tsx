@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Karla } from 'next/font/google';
+import { Roboto_Flex  } from 'next/font/google';
 
-const karla = Karla({
+const robotoFlex = Roboto_Flex({
   subsets: ['latin'],
   weight: ['500'],
 });
-
 
 
 
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${karla.className} ${karla.className} antialiased`}
+        className={`${robotoFlex.className} ${robotoFlex.className} antialiased bg-[#EEFAFE]`}
       >
  
       <main>{children}</main>
