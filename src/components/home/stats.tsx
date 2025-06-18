@@ -3,16 +3,7 @@ import Image from "next/image"
 export default function StatsSection() {
   return (
     <div className="relative w-full py-16 px-4 md:px-8 lg:px-16 overflow-hidden">
-      {/* World Map Background */}
-      <div className="absolute w-[1000] h-[690px] inset-0 z-0">
-  <Image
-    src="/12.png"
-    alt="World Map Background"
-    fill
-    className="object-contain  opacity-50"
-    priority
-  />
-</div>
+      
 
 
       {/* Stats Grid */}
@@ -48,96 +39,22 @@ export default function StatsSection() {
         </div>
 
         {/* Partner Logos */}
-        <div className="max-w-3xl mx-auto">
-          {/* Top row - 3 logos */}
-          <div className="grid grid-cols-3 gap-8 mb-12 items-center justify-items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/stats/1.png" alt="UNGC Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">UNGC</span>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-16 relative mb-3">
-                <Image src="/stats/2.png" alt="CII Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">CII</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-16 relative mb-3">
-                <Image src="/stats/3.png" alt="APO Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">APO</span>
-            </div>
-            
-
-          
-          </div>
-
-          <div className="grid grid-cols-3 gap-8 mb-12 items-center justify-items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-16 relative mb-3">
-                <Image src="/13.png" alt="CII Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">Coal India</span>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/14.png" alt="Dabur Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">Dabur</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/16.png" alt="GAIL Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">GAIL</span>
-            </div>
-           </div>
-
-          <div className="grid grid-cols-3 gap-8 mb-12 items-center justify-items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-16 relative mb-3">
-                <Image src="/17.png" alt="HINDZINC Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">HINDZINC</span>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/18.png" alt="IGL Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">IGL</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/19.png" alt="ILO Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">ILO</span>
-            </div>
-           </div>
-
-          {/* Bottom row - 2 logos */}
-          <div className="grid grid-cols-2 gap-8 items-center justify-items-center">
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-28 relative mb-3">
-                <Image src="/stats/4.png" alt="CTCN Logo" fill className="object-contain" />
-              </div>
-              <span className="text-[#004D40]font-medium text-lg">CTCN</span>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <div className="w-28 h-16 relative mb-3">
-                <Image src="/stats/5.png" alt="IPLA Logo" fill className="object-contain" />
-              </div>
-              
-              <span className="text-[#004D40]font-medium text-lg">IPLA</span>
-            </div>
-          </div>
-        </div>
+        
       </div>
+
+    {/* World Map Background */}
+      <div className="absolute w-[1000] h-[690px] inset-0 z-0">
+  <Image
+    src="/12.png"
+    alt="World Map Background"
+    fill
+    className="object-contain  opacity-50"
+    priority
+  />
+</div>
+
+
     </div>
+    
   )
 }

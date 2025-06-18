@@ -9,6 +9,7 @@ import Insights from "@/components/home/insights"
 import Impact from "@/components/home/impact"
 import Footer from "@/components/footer/footer"
 import Header from "@/components/navbar/header"
+import PartnerLogosScroll from "@/components/home/logos"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Work/>
       <Stats/>
       <Insights/>
+      <PartnerLogosScroll/>
       <Impact/>
       <Footer/>
     </>
