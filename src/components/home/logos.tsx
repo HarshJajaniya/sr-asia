@@ -34,7 +34,13 @@ export default function PartnerLogosScroll() {
 
   return (
     <div className="relative max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-center">
+          <h1 className="text-3xl font-bold text-gray-900 text-center">
+            OUR CLIENTS
+          </h1>
+        </div>
       {/* Left Arrow */}
+
       <button
         onClick={() => scroll('left')}
         className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow p-2 hover:bg-gray-100"
@@ -47,16 +53,16 @@ export default function PartnerLogosScroll() {
         ref={scrollRef}
         className="overflow-x-scroll scrollbar-hide"
       >
-        <div className="flex gap-8 py-10 w-max">
+        
+        <div className="flex gap-8 py-4 w-max">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="bg-white shadow-xl rounded-2xl p-6 flex flex-col items-center min-w-[200px] h-[260px]"
+              className="p-6 flex flex-col items-center min-w-[200px] h-[260px]"
             >
-              <div className={`relative mb-4 ${partner.alt === "CII" || partner.alt === "IPLA" ? "w-32 h-20" : "w-32 h-32"}`}>
+              <div className={`relative w-32 h-32`}>
                 <Image src={partner.src} alt={partner.alt} fill className="object-contain" />
               </div>
-              <span className="text-[#004D40] font-semibold text-lg text-center">{partner.name}</span>
             </div>
           ))}
         </div>

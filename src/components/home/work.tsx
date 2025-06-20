@@ -144,13 +144,13 @@ export default function SrAsiaWorkCarousel() {
       </div>
 
       {/* 🗺️ The SR Asia Footprint */}
-      <div className="relative mt-16">
+      <div className="relative mt-8">
         <div className="flex items-center px-4 md:px-6">
           <div className="relative mr-4">
             
           </div>
          <div className="w-full text-center">
-  <h2 className="text-2xl font-semibold text-[#14444D]">The SR Asia Footprint</h2>
+  <h2 className="text-3xl font-bold text-[#072328] weight-600 mb-8">The SR Asia Footprint</h2>
 </div>
 
         </div>

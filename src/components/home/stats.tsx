@@ -8,7 +8,7 @@ export default function StatsSection() {
     <div className="relative w-full py-8 px-4 md:px-8 lg:px-16 overflow-hidden">
       {/* Stats Grid */}
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <Stat
             value={120}
             suffix="+"
@@ -27,17 +27,14 @@ export default function StatsSection() {
             suffix="+"
             label="CSR/ESG Clients Served"
           />
-        </div>
-
-        {/* Centered Stat */}
-        <div className="w-full flex justify-center mb-4">
-          <Stat
+            <Stat
             value={50000}
             separator=","
             suffix="+"
             label="Field Research & Surveys"
           />
         </div>
+     
       </div>
 
       {/* World Map Background */}

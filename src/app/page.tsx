@@ -11,6 +11,7 @@ import Footer from "@/components/footer/footer"
 import Header from "@/components/navbar/header"
 import PartnerLogosScroll from "@/components/home/logos"
 import Vision from "@/components/home/vision"
+import Touch from "@/components/home/touch"
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <Stats/>
       <Insights/>
       <PartnerLogosScroll/>
-      
+      <Touch/>
       <Footer/>
     </>
   );
