@@ -6,22 +6,22 @@ import { Label } from "@/components/ui/label"
 
 export default function ContactForm() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-4 md:p-8">
+    <div className="min-h-screen mb-12 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Left side - Image */}
-            <div className="relative h-64 md:h-full min-h-[400px] bg-gradient-to-br from-blue-600 to-purple-600 p-8 flex items-center justify-center">
+            
               <div className="relative w-full max-w-md">
                 <Image
-                  src="/laptop-email.png"
+                  src="/57.png"
                   alt="Laptop with email interface"
                   width={400}
                   height={300}
                   className="w-full h-auto object-contain"
                 />
               </div>
-            </div>
+    
 
             {/* Right side - Contact Form */}
             <div className="p-8 md:p-12">
@@ -98,7 +98,7 @@ export default function ContactForm() {
                   <div className="pt-4">
                     <Button
                       type="submit"
-                      className="w-full bg-teal-700 hover:bg-teal-800 text-white py-4 text-lg font-medium"
+                      className="w-full bg-[#072328] hover:bg-[#072328] text-white py-4 text-lg font-medium"
                     >
                       Submit Message
                     </Button>

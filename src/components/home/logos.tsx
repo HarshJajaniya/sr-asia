@@ -51,7 +51,7 @@ export default function PartnerLogosScroll() {
       {/* Scrollable Partner Logos */}
       <div
         ref={scrollRef}
-        className="overflow-x-scroll scrollbar-hide"
+        className="overflow-x-scroll "
       >
         
         <div className="flex gap-8 py-4 w-max">

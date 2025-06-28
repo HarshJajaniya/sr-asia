@@ -137,10 +137,7 @@ export default function AboutUsSection() {
             <p>
               We are a member of UNGC, IPLA Japan, and Confederation of Indian Industry (CII) No.N7559P and the Alumni
               of the Asian Productivity Organisation Japan. At SR Asia, we are committed to helping organizations like
-              yours navigate these changes seamlessly. Our services span Gap Assessments, Capacity Building, and
-              Assurance across frameworks such as BRSR, ESG, CDP, TCFD, and CRSD reporting. With a proven track record
-              of delivering over 200 assurance statements globally, we have partnered with clients like NTPC, Coal
-              India, GAIL, SAIL, IOCL, Nayara Ene..
+              yours navigate these changes seamlessly.
             </p>
 
 

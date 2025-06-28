@@ -10,8 +10,7 @@ export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
   const overlayRef = useRef(null);
-  const mobileNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
-const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
+
 
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
@@ -35,54 +34,10 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
   };
 
   // 🟩 Animate sidebar nav links when opened
-  useEffect(() => {
-    if (isSidebarOpen && sidebarRef.current && overlayRef.current) {
-      gsap.fromTo(
-        overlayRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 1, ease: "power2.out" }
-      );
 
-      gsap.fromTo(
-        sidebarRef.current,
-        { x: "-100%" },
-        {
-          x: "0%",
-          duration: 1,
-          ease: "power3.out",
-          onComplete: () => {
-            gsap.fromTo(
-              mobileNavLinksRef.current,
-              { opacity: 0, y: -20 },
-              {
-                opacity: 1,
-                y: 0,
-                stagger: 0.5,
-                duration: 1,
-                delay: 0.5,
-                ease: "power2.out",
-              }
-            );
-          },
-        }
-      );
-    }
-  }, [isSidebarOpen]);
 
   // 🟩 Animate desktop nav links on page load
-  useEffect(() => {
-    gsap.fromTo(
-      desktopNavLinksRef.current,
-      { opacity: 0, y: -20 },
-      {
-        opacity: 1,
-        y: 0,
-        stagger: 0.5,
-        duration: 1,
-        ease: "power2.out",
-      }
-    );
-  }, []);
+
 
   const linkStyle =
     "text-[#14444D] font-bold text-[18px] leading-[100%] hover:text-blue-700 transition-colors";
@@ -92,13 +47,13 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
       {/* Navigation */}
       <nav className="relative bg-[#EEFAFE] flex items-center justify-center px-4 md:px-8 py-3 border-b border-gray-100">
   {/* Desktop Links */}
-  <div className="p-4 hidden md:flex space-x-6">
-    {["About", "Our Work", "Resources", "Connect"].map((route, index) => (
+  <div className="p-4 hidden md:flex space-x-10">
+    {["About","Services", "Our Work", "Resources", "Connect"].map((route, index) => (
       <Link
         key={route}
         href={`/${route.toLowerCase().replace(" ", "")}`}
         className={linkStyle}
-        ref={(el) => { desktopNavLinksRef.current[index] = el; }}
+        
       >
         {route}
       </Link>
@@ -130,13 +85,13 @@ const desktopNavLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
               </button>
             </div>
             <nav className="flex flex-col space-y-6">
-              {["About", "Our Work", "Resources", "Connect"].map((route, index) => (
+              {["About","Services", "Our Work", "Resources", "Connect"].map((route, index) => (
                 <Link
                   key={route}
                   href={`/${route.toLowerCase().replace(" ", "")}`}
                   onClick={closeSidebar}
                   className={linkStyle}
-                  ref={(el) => {mobileNavLinksRef.current[index] = el}} // ⬅️ Store each ref
+                 // ⬅️ Store each ref
                 >
                   {route}
                 </Link>

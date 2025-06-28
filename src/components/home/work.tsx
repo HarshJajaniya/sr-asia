@@ -70,7 +70,7 @@ export default function SrAsiaWorkCarousel() {
         {/* 🔖 Section Header */}
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
-            <h2 className="text-2xl font-bold text-[#14444D] mx-auto bg-white px-4 z-10">
+            <h2 className="text-2xl font-bold text-[#072328] mx-auto bg-white px-4 z-10">
               Our Approach
             </h2>
             <div
@@ -122,7 +122,7 @@ export default function SrAsiaWorkCarousel() {
                   </p>
                   <Link
                     href="#"
-                    className="block text-center py-2 px-4 bg-[#00966E] hover:bg-[#FDFCD6] hover:text-[#00966E] text-white font-medium rounded"
+                    className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#FDFCD6] text-white font-medium"
                   >
                     Read more
                   </Link>
