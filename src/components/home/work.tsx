@@ -32,7 +32,7 @@ const workCards = [
     title: "Precision Mapping for Smarter Decisions",
     description:
       "OAt SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights. From environmental monitoring to infrastructure planning, our geospatial solutions empower organizations to visualize, analyze, and act with clarity and confidence.",
-    image: "/workk/8.png",
+    image: "/workk/8.PNG",
   },
   {
     title: "Policy Intelligence for Impactful Governance",
@@ -62,7 +62,7 @@ const workCards = [
     title: "Expert Advisory Project Success and Feasibility",
     description:
       "At SR Asia, we deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning. With deep sectoral insight and robust execution support, we ensure your projects are viable, future-ready, and aligned for long-term impact.",
-    image: "/workk/7.png",
+    image: "/workk/7.PNG",
   },
 
 ];
