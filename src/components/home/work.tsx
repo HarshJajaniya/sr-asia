@@ -15,23 +15,36 @@ const workCards = [
       "At SR Asia, we drive purpose-led transformation through end-to-end solutions in CSR, sustainability, and compliance. From need assessments to impact evaluation, we align your projects with national laws and global standards—delivering measurable results, meaningful engagement, and lasting value.",
     image: "/workk/1.jpg",
   },
-  {
-    title: "Enabling Responsible Land Development",
+ 
+   {
+    title: "Trusted Assurance & Transparent Reporting",
     description:
-      "At SR Asia, we offer end-to-end land acquisition and impact assessment services under the RTFCLARR Act—spanning Land Survey, SIA, ESIA, EIA, and R&R. We blend precision, legal compliance, and community engagement to support development that is inclusive, sustainable, and conflict-free.",
-    image: "/workk/2.jpg",
-  },
-  {
-    title: "Insight-Driven Research for Smarter Decisions",
-    description:
-      "At SR Asia, we deliver high-impact Behavioral and Market Surveys powered by AI-ML, advanced analytics, and data visualization. From understanding human behavior to decoding market dynamics, our research unlocks actionable insights that help organizations innovate, compete, and grow with confidence.",
+      "SR Asia strengthens organizational credibility through independent third-party assessments, ESG disclosures, and integrated reporting. We help you build stakeholder trust by validating impact, enhancing transparency, and aligning with global sustainability standards.",
     image: "/workk/3.jpg",
+  },
+  // {
+  //   title: "Insight-Driven Research for Smarter Decisions",
+  //   description:
+  //     "At SR Asia, we deliver high-impact Behavioral and Market Surveys powered by AI-ML, advanced analytics, and data visualization. From understanding human behavior to decoding market dynamics, our research unlocks actionable insights that help organizations innovate, compete, and grow with confidence.",
+  //   image: "/workk/3.jpg",
+  // },
+    {
+    title: "Precision Mapping for Smarter Decisions",
+    description:
+      "OAt SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights. From environmental monitoring to infrastructure planning, our geospatial solutions empower organizations to visualize, analyze, and act with clarity and confidence.",
+    image: "/workk/8.png",
   },
   {
     title: "Policy Intelligence for Impactful Governance",
     description:
       "At SR Asia, we empower governments and organizations with data-driven insights, strategic policy research, and on-ground implementation support. From evaluating flagship programs like PMAY and NRLM to crafting actionable briefs and ensuring compliance, we turn policy into performance—delivering change that matters.",
-    image: "/workk/5.jpg",
+    image: "/workk/2.jpg",
+  },
+   {
+    title: "Enabling Responsible Land Development",
+    description:
+      "At SR Asia, we offer end-to-end land acquisition and impact assessment services under the RTFCLARR Act—spanning Land Survey, SIA, ESIA, EIA, and R&R. We blend precision, legal compliance, and community engagement to support development that is inclusive, sustainable, and conflict-free.",
+    image: "/workk/9.jpg",
   },
   // {
   //   title: "Transparency That Inspires Trust",
@@ -45,18 +58,13 @@ const workCards = [
   //     "At SR Asia, we turn vision into action—delivering end-to-end implementation for CSR, development projects, and R&R programs. With strategic planning, stakeholder engagement, and impact-focused execution, we ensure every initiative is inclusive, measurable, and built to last.",
   //   image: "/workk/6.png",
   // },
-  // {
-  //   title: "Expert Advisory for Project Success",
-  //   description:
-  //     "At SR Asia, we deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning. With deep sectoral insight and robust execution support, we ensure your projects are viable, future-ready, and aligned for long-term impact.",
-  //   image: "/workk/7.png",
-  // },
-  // {
-  //   title: "Precision Mapping for Smarter Decisions",
-  //   description:
-  //     "OAt SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights. From environmental monitoring to infrastructure planning, our geospatial solutions empower organizations to visualize, analyze, and act with clarity and confidence.",
-  //   image: "/workk/8.png",
-  // },
+  {
+    title: "Expert Advisory Project Success and Feasibility",
+    description:
+      "At SR Asia, we deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning. With deep sectoral insight and robust execution support, we ensure your projects are viable, future-ready, and aligned for long-term impact.",
+    image: "/workk/7.png",
+  },
+
 ];
 
 // ----------------------------------------------------
@@ -90,6 +98,7 @@ export default function SrAsiaWorkCarousel() {
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
           }}
           navigation
           pagination={{ clickable: true }}
@@ -132,15 +141,7 @@ export default function SrAsiaWorkCarousel() {
           ))}
         </Swiper>
 
-        {/* 📄 View All Projects Button */}
-        {/* <div className="flex justify-center mt-12">
-          <Link
-            href="#"
-            className="py-3 px-8 bg-[#537D5D] hover:bg-green-950 text-white text-lg font-medium transition rounded"
-          >
-            View All Projects
-          </Link>
-        </div> */}
+    
       </div>
 
       {/* 🗺️ The SR Asia Footprint */}
