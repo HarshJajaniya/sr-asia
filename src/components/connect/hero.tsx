@@ -1,42 +1,61 @@
-import { Inter } from "next/font/google"
+"use client";
 
-const karla = Inter({
-  subsets: ["latin"],
-  weight: ["500"],
-  variable: "--font-karla",
-})
+import type React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function Component() {
+const Hero = () => {
   return (
-    <section className="bg-[#537D5D] py-16 px-4">
-      <div className="max-w-2xl mx-auto text-center">
-        <h2
-          className="text-[#FDFCD6] mb-6"
-          style={{
-            fontFamily: "Karla, sans-serif",
-            fontWeight: 500,
-            fontSize: "26px",
-            lineHeight: "50px",
-            letterSpacing: "0%",
-            textAlign: "center",
-          }}
+    <section className="relative h-[600px] md:h-[600px] overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
         >
-          Connect With Us
-        </h2>
-        <p
-          className="text-white"
-          style={{
-            fontFamily: "Karla, sans-serif",
-            fontWeight: 500,
-            fontSize: "26px",
-            lineHeight: "50px",
-            letterSpacing: "0%",
-            textAlign: "center",
+          <source src="/vedios/5.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      {/* Foreground content */}
+      <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 z-20">
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 6,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
           }}
+          className="bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-lg max-w-2xl text-white"
         >
-          Whether you're a corporation, government body, researcher, or individual passionate about sustainability
-        </p>
+          <div className="flex items-center mb-6">
+            <div>
+              {/* <h1 className="text-4xl md:text-5xl font-bold mb-2">
+               Insights, Events & Stories from the Field
+              </h1> */}
+              <p className="text-lg md:text-xl opacity-90 mb-6">
+               Join a team that’s building a sustainable, inclusive future across Asia.
+              </p>
+            </div>
+            <div>
+              <Image
+                src={"/badge.svg"}
+                alt="SR Asia Logo"
+                width={150}
+                height={150}
+                className="mx-auto mb-4"
+              />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default Hero;

@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '@/components/navbar/navbar'
 import Hero from '@/components/connect/hero'  
-import News from '@/components/connect/news'
+import Partner from '@/components/connect/partner'
 import Footer from '@/components/footer/footer'
-import Connect from '@/components/connect/connect'
+import { JobListings } from '@/components/connect/connect'
 import Contact from '@/components/connect/partner'
 
 const page = () => {
@@ -11,10 +11,8 @@ const page = () => {
     <div>
         <Navbar/>
         <Hero/>
-        <Connect/>
+        <JobListings/>
         <Contact/>
-        <News/>
-        
         <Footer/>
     </div>
   )
