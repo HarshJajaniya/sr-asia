@@ -13,7 +13,7 @@ export default function Component() {
           loop
           playsInline
         >
-          <source src="/vedios/connect.mp4" type="video/mp4" />
+          <source src="/vedios/connect1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

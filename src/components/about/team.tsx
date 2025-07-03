@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card } from "@/components/ui/card"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useState } from "react";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function TeamDisplay() {
-  const [activeTab, setActiveTab] = useState("advisory-board")
+  const [activeTab, setActiveTab] = useState("advisory-board");
 
   const teamMembers = [
     {
@@ -19,7 +18,7 @@ export default function TeamDisplay() {
       name: "Rameen Anjum ",
       title: "Sr. Research Analyst",
       image: "/team/3.jpeg",
-        },
+    },
     {
       id: "Kalash-Kesharwani ",
       name: "Kalash Kesharwani ",
@@ -31,7 +30,7 @@ export default function TeamDisplay() {
       name: "Jaya Yadav ",
       title: "Research Analyst",
       image: "/team/4.jpeg",
-        },
+    },
     {
       id: "Sanjukta-Tirkey",
       name: "Sanjukta Tirkey",
@@ -44,73 +43,28 @@ export default function TeamDisplay() {
       title: "HR Generalist",
       image: "/team/6.jpeg",
     },
-  ]
+  ];
 
   return (
-    <div className="container mx-auto px-6 lg:px-12">
-     <div className="flex flex-wrap justify-center gap-6 relative overflow-visible">
-
+    <div className="container mx-auto px-6 lg:px-12 mb-16">
+      <p className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+        OUR TEAM
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
         {teamMembers.map((member) => (
-          <Card
-            key={member.id}
-            className={`
-              group relative cursor-pointer 
-    bg-[#fffde7] border-[#fffde7] shadow-md 
-    transition-transform duration-300 
-    w-[200px] h-[300px] 
-    transform-gpu
-    hover:scale-125
-    hover:z-50
-    z-10
-            `}
-          >
-            <div className="pl-4 pr-4 flex flex-col items-center text-center h-full overflow-hidden">
-              <div className="w-40 h-65 overflow-hidden mb-4">
-                <img
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name || "Team member"}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-
-              <h3 className="text-lg font-semibold text-green-800">{member.name}</h3>
-              <p className="text-sm text-gray-600 mb-2">{member.title}</p>
-
-              <div
-                className={`
-                  text-xs text-gray-600 mt-2 transition-all duration-300 
-                  overflow-hidden max-h-[60px] group-hover:max-h-[400px]
-                `}
-              >
-              </div>
-            </div>
-          </Card>
+          <div key={member.id} className="flex flex-col items-center text-center">
+            <img
+              src={member.image || "/placeholder.svg"}
+              alt={member.name || "Team member"}
+              className="object-cover w-32 h-40 "
+            />
+            <h3 className="text-sm font-semibold mt-2 text-[#031318]">{member.name}</h3>
+            <p className="text-xs text-gray-600">{member.title}</p>
+          </div>
         ))}
       </div>
 
-      <div className="mt-16 flex justify-center">
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full max-w-3xl">
-          <TabsList className="w-full justify-between bg-transparent">
-            {[
-              "advisory-board",
-              "management-team",
-              "executive-team",
-              "subject-matter-expert",
-              "country-directors",
-            ].map((tab) => (
-              <TabsTrigger
-                key={tab}
-                value={tab}
-                className={`text-base ${
-                  activeTab === tab ? "text-green-800 font-medium" : "text-gray-400"
-                }`}
-              >
-                {tab.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-        </Tabs>
-      </div>
+      
     </div>
-  )
+  );
 }

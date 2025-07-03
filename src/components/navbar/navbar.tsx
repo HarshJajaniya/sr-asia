@@ -7,12 +7,12 @@ import gsap from "gsap";
 
 // Submenus
 const AboutSubmenu = [
-  { label: "Who we are", href: "/about/who-we-are" },
-  { label: "What we do", href: "/about/what-we-do" },
-  { label: "Our Mission & Vision", href: "/about/our-mission-vision" },
-  { label: "Certification & Monitoring", href: "/about/certification-monitoring" },
-  { label: "Team", href: "/about/team" },
-  { label: "Why Choose us", href: "/about/why-choose-us" },
+  { label: "Who we are", href: "/about" },
+  { label: "What we do", href: "/about" },
+  { label: "Our Mission & Vision", href: "/about" },
+  { label: "Certification & Monitoring", href: "/about" },
+  { label: "Team", href: "/about" },
+  { label: "Why Choose us", href: "/about" },
 ];
 
 const servicesSubmenu = [
@@ -49,10 +49,9 @@ const careersSubmenu = [
 
 const navItems = [
   { label: "ABOUT", href: "/about" },
-  { label: "SERVICES", href: "/services" },
+  { label: "SERVICES", href: "/services/assurance" },
   { label: "REPORT", href: "/report" },
   { label: "MEDIA", href: "/media" },
-  
   { label: "CONNECT", href: "/connect" },
 ];
 

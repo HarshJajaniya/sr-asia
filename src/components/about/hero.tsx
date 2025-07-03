@@ -1,150 +1,64 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import Pdf from "@/components/about/pdf"
+"use client";
 
+import type React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-gsap.registerPlugin(ScrollTrigger)
-
-export default function AboutUsSection() {
-  const aboutHeaderRef = useRef(null)
-  const aboutTextRef = useRef(null)
-  const countriesTitleRef = useRef(null)
-  const flagRefs = useRef<HTMLDivElement[]>([])
-
-
-
+const Hero = () => {
   return (
-  <div className="py-8 md:py-12 bg-gray-50">
-    {/* About Us Header */}
-    <div className="flex items-center mb-6 px-4 md:px-8" ref={aboutHeaderRef}>
-      <div className="h-px bg-green-800 w-12 md:w-44"></div>
-      <div className="w-2 h-2 md:w-4 md:h-4 rounded-full bg-green-800 ml-2"></div>
-      <h2 className="text-lg md:text-2xl font-bold text-green-800 ml-4">About Us</h2>
-    </div>
+    <section className="relative min-h-screen overflow-hidden">
 
-    {/* Carousel */}
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 mb-10">
-      <Carousel>
-        <CarouselContent>
-          {[...Array(3)].map((_, i) => (
-            <CarouselItem key={i}>
-              <Image
-                src="/about.png"
-                alt="About Us Hero"
-                width={1193}
-                height={81}
-                className="object-cover w-full h-auto max-h-[240px] sm:max-h-[300px] md:max-h-[400px]"
-              />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </div>
+      {/* Video Background */}
+     <div className="w-full aspect-video">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src="/vedios/5.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
-    {/* About Us Content */}
-    <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 mb-12 justify-center">
-        {/* Logo */}
-        <div className="w-full md:w-auto flex justify-center md:justify-start">
-          <Image
-            src="/sr-asia-logo.png"
-            alt="SR Asia Logo"
-            width={140}
-            height={140}
-            className="object-contain"
-          />
-        </div>
 
-        {/* Text */}
-        <div className="w-full md:w-2/3 text-center md:text-left" ref={aboutTextRef}>
-          <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
-            We are an international, not-for-profit organization registered in 2012 and ISO 9001 certified. SR Asia is a
-            leading consulting firm with expertise in CSR impact assessment, ESG and sustainability reporting,
-            socio-economic studies, and policy research.
-          </p>
-          <div className="mt-2 flex justify-center md:justify-end">
-            <Link href="#" className="text-blue-600 font-medium flex items-center hover:underline">
-              Read more <ArrowRight className="ml-1 h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* PDF Section */}
-    <div className="px-4 md:px-8">
-      <Pdf />
-    </div>
-
-    {/* Countries Section */}
-    <div className="mb-10">
-      <div className="relative flex items-center mb-6 max-w-screen-xl mx-auto px-4" ref={countriesTitleRef}>
-        <h2 className="text-lg md:text-2xl font-bold text-[#004D40] mx-auto bg-gray-50 px-4 z-10 text-center">
-          Countries We Operate in
-        </h2>
-        <div
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 items-center space-x-2 hidden sm:flex"
-          style={{ width: '30vw', minWidth: '150px' }}
+      {/* Foreground content */}
+      <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 z-20">
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 6,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+          }}
+          className="bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-lg max-w-2xl text-white"
         >
-          <div className="w-2 h-2 md:w-4 md:h-4 rounded-full bg-[#004D40] z-20"></div>
-          <div className="h-px bg-[#004D40] flex-grow"></div>
-        </div>
-      </div>
-
-      {/* Flags */}
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
-          {[
-            { country: "India", flag: "india.png" },
-            { country: "Philippine", flag: "philipines.png" },
-            { country: "Vietnam", flag: "vietnam.png" },
-            { country: "Malaysia", flag: "malayasia.png" },
-            { country: "Indonesia", flag: "indonesia.png" },
-            { country: "Bangladesh", flag: "bangladesh.png" },
-          ].map((item, index) => (
-            <div
-              key={item.country}
-              className="flex flex-col items-center"
-              ref={(el) => {
-                if (el) flagRefs.current[index] = el
-              }}
-            >
-              <div className="w-16 h-12 sm:w-20 sm:h-14 md:w-24 md:h-16 overflow-hidden rounded-lg mb-2 shadow-md">
-                <Image
-                  src={`/flags/${item.flag}`}
-                  alt={`${item.country} Flag`}
-                  width={96}
-                  height={64}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-              <span className="text-xs sm:text-sm md:text-base text-gray-700 text-center">
-                {item.country}
-              </span>
+          <div className="flex items-center mb-6">
+            <div>
+              <h1 className="text-3xl md:text-3xl font-bold mb-2">
+                Empowering Impact Through Responsibility and Innovation
+              </h1>
+              <p className="text-lg md:text-xl opacity-90 mb-6">
+                A not-for-profit organization committed to sustainable development, ESG leadership, and inclusive growth across Asia.
+              </p>
             </div>
-          ))}
-        </div>
+            <div>
+              <Image
+                src={"/badge.svg"}
+                alt="SR Asia Logo"
+                width={150}
+                height={150}
+                className="mx-auto mb-4"
+              />
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
+  );
+};
 
-    {/* Divider */}
-    <div className="w-full max-w-md mx-auto h-px bg-[#004D40]"></div>
-  </div>
-)
-
-}
+export default Hero;
 

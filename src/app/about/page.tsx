@@ -2,18 +2,26 @@ import React from 'react'
 import Navbar from '@/components/navbar/navbar';
 import Footer from '@/components/footer/footer';
 import Hero from '@/components/about/hero';
-import News from '@/components/about/news';
+import Mission from '@/components/home/vision';
+import What from '@/components/about/what';
 import Team from '@/components/about/team';
-import Work from '@/components/about/work';
+import Connect from '@/components/work/connect';
+import Who from '@/components/about/who';
+import Why from '@/components/about/why';
+import Header from '@/components/navbar/header';
 
 const page = () => {
   return (
     <div>
+      <Header/>
         <Navbar/>
         <Hero/>
-        <News/>
+        <Who/>
+       <Mission/>
+       <What/>
+       <Why/>
         <Team/>
-        <Work/>
+       <Connect/>
         <Footer/>
     </div>
   )
