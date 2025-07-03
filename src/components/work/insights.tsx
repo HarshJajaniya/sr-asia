@@ -10,60 +10,42 @@ import "swiper/css/pagination";
 
 const workCards = [
   {
-    title: "Strategic Impact Services for Sustainable Development",
+    title: "Ganga Express Way: एसआर एशिया के सर्वे के बाद होगा भूमि अधिग्रहण, किया गया एजेंसी का चयन",
+    subtitle:"Aug 31,2021",
     description:
-      "At SR Asia, we drive purpose-led transformation through end-to-end solutions in CSR, sustainability, and compliance. From need assessments to impact evaluation, we align your projects with national laws and global standards—delivering measurable results, meaningful engagement, and lasting value.",
-    image: "/workk/1.jpg",
+      "गंगा एक्सप्रेस-वे के लिए प्रशासन की ओर से पूरी कवायद जारी है। लेकिन मेरठ जनपद में 181 हेक्टेयर में से 28 हेक्टेयर जमीन की खरीद किसानों के विवाद के कारण नहीं हो सकी है। अब इस जमीन का अधिग्रहण करना होगा। प्रक्रिया शुरू हो चुकी है।",
+    image: "/resources/1.png",
+  },
+   {
+    title: "रैपिड के लिए सामाजिक अध्ययन करेगी एसआर एशिया",
+    subtitle:"Apr 04,2024",
+    description:
+      "रैपिड रेल प्रोजेक्ट के तहत मेरठ शहर की सीमा क्षेत्र में विभिन्न स्टेशनों के निर्माण के लिए जमीन आपसी सहमति से नहीं मिल पा रही है। लिहाजा आठ स्थानों पर कुल 5.8982 हेक्टेयर भूमि का अधिग्रहण करने का निर्णय लिया गया है।",
+    image: "/resources/3.png",
+  },
+   {
+    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
+    subtitle:"Feb 20,2022",
+    description:
+      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
+    image: "/resources/4.png",
+  }, {
+    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
+    subtitle:"Feb 20,2022",
+    description:
+      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
+    image: "/resources/4.png",
+  }, {
+    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
+    subtitle:"Feb 20,2022",
+    description:
+      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
+    image: "/resources/4.png",
   },
  
-   {
-    title: "Trusted Assurance & Transparent Reporting",
-    description:
-      "SR Asia strengthens organizational credibility through independent third-party assessments, ESG disclosures, and integrated reporting. We help you build stakeholder trust by validating impact, enhancing transparency, and aligning with global sustainability standards.",
-    image: "/workk/3.jpg",
-  },
-  // {
-  //   title: "Insight-Driven Research for Smarter Decisions",
-  //   description:
-  //     "At SR Asia, we deliver high-impact Behavioral and Market Surveys powered by AI-ML, advanced analytics, and data visualization. From understanding human behavior to decoding market dynamics, our research unlocks actionable insights that help organizations innovate, compete, and grow with confidence.",
-  //   image: "/workk/3.jpg",
-  // },
-    {
-    title: "Precision Mapping for Smarter Decisions",
-    description:
-      "OAt SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights. From environmental monitoring to infrastructure planning, our geospatial solutions empower organizations to visualize, analyze, and act with clarity and confidence.",
-    image: "/workk/8.png",
-  },
-  {
-    title: "Policy Intelligence for Impactful Governance",
-    description:
-      "At SR Asia, we empower governments and organizations with data-driven insights, strategic policy research, and on-ground implementation support. From evaluating flagship programs like PMAY and NRLM to crafting actionable briefs and ensuring compliance, we turn policy into performance—delivering change that matters.",
-    image: "/workk/2.jpg",
-  },
-   {
-    title: "Enabling Responsible Land Development",
-    description:
-      "At SR Asia, we offer end-to-end land acquisition and impact assessment services under the RTFCLARR Act—spanning Land Survey, SIA, ESIA, EIA, and R&R. We blend precision, legal compliance, and community engagement to support development that is inclusive, sustainable, and conflict-free.",
-    image: "/workk/9.jpg",
-  },
-  // {
-  //   title: "Transparency That Inspires Trust",
-  //   description:
-  //     "From ESG and sustainability disclosures to third-party assurances and regulatory reporting, SR Asia delivers end-to-end solutions that turn data into credibility. We help organizations lead with transparency, compliance, and strategic impact.",
-  //   image: "/workk/5.png",
-  // },
-  // {
-  //   title: "Driving Impact Through Effective Implementation",
-  //   description:
-  //     "At SR Asia, we turn vision into action—delivering end-to-end implementation for CSR, development projects, and R&R programs. With strategic planning, stakeholder engagement, and impact-focused execution, we ensure every initiative is inclusive, measurable, and built to last.",
-  //   image: "/workk/6.png",
-  // },
-  {
-    title: "Expert Advisory Project Success and Feasibility",
-    description:
-      "At SR Asia, we deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning. With deep sectoral insight and robust execution support, we ensure your projects are viable, future-ready, and aligned for long-term impact.",
-    image: "/workk/7.png",
-  },
+
+
+ 
 
 ];
 
