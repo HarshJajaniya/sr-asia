@@ -35,7 +35,7 @@ const Hero = () => {
   }, [])
 
   return (
-   <section className="relative h-[600px] md:h-[600px] overflow-hidden">
+   <section className="relative h-[600px] md:h-[600px] overflow-hidden mb-[5px]">
   <div className="relative w-full h-[600px]"> {/* Relative added here */}
     <Image
       src="/main.png"

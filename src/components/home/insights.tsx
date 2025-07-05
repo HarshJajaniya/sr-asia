@@ -4,18 +4,18 @@ import { ChevronRight } from "lucide-react";
 export default function Component() {
   return (
     <div className="py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[1400px] mx-auto mb-[75px]">
 
         {/* Heading */}
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-[75px]">
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             INSIGHTS &amp; SPECIALS
           </h1>
         </div>
 
         {/* ---------- 1 ▸ IMAGE ON THE RIGHT ---------- */}
-        <div className="bg-white rounded-lg shadow-sm mb-8 overflow-hidden">
-          <div className="flex flex-col md:flex-row gap-6 p-6">
+        <div className="bg-white mb-8 overflow-hidden mb-[75px]">
+          <div className="flex flex-col md:flex-row gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">
               <h2 className="text-xl font-semibold text-gray-900 leading-tight">
@@ -39,14 +39,14 @@ and share SR solutions for shaping the modern day business on sustainability and
               width={300}
               height={425}
               /* 400 × 225 ≈ 16 : 9  */
-              className="md:w-52 md:h-72 lg:w-80 aspect-video object-cover"
+              className="md:w-52 md:h-72 lg:w-[422px] lg:h-[355px] aspect-video object-cover"
             />
           </div>
         </div>
 
         {/* ---------- 2 ▸ IMAGE ON THE LEFT ---------- */}
-        <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-          <div className="flex flex-col md:flex-row-reverse gap-6 p-6">
+        <div className="bg-white overflow-hidden mb-[75px]">
+          <div className="flex flex-col md:flex-row-reverse gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">
               <h2 className="text-xl font-semibold text-gray-900 leading-tight">
@@ -69,7 +69,7 @@ and share SR solutions for shaping the modern day business on sustainability and
               alt="Award ceremony or recognition event"
               width={300}
               height={425}
-              className="md:w-52 md:h-72 lg:w-80 aspect-video object-cover"
+              className="md:w-52 md:h-72 lg:w-[422px] lg:h-[355px]aspect-video object-cover"
             />
           </div>
         </div>

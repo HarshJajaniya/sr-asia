@@ -74,12 +74,12 @@ export default function SrAsiaWorkCarousel() {
   return (
     <section className="max-w-full">
       {/* ⭕ Outer Card Section */}
-      <div className="bg-gray-50 shadow-xl rounded-2xl my-12 px-4 md:px-6 py-10">
+      <div className="bg-white shadow-2xs rounded-1xl my-12 px-4 md:px-6 py-10">
         {/* 🔖 Section Header */}
-        <div className="relative mb-12 max-w-5xl mx-auto">
+        <div className="relative max-w-5xl mx-auto mb-[75px] mt-mb-[75px]">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
             <h2 className="text-2xl font-bold text-[#072328] mx-auto bg-white px-4 z-10">
-              Our Approach
+              OUR APPROACH
             </h2>
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-2"
@@ -93,7 +93,7 @@ export default function SrAsiaWorkCarousel() {
         {/* 🖼️ Swiper Carousel */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={24}
+          spaceBetween={40}
           slidesPerView={1}
           breakpoints={{
             768: { slidesPerView: 2 },
@@ -103,40 +103,39 @@ export default function SrAsiaWorkCarousel() {
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 4500, disableOnInteraction: false }}
-          className="max-w-6xl mx-auto"
+          className="max-w-8xl mx-auto"
         >
           {workCards.map((card, idx) => (
             <SwiperSlide key={idx} className="pb-12 h-full">
-             <article className="h-full flex flex-col justify-between bg-white shadow-lg border border-gray-200 overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl rounded-lg">
+             <article className="h-full flex flex-col justify-between bg-white overflow-hidden transition-transform hover:-translate-y-1 ">
+  {/* Image */}
+  <div className="overflow-hidden h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72">
+    <Image
+      src={card.image}
+      alt={card.title}
+      width={500}
+      height={300}
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-                {/* Image */}
-                <div className="overflow-hidden h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72">
-                  <Image
-                    src={card.image}
-                    alt={card.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+  {/* Text Section with no horizontal padding */}
+  <div className="py-6 flex flex-col gap-6 justify-between flex-grow">
+    <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-800 line-clamp-2">
+      {card.title}
+    </h3>
+    <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+      {card.description}
+    </p>
+    <Link
+      href="#"
+      className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#A1E3F9] text-white hover:text-[#072328] font-medium"
+    >
+      Read more
+    </Link>
+  </div>
+</article>
 
-                {/* Text */}
-                <div className="p-6 flex flex-col justify-between flex-grow">
-
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-800 line-clamp-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                    {card.description}
-                  </p>
-                  <Link
-                    href="#"
-                    className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#FDFCD6] text-white font-medium"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </article>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -145,7 +144,7 @@ export default function SrAsiaWorkCarousel() {
       </div>
 
       {/* 🗺️ The SR Asia Footprint */}
-      <div className="relative mt-8">
+      <div className="relative mt-[75px] mb-[75px]">
         <div className="flex items-center px-4 md:px-6">
           <div className="relative mr-4">
             
