@@ -45,16 +45,16 @@ const workCards = [
 export default function SrAsiaWorkGrid() {
   return (
     <section className="max-w-full bg-gray-50 py-16 px-4 md:px-6 lg:px-8 mb-[75px]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-[#072328] text-center mb-12">Our Approach</h2>
+        <h2 className="text-3xl font-bold text-[#072328] text-center mb-[75px]">OUR APPROACH</h2>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {workCards.map((card, idx) => (
             <article
               key={idx}
-              className="flex flex-col justify-between bg-white shadow-lg border border-gray-200 overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl rounded-lg"
+              className="flex flex-col justify-between bg-white overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Image */}
               <div className="overflow-hidden h-48">
@@ -77,7 +77,7 @@ export default function SrAsiaWorkGrid() {
                 </p>
                 <Link
                   href="#"
-                  className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#FDFCD6] text-white hover:text-[#072328] font-medium"
+                  className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#A1E3F9] hover:text-[#072328] text-white hover:text-[#072328] font-medium"
                 >
                   Read more
                 </Link>

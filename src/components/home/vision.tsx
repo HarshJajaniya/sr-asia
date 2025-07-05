@@ -3,8 +3,8 @@ import Image from "next/image"
 export default function Component() {
   return (
     <>
-    <div className="mb-[75px]">
-<section className="py-16 px-4 md:px-6 lg:px-8">
+    <div className="mb-[75px] mt-[75px]">
+<section className="mb-[75px] px-4 md:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -44,7 +44,7 @@ export default function Component() {
         </div>
       </div>
     </section>
-    <section className="py-16 px-4 md:px-6 lg:px-8">
+    <section className="px-4 md:px-6 lg:px-8">
       <div className="max-w-8xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
