@@ -4,38 +4,57 @@ export default function ServicesSection() {
   const services = [
     {
       image: "/assurance/1.png",
-      title: "Advisory",
+      title: "✔️ Third-Party Assurance",
       description:
-        "We offer strategic planning and advisory services to help organizations set goals, define strategies, and navigate strategic challenges. Our strategic advisors work closely with clients to develop actionable plans, identify growth opportunities, and drive organizational success.",
+        "With a commitment to independence and integrity, SR Asia provides robust third-party assurance services that validate ESG performance, compliance, and governance frameworks — reinforcing trust and credibility in your operations.",
     },
     {
       image: "/assurance/2.png",
-      title: "Consulting",
+      title: "🌱 Sustainability Reporting",
       description:
-        "SR Asia offers strategic consulting in CSR program management, guiding organizations to design impactful, compliant, and purpose-driven initiatives. From needs assessment to implementation and impact evaluation, we ensure every CSR investment delivers measurable social value.",
+        "SR Asia enables organizations to communicate their ESG commitments with clarity and credibility. Through rigorous assessments, stakeholder engagement, and materiality-driven insights, we deliver impactful sustainability reports aligned with global standards and sustainable development goals.",
     },
     {
       image: "/assurance/3.png",
-      title: "CSR Project Design",
+      title: "📘 Integrated Reporting",
       description:
-        "We develop detailed technical designs and specifications for the proposed project, outlining the required infrastructure, equipment, technology, and engineering solutions. Our technical expertise ensures that project designs are robust, efficient, and aligned with industry standards and best practices.",
+        "SR Asia empowers organizations to present a unified narrative of financial performance and ESG impact. Our integrated reporting services deliver a strategic, stakeholder-informed view of value creation, risks, and long-term sustainability—enhancing transparency and decision-making.",
     },
     {
       image: "/assurance/4.png",
-      title: "M&E",
+      title: "📊 BRSR-SEBI Reporting",
       description:
-        "At SR Asia, we understand the critical importance of monitoring and evaluation (M&E) in ensuring the success of projects, programs, or policies. Our Concurrent Monitoring and Evaluation service provides real-time insights to inform decision-making, enhance accountability, and maximize impact.",
+        "SR Asia supports listed companies in navigating SEBI’s BRSR framework with precision and confidence. From data collection to stakeholder engagement, we ensure compliance-driven, transparent, and strategically aligned sustainability disclosures that meet regulatory and investor expectations.",
     },
      {
       image: "/assurance/5.png",
-      title: "Execution",
+      title: "🌍 Environment & Social Governance (ESG)",
       description:
-        "We assist organizations in allocating resources effectively to support policy implementation activities. This may involve budgeting, staffing, and securing necessary infrastructure and technology to ensure the successful execution of policy initiatives.",
-    }, {
+        "SR Asia partners with organizations to embed ESG principles into strategy, operations, and reporting. Through tailored frameworks, performance measurement, and assurance services, we help drive responsible growth, mitigate risks, and enhance long-term value for stakeholders.",
+    },
+    {
+      image: "/assurance/6.png",
+      title: "📑 Annual Reports",
+      description:
+        "SR Asia crafts insightful, stakeholder-focused annual reports that go beyond compliance—showcasing performance, strategy, and impact with clarity and credibility. Our tailored approach ensures transparent reporting aligned with regulatory standards and organizational vision.",
+    },
+    {
       image: "/assurance/6.png",
       title: "Project planning, Log framework, ToC",
       description:
         "We assist organizations in planning, implementing, and managing projects of all sizes and complexities. From defining project objectives to overseeing execution and monitoring progress, our project management expertise ensures successful project outcomes.",
+    },
+    {
+      image: "/assurance/7.png",
+      title: "📊 Feasibility Reporting",
+      description:
+        "SR Asia delivers in-depth feasibility assessments to help organizations evaluate the viability, risks, and sustainability of proposed projects. Our evidence-based reports support sound decision-making, strategic planning, and long-term value creation.", 
+    },
+    {
+      image: "/assurance/8.png",
+      title: "📘 Detailed Project Report (DPR)",
+      description:
+        "SR Asia develops comprehensive and data-driven Detailed Project Reports that serve as the foundation for project planning, approvals, and execution. Our DPRs integrate technical, financial, environmental, and social insights to ensure project feasibility, compliance, and long-term impact.",
     },
   ]
 

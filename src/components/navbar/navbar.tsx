@@ -35,16 +35,16 @@ const reportSubmenu = [
 ];
 
 const mediaSubmenu = [
-  { label: "Blogs & Articles", href: "/media/blogs" },
-  { label: "Conference", href: "/media/conference" },
-  { label: "Webinar", href: "/media/webinar" },
+  { label: "Blogs & Articles", href: "/media" },
+  { label: "Conference", href: "/media" },
+  { label: "Webinar", href: "/media" },
 ];
 
 const careersSubmenu = [
-  { label: "Current Opening", href: "/careers/current-opening" },
-  { label: "Internship", href: "/careers/internship" },
-  { label: "Volunteer", href: "/careers/volunteer" },
-  { label: "Empanelment", href: "/careers/empanelment" },
+  { label: "Current Opening", href: "/connect" },
+  { label: "Internship", href: "/connect" },
+  { label: "Volunteer", href: "/connect" },
+  { label: "Empanelment", href: "/connect" },
 ];
 
 const navItems = [
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="max-w-7xl w-full mx-auto grid grid-cols-5 gap-8">
             {/* ABOUT */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2">About</h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about">About</Link></h3>
               <ul className="space-y-2">
                 {AboutSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -126,7 +126,7 @@ export default function Home() {
 
             {/* SERVICES */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2">Services</h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/services">Services</Link></h3>
               <ul className="space-y-2">
                 {servicesSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -143,7 +143,7 @@ export default function Home() {
 
             {/* REPORT */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2">Reports</h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/reports">Reports</Link></h3>
               <ul className="space-y-2">
                 {reportSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -160,7 +160,7 @@ export default function Home() {
 
             {/* MEDIA */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2">Media</h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/media">Media</Link></h3>
               <ul className="space-y-2">
                 {mediaSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -177,7 +177,7 @@ export default function Home() {
 
             {/* CAREERS */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2">Connect</h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/connect">Connect</Link></h3>
               <ul className="space-y-2">
                 {careersSubmenu.map((item, idx) => (
                   <li key={idx}>
