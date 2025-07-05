@@ -7,6 +7,12 @@ export default function StatsSection() {
   return (
     <div className="relative w-full py-8 px-[20px] overflow-hidden">
   {/* Stats Grid */}
+   <div className="relative z-10 text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-[75px]">
+                  The SR Asia Footprint 
+                </h2>
+      </div>
+  
   <div className="relative z-10 max-w-8xl mx-auto w-full">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-[75px]">
       <Stat
