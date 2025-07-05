@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Component() {
   return (
@@ -24,7 +25,10 @@ export default function Component() {
             Have a question, idea, or opportunity? Let's connect and build something impactful together.
           </p>
           <Button size="lg" className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg">
+            <Link href="/connect">
             Get in Touch
+            </Link>
+            
           </Button>
         </div>
 

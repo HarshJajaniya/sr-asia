@@ -15,6 +15,7 @@ const workCards = [
     description:
       "गंगा एक्सप्रेस-वे के लिए प्रशासन की ओर से पूरी कवायद जारी है। लेकिन मेरठ जनपद में 181 हेक्टेयर में से 28 हेक्टेयर जमीन की खरीद किसानों के विवाद के कारण नहीं हो सकी है। अब इस जमीन का अधिग्रहण करना होगा। प्रक्रिया शुरू हो चुकी है।",
     image: "/resources/1.png",
+    link:"https://www.jagran.com/uttar-pradesh/meerut-city-ganga-express-way-after-survey-of-sr-asia-land-acquisition-will-be-done-agency-selected-22009866.html",
   },
    {
     title: "रैपिड के लिए सामाजिक अध्ययन करेगी एसआर एशिया",
@@ -22,6 +23,8 @@ const workCards = [
     description:
       "रैपिड रेल प्रोजेक्ट के तहत मेरठ शहर की सीमा क्षेत्र में विभिन्न स्टेशनों के निर्माण के लिए जमीन आपसी सहमति से नहीं मिल पा रही है। लिहाजा आठ स्थानों पर कुल 5.8982 हेक्टेयर भूमि का अधिग्रहण करने का निर्णय लिया गया है।",
     image: "/resources/3.png",
+    
+    link:"https://www.newindianexpress.com/nation/2022/feb/20/ashshash-project-social-responsibility-sr-asia-pledges-solidarity-for-survivors-of-human-trafficking-2428850.html",
   },
    {
     title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
@@ -29,19 +32,8 @@ const workCards = [
     description:
       "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
     image: "/resources/4.png",
-  }, {
-    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
-    subtitle:"Feb 20,2022",
-    description:
-      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
-    image: "/resources/4.png",
-  }, {
-    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
-    subtitle:"Feb 20,2022",
-    description:
-      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
-    image: "/resources/4.png",
-  },
+    link:"https://www.jagran.com/uttar-pradesh/meerut-city-rapid-asia-will-do-social-study-for-rapid-rail-project-23009866.html",
+  }, 
  
 
 
@@ -80,7 +72,7 @@ export default function SrAsiaWorkCarousel() {
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 },
+           
           }}
           navigation
           pagination={{ clickable: true }}
@@ -112,8 +104,8 @@ export default function SrAsiaWorkCarousel() {
                     {card.description}
                   </p>
                   <Link
-                    href="#"
-                    className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#FDFCD6] text-white font-medium"
+                    href={card.link}
+                    className="block text-center py-2 px-4 bg-[#072328] text-white font-medium"
                   >
                     Read more
                   </Link>
