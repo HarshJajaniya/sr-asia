@@ -1,40 +1,52 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
+import { useState } from "react"
 
 export default function ContactForm() {
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Simulate form submission (e.g., API call)
+    setSubmitted(true)
+
+    // Optional: Reset message after 5 seconds
+    setTimeout(() => setSubmitted(false), 5000)
+  }
+
   return (
     <div className="min-h-screen mb-12 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Left side - Image */}
-            
-              <div className="relative w-full max-w-md">
-                <Image
-                  src="/57.png"
-                  alt="Laptop with email interface"
-                  width={400}
-                  height={300}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-    
+            <div className="relative w-full max-w-md">
+              <Image
+                src="/57.png"
+                alt="Laptop with email interface"
+                width={400}
+                height={300}
+                className="w-full h-auto object-contain"
+              />
+            </div>
 
             {/* Right side - Contact Form */}
             <div className="p-8 md:p-12">
               <div className="max-w-md mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">GET IN TOUCH</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                  GET IN TOUCH
+                </h2>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   {/* Name and Phone row */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="sr-only">
-                        Name
-                      </Label>
+                      <Label htmlFor="name" className="sr-only">Name</Label>
                       <Input
                         id="name"
                         type="text"
@@ -43,9 +55,7 @@ export default function ContactForm() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="sr-only">
-                        Phone
-                      </Label>
+                      <Label htmlFor="phone" className="sr-only">Phone</Label>
                       <Input
                         id="phone"
                         type="tel"
@@ -58,9 +68,7 @@ export default function ContactForm() {
                   {/* Email and Organization row */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="sr-only">
-                        Email
-                      </Label>
+                      <Label htmlFor="email" className="sr-only">Email</Label>
                       <Input
                         id="email"
                         type="email"
@@ -69,9 +77,7 @@ export default function ContactForm() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="organization" className="sr-only">
-                        Organization / Affiliation
-                      </Label>
+                      <Label htmlFor="organization" className="sr-only">Organization</Label>
                       <Input
                         id="organization"
                         type="text"
@@ -83,9 +89,7 @@ export default function ContactForm() {
 
                   {/* Message field */}
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="sr-only">
-                      Message
-                    </Label>
+                    <Label htmlFor="message" className="sr-only">Message</Label>
                     <Textarea
                       id="message"
                       placeholder="Message"
@@ -103,6 +107,12 @@ export default function ContactForm() {
                       Submit Message
                     </Button>
                   </div>
+
+                  {submitted && (
+                    <p className="text-green-600 text-center font-medium pt-2">
+                      ✅ Your message has been submitted!
+                    </p>
+                  )}
                 </form>
               </div>
             </div>
