@@ -1,53 +1,58 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function ServicesSection() {
   const services = [
     {
       title: "CSR Consulting & Impact Assessment",
       icon: "/about/icons/1.png",
-    //   description: "Comprehensive CSR strategy and impact measurement",
+      //   description: "Comprehensive CSR strategy and impact measurement",
     },
     {
       title: "ESG & Sustainability Reporting",
       subtitle: "(BRSR, TCFD, CDP)",
       icon: "/about/icons/2.png",
-    //   description: "Complete ESG reporting and compliance solutions",
+      //   description: "Complete ESG reporting and compliance solutions",
     },
     {
       title: "Monitoring & Evaluation",
       subtitle: "(M&E)",
       icon: "/about/icons/3.png",
-    //   description: "Data-driven monitoring and evaluation services",
+      //   description: "Data-driven monitoring and evaluation services",
     },
     {
       title: "Skill Development & Ecological Restoration",
       icon: "/about/icons/4.png",
-    //   description: "Capacity building and environmental restoration",
+      //   description: "Capacity building and environmental restoration",
     },
     {
       title: "Policy Research & Advisory",
       icon: "/about/icons/5.png",
-    //   description: "Strategic policy analysis and advisory services",
+      //   description: "Strategic policy analysis and advisory services",
     },
     {
       title: "Third-party Evaluation & Assurance",
       icon: "/about/icons/6.png",
-    //   description: "Independent evaluation and assurance services",
+      //   description: "Independent evaluation and assurance services",
     },
-  ]
+  ];
 
   return (
-    <section className="py-16 px-4 ">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 tracking-wide">WHAT WE DO</h2>
+    <section className="mb-[75px]">
+      <div className="max-w-8xl mx-[20px]">
+        <h2 className="text-3xl font-bold text-center text-[#031318] mb-12 tracking-wide">
+          WHAT WE DO
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
-              <CardContent className="p-4 text-center">
-                <div className="mb-8 flex justify-center">
-                  <div className="w-20 h-20 rounded-2xl flex items-center justify-center">
+            <Card
+              key={index}
+              className="hover:shadow-lg transition-shadow duration-300 w-[446px] h-[380px] border-none shadow-none rounded-none"
+            >
+              <CardContent className="flex flex-col items-center justify-center text-center h-full rounded-none">
+                <div className="mb-8">
+                  <div className="w-20 h-20 flex items-center justify-center">
                     <Image
                       src={service.icon || "/placeholder.svg"}
                       alt={service.title}
@@ -58,16 +63,20 @@ export default function ServicesSection() {
                   </div>
                 </div>
 
-                <h3 className="text-lg font-semibold text-gray-800 mb-2 leading-tight">{service.title}</h3>
+                <h3 className="text-[24px] font-regular text-[#031318] mb-2 leading-tight">
+                  {service.title}
+                </h3>
 
-                {service.subtitle && <p className="text-sm text-gray-600 font-medium mb-3">{service.subtitle}</p>}
-
-              
+                {service.subtitle && (
+                  <p className="text-[24px] font-regular text-[#031318] mb-3">
+                    {service.subtitle}
+                  </p>
+                )}
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
