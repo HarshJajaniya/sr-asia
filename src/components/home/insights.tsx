@@ -14,7 +14,7 @@ export default function Component() {
         </div>
 
         {/* ---------- 1 ▸ IMAGE ON THE RIGHT ---------- */}
-        <div className="bg-white mb-8 overflow-hidden mb-[75px]">
+        <div className="bg-white overflow-hidden mb-[75px]">
           <div className="flex flex-col md:flex-row gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">

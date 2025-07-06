@@ -77,7 +77,7 @@ export default function SrAsiaWorkGrid() {
                 </p>
                 <Link
                   href="#"
-                  className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#A1E3F9] hover:text-[#072328] text-white hover:text-[#072328] font-medium"
+                  className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#A1E3F9] hover:text-[#072328] text-white font-medium"
                 >
                   Read more
                 </Link>
