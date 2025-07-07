@@ -12,7 +12,7 @@ export default function StatsSection() {
           <Stat
             value={120}
             suffix="+"
-            label="Projects Implemented"
+            label="Projects Implemented "
           />
 
           <Stat
