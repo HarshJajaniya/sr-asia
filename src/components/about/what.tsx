@@ -48,7 +48,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300 w-[446px] h-[380px] border-none shadow-none rounded-none"
+              className="hover:shadow-lg transition-shadow duration-300 w-100 h-100 border-none shadow-none rounded-none"
             >
               <CardContent className="flex flex-col items-center justify-center text-center h-full rounded-none">
                 <div className="mb-8">
