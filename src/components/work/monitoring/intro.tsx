@@ -33,7 +33,7 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-8xl mx-[20px]">
         {/* Introduction Section */}
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
@@ -52,7 +52,7 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
           </p>
 
           {/* Our Drivers */}
-          <div className="mb-8">
+          <div className="mb-4">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Drivers</h3>
             <div className="flex flex-wrap gap-3 mb-6">
               {Object.keys(driverContent).map((driver) => (
@@ -85,12 +85,7 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
           </div>
         </section>
 
-        {/* How Can We Help Section */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">How can we help you?</h2>
-
-       
-        </section>
+      
       </div>
     </div>
   )

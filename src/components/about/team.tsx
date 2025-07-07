@@ -46,25 +46,28 @@ export default function TeamDisplay() {
   ];
 
   return (
-    <div className="container mx-auto px-6 lg:px-12 mb-16">
-      <p className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+    <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 mb-[75px]">
+      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800 ">
         OUR TEAM
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
         {teamMembers.map((member) => (
-          <div key={member.id} className="flex flex-col items-center text-center">
+          <div
+            key={member.id}
+            className="flex flex-col items-center text-center"
+          >
             <img
               src={member.image || "/placeholder.svg"}
               alt={member.name || "Team member"}
-              className="object-cover w-32 h-40 "
+              className="object-cover w-32 h-40"
             />
-            <h3 className="text-sm font-semibold mt-2 text-[#031318]">{member.name}</h3>
+            <h3 className="text-sm font-semibold mt-2 text-[#031318]">
+              {member.name}
+            </h3>
             <p className="text-xs text-gray-600">{member.title}</p>
           </div>
         ))}
       </div>
-
-      
     </div>
   );
 }

@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden mb-[75px]">
 
       {/* Video Background */}
-     <div className="w-full aspect-video">
+     <div className="w-full h-[720px]">
   <video
     autoPlay
     muted
@@ -40,7 +40,7 @@ const Hero = () => {
               <h1 className="text-3xl md:text-3xl font-bold mb-2">
                 Empowering Impact Through Responsibility and Innovation
               </h1>
-              <p className="text-lg md:text-xl opacity-90 mb-6">
+              <p className="text-lg md:text-1rem opacity-90 mb-6">
                 A not-for-profit organization committed to sustainable development, ESG leadership, and inclusive growth across Asia.
               </p>
             </div>

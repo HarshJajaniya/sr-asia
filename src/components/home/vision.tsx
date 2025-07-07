@@ -3,8 +3,9 @@ import Image from "next/image"
 export default function Component() {
   return (
     <>
-    <section className="py-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="mb-[75px] mt-[75px]">
+<section className="mb-[75px] px-4 md:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
@@ -29,7 +30,7 @@ export default function Component() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <div className="relative overflow-hidden">
               <Image
                 src="/vision/1.png"
                 alt="Professional office environment with person silhouette overlooking city skyline"
@@ -43,12 +44,12 @@ export default function Component() {
         </div>
       </div>
     </section>
-    <section className="py-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="px-4 md:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
            <div className="relative">
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
+            <div className="relative overflow-hidden ">
               <Image
                 src="/vision/vision.png"
                 alt="Professional office environment with person silhouette overlooking city skyline"
@@ -86,6 +87,8 @@ export default function Component() {
         </div>
       </div>
     </section>
+    </div>
+    
     </>
   )
 }

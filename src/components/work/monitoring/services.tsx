@@ -47,7 +47,9 @@ export default function ServicesSection() {
   ]
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-8">
+    <div className="w-full max-w-8xl mb-[75px] mx-[20px]">
+      <h2 className="text-[32px] mb-[75px] font-bold text-gray-900">How can we help you?</h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {services.map((service, index) => (
           <div key={index} className="relative">
@@ -60,7 +62,7 @@ export default function ServicesSection() {
             <div className="absolute bottom-0 left-0 right-0 h-px bg-[#45B6CD]"></div>
 
 
-            <div className="py-24 px-4">
+            <div className="py-10 px-4">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <Image

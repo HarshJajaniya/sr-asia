@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Component() {
   const features = [
@@ -39,17 +39,19 @@ export default function Component() {
         "Blending community voices, tech-driven tools, and global best practices to create sustainable, equitable change.",
       image: "/about/what/6.png",
     },
-  ]
+  ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-12">
+    <div className="w-full max-w-8xl mx-auto mb-[75px] px-4 ">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">WHY CHOOSE US</h2>
+        <h2 className="text-3xl font-bold text-[#072328] mb-2">
+          WHY CHOOSE US
+        </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((feature, index) => (
-          <Card key={index} className="border-0 shadow-none">
+          <Card key={index} className="border-0 shadow-none rounded-none">
             <CardContent className="p-0">
               <div className="aspect-video mb-4 overflow-hidden">
                 <Image
@@ -61,13 +63,17 @@ export default function Component() {
                 />
               </div>
               <div className="space-y-3">
-                <h3 className="font-semibold text-lg text-gray-900 leading-tight p-4">{feature.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed p-4">{feature.description}</p>
+                <h3 className="font-semibold text-lg text-gray-900 leading-tight px-4 pt-0">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed px-4 pb-4">
+                  {feature.description}
+                </p>
               </div>
             </CardContent>
           </Card>
         ))}
       </div>
     </div>
-  )
+  );
 }

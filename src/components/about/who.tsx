@@ -94,20 +94,20 @@ export default function AboutUsSection() {
 
 
   return (
-    <div className="w-full py-12 px-4">
+    <div className="w-full px-[20px]">
       {/* Header */}
-      <div className="max-w-6xl mx-auto mb-8" ref={aboutHeaderRef}>
-        <h2 className="text-2xl font-bold text-center text-[#072328] py-4">
+      <div className="max-w-8xl mx-auto mb-8" ref={aboutHeaderRef}>
+        <h2 className="text-[32px] font-bold text-center text-[#072328] py-4">
           WHO WE ARE
         </h2>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Left Column - Image */}
           <div className="relative">
-            <div className="relative h-64 lg:h-80 w-full overflow-hidden rounded-lg">
+            <div className="relative h-64 lg:h-80 w-full overflow-hidden ">
               <Image
                 src="/36.png"
                 alt="Forest background representing sustainable development"

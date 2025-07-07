@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <div className="w-full">
+    <div className="w-full ">
       {/* Main Connect Section */}
-      <section className="relative text-white py-16 px-6 overflow-hidden">
+      <section className="relative text-white mb-[75px] py-16 px-6 overflow-hidden">
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"

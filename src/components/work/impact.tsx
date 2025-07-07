@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Component() {
   return (
-    <section className="py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-[tertiary/700] mb-8">How we create impact</h2>
+    <section className=" mb-[75px] px-4">
+      <div className="max-w-8xl mx-auto">
+        <h2 className="text-3xl mb-[75px] font-bold text-[tertiary/700] ">How we create impact</h2>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left side - Image */}
@@ -14,7 +14,7 @@ export default function Component() {
               alt="People in a classroom setting discussing and learning"
               width={400}
               height={300}
-              className="rounded-lg object-cover w-full"
+              className="object-cover h-[300px] w-full"
             />
           </div>
 

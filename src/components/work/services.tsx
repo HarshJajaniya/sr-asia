@@ -40,7 +40,8 @@ export default function ServicesSection() {
   ]
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-8">
+    <div className="w-full max-w-8xl mx-[20px] mb-[75px]">
+      <h2 className="text-[32px] font-bold text-gray-900 mb-8">How can we help you?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {services.map((service, index) => (
           <div key={index} className="relative">
