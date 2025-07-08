@@ -44,7 +44,7 @@ export default function FullScreenNestedCarousel() {
   ];
 
   return (
-    <div className="mb-4 mt-4 w-full bg-white p-4">
+    <div className="mb-[75px] mt-4 w-full bg-white p-4">
       <Swiper
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
@@ -64,7 +64,9 @@ export default function FullScreenNestedCarousel() {
                   <h2 className="text-lg lg:text-xl text-gray-600 mb-4">
                     {slide.subtitle}
                   </h2>
-                  <p className="text-gray-700 mb-6">{slide.intro}</p>
+                  <p className="text-gray-700 mb-6 line-clamp-4">
+                    {slide.intro}
+                  </p>
 
                   {slide.pdfs && (
                     <div className="mb-4">
@@ -112,7 +114,7 @@ export default function FullScreenNestedCarousel() {
                       <img
                         src={imgSrc}
                         alt={`Inner ${idx + 1}`}
-                        className="w-full h-[300px] object-cover"
+                        className="w-full h-[500px] object-cover"
                       />
                     </SwiperSlide>
                   ))}

@@ -1,14 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Play, Users, Leaf, TrendingUp, Shield, Calendar } from "lucide-react"
+import { useState } from "react";
+import { Play, Users, Leaf, TrendingUp, Shield, Calendar } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-
-import { Badge } from "@/components/ui/badge"
-
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const webinarSlides = [
   {
@@ -71,7 +75,8 @@ const webinarSlides = [
     challenges: [
       {
         title: "Environmental Responsibility",
-        description: "From reducing carbon emissions to managing pharmaceutical waste",
+        description:
+          "From reducing carbon emissions to managing pharmaceutical waste",
       },
       {
         title: "Social Impact",
@@ -84,11 +89,13 @@ const webinarSlides = [
       },
       {
         title: "Innovation and Sustainability",
-        description: "What role does innovation play in drive sustainability within the industry",
+        description:
+          "What role does innovation play in drive sustainability within the industry",
       },
       {
         title: "Regulatory Compliance",
-        description: "Navigating evolving regulations and standards to ensure compliance",
+        description:
+          "Navigating evolving regulations and standards to ensure compliance",
       },
     ],
   },
@@ -143,24 +150,27 @@ const webinarSlides = [
       },
     ],
   },
-]
+];
 
 export default function Component() {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 mb-0 pb-0">
       <Carousel className="w-full max-w-7xl mx-auto">
         <CarouselContent>
           {webinarSlides.map((slide, index) => (
             <CarouselItem key={slide.id}>
-              <div className="p-6">
+              <div className="px-6 pt-6 pb-2">
                 {/* Header Section */}
                 <div className="relative mb-8 rounded-2xl overflow-hidden bg-gradient-to-r from-green-100 to-teal-100 p-8">
                   <div className="flex flex-col lg:flex-row items-start gap-8">
                     <div className="flex-1">
                       <div className="flex items-center gap-4 mb-4">
-                        <Badge variant="secondary" className="bg-teal-700 text-white px-4 py-1">
+                        <Badge
+                          variant="secondary"
+                          className="bg-teal-700 text-white px-4 py-1"
+                        >
                           {slide.type}
                         </Badge>
                         <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -168,8 +178,12 @@ export default function Component() {
                           {slide.date}
                         </div>
                       </div>
-                      <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">{slide.title}</h1>
-                      <p className="text-gray-600 mb-6 max-w-2xl">{slide.description}</p>
+                      <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+                        {slide.title}
+                      </h1>
+                      <p className="text-gray-600 mb-4 max-w-2xl">
+                        {slide.description}
+                      </p>
                       <Button className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2">
                         <Play className="w-4 h-4 mr-2" />
                         Watch Recording
@@ -189,11 +203,16 @@ export default function Component() {
                         <CardContent className="p-6">
                           <div className="flex flex-col items-center text-center mb-4">
                             {pillar.icon}
-                            <h3 className="font-semibold text-lg mt-3 mb-4">{pillar.title}</h3>
+                            <h3 className="font-semibold text-lg mt-3 mb-4">
+                              {pillar.title}
+                            </h3>
                           </div>
                           <ul className="space-y-2 text-sm text-gray-600">
                             {pillar.points.map((point, pointIndex) => (
-                              <li key={pointIndex} className="flex items-start gap-2">
+                              <li
+                                key={pointIndex}
+                                className="flex items-start gap-2"
+                              >
                                 <div className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0" />
                                 {point}
                               </li>
@@ -206,12 +225,14 @@ export default function Component() {
                 ) : (
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                      <h2 className="text-2xl font-bold text-gray-800 mb-6">{slide.title}</h2>
-                      <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
+                      <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                        {slide.title}
+                      </h2>
+                      <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
                         <Calendar className="w-4 h-4" />
                         {slide.date}
                       </div>
-                      <p className="text-gray-600 mb-6">{slide.description}</p>
+                      <p className="text-gray-600 mb-4">{slide.description}</p>
                       <Button className="bg-gray-800 hover:bg-gray-700 text-white">
                         <Play className="w-4 h-4 mr-2" />
                         Watch Recording
@@ -219,14 +240,25 @@ export default function Component() {
                     </div>
                     <Card className="bg-teal-700 text-white">
                       <CardContent className="p-6">
-                        <h3 className="text-xl font-bold mb-6">{slide.title}</h3>
+                        <h3 className="text-xl font-bold mb-6">
+                          {slide.title}
+                        </h3>
                         <div className="space-y-4">
-                          {slide.challenges?.map((challenge, challengeIndex) => (
-                            <div key={challengeIndex} className="border-l-2 border-teal-300 pl-4">
-                              <h4 className="font-semibold mb-1">{challenge.title}</h4>
-                              <p className="text-sm text-teal-100">{challenge.description}</p>
-                            </div>
-                          ))}
+                          {slide.challenges?.map(
+                            (challenge, challengeIndex) => (
+                              <div
+                                key={challengeIndex}
+                                className="border-l-2 border-teal-300 pl-4"
+                              >
+                                <h4 className="font-semibold mb-1">
+                                  {challenge.title}
+                                </h4>
+                                <p className="text-sm text-teal-100">
+                                  {challenge.description}
+                                </p>
+                              </div>
+                            )
+                          )}
                         </div>
                       </CardContent>
                     </Card>
@@ -234,7 +266,7 @@ export default function Component() {
                 )}
 
                 {/* Slide Indicator */}
-                <div className="flex justify-center mt-8 gap-2">
+                <div className="flex justify-center mt-6 mb-0 gap-2">
                   {webinarSlides.map((_, slideIndex) => (
                     <div
                       key={slideIndex}
@@ -252,5 +284,5 @@ export default function Component() {
         <CarouselNext className="right-4" />
       </Carousel>
     </div>
-  )
+  );
 }
