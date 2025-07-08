@@ -11,7 +11,7 @@ export default function TeamDisplay() {
       id: "Shruti-Sharma",
       name: "Shruti Sharma",
       title: "HR Executive",
-      image: "/team/1.jpeg",
+      image: "/team/12.jpg",
     },
     {
       id: "Dolly-Pandey",
@@ -23,7 +23,7 @@ export default function TeamDisplay() {
       id: "Kalash-Kesharwani",
       name: "Kalash Kesharwani",
       title: "Salesforce Admin",
-      image: "/team/2.jpeg",
+      image: "/team/9.jpg",
     },
     {
       id: "Jaya-Yadav ",
@@ -41,7 +41,13 @@ export default function TeamDisplay() {
       id: "Tanu-Akolia",
       name: "Tanu Akolia",
       title: "HR Generalist",
-      image: "/team/6.jpeg",
+      image: "/team/10.jpg",
+    },
+     {
+      id: "Swati-Bhatt",
+      name: "Swati Bhatt",
+      title: "Director",
+      image: "/team/11.jpg",
     },
   ];
 
@@ -50,7 +56,7 @@ export default function TeamDisplay() {
       <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800 ">
         OUR TEAM
       </p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 justify-center">
         {teamMembers.map((member) => (
           <div
             key={member.id}
