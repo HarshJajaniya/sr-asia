@@ -45,7 +45,7 @@ const workCards = [
 export default function SrAsiaWorkGrid() {
   return (
     <section className="max-w-full bg-gray-50 py-16 px-4 md:px-6 lg:px-8 mb-[75px]">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-full mx-auto">
         {/* Section Heading */}
         <h2 className="text-3xl font-bold text-[#072328] text-center mb-[75px]">OUR APPROACH</h2>
 

@@ -96,14 +96,14 @@ export default function AboutUsSection() {
   return (
     <div className="w-full py-12 px-4">
       {/* Header */}
-      <div className="max-w-8xl mx-auto mb-[75px]" ref={aboutHeaderRef}>
+      <div className="max-w-full mx-auto mb-[75px]" ref={aboutHeaderRef}>
         <h2 className="text-2xl font-bold text-center text-[#072328] py-4">
           ABOUT US
         </h2>
       </div>
 
       {/* Main Content */}
-<div className="max-w-8xl mx-auto px-5">
+<div className="max-w-full mx-auto px-5">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
     {/* Left Column - Image */}
     <div className="relative">

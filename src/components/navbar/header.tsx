@@ -11,7 +11,7 @@ export default function Component() {
 
   return (
     <header className="w-full bg-white border-b border-gray-200">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">

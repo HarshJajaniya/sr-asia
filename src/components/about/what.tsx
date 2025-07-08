@@ -39,7 +39,7 @@ export default function ServicesSection() {
 
   return (
     <section className="mb-[75px]">
-      <div className="max-w-8xl mx-[20px]">
+      <div className="max-w-full mx-[20px]">
         <h2 className="text-3xl font-bold text-center text-[#031318] mb-12 tracking-wide">
           WHAT WE DO
         </h2>

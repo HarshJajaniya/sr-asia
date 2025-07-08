@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Component() {
   return (
     <section className=" mb-[75px] px-4">
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-full mx-auto">
         <h2 className="text-3xl mb-[75px] font-bold text-[tertiary/700] ">How we create impact</h2>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">

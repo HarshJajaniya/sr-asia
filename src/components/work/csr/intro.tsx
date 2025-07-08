@@ -38,7 +38,7 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-8xl mx-auto px-6 py-12">
+      <div className="max-w-full mx-auto px-6 py-12">
         {/* Introduction Section */}
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>

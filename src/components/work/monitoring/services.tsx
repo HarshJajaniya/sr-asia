@@ -47,7 +47,7 @@ export default function ServicesSection() {
   ]
 
   return (
-    <div className="w-full max-w-8xl mb-[75px] mx-[20px]">
+    <div className="w-full max-w-full mb-[75px] mx-[20px]">
       <h2 className="text-[32px] mb-[75px] font-bold text-gray-900">How can we help you?</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">

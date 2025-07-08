@@ -49,7 +49,7 @@ export default function SrAsiaWorkCarousel() {
       {/* Outer Card Section */}
       <div className="bg-white shadow-2xs rounded-2xl my-12 px-0 py-10">
         {/* Section Header */}
-        <div className="relative mb-12 max-w-8xl mx-auto">
+        <div className="relative mb-12 max-w-full mx-auto">
           <div className="relative flex items-center mb-10 max-w-full">
             <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10">
               Featured Insights

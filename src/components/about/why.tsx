@@ -42,7 +42,7 @@ export default function Component() {
   ];
 
   return (
-    <div className="w-full max-w-8xl mx-auto mb-[75px] px-4 ">
+    <div className="w-full max-w-full mx-auto mb-[75px] px-4 ">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-[#072328] mb-2">
           WHY CHOOSE US
