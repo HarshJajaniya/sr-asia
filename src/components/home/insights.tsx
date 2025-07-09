@@ -3,8 +3,8 @@ import { ChevronRight } from "lucide-react";
 
 export default function Component() {
   return (
-    <div className="py-12 px-4">
-      <div className="max-w-[1400px] mx-auto mb-[75px]">
+    <div className=" bg-white py-4 px-4">
+      <div className="max-w-[1400px] mx-auto mb-[35px] ">
 
         {/* Heading */}
         <div className="flex items-center justify-center mb-[75px]">
@@ -14,7 +14,7 @@ export default function Component() {
         </div>
 
         {/* ---------- 1 ▸ IMAGE ON THE RIGHT ---------- */}
-        <div className="bg-white overflow-hidden mb-[75px]">
+        <div className="bg-white overflowwh-hidden mb-[30px] border-b border-gray-200 shadow-lg">
           <div className="flex flex-col md:flex-row gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">
@@ -45,7 +45,7 @@ and share SR solutions for shaping the modern day business on sustainability and
         </div>
 
         {/* ---------- 2 ▸ IMAGE ON THE LEFT ---------- */}
-        <div className="bg-white overflow-hidden mb-[75px]">
+        <div className="bg-white overflow-hidden mb-[35px] border-b border-gray-200 shadow-lg">
           <div className="flex flex-col md:flex-row-reverse gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">
