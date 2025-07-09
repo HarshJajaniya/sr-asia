@@ -38,9 +38,10 @@ const Hero = () => {
               {/* <h1 className="text-4xl md:text-5xl font-bold mb-2">
                Insights, Events & Stories from the Field
               </h1> */}
-              <p className="text-lg md:text-xl opacity-90 mb-6">
-               Join a team that’s building a sustainable, inclusive future across Asia.
-              </p>
+              <h1 className="text-[40px] opacity-90 mb-6">
+                Join a team that’s building a sustainable, inclusive future
+                across Asia.
+              </h1>
             </div>
             <div>
               <Image
