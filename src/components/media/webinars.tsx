@@ -156,12 +156,12 @@ export default function Component() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 mb-0 pb-0">
-      <Carousel className="w-full max-w-7xl mx-auto">
+    <div className="bg-gradient-to-br from-green-50 to-blue-50 mb-0 pb-0">
+      <Carousel className="w-full max-w-8xl mx-auto">
         <CarouselContent>
           {webinarSlides.map((slide, index) => (
             <CarouselItem key={slide.id}>
-              <div className="px-6 pt-6 pb-2">
+              <div className="px-6 pt-2">
                 {/* Header Section */}
                 <div className="relative mb-8 rounded-2xl overflow-hidden bg-gradient-to-r from-green-100 to-teal-100 p-8">
                   <div className="flex flex-col lg:flex-row items-start gap-8">
@@ -199,7 +199,7 @@ export default function Component() {
                 {slide.pillars ? (
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {slide.pillars.map((pillar, pillarIndex) => (
-                      <Card key={pillarIndex} className="h-full">
+                      <Card key={pillarIndex} className="h-[400px]">
                         <CardContent className="p-6">
                           <div className="flex flex-col items-center text-center mb-4">
                             {pillar.icon}

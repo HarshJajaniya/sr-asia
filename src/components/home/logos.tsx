@@ -31,12 +31,10 @@ export default function PartnerLogosScroll() {
     { src: "/l7.png", alt: "HINDZINC", name: "HINDZINC" },
     { src: "/l8.png", alt: "IGL", name: "IGL" },
     { src: "/l9.png", alt: "ILO", name: "ILO" },
-    { src: "/stats/4.png", alt: "CTCN", name: "CTCN" },
-    { src: "/stats/5.png", alt: "IPLA", name: "IPLA" },
   ];
 
   return (
-    <div className="relative max-w-full mx-auto px-6">
+    <div className="relative max-w-full mx-auto px-6 mt-[75px]">
       <div className="flex items-center justify-center mb-[35px]">
         <h1 className="text-3xl font-bold text-gray-900 text-center mt-4">
           OUR CLIENTS
