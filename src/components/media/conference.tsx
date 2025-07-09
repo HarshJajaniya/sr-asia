@@ -20,7 +20,7 @@ export default function FullScreenNestedCarousel() {
         { name: "Presentation.pdf", url: "/pdfs/presentation1.pdf" },
         { name: "Research.pdf", url: "/pdfs/research1.pdf" },
       ],
-      images: ["/insights/4.png", "/img/1b.jpg", "/img/1c.jpg"],
+      images: ["/insights/4.png", "/37.jpeg", "/38.jpeg"],
     },
     {
       title: "SR Asia Bangladesh – 2nd National Conference",
