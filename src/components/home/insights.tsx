@@ -18,14 +18,17 @@ export default function Component() {
           <div className="flex flex-col md:flex-row gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">
-              <h2 className="text-xl font-semibold text-gray-900 leading-tight">
-                International Conference Responsible Business Conduct in Poverty Alleviation & Financial Inclusion through Green Banking & CSR
-              </h2>
-              <p className="text-gray-600 text-sm leading-relaxed">
-               Social Responsibility Asia (SR Asia) is a professional network of SR professionals based in
- Asia, creating bench marks and new standards in the field of social responsibility. SR Asia is to provide
-and share SR solutions for shaping the modern day business on sustainability and competitiveness.
-              </p>
+             <h2 className="text-xl font-semibold text-gray-900 leading-tight">
+  International Conference on Responsible Business Conduct in Poverty Alleviation & Financial Inclusion through Green Banking & CSR
+</h2>
+<p className="text-gray-600 text-sm leading-relaxed mt-2">
+  The International Conference aims to bring together academics, industry leaders, policymakers, and CSR professionals to explore innovative strategies that promote responsible business practices. The focus will be on integrating Green Banking principles and Corporate Social Responsibility (CSR) initiatives to foster financial inclusion and alleviate poverty, especially in underserved regions.
+</p>
+<p className="text-gray-600 text-sm leading-relaxed mt-2">
+  Organized in collaboration with Social Responsibility Asia (SR Asia), this event underscores the growing need for sustainable business models that balance economic growth with social equity and environmental stewardship.
+</p>
+
+
               <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors">
                 Read more
                 <ChevronRight className="ml-1 w-4 h-4" />
