@@ -37,8 +37,8 @@ export default function PartnerLogosScroll() {
 
   return (
     <div className="relative max-w-full mx-auto px-6">
-      <div className="flex items-center justify-center mb-[75px]">
-        <h1 className="text-3xl font-bold text-gray-900 text-center">
+      <div className="flex items-center justify-center mb-[35px]">
+        <h1 className="text-3xl font-bold text-gray-900 text-center mt-4">
           OUR CLIENTS
         </h1>
       </div>

@@ -94,7 +94,7 @@ export default function AboutUsSection() {
 
 
   return (
-    <div className="w-full py-12 px-4">
+    <div className="w-full py-12 px-4 border-b border-gray-200 shadow-lg mb-[75px]">
       {/* Header */}
       <div className="max-w-full mx-auto mb-[75px]" ref={aboutHeaderRef}>
         <h2 className="text-2xl font-bold text-center text-[#072328] py-4">
