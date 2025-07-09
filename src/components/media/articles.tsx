@@ -54,11 +54,11 @@ export default function SrAsiaWorkCarousel() {
   return (
     <section className="max-w-full">
       {/* ⭕ Outer Card Section */}
-      <div className="bg-gray-50 shadow-xl rounded-2xl my-12 px-4 md:px-6 py-10">
+      <div className="bg-white shadow-xl rounded-2xl my-12 px-4 md:px-6 py-10">
         {/* 🔖 Section Header */}
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
-            <h2 className="text-2xl font-bold text-[#072328] mx-auto bg-white px-4 z-10">
+            <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10">
               Featured Insights
             </h2>
             <div
@@ -75,16 +75,16 @@ export default function SrAsiaWorkCarousel() {
           slidesPerView={1}
           breakpoints={{
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           navigation
           pagination={{ clickable: true }}
           autoplay={{ delay: 4500, disableOnInteraction: false }}
-          className="max-w-6xl mx-auto"
+          className="max-w-full mx-auto"
         >
           {workCards.map((card, idx) => (
             <SwiperSlide key={idx} className="pb-12 h-full">
-              <article className="h-full flex flex-col justify-between bg-white shadow-lg border border-gray-200 overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl rounded-lg">
+              <article className="h-full flex flex-col justify-between bg-white overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl rounded-lg">
                 {/* Image */}
                 <div className="overflow-hidden h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72">
                   <Image
@@ -106,7 +106,7 @@ export default function SrAsiaWorkCarousel() {
                   </p>
                   <Link
                     href={card.link}
-                    className="block text-center py-2 px-4 bg-[#072328] text-white font-medium"
+                    className="block text-center py-2 px-4 bg-[#072328] text-white font-medium hover:bg-[#A1E3F9] hover:text-[#072328]"
                   >
                     Read more
                   </Link>
