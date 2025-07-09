@@ -8,6 +8,24 @@ export default function TeamDisplay() {
 
   const teamMembers = [
     {
+      id: "Rakesh-Khare",
+      name: "Rakesh Khare",
+      title: "Senior Advisor",
+      image: "/team/14.jpg",
+    },
+    {
+      id: "Birendra-Dutt-Raturi",
+      name: "Birendra Dutt Raturi",
+      title: "International Director",
+      image: "/team/13.jpg",
+    },
+     {
+      id: "Swati-Bhatt",
+      name: "Swati Bhatt",
+      title: "Director",
+      image: "/team/11.jpg",
+    },
+    {
       id: "Shruti-Sharma",
       name: "Shruti Sharma",
       title: "HR Executive",
@@ -43,12 +61,7 @@ export default function TeamDisplay() {
       title: "HR Generalist",
       image: "/team/10.jpg",
     },
-     {
-      id: "Swati-Bhatt",
-      name: "Swati Bhatt",
-      title: "Director",
-      image: "/team/11.jpg",
-    },
+    
   ];
 
   return (
@@ -56,7 +69,7 @@ export default function TeamDisplay() {
       <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800 ">
         OUR TEAM
       </p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
         {teamMembers.map((member) => (
           <div
             key={member.id}
