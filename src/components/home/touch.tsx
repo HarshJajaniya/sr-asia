@@ -17,8 +17,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen py-12 px-4 mb-[75px]">
-      <div className="max-w-full mx-auto">
+    <div className="py-12 px-4 mb-0">
+      <div className="max-w-full mx-[20px]">
         <div className="bg-white overflow-hidden">
           <div className="grid md:grid-cols-2 min-h-[600px]">
             {/* Left Side - Full Height Image */}

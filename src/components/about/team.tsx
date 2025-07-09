@@ -19,7 +19,7 @@ export default function TeamDisplay() {
       title: "International Director",
       image: "/team/13.jpg",
     },
-     {
+    {
       id: "Swati-Bhatt",
       name: "Swati Bhatt",
       title: "Director",
@@ -44,8 +44,8 @@ export default function TeamDisplay() {
       image: "/team/9.jpg",
     },
     {
-      id: "Jaya-Yadav ",
-      name: "Jaya Yadav ",
+      id: "Jaya-Yadav",
+      name: "Jaya Yadav",
       title: "Research Analyst",
       image: "/team/4.jpeg",
     },
@@ -61,31 +61,34 @@ export default function TeamDisplay() {
       title: "HR Generalist",
       image: "/team/10.jpg",
     },
-    
   ];
 
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 mb-[75px]">
-      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800 ">
+    <div className="w-full  px-2 sm:px-4 mb-[75px]">
+      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800">
         OUR TEAM
       </p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
-        {teamMembers.map((member) => (
-          <div
-            key={member.id}
-            className="flex flex-col items-center text-center"
-          >
-            <img
-              src={member.image || "/placeholder.svg"}
-              alt={member.name || "Team member"}
-              className="object-cover w-32 h-40"
-            />
-            <h3 className="text-sm font-semibold mt-2 text-[#031318]">
-              {member.name}
-            </h3>
-            <p className="text-xs text-gray-600">{member.title}</p>
-          </div>
-        ))}
+
+      {/* ✅ Centered team grid */}
+      <div className="w-full justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+          {teamMembers.map((member) => (
+            <div
+              key={member.id}
+              className="flex flex-col items-center text-center"
+            >
+              <img
+                src={member.image || "/placeholder.svg"}
+                alt={member.name || "Team member"}
+                className="object-cover w-32 h-40 rounded-md"
+              />
+              <h3 className="text-sm font-semibold mt-2 text-[#031318]">
+                {member.name}
+              </h3>
+              <p className="text-xs text-gray-600">{member.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

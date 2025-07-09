@@ -6,22 +6,20 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden mb-[75px]">
-
+    <section className="relative  overflow-hidden mb-[75px]">
       {/* Video Background */}
-     <div className="w-full h-[720px]">
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-full h-full object-cover"
-  >
-    <source src="/vedios/5.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-
+      <div className="w-full h-[720px]">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/vedios/5.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       {/* Foreground content */}
       <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 z-20">
@@ -41,7 +39,8 @@ const Hero = () => {
                 Empowering Impact Through Responsibility and Innovation
               </h1>
               <p className="text-lg md:text-1rem opacity-90 mb-6">
-                A not-for-profit organization committed to sustainable development, ESG leadership, and inclusive growth across Asia.
+                A not-for-profit organization committed to sustainable
+                development, ESG leadership, and inclusive growth across Asia.
               </p>
             </div>
             <div>
@@ -61,4 +60,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
