@@ -118,7 +118,7 @@ export default function AboutUsSection() {
     </div>
 
     {/* Right Column - Text Content */}
-    <div className="space-y-4 text-sm text-gray-700 leading-relaxed" ref={aboutTextRef}>
+    <div className="space-y-4 text-3sm text-gray-700 leading-relaxed" ref={aboutTextRef}>
       <p>
         We are an international not-for-profit organization registered in 2012 with a vision of working for
         Sustainable Asia. The founders are subject experts and certified on subjects by APO Japan, CBI the
@@ -134,9 +134,9 @@ export default function AboutUsSection() {
       </p>
 
       <p>
-        We are a member of UNGC, IPLA Japan, and Confederation of Indian Industry (CII) No.N7559P and the Alumni
+        {/* We are a member of UNGC, IPLA Japan, and Confederation of Indian Industry (CII) No.N7559P and the Alumni
         of the Asian Productivity Organisation Japan. At SR Asia, we are committed to helping organizations like
-        yours navigate these changes seamlessly.
+        yours navigate these changes seamlessly. */}
       </p>
 
       {/* Read More Button */}
