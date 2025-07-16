@@ -41,10 +41,10 @@ const mediaSubmenu = [
 ];
 
 const careersSubmenu = [
-  { label: "Current Opening", href: "/connect" },
-  { label: "Internship", href: "/connect" },
-  { label: "Volunteer", href: "/connect" },
-  { label: "Empanelment", href: "/connect" },
+  { label: "Current Opening", href: "/career" },
+  { label: "Internship", href: "/career" },
+  { label: "Volunteer", href: "/career" },
+  { label: "Empanelment", href: "/career" },
 ];
 
 const navItems = [
@@ -52,7 +52,7 @@ const navItems = [
   { label: "SERVICES", href: "/services/assurance" },
   { label: "REPORT", href: "/report" },
   { label: "MEDIA", href: "/media" },
-  { label: "CONNECT", href: "/connect" },
+  { label: "CAREERS WITH US", href: "/career" },
 ];
 
 export default function Home() {
@@ -177,7 +177,7 @@ export default function Home() {
 
             {/* CAREERS */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/connect">Connect</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/career">CAREERS WITH US</Link></h3>
               <ul className="space-y-2">
                 {careersSubmenu.map((item, idx) => (
                   <li key={idx}>
