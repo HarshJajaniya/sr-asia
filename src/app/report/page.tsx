@@ -3,8 +3,9 @@ import Navbar from '@/components/navbar/navbar'
 import Hero from '@/components/connect/hero'  
 import Footer from '@/components/footer/footer'
 import { Sidebar } from '@/components/reports/sidebar'
+import Cirtificates from '@/components/reports/certifications'
 import Reports from '@/components/reports/reports'
-import Contact from '@/components/connect/partner'
+import Connect from '@/components/work/connect'
 import Header from '@/components/navbar/header'
 
 const page = () => {
@@ -15,7 +16,8 @@ const page = () => {
         <Hero/>
        
         <Reports/>
-        <Contact/>
+        <Cirtificates/>
+       <Connect/>
         <Footer/>
     </div>
   )

@@ -146,7 +146,7 @@ export default function ReportViewer() {
                 <h3 className="text-lg font-semibold text-gray-700">{report.subtitle}</h3>
                 <p className="text-sm text-gray-600 line-clamp-3">{report.description}</p>
                 <Button className="bg-[#1a3640] text-white hover:bg-[#2a4650] px-6 py-2 rounded-md">
-                  Register Now
+                  Read More
                 </Button>
               </div>
             </div>
