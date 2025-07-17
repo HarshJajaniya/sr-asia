@@ -66,9 +66,9 @@ const navItems = [
   { label: "HOME", href: "/" },
   { label: "ABOUT", href: "/about" },
   { label: "SERVICES", href: "/services/assurance" },
-  { label: "REPORT", href: "/report" },
+  { label: "PROJECTS", href: "/report" },
   { label: "NETWORK", href: "/network" },
-  { label: "MEDIA", href: "/media" },
+  { label: "EVENTS", href: "/media" },
   { label: "CAREERS", href: "/career" },
 ];
 
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             {/* ABOUT */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about">About</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about">ABOUT</Link></h3>
               <ul className="space-y-2">
                 {HomeSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -158,7 +158,7 @@ export default function Home() {
 
             {/* SERVICES */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/services">Services</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/services">SERVICES</Link></h3>
               <ul className="space-y-2">
                 {servicesSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -175,7 +175,7 @@ export default function Home() {
 
             {/* REPORT */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/reports">Reports</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/reports">PROJECTS</Link></h3>
               <ul className="space-y-2">
                 {reportSubmenu.map((item, idx) => (
                   <li key={idx}>
@@ -207,7 +207,7 @@ export default function Home() {
 
             {/* MEDIA */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/media">Media</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/media">EVENTS</Link></h3>
               <ul className="space-y-2">
                 {mediaSubmenu.map((item, idx) => (
                   <li key={idx}>
