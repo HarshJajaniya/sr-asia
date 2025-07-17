@@ -1,25 +1,35 @@
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
-import { cn } from "@/lib/utils" // Assuming cn utility is available
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
+import { cn } from "@/lib/utils"; // Assuming cn utility is available
 
 interface UniversityCardProps {
-  imageSrc: string
-  imageAlt: string
-  title: string
-  description: string
+  imageSrc: string;
+  imageAlt: string;
+  title: string;
+  description: string;
 }
 
-function UniversityCard({ imageSrc, imageAlt, title, description }: UniversityCardProps) {
+function UniversityCard({
+  imageSrc,
+  imageAlt,
+  title,
+  description,
+}: UniversityCardProps) {
   return (
-    <Card className="group relative w-full max-w-sm overflow-hidden rounded-lg shadow-lg bg-gray-800">
-      <div className="relative h-64 w-full">
+    <Card className="group relative w-full overflow-hidden rounded-lg shadow-lg bg-gray-800">
+      <div className="relative h-[367px] w-full">
         <Image
           src={imageSrc || "/placeholder.svg"}
           alt={imageAlt}
-          width={400}
-          height={250}
+          width={435}
+          height={367}
           style={{ objectFit: "cover" }}
-          className="transition-transform duration-300 ease-in-out group-hover:scale-105"
+          className="transition-transform w-[435px] duration-300 ease-in-out group-hover:scale-105"
           priority
         />
 
@@ -30,19 +40,19 @@ function UniversityCard({ imageSrc, imageAlt, title, description }: UniversityCa
       {/* Text content visible only on hover */}
       <CardContent
         className={cn(
-          "absolute bottom-0 left-0 right-0 p-4 text-white",
+          "absolute bottom-0 left-0 right-0 p-4 text-[#072328] bg-[#A1E3F9]",
           "transition-all duration-300 ease-in-out",
           "opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0"
         )}
       >
         <CardTitle className="text-xl font-bold mb-2">{title}</CardTitle>
-        <CardDescription className="text-sm text-gray-200">{description}</CardDescription>
+        <CardDescription className="text-sm text-[#1B4C58]">
+          {description}
+        </CardDescription>
       </CardContent>
     </Card>
-  )
+  );
 }
-
-
 
 export default function Home() {
   const universities = [
@@ -67,7 +77,7 @@ export default function Home() {
       description:
         "A leading center for higher education in India, the Central University of Himachal Pradesh focuses on inclusive learning and research. SRI Asia works with the university on joint policy research, ecological studies, and capacity-building initiatives in rural development.",
     },
-  ]
+  ];
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#EEFAFE] p-4">
@@ -83,5 +93,5 @@ export default function Home() {
         ))}
       </div>
     </div>
-  )
+  );
 }
