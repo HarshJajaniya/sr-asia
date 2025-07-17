@@ -7,18 +7,19 @@ export default function TeamDisplay() {
   const [activeTab, setActiveTab] = useState("advisory-board");
 
   const teamMembers = [
+     {
+      id: "Birendra-Dutt-Raturi",
+      name: "Birendra Dutt Raturi",
+      title: "International Director",
+      image: "/team/14.jpg",
+    },
     {
       id: "Rakesh-Khare",
       name: "Rakesh Khare",
       title: "Senior Advisor",
-      image: "/team/14.jpg",
-    },
-    {
-      id: "Birendra-Dutt-Raturi",
-      name: "Birendra Dutt Raturi",
-      title: "International Director",
       image: "/team/13.jpg",
     },
+   
     {
       id: "Swati-Bhatt",
       name: "Swati Bhatt",

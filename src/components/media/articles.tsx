@@ -38,12 +38,12 @@ const workCards = [
   },
   {
     title:
-      "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
-    subtitle: "Feb 20,2022",
+      "Coca-Cola Foundation funds SR Asia to improve DSCC waste management",
+    subtitle: "01 Jun 2022",
     description:
-      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
-    image: "/resources/4.png",
-    link: "https://www.jagran.com/uttar-pradesh/meerut-city-rapid-asia-will-do-social-study-for-rapid-rail-project-23009866.html",
+      "The core objective is to develop an efficient waste management system along with reducing local air, water and land pollution. The partnership is also focused on improving the lives of individuals such as waste management workers through green jobs and inclusive economic growth.",
+    image: "/insights/5.png",
+    link: "https://www.dhakatribune.com/bangladesh/289106/coca-cola-foundation-funds-sr-asia-to-improve-dscc",
   },
 ];
 
