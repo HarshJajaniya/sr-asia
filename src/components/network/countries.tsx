@@ -1,81 +1,89 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useRef } from "react"
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
 
-interface Place {
-  name: string
-  imageSrc: string
-}
-
-const places: Place[] = [
-  { name: "INDIA", imageSrc: "/flags/India.png" },
-  { name: "BANGLADESH", imageSrc: "/flags/Bangladesh.png" },
-  { name: "INDONESIA", imageSrc: "/flags/Indonesia.png" },
-  { name: "MALAYSIA", imageSrc: "/flags/Malysia.png" },
-  { name: "PHILIPINES", imageSrc: "/flags/PHILLIPPINES.png" },
-  { name: "VIETNAM", imageSrc: "/flags/Vietnam.png" },
-]
-
-export default function PresenceCarousel() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null)
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 300 // Adjust this value as needed
-      if (direction === "left") {
-        scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" })
-      } else {
-        scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" })
-      }
-    }
-  }
+export default function Component() {
+  const images = [
+    {
+      src: "/flags/india.png",
+      alt: "View of Indian city through ornate Mughal archway",
+      title: "INDIA",
+    },
+    {
+      src: "/flags/bangladesh.png",
+      alt: "Taj Mahal at sunrise",
+      title: "BANGLADESH",
+    },
+    {
+      src: "/flags/indonesia.png",
+      alt: "Kerala backwaters",
+      title: "INDONESIA",
+    },
+    {
+      src: "/flags/Malysia.png",
+      alt: "Rajasthan desert landscape",
+      title: "MALYSIA",
+    },
+    {
+      src: "/flags/PHILLIPPINES.png",
+      alt: "Himalayan mountain range",
+      title: "PHILLIPPINES",
+    },
+  ];
 
   return (
-    <section className="w-full py-8 md:py-12 lg:py-16 bg-white">
-      <div className="container px-4 md:px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-center uppercase mb-8">PRESENCE ACROSS ASIA</h2>
-        <div className="relative">
-          <div
-            ref={scrollContainerRef}
-            className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 gap-4 no-scrollbar"
-          >
-            {places.map((place, index) => (
-              <div
-                key={index}
-                className="relative flex-none w-[calc(100vw-2rem)] md:w-[400px] lg:w-[500px] h-[250px] md:h-[300px] rounded-lg overflow-hidden shadow-lg snap-center"
-              >
-                <Image
-                  src={place.imageSrc || "/placeholder.svg"}
-                  alt={`View of ${place.name}`}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="z-0"
-                />
-                <div className="absolute top-4 left-4 bg-[#42a5f5] text-white px-4 py-2 rounded-full text-lg font-semibold z-10">
-                  {place.name}
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Add navigation buttons here */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 z-20 hidden md:block"
-            aria-label="Scroll left"
-          >
-            <ChevronLeft className="h-6 w-6 text-gray-800" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 z-20 hidden md:block"
-            aria-label="Scroll right"
-          >
-            <ChevronRight className="h-6 w-6 text-gray-800" />
-          </button>
-        </div>
+    <div className="w-full">
+      <div className="w-full mb-[75px] flex items-center justify-center text-[40px]">
+        Presence Across Asia
       </div>
-    </section>
-  )
+      <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+        <CarouselContent className="-ml-0">
+          {images.map((image, index) => (
+            <CarouselItem key={index} className="pl-0">
+              <Card className="border-0 rounded-none">
+                <CardContent className="p-0 relative">
+                  <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh]">
+                    <Image
+                      src={image.src || "/placeholder.svg"}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                    <div className="absolute top-8 left-8 z-10">
+                      <div className="bg-sky-400 text-white px-6 py-3 rounded-full text-lg md:text-xl font-bold tracking-wider">
+                        {image.title}
+                      </div>
+                    </div>
+                    {/* Overlay gradient for better text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20" />
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="left-4 h-12 w-12 bg-white/80 hover:bg-white border-0 shadow-lg" />
+        <CarouselNext className="right-4 h-12 w-12 bg-white/80 hover:bg-white border-0 shadow-lg" />
+      </Carousel>
+
+      {/* Optional: Carousel indicators */}
+      <div className="flex justify-center mt-6 space-x-2">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-500 cursor-pointer transition-colors"
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
