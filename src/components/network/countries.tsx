@@ -41,8 +41,8 @@ export default function Component() {
 
   return (
     <div className="w-full mb-[75px]">
-      <div className="w-full flex items-center justify-center text-[40px]">
-        Presence Across Asia
+      <div className="w-full text-2xl mb-[75px] md:text-[40px] font-bold flex items-center justify-center text-[40px]">
+        PRESENCE WITH ASIA
       </div>
       <Carousel className="w-full" opts={{ align: "start", loop: true }}>
         <CarouselContent className="-ml-0">

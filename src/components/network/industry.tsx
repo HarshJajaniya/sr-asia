@@ -2,9 +2,10 @@ import Link from "next/link";
 
 export default function Component() {
   const industryEntries = [
-      {
+    {
       year: "2021",
-      title: "MoU Between SR Asia and Enactus Hansraj for Sustainable Development and Social Innovation",
+      title:
+        "MoU Between SR Asia and Enactus Hansraj for Sustainable Development and Social Innovation",
       description:
         "SR Asia supports Project AHSAAS, an initiative by Enactus Hansraj aimed at promoting self-employment for the differently-abled. The partnership emphasizes mentorship, strategic guidance, and fostering sustainable livelihoods..",
       link: "/mous/2.pdf",
@@ -18,18 +19,18 @@ export default function Component() {
     },
     {
       year: "2023",
-      title: "Strategic MoUs Signed by the International Center for Clean Water (ICCW)",
+      title:
+        "Strategic MoUs Signed by the International Center for Clean Water (ICCW)",
       description:
         "The International Center for Clean Water (ICCW), housed at IIT Madras Research Park, has established strategic Memorandums of Understanding (MoUs) with leading academic institutions, industry partners, and government bodies to foster innovation in clean water technologies.",
       link: "/mous/1.pdf",
     },
-  
-  ]
+  ];
 
   return (
     <div className="mb-[75px] bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-full mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+        <h1 className="text-3xl md:text-[40px] font-bold text-center mb-12 text-gray-800">
           INDUSTRY NETWORK
         </h1>
         <div className="space-y-8">
