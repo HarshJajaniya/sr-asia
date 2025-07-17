@@ -35,13 +35,13 @@ const Hero = () => {
         >
           <div className="flex items-center mb-6">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">
-                Insights, Events & Stories from the Field
-              </h1>
-              <p className="text-lg md:text-xl opacity-90 mb-6">
-                Explore SR Asia’s latest articles, expert perspectives, and
-                event highlights from across Asia.
-              </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+  Our Global & Regional Network
+</h1>
+<p className="text-lg md:text-xl opacity-90 mb-6">
+  Connect with our growing network of institutions, industries, and strategic partners. Discover how collaboration powers our mission.
+</p>
+
             </div>
             <div>
               <Image
