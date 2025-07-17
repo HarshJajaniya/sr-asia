@@ -6,6 +6,14 @@ import { Menu, X } from "lucide-react";
 import gsap from "gsap";
 
 // Submenus
+const HomeSubmenu = [
+  { label: "Who we are", href: "/" },
+  
+  { label: "Our Mission & Vision", href: "/" },
+  { label: "Approach", href: "/" },
+  { label: "Footprints", href: "/" },
+  { label: "Insights", href: "/" },
+];
 const AboutSubmenu = [
   { label: "Who we are", href: "/about" },
   { label: "What we do", href: "/about" },
@@ -46,13 +54,22 @@ const careersSubmenu = [
   { label: "Volunteer", href: "/career" },
   { label: "Empanelment", href: "/career" },
 ];
+const networkSubmenu = [
+  { label: "Country Network", href: "/network" },
+  { label: "Institutional", href: "/network" },
+  { label: "Industrial", href: "/network" },
+  { label: "Membership", href: "/network" },
+  { label: "Partners", href: "/network" },
+];
 
 const navItems = [
+  { label: "HOME", href: "/" },
   { label: "ABOUT", href: "/about" },
   { label: "SERVICES", href: "/services/assurance" },
   { label: "REPORT", href: "/report" },
+  { label: "NETWORK", href: "/network" },
   { label: "MEDIA", href: "/media" },
-  { label: "CAREERS WITH US", href: "/career" },
+  { label: "CAREERS", href: "/career" },
 ];
 
 export default function Home() {
@@ -107,11 +124,26 @@ export default function Home() {
         {/* Full Width Dropdown on Hover */}
         <div className="absolute left-0 w-full hidden group-hover:flex bg-[#EEFAFE] border-t shadow-lg z-40 py-6 px-10">
           <div className="max-w-7xl w-full mx-auto grid grid-cols-5 gap-8">
+             <div>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/">HOME</Link></h3>
+              <ul className="space-y-2">
+                {AboutSubmenu.map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-700 hover:text-blue-600 block text-sm"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             {/* ABOUT */}
             <div>
               <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about">About</Link></h3>
               <ul className="space-y-2">
-                {AboutSubmenu.map((item, idx) => (
+                {HomeSubmenu.map((item, idx) => (
                   <li key={idx}>
                     <Link
                       href={item.href}
@@ -157,6 +189,21 @@ export default function Home() {
                 ))}
               </ul>
             </div>
+             <div>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/network">NETWORK</Link></h3>
+              <ul className="space-y-2">
+                {networkSubmenu.map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-700 hover:text-blue-600 block text-sm"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {/* MEDIA */}
             <div>
@@ -177,7 +224,7 @@ export default function Home() {
 
             {/* CAREERS */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/career">CAREERS WITH US</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/career">CAREERS</Link></h3>
               <ul className="space-y-2">
                 {careersSubmenu.map((item, idx) => (
                   <li key={idx}>
