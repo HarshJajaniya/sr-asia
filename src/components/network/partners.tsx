@@ -1,11 +1,11 @@
 export default function StrategicPartners() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-12 md:py-16 lg:py-16 bg-white">
+      <div className="container px-4 md:px-4">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
+          <div className="">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">STRATEGIC PARTNERS</h2>
-            <p className="max-w-[900px] text-lg text-blue-700 md:text-xl">
+            <p className="max-w-[900px] text-lg text-[#348EA0] md:text-xl">
               Collaborating with industry leaders to advance sustainability and innovation.
             </p>
           </div>
@@ -14,11 +14,11 @@ export default function StrategicPartners() {
           <div className="flex flex-col items-start gap-4">
             <div className="flex items-center gap-4">
               <img
-                src="/flags/3.png"
+                src="/flags/5.png"
                 alt="GSPL Logo"
                 width={96}
                 height={96}
-                className="w-24 h-24"
+                className="w-32 h-32"
               />
               <div className="grid gap-1">
                 <h3 className="text-2xl font-bold text-gray-900">GSPL – Gujarat State Petronet Limited</h3>
@@ -30,7 +30,7 @@ export default function StrategicPartners() {
           </div>
           <div className="flex flex-col items-start gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-24 h-24 bg-cyan-500 flex items-center justify-center text-white text-3xl font-bold">
+              <div className="w-40 h-32 bg-cyan-500 flex items-center justify-center text-white text-2xl font-bold">
                 CF farm
               </div>
               <div className="grid gap-1">
