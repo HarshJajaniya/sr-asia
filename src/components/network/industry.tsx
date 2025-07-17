@@ -2,12 +2,12 @@ import Link from "next/link"
 
 export default function Component() {
   const industryEntries = [
-    {
-      year: "2024",
-      title: "Industry Network Integration: Circular Biotech MoU",
+      {
+      year: "2021",
+      title: "MoU Between SR Asia and Enactus Hansraj for Sustainable Development and Social Innovation",
       description:
-        "This MoU represents a landmark collaboration between 10 parties across India and Taiwan, including SR Asia, IIT Madras (ICCW), and multiple biotech, environmental, and consulting firms. It establishes a strategic platform for innovation in climate change, health, and circular biotechnology, targeting Sustainable Development Goals (SDGs).",
-      link: "#",
+        "SR Asia supports Project AHSAAS, an initiative by Enactus Hansraj aimed at promoting self-employment for the differently-abled. The partnership emphasizes mentorship, strategic guidance, and fostering sustainable livelihoods..",
+      link: "/mous/2.pdf",
     },
     {
       year: "2024",
@@ -17,12 +17,13 @@ export default function Component() {
       link: "#",
     },
     {
-      year: "2024",
-      title: "Industry Network Integration: Circular Biotech MoU",
+      year: "2023",
+      title: "Strategic MoUs Signed by the International Center for Clean Water (ICCW)",
       description:
-        "This MoU represents a landmark collaboration between 10 parties across India and Taiwan, including SR Asia, IIT Madras (ICCW), and multiple biotech, environmental, and consulting firms. It establishes a strategic platform for innovation in climate change, health, and circular biotechnology, targeting Sustainable Development Goals (SDGs).",
-      link: "#",
+        "The International Center for Clean Water (ICCW), housed at IIT Madras Research Park, has established strategic Memorandums of Understanding (MoUs) with leading academic institutions, industry partners, and government bodies to foster innovation in clean water technologies.",
+      link: "/mous/1.pdf",
     },
+  
   ]
 
   return (

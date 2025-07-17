@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from '@/components/navbar/navbar'
-import Hero from '@/components/connect/hero'  
+import Hero from '@/components/reports/hero'  
 import Footer from '@/components/footer/footer'
-import { Sidebar } from '@/components/reports/sidebar'
+
 import Cirtificates from '@/components/reports/certifications'
 import Reports from '@/components/reports/reports'
 import Connect from '@/components/work/connect'
