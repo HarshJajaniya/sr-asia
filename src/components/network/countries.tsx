@@ -40,8 +40,8 @@ export default function Component() {
   ];
 
   return (
-    <div className="w-full">
-      <div className="w-full mb-[75px] flex items-center justify-center text-[40px]">
+    <div className="w-full mb-[75px]">
+      <div className="w-full flex items-center justify-center text-[40px]">
         Presence Across Asia
       </div>
       <Carousel className="w-full" opts={{ align: "start", loop: true }}>

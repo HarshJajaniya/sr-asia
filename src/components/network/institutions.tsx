@@ -80,7 +80,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#EEFAFE] p-4">
+    <div className="flex mb-[75px] items-center justify-center bg-[#EEFAFE] p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {universities.map((uni, index) => (
           <UniversityCard
