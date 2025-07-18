@@ -8,6 +8,7 @@ import Articles from "@/components/media/articles";
 import Webinar from "@/components/media/webinars";
 import Conference from "@/components/media/conference";
 import Lower from "@/components/media/conference2";
+import Third from "@/components/media/conference3";
 import Insights from "@/components/work/insights";
 
 const page = () => {
@@ -20,6 +21,7 @@ const page = () => {
       <Webinar />
       <Conference />
       <Lower />
+      <Third/>
       <Connect />
       <Footer />
     </div>

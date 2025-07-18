@@ -6,7 +6,7 @@ export default function Component() {
       name: "APO JAPAN – Asian Productivity Organization",
       description:
         "Promotes productivity and innovation for sustainable socioeconomic development in the Asia-Pacific region.",
-      link: "#",
+      link: "https://www.apo-tokyo.org/alumni/interview-with-sr-asia-founder/",
     },
     {
       name: "IPLA – International Partnership for Expanding Waste Management Services",
@@ -18,13 +18,13 @@ export default function Component() {
       name: "UNGC – United Nations Global Compact",
       description:
         "Encourages businesses worldwide to uphold principles of human rights, labor, environment, and anti-corruption.",
-      link: "#",
+      link: "https://unglobalcompact.org/what-is-gc/participants/30251-SR-Asia",
     },
     {
       name: "CTCN – Climate Technology Centre and Network",
       description:
         "UNFCCC initiative that facilitates access to climate-resilient technologies in developing nations.",
-      link: "#",
+      link: "https://www.ctc-n.org/networking-and-collaboration/collaboration/network-members/sr-asia",
     },
     {
       name: "CSR PAYMA – Taiwan",

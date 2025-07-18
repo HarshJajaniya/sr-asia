@@ -15,31 +15,16 @@ export default function FullScreenNestedCarousel() {
       intro:
         "The 2nd National Conference organized by SR Asia Bangladesh brought together corporate leaders, policymakers, and development experts to discuss the future of sustainable business practices in South Asia. The event featured panel discussions on CSR integration, the relevance of ISO 26000, and policy alignment with the Sustainable Development Goals. Inaugurated by the Honourable Minister of Industries, Government of Bangladesh, the conference served as a dynamic platform for cross-sector collaboration, capacity building, and the launch of new CSR initiatives.",
       pdfs: [
-        { name: "Report.pdf", url: "/pdfs/report1.pdf" },
-        { name: "Summary.pdf", url: "/pdfs/summary1.pdf" },
-        { name: "Presentation.pdf", url: "/pdfs/presentation1.pdf" },
-        { name: "Research.pdf", url: "/pdfs/research1.pdf" },
+        { name: "Report.pdf", url: "/pdf/5.pdf" },
+        { name: "Summary.pdf", url: "/pdf/6.pdf" },
+        { name: "Presentation.pdf", url: "/pdf/7.pdf" },
+       
       ],
-      images: ["/insights/3.png", "/img/2b.jpg"],
+      images: ["/insights/3.png", "/38.jpeg"],
     },
 
-    {
-      title: "SR Asia Bangladesh – 2nd National Conference",
-      subtitle: "BEF Auditorium, Dhaka, Bangladesh | 17th January 2013",
-      intro:
-        "The 2nd National Conference organized by SR Asia Bangladesh brought together corporate leaders, policymakers, and development experts to discuss the future of sustainable business practices in South Asia. The event featured panel discussions on CSR integration, the relevance of ISO 26000, and policy alignment with the Sustainable Development Goals. Inaugurated by the Honourable Minister of Industries, Government of Bangladesh, the conference served as a dynamic platform for cross-sector collaboration, capacity building, and the launch of new CSR initiatives.",
-      pdfUrl: "/sample2.pdf",
-      images: ["/i/2a.jpg", "/img/2b.jpg"],
-    },
-
-    {
-      title: "SR Asia Bangladesh – 2nd National Conference",
-      subtitle: "BEF Auditorium, Dhaka, Bangladesh | 17th January 2013",
-      intro:
-        "The 2nd National Conference organized by SR Asia Bangladesh brought together corporate leaders, policymakers, and development experts to discuss the future of sustainable business practices in South Asia. The event featured panel discussions on CSR integration, the relevance of ISO 26000, and policy alignment with the Sustainable Development Goals. Inaugurated by the Honourable Minister of Industries, Government of Bangladesh, the conference served as a dynamic platform for cross-sector collaboration, capacity building, and the launch of new CSR initiatives.",
-      pdfUrl: "/sample2.pdf",
-      images: ["/i/2a.jpg", "/img/2b.jpg"],
-    },
+  
+   
     // Add more outer slides as needed
   ];
 
@@ -93,7 +78,12 @@ export default function FullScreenNestedCarousel() {
                 </div>
 
                 <button className="w-full bg-[#072328] text-white py-3 mt-4">
-                  Highlight
+                  <a
+                    href="/pdf/7.pdf"
+                    className="text-white"
+                  >
+                    Highlight
+                  </a>
                 </button>
               </div>
 
