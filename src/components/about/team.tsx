@@ -53,7 +53,7 @@ export default function TeamDisplay() {
     {
       id: "Sanjukta-Tirkey",
       name: "Sanjukta Tirkey",
-      title: "Research Analyst",
+      title: "Research Associate",
       image: "/team/5.jpeg",
     },
     {
