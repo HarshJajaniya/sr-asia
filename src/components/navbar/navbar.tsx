@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             {/* ABOUT */}
             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about">ABOUT</Link></h3>
+              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about"> ABOUT</Link></h3>
               <ul className="space-y-2">
                 {HomeSubmenu.map((item, idx) => (
                   <li key={idx}>
