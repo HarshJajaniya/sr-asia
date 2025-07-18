@@ -44,7 +44,7 @@ export default function PdfAccordion() {
     },
     {
       id: "item-8",
-      title: "CTN Certificate",
+      title: "CTCN Certificate",
       pdfUrl: "/certificates/CTN.jpg", // Placeholder PDF URL
     },
     {
