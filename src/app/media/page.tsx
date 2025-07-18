@@ -9,7 +9,7 @@ import Webinar from "@/components/media/webinars";
 import Conference from "@/components/media/conference";
 import Lower from "@/components/media/conference2";
 import Third from "@/components/media/conference3";
-import Insights from "@/components/work/insights";
+import Insights from "@/components/media/articles";
 
 const page = () => {
   return (
