@@ -42,12 +42,12 @@ export default function PdfAccordion() {
       title: "Updated Udyam Registration Certificate",
       pdfUrl: "/certificates/7.pdf", // Placeholder PDF URL
     },
-    ,{
+    {
       id: "item-8",
-      title: "CTN Certificate",
+      title: "CTCN Certificate",
       pdfUrl: "/certificates/CTN.jpg", // Placeholder PDF URL
     },
-    ,{
+    {
       id: "item-9",
       title: "Turnover Certificate",
       pdfUrl: "/certificates/8.pdf", // Placeholder PDF URL

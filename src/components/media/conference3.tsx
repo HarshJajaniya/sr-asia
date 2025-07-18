@@ -10,15 +10,15 @@ import { Download } from "lucide-react";
 export default function FullScreenNestedCarousel() {
   const slides = [
     {
-      title: "SR Asia – 1st International Conference (2012)",
-      subtitle: "October 18–19, 2012 | India International Centre, New Delhi",
+      title: "SR Asia – 3st International Conference (2014)",
+      subtitle: "29–30 November 2014| Dhaka, Bangladesh",
       intro:
-        "SR Asia’s inaugural international conference brought together thought leaders, policymakers, industry experts, and global organizations to discuss the emerging role of socially responsible products and services in sustainable development. This two-day event featured sessions on CSR....",
+        "This conference aims to align policies and promote green banking and corporate social responsibility (CSR) as key strategies for sustainable development. It will focus on addressing poverty challenges, especially in remote and underserved communities....",
       pdfs: [
-        { name: "Report.pdf", url: "/pdf/1.pdf" },
-        { name: "Summary.pdf", url: "/pdf/2.pdf" },
-        { name: "Presentation.pdf", url: "/pdf/3.pdf" },
-        { name: "Journal.pdf", url: "/pdfs/4.pdf" },
+        { name: "Report.pdf", url: "/pdfs/1.pdf" },
+        { name: "Summary.pdf", url: "/pdfs/summary1.pdf" },
+        { name: "Presentation.pdf", url: "/pdfs/presentation1.pdf" },
+        { name: "Research.pdf", url: "/pdfs/research1.pdf" },
       ],
       images: ["/insights/4.png", "/37.jpeg", "/38.jpeg"],
     },
@@ -98,9 +98,9 @@ export default function FullScreenNestedCarousel() {
                 </div>
 
                 <button className="w-full bg-[#072328] text-white py-3 mt-4">
-                  <a href="/pdf/1.pdf" className="text-white">
-                    Highlight
-                  </a>
+                    <a href="https://www.eco-business.com/events/sr-asia-3rd-international-conference-on-responsible-business-conduct-in-poverty-alleviation-financ/" className="text-white">
+                      Highlight
+                    </a>
                 </button>
               </div>
             </div>

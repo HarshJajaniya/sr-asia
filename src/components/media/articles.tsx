@@ -45,6 +45,15 @@ const workCards = [
     image: "/insights/5.png",
     link: "https://www.dhakatribune.com/bangladesh/289106/coca-cola-foundation-funds-sr-asia-to-improve-dscc",
   },
+  {
+    title:
+      "Blog About SR Asia-The Economic Times",
+    subtitle: "01 Jun 2022",
+    description:
+      "SR Asia (Social Responsibility Asia) is a private, non-governmental organization incorporated on 10th February 2012, dedicated to advancing sustainable development through community, personal, and social services. With its headquarters in New Delhi, the organization operates as a private unlisted company, actively working in the development sector for over 13 years.",
+    image: "/resources/blogs.jpeg",
+    link: "https://economictimes.indiatimes.com/company/sr-asia/U93000DL2012NPL231376",
+  },
 ];
 
 // ----------------------------------------------------
@@ -59,7 +68,7 @@ export default function SrAsiaWorkCarousel() {
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
             <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10">
-              Featured Insights
+              BLOGS & ARTICLES
             </h2>
             <div
               className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-2"
