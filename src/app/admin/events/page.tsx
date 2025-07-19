@@ -16,7 +16,7 @@ export default function AdminPage() {
   const [imageFile, setImageFile] = useState<File | null>(null)
 
   const fetchEvents = () => {
-    axios.get("http://localhost:5000/api/events")
+    axios.get("https://srasia-backend.onrender.com/api/events")
       .then(res => setEvents(res.data))
       .catch(err => console.error(err))
   }
@@ -32,14 +32,14 @@ export default function AdminPage() {
     data.append("description", form.description)
     if (imageFile) data.append("image", imageFile)
 
-    await axios.post("http://localhost:5000/api/events", data)
+    await axios.post("https://srasia-backend.onrender.com/api/events", data)
     setForm({ title: "", description: "" })
     setImageFile(null)
     fetchEvents()
   }
 
   const handleDelete = async (id: string) => {
-    await axios.delete(`http://localhost:5000/api/events/${id}`)
+    await axios.delete(`https://srasia-backend.onrender.com/api/events/${id}`)
     fetchEvents()
   }
 

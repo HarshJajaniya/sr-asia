@@ -109,7 +109,7 @@ function ApplicationForm({
         if (value) data.append(key, value);
       });
       data.append("jobId", jobId.toString());
-      await axios.post("http://localhost:5000/api/apply", data);
+      await axios.post("https://srasia-backend.onrender.com/api/apply", data);
       alert("Application submitted successfully!");
       setFormData({
         name: "",
@@ -217,7 +217,7 @@ export function JobListings() {
       setLoading(true);
       const type = activeTab === "current" ? "job" : "internship";
       const res = await axios.get(
-        `http://localhost:5000/api/jobs?type=${type}&_=${Date.now()}`
+        `https://srasia-backend.onrender.com/api/jobs?type=${type}&_=${Date.now()}`
       );
       setFetchedJobs(res.data);
     } catch (err) {

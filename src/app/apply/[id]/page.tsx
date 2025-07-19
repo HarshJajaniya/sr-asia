@@ -15,7 +15,7 @@ export default function ApplyPage() {
     })
     data.append("jobId", id as string)
 
-    await axios.post("http://localhost:5000/api/apply", data)
+    await axios.post("https://srasia-backend.onrender.com/api/apply", data)
     alert("Application submitted successfully!")
   }
 

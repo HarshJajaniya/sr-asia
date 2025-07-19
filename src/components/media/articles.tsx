@@ -63,12 +63,12 @@ export default function SrAsiaWorkCarousel() {
   useEffect(() => {
     const fetchBackendEvents = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/events"); // or your hosted URL
+        const res = await axios.get("https://srasia-backend.onrender.com/api/events"); // or your hosted URL
         const backendCards: EventType[] = res.data.map((item: any) => ({
           title: item.title,
           subtitle: item.subtitle || "Latest", // fallback
           description: item.description,
-          image: `http://localhost:5000${item.image}`, // ensure full URL
+          image: `https://srasia-backend.onrender.com${item.image}`, // ensure full URL
           link: item.link || "#",
         }));
         setCombinedCards(prev => [...prev, ...backendCards]);

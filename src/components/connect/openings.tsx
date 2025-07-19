@@ -32,7 +32,7 @@ const fetchOpenings = async () => {
   try {
     setLoading(true)
     const res = await axios.get(
-      `http://localhost:5000/api/jobs${type ? `?type=${type}` : ''}&_=${Date.now()}`
+      `https://srasia-backend.onrender.com/api/jobs${type ? `?type=${type}` : ''}&_=${Date.now()}`
     )
     setOpenings(res.data)
   } catch (err) {
@@ -77,7 +77,7 @@ const fetchOpenings = async () => {
       fd.append('ctc', form.ctc)
       if (form.resume) fd.append('resume', form.resume)
 
-      await axios.post('http://localhost:5000/api/apply', fd, {
+      await axios.post('https://srasia-backend.onrender.com/api/apply', fd, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
 

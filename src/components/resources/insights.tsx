@@ -16,7 +16,7 @@ export default function Page() {
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/events')
+      const res = await axios.get('https://srasia-backend.onrender.com/api/events')
       setEvents(res.data)
     } catch (err) {
       console.error('Axios fetch failed:', err)
@@ -25,7 +25,7 @@ export default function Page() {
 
   const deleteEvent = async (id: string) => {
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`)
+      await axios.delete(`https://srasia-backend.onrender.com/api/events/${id}`)
       fetchEvents()
     } catch (err) {
       console.error('Delete failed:', err)
@@ -61,7 +61,7 @@ export default function Page() {
                 {/* Image */}
                 <div className="h-40 relative">
                   <Image
-                    src={`http://localhost:5000${event.image}`}
+                    src={`https://srasia-backend.onrender.com${event.image}`}
                     alt={event.title}
                     fill
                     className="object-cover"
