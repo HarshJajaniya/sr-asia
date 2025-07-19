@@ -7,60 +7,72 @@ export default function TeamDisplay() {
   const [activeTab, setActiveTab] = useState("advisory-board");
 
   const teamMembers = [
-     {
+    {
       id: "Birendra-Dutt-Raturi",
       name: "Birendra Dutt Raturi",
       title: "International Director",
-      image: "/team/14.jpg",
+      image: "/team/6.JPG",
     },
     {
       id: "Rakesh-Khare",
       name: "Rakesh Khare",
       title: "Senior Advisor",
-      image: "/team/13.jpg",
+      image: "/team/10.png",
     },
-   
+
     {
       id: "Swati-Bhatt",
       name: "Swati Bhatt",
       title: "Director",
-      image: "/team/11.jpg",
+      image: "/team/11.JPG",
     },
     {
       id: "Shruti-Sharma",
       name: "Shruti Sharma",
       title: "HR Executive",
-      image: "/team/12.jpg",
+      image: "/team/8.JPG",
     },
     {
       id: "Dolly-Pandey",
       name: "Dolly Pandey",
       title: "Assistant Manager",
-      image: "/team/8.jpg",
+      image: "/team/4.JPG",
+    },
+    {
+      id: "Lalvulmawii",
+      name: "Lalvulmawii",
+      title: "Prjoect Coordinator",
+      image: "/team/7.jpg",
     },
     {
       id: "Kalash-Kesharwani",
       name: "Kalash Kesharwani",
       title: "Salesforce Admin",
-      image: "/team/9.jpg",
+      image: "/team/1.JPG",
     },
     {
       id: "Jaya-Yadav",
       name: "Jaya Yadav",
       title: "Research Analyst",
-      image: "/team/4.jpeg",
+      image: "/team/5.JPG",
     },
     {
       id: "Sanjukta-Tirkey",
       name: "Sanjukta Tirkey",
       title: "Research Associate",
-      image: "/team/5.jpeg",
+      image: "/team/2.JPG",
     },
     {
       id: "Tanu-Akolia",
       name: "Tanu Akolia",
       title: "HR Generalist",
-      image: "/team/10.jpg",
+      image: "/team/9.jpeg",
+    },
+    {
+      id: "Shrabanti-Chakraborty",
+      name: "Shrabanti Chakraborty",
+      title: "Website design and Development Lead",
+      image: "/team/3.JPG",
     },
   ];
 
