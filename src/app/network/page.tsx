@@ -6,7 +6,7 @@ import Countries from "@/components/network/countries";
 import Institutions from "@/components/network/institutions";
 import Industry from "@/components/network/industry";
 import Mous from "@/components/network/mous";
-import Partners from "@/components/network/partners";
+// import Partners from "@/components/network/partners";
 import Connect from "@/components/work/connect";
 import Header from "@/components/navbar/header";
 
@@ -20,7 +20,6 @@ const page = () => {
       <Institutions />
       <Industry />
       <Mous />
-      <Partners />
 
       <Connect />
       <Footer />
