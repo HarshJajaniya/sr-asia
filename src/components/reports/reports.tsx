@@ -109,13 +109,13 @@ export default function ReportViewer() {
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
       <div className="w-60 bg-white border-r border-gray-200 p-4 space-y-4">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">Report Categories</h2>
+        <h2 className="text-lg font-semibold text-gray-800 mb-4">Projects Categories</h2>
         <Button
           variant={activeTab === "brsr" ? "default" : "outline"}
           className="w-full"
           onClick={() => setActiveTab("brsr")}
         >
-          BRSR Reports
+          BRSR Assessments
         </Button>
         <Button
           variant={activeTab === "impact" ? "default" : "outline"}
@@ -129,7 +129,7 @@ export default function ReportViewer() {
           className="w-full"
           onClick={() => setActiveTab("social")}
         >
-          Social Impact Reports
+          Social Impact Assessments
         </Button>
       </div>
 
