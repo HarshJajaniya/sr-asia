@@ -15,7 +15,7 @@ export default function BlogsPage() {
   const [blogs, setBlogs] = useState<Blog[]>([])
 
   useEffect(() => {
-    fetch("https://srasia-backend.onrender.com/api/blogs")
+    fetch("http://localhost:5000/api/blogs")
       .then(res => res.json())
       .then(data => setBlogs(data))
   }, [])

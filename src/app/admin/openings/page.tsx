@@ -11,7 +11,7 @@ export default function AdminOpeningsPage() {
 
   const fetchOpenings = async () => {
     try {
-      const res = await axios.get("https://srasia-backend.onrender.com/api/jobs")
+      const res = await axios.get("http://localhost:5000/api/jobs")
       setOpenings(res.data)
     } catch (err) {
       console.error("Error fetching jobs", err)
@@ -25,7 +25,7 @@ export default function AdminOpeningsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      await axios.post("https://srasia-backend.onrender.com/api/jobs", {
+      await axios.post("http://localhost:5000/api/jobs", {
         title,
         description,
         type,
@@ -41,7 +41,7 @@ export default function AdminOpeningsPage() {
 
   const handleDelete = async (id: string) => {
     try {
-      await axios.delete(`https://srasia-backend.onrender.com/api/jobs/${id}`)
+      await axios.delete(`http://localhost:5000/api/jobs/${id}`)
       fetchOpenings()
     } catch (err) {
       console.error("Error deleting job", err)

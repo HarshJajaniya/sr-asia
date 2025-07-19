@@ -11,7 +11,7 @@ export default function AdminBlogPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    await fetch("https://srasia-backend.onrender.com/api/blogs", {
+    await fetch("http://localhost:5000/api/blogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),

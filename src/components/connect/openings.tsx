@@ -25,18 +25,22 @@ export default function OpeningsPage() {
     ctc: '',
     resume: null as File | null,
   })
+  const [loading, setLoading] = useState(false)
 
   /* -------------------- data load -------------------- */
-  const fetchOpenings = async () => {
-    try {
-      const res = await axios.get(
-        `https://srasia-backend.onrender.com/api/jobs${type ? `?type=${type}` : ''}`,
-      )
-      setOpenings(res.data)
-    } catch (err) {
-      console.error('Error fetching openings:', err)
-    }
+const fetchOpenings = async () => {
+  try {
+    setLoading(true)
+    const res = await axios.get(
+      `http://localhost:5000/api/jobs${type ? `?type=${type}` : ''}&_=${Date.now()}`
+    )
+    setOpenings(res.data)
+  } catch (err) {
+    console.error('Error fetching openings:', err)
+  } finally {
+    setLoading(false)
   }
+}
 
   useEffect(() => {
     fetchOpenings()
@@ -73,7 +77,7 @@ export default function OpeningsPage() {
       fd.append('ctc', form.ctc)
       if (form.resume) fd.append('resume', form.resume)
 
-      await axios.post('https://srasia-backend.onrender.com/api/apply', fd, {
+      await axios.post('http://localhost:5000/api/apply', fd, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
 

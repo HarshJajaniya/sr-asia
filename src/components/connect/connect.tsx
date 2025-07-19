@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 
-// Split into two categories
-const currentOpenings = [
+// Static fallback jobs
+const staticCurrentOpenings = [
   {
     id: 1,
     title: "Client Relationship Executive / Manager",
@@ -34,7 +34,7 @@ const currentOpenings = [
   },
 ];
 
-const internships = [
+const staticInternships = [
   {
     id: 101,
     title: "Client Relationship Executive",
@@ -75,7 +75,7 @@ const internships = [
       "Support marketing campaigns and initiatives to enhance brand visibility and engagement.",
   },
   {
-    id: 105,
+    id: 106,
     title: "Research Analyst",
     location: "Ghaziabad",
     type: "Internship",
@@ -103,15 +103,13 @@ function ApplicationForm({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
     try {
       const data = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
         if (value) data.append(key, value);
       });
       data.append("jobId", jobId.toString());
-
-      await axios.post("https://srasia-backend.onrender.com/api/apply", data);
+      await axios.post("http://localhost:5000/api/apply", data);
       alert("Application submitted successfully!");
       setFormData({
         name: "",
@@ -211,8 +209,35 @@ function ApplicationForm({
 export function JobListings() {
   const [selectedJobId, setSelectedJobId] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<"current" | "intern">("current");
+  const [fetchedJobs, setFetchedJobs] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
 
-  const jobsToShow = activeTab === "current" ? currentOpenings : internships;
+  const fetchOpenings = async () => {
+    try {
+      setLoading(true);
+      const type = activeTab === "current" ? "job" : "internship";
+      const res = await axios.get(
+        `http://localhost:5000/api/jobs?type=${type}&_=${Date.now()}`
+      );
+      setFetchedJobs(res.data);
+    } catch (err) {
+      console.error("Error fetching jobs:", err);
+      // If error, fallback to static data
+      setFetchedJobs(activeTab === "current" ? staticCurrentOpenings : staticInternships);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchOpenings();
+  }, [activeTab]);
+
+  const jobsToShow = fetchedJobs.length
+    ? fetchedJobs
+    : activeTab === "current"
+    ? staticCurrentOpenings
+    : staticInternships;
 
   return (
     <div className="flex min-h-screen bg-gray-50">
@@ -238,7 +263,7 @@ export function JobListings() {
       <div className="flex-1 overflow-hidden">
         <div className="h-full overflow-y-auto p-4 space-y-6">
           {jobsToShow.map((job) => (
-            <Card key={job.id} className="bg-sky-100 border-sky-200">
+            <Card key={job.id || job._id} className="bg-sky-100 border-sky-200">
               <CardContent className="p-4">
                 <div className="flex justify-between items-start mb-3">
                   <div className="flex-1">
@@ -269,7 +294,7 @@ export function JobListings() {
                 {/* Show Application Form */}
                 {selectedJobId === job.id && (
                   <ApplicationForm
-                    jobId={job.id}
+                    jobId={job.id || job._id}
                     onClose={() => setSelectedJobId(null)}
                   />
                 )}

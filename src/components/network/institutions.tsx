@@ -72,7 +72,7 @@ export default function Home() {
     },
     {
       imageSrc: "/flags/3.png", // Using placeholder for consistency
-      imageAlt: "Aerial view of Central University of Himachal Pradesh",
+       imageAlt: "Aerial view of Central University of Himachal Pradesh",
       title: "Central University of Himachal Pradesh",
       description:
         "A leading center for higher education in India, the Central University of Himachal Pradesh focuses on inclusive learning and research. SRI Asia works with the university on joint policy research, ecological studies, and capacity-building initiatives in rural development.",
