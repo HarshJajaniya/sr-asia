@@ -5,9 +5,10 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Volunteer Section */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-white mx-[20px] mb-[75px]">
+        <div className="w-full py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Image on Left (on large screens) */}
             <div className="order-2 lg:order-1">
               <Image
                 src="/carrers/1.png"
@@ -17,6 +18,8 @@ export default function Component() {
                 className="w-full h-auto rounded-lg"
               />
             </div>
+
+            {/* Content on Right (on large screens) */}
             <div className="order-1 lg:order-2 space-y-6">
               <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide">
                 Volunteer with us
@@ -38,9 +41,10 @@ export default function Component() {
       </section>
 
       {/* Empanelment Section */}
-      <section className="bg-gray-50 mb-[75px]">
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-gray-50 mb-[75px] mx-[20px]">
+        <div className="w-full py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
             <div className="space-y-6">
               <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide">
                 Empanelment of Experts
@@ -90,6 +94,8 @@ export default function Component() {
                 Submit Profile
               </Button>
             </div>
+
+            {/* Right Image */}
             <div>
               <Image
                 src="/carrers/2.png"
@@ -103,14 +109,14 @@ export default function Component() {
         </div>
       </section>
 
-      <section className="w-full px-[20px]  mb-[75px]  bg-gray-50">
+      <section className="w-full px-[20px] mb-[75px] bg-gray-50">
         <div className="max-w-full mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Left Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/42.jpg" // 🔁 Replace with your image path
+              src="/42.jpg"
               alt="Newsletter Illustration"
-              className="w-full h-auto rounded-md"
+              className="w-full h-[400px] object-cover rounded-md"
             />
           </div>
 
