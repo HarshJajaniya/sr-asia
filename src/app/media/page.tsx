@@ -10,6 +10,8 @@ import Conference from "@/components/media/conference";
 import Lower from "@/components/media/conference2";
 import Third from "@/components/media/conference3";
 import Insights from "@/components/media/articles";
+import Fourth from "@/components/media/conference4";
+import Fifth from "@/components/media/conference5";
 
 const page = () => {
   return (
@@ -21,7 +23,9 @@ const page = () => {
       <Webinar />
       <Conference />
       <Lower />
-      <Third/>
+      <Third />
+      <Fourth />
+      <Fifth />
       <Connect />
       <Footer />
     </div>
