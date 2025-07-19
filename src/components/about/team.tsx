@@ -24,13 +24,13 @@ export default function TeamDisplay() {
       id: "Swati-Bhatt",
       name: "Swati Bhatt",
       title: "Director",
-      image: "/team/11.JPG",
+      image: "/team/11.jpg",
     },
     {
       id: "Shruti-Sharma",
       name: "Shruti Sharma",
       title: "HR Executive",
-      image: "/team/8.JPG",
+      image: "/team/8.jpg",
     },
     {
       id: "Dolly-Pandey",
