@@ -60,7 +60,12 @@ export default function Component() {
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="border-2 border-gray-300 p-4 text-center bg-white">
                   <span className="text-sm font-medium text-gray-700">
-                    CSR & ESG
+                    ESG
+                  </span>
+                </div>
+                <div className="border-2 border-gray-300 p-4 text-center bg-white">
+                  <span className="text-sm font-medium text-gray-700">
+                    CSR & Impact Assessments
                   </span>
                 </div>
                 <div className="border-2 border-gray-300 p-4 text-center bg-white">
@@ -76,6 +81,11 @@ export default function Component() {
                 <div className="border-2 border-gray-300 p-4 text-center bg-white">
                   <span className="text-sm font-medium text-gray-700">
                     Policy & Governance
+                  </span>
+                </div>
+                <div className="border-2 border-gray-300 p-4 text-center bg-white">
+                  <span className="text-sm font-medium text-gray-700">
+                    Others
                   </span>
                 </div>
               </div>

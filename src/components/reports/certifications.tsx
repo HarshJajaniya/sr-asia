@@ -71,11 +71,24 @@ export default function PdfAccordion() {
                 )}
               />
             </AccordionTrigger>
-            <AccordionContent className="bg-white p-0 overflow-hidden">
-              <div className="w-full h-[600px] overflow-y-auto">
-                <iframe src={item.pdfUrl} className="w-full h-full border-0" title={item.title}></iframe>
-              </div>
-            </AccordionContent>
+         <AccordionContent className="bg-white p-0 overflow-hidden">
+  <div className="w-full h-[600px] overflow-y-auto">
+    {item.pdfUrl.endsWith(".pdf") ? (
+      <iframe
+        src={`${item.pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+        className="w-full h-full border-0"
+        title={item.title}
+      />
+    ) : (
+      <img
+        src={item.pdfUrl}
+        alt={item.title}
+        className="w-full h-full object-contain"
+      />
+    )}
+  </div>
+</AccordionContent>
+
           </AccordionItem>
         ))}
       </Accordion>
