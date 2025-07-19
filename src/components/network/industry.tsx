@@ -8,7 +8,7 @@ export default function Component() {
         "MoU Between SR Asia and Enactus Hansraj for Sustainable Development and Social Innovation",
       description:
         "SR Asia supports Project AHSAAS, an initiative by Enactus Hansraj aimed at promoting self-employment for the differently-abled. The partnership emphasizes mentorship, strategic guidance, and fostering sustainable livelihoods..",
-      link: "/mous/2.pdf",
+      link: "/pdf/10.pdf",
     },
     {
       year: "2024",
@@ -23,7 +23,7 @@ export default function Component() {
         "Strategic MoUs Signed by the International Center for Clean Water (ICCW)",
       description:
         "The International Center for Clean Water (ICCW), housed at IIT Madras Research Park, has established strategic Memorandums of Understanding (MoUs) with leading academic institutions, industry partners, and government bodies to foster innovation in clean water technologies.",
-      link: "/mous/1.pdf",
+      link: "/pdf/11.pdf",
     },
   ];
 
@@ -48,12 +48,15 @@ export default function Component() {
                 </h2>
                 <p className="text-sm text-gray-600">{entry.description}</p>
               </div>
-              <Link
-                href={entry.link}
-                className="text-blue-600 hover:underline justify-self-end pt-1"
-              >
-                Read here
-              </Link>
+           <Link
+  href={entry.link.endsWith(".pdf") ? `${entry.link}#page=1` : entry.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-600 hover:underline justify-self-end pt-1"
+>
+  Read here
+</Link>
+
             </div>
           ))}
         </div>
