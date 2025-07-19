@@ -37,6 +37,16 @@ export default function Component() {
       alt: "Himalayan mountain range",
       title: "PHILLIPPINES",
     },
+    {
+      src: "/flags/japan.jpg",
+      alt: "Japan image tree",
+      title: "JAPAN",
+    },
+    {
+      src: "/flags/singapore.jpg",
+      alt: "famous fountain",
+      title: "SINGAPORE",
+    },
   ];
 
   return (
