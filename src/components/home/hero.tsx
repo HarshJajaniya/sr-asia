@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useMemo } from "react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { useMemo } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   // Generate realistic droplets with varied starting and ending positions
@@ -18,8 +18,8 @@ const Hero = () => {
       duration: Math.random() * 4 + 6, // Slower, more realistic
       delay: Math.random() * 8,
       maxOpacity: Math.random() * 0.4 + 0.2, // Lower opacity for realism
-    }))
-  }, [])
+    }));
+  }, []);
 
   // Generate subtle floating particles
   const particles = useMemo(() => {
@@ -31,21 +31,22 @@ const Hero = () => {
       duration: Math.random() * 8 + 12, // Very slow movement
       delay: Math.random() * 10,
       opacity: Math.random() * 0.3 + 0.1,
-    }))
-  }, [])
+    }));
+  }, []);
 
   return (
-   <section className="relative h-[600px] md:h-[600px] overflow-hidden mb-[5px]">
-  <div className="relative w-full h-[600px]"> {/* Relative added here */}
-    <Image
-      src="/main.png"
-      alt="Background"
-      fill
-      priority
-      className="object-cover object-top" // Aligns image to top
-    />
-  </div>
-
+    <section className="relative h-[600px] md:h-[600px] overflow-hidden mb-[5px]">
+      <div className="relative w-full h-[600px]">
+        {" "}
+        {/* Relative added here */}
+        <Image
+          src="/main.png"
+          alt="Background"
+          fill
+          priority
+          className="object-cover object-top" // Aligns image to top
+        />
+      </div>
 
       {/* Realistic Water Droplets */}
       <div className="absolute inset-0 z-5">
@@ -90,7 +91,7 @@ const Hero = () => {
               animationDelay: `${particle.delay}s`,
               opacity: particle.opacity,
             }}
-            >
+          >
             <div
               className="bg-gradient-to-br from-green-300/40 to-green-500/60 rounded-full"
               style={{
@@ -107,20 +108,34 @@ const Hero = () => {
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          transition={{
+            duration: 6,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+          }}
           className="bg-black/30 backdrop-blur-sm p-6 md:p-8 rounded-lg max-w-2xl text-white"
         >
           <div className="flex items-center mb-6">
-            <div> <h1 className="text-4xl md:text-5xl font-bold mb-2">Building a Sustainable Future for Asia</h1>
-          <p className="text-lg md:text-xl opacity-90 mb-6">
-            Advancing environmental governance, CSR excellence, and inclusive development across the Asian continent.
-          </p></div>
-         <div>  
-          <Image src={"/badge.svg"} alt="SR Asia Logo" width={150} height={150} className="mx-auto mb-4" />
-         </div>
-        </div>
-        
-        
+            <div>
+              {" "}
+              <h1 className="text-4xl leading-15 md:text-5xl font-bold mb-4">
+                Building a Sustainable Future for Asia
+              </h1>
+              <p className="text-lg md:text-xl opacity-90 mb-6">
+                Advancing environmental governance, CSR excellence, and
+                inclusive development across the Asian continent.
+              </p>
+            </div>
+            <div>
+              <Image
+                src={"/badge.svg"}
+                alt="SR Asia Logo"
+                width={150}
+                height={150}
+                className="mx-auto mb-4"
+              />
+            </div>
+          </div>
         </motion.div>
 
         <div className="flex justify-center mt-10 px-4">
@@ -130,7 +145,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
