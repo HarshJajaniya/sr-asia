@@ -8,7 +8,8 @@ export default function QuickLinks() {
       <div className="flex flex-wrap gap-6">
         {[
           { href: '/admin/openings', label: 'Openings' },
-          { href: '/admin/blog',      label: 'Blog'      },
+          { href: '/admin/conference',      label: 'Conference'      },
+           { href: '/admin/reports',    label: 'Reports'    },
           { href: '/admin/events',    label: 'Events'    },
         ].map(({ href, label }) => (
           <Link key={href} href={href}>

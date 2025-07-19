@@ -30,7 +30,7 @@ export default function Component() {
     {
       src: "/flags/Malysia.png",
       alt: "Rajasthan desert landscape",
-      title: "MALYSIA",
+      title: "MALAYSIA",
     },
     {
       src: "/flags/PHILLIPPINES.png",

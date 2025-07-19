@@ -1,10 +1,27 @@
-'use client'
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import axios from "axios";
+import { Button } from "@/components/ui/button";
 
-const reportCategories = {
+type Report = {
+  id?: number | string;
+  _id?: string;
+  image: string;
+  alt: string;
+  title: string;
+  subtitle: string;
+  link: string;
+  description: string;
+  category?: "brsr" | "impact" | "social";
+};
+
+const isValidImageUrl = (url: any) => {
+  return typeof url === "string" && (url.startsWith("http") || url.startsWith("/"));
+};
+
+const staticReportCategories: Record<"brsr" | "impact" | "social", Report[]>  = {
   brsr: [
     {
       id: 1,
@@ -99,71 +116,74 @@ const reportCategories = {
     },
   ],
 }
-
-type CategoryKey = keyof typeof reportCategories
+type CategoryKey = keyof typeof staticReportCategories;
 
 export default function ReportViewer() {
-  const [activeTab, setActiveTab] = useState<CategoryKey>("brsr")
+  const [activeTab, setActiveTab] = useState<CategoryKey>("brsr");
+  const [dynamicReports, setDynamicReports] = useState<Report[]>([]);
+
+  useEffect(() => {
+    axios.get("https://srasia-backend.onrender.com/api/reports/")
+      .then((res) => setDynamicReports(res.data))
+      .catch((err) => console.error("Error fetching reports", err));
+  }, []);
+
+  const combinedReports = (category: CategoryKey): Report[] => {
+    const dynamic = dynamicReports.filter((r) => r.category === category);
+    return [...staticReportCategories[category], ...dynamic];
+  };
 
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
       <div className="w-60 bg-white border-r border-gray-200 p-4 space-y-4">
         <h2 className="text-lg font-semibold text-gray-800 mb-4">Projects Categories</h2>
-        <Button
-          variant={activeTab === "brsr" ? "default" : "outline"}
-          className="w-full"
-          onClick={() => setActiveTab("brsr")}
-        >
-          BRSR Assessments
-        </Button>
-        <Button
-          variant={activeTab === "impact" ? "default" : "outline"}
-          className="w-full"
-          onClick={() => setActiveTab("impact")}
-        >
-          Impact Assessment
-        </Button>
-        <Button
-          variant={activeTab === "social" ? "default" : "outline"}
-          className="w-full"
-          onClick={() => setActiveTab("social")}
-        >
-          Social Impact Assessments
-        </Button>
+        {(["brsr", "impact", "social"] as CategoryKey[]).map((key) => (
+          <Button
+            key={key}
+            variant={activeTab === key ? "default" : "outline"}
+            className="w-full"
+            onClick={() => setActiveTab(key)}
+          >
+            {key === "brsr" ? "BRSR Assessments" :
+             key === "impact" ? "Impact Assessment" : "Social Impact Assessments"}
+          </Button>
+        ))}
       </div>
 
-      {/* Right-side cards */}
+      {/* Report Cards */}
       <div className="flex-1 p-6 overflow-y-auto">
         <div className="mx-auto max-w-4xl space-y-8">
-          {reportCategories[activeTab].map((report) => (
+          {combinedReports(activeTab).map((report, index) => (
             <div
-              key={report.id}
+              key={report._id ?? report.id ?? index}
               className="flex flex-col md:flex-row items-start gap-6 bg-white p-6 rounded-lg shadow-sm"
             >
               <div className="flex-shrink-0 w-full md:w-[200px] h-[150px] relative">
-                <Image
-                  src={report.image}
-                  alt={report.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
+             <Image
+  src={isValidImageUrl(report.image) ? report.image : "/report/1.png"}
+  alt={report.alt || "Default Image"}
+  layout="fill"
+  objectFit="cover"
+/>
+
               </div>
               <div className="flex-1 space-y-2">
                 <h2 className="text-xl font-bold text-gray-800 uppercase">{report.title}</h2>
                 <h3 className="text-lg font-semibold text-gray-700">{report.subtitle}</h3>
                 <p className="text-sm text-gray-600 line-clamp-3">{report.description}</p>
-                <Button className="bg-[#1a3640] text-white hover:bg-[#2a4650] px-6 py-2 rounded-md">
-                  <a href={report.link} target="_blank" rel="noopener noreferrer">
-                    View Report
-                  </a>
-                </Button>
+                {report.link && (
+                  <Button className="bg-[#1a3640] text-white hover:bg-[#2a4650] px-6 py-2 rounded-md">
+                    <a href={report.link} target="_blank" rel="noopener noreferrer">
+                      View Report
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }

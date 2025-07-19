@@ -11,6 +11,7 @@ import Lower from "@/components/media/conference2";
 import Third from "@/components/media/conference3";
 import Insights from "@/components/media/articles";
 import Fourth from "@/components/media/conference4";
+import Admin from "@/components/media/conference6";
 import Fifth from "@/components/media/conference5";
 
 const page = () => {
@@ -26,6 +27,7 @@ const page = () => {
       <Third />
       <Fourth />
       <Fifth />
+      <Admin/>
       <Connect />
       <Footer />
     </div>

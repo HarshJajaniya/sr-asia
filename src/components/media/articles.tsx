@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,77 +8,89 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import axios from "axios";
 
-const workCards = [
+// Static Work Cards
+const staticWorkCards = [
   {
-    title:
-      "Ganga Express Way: एसआर एशिया के सर्वे के बाद होगा भूमि अधिग्रहण, किया गया एजेंसी का चयन",
+    title: "Ganga Express Way: एसआर एशिया के सर्वे के बाद होगा भूमि अधिग्रहण, किया गया एजेंसी का चयन",
     subtitle: "Aug 31,2021",
-    description:
-      "गंगा एक्सप्रेस-वे के लिए प्रशासन की ओर से पूरी कवायद जारी है। लेकिन मेरठ जनपद में 181 हेक्टेयर में से 28 हेक्टेयर जमीन की खरीद किसानों के विवाद के कारण नहीं हो सकी है। अब इस जमीन का अधिग्रहण करना होगा। प्रक्रिया शुरू हो चुकी है।",
+    description: "गंगा एक्सप्रेस-वे के लिए प्रशासन की ओर से पूरी कवायद जारी है...",
     image: "/resources/1.png",
     link: "https://www.jagran.com/uttar-pradesh/meerut-city-ganga-express-way-after-survey-of-sr-asia-land-acquisition-will-be-done-agency-selected-22009866.html",
   },
   {
     title: "रैपिड के लिए सामाजिक अध्ययन करेगी एसआर एशिया",
     subtitle: "Apr 04,2024",
-    description:
-      "रैपिड रेल प्रोजेक्ट के तहत मेरठ शहर की सीमा क्षेत्र में विभिन्न स्टेशनों के निर्माण के लिए जमीन आपसी सहमति से नहीं मिल पा रही है। लिहाजा आठ स्थानों पर कुल 5.8982 हेक्टेयर भूमि का अधिग्रहण करने का निर्णय लिया गया है।",
+    description: "रैपिड रेल प्रोजेक्ट के तहत मेरठ शहर की सीमा क्षेत्र में...",
     image: "/resources/3.png",
-
     link: "https://www.newindianexpress.com/nation/2022/feb/20/ashshash-project-social-responsibility-sr-asia-pledges-solidarity-for-survivors-of-human-trafficking-2428850.html",
   },
   {
-    title:
-      "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
+    title: "Ashshash Project, Social Responsibility (SR) Asia pledges solidarity for survivors of human trafficking",
     subtitle: "Feb 20,2022",
-    description:
-      "Winrock International's Ashshash Project supported by the Swiss Embassy and Social Responsibility Asia (SR ASIA) have teamed up to affirm the mobilisation of resources, exhibit advanced CSR practices, and enable sensitisation on Trafficking-in-Persons (TIP) issues amongst public and private sector organisations.",
+    description: "Winrock International's Ashshash Project supported by the Swiss Embassy...",
     image: "/resources/4.png",
     link: "https://www.jagran.com/uttar-pradesh/meerut-city-rapid-asia-will-do-social-study-for-rapid-rail-project-23009866.html",
   },
   {
-    title:
-      "Coca-Cola Foundation funds SR Asia to improve DSCC waste management",
+    title: "Coca-Cola Foundation funds SR Asia to improve DSCC waste management",
     subtitle: "01 Jun 2022",
-    description:
-      "The core objective is to develop an efficient waste management system along with reducing local air, water and land pollution. The partnership is also focused on improving the lives of individuals such as waste management workers through green jobs and inclusive economic growth.",
+    description: "The core objective is to develop an efficient waste management system...",
     image: "/insights/5.png",
     link: "https://www.dhakatribune.com/bangladesh/289106/coca-cola-foundation-funds-sr-asia-to-improve-dscc",
   },
   {
-    title:
-      "Blog About SR Asia-The Economic Times",
+    title: "Blog About SR Asia-The Economic Times",
     subtitle: "01 Jun 2022",
-    description:
-      "SR Asia (Social Responsibility Asia) is a private, non-governmental organization incorporated on 10th February 2012, dedicated to advancing sustainable development through community, personal, and social services. With its headquarters in New Delhi, the organization operates as a private unlisted company, actively working in the development sector for over 13 years.",
+    description: "SR Asia (Social Responsibility Asia) is a private, non-governmental organization...",
     image: "/resources/blogs.jpeg",
     link: "https://economictimes.indiatimes.com/company/sr-asia/U93000DL2012NPL231376",
   },
 ];
 
-// ----------------------------------------------------
-// 🏗️  COMPONENT
-// ----------------------------------------------------
+interface EventType {
+  title: string;
+  subtitle?: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
 export default function SrAsiaWorkCarousel() {
+  const [combinedCards, setCombinedCards] = useState<EventType[]>(staticWorkCards);
+
+  useEffect(() => {
+    const fetchBackendEvents = async () => {
+      try {
+        const res = await axios.get("https://srasia-backend.onrender.com/api/events"); // or your hosted URL
+        const backendCards: EventType[] = res.data.map((item: any) => ({
+          title: item.title,
+          subtitle: item.subtitle || "Latest", // fallback
+          description: item.description,
+          image: `https://srasia-backend.onrender.com${item.image}`, // ensure full URL
+          link: item.link || "#",
+        }));
+        setCombinedCards(prev => [...prev, ...backendCards]);
+      } catch (err) {
+        console.error("Failed to fetch events", err);
+      }
+    };
+
+    fetchBackendEvents();
+  }, []);
+
   return (
     <section className="max-w-full">
-      {/* ⭕ Outer Card Section */}
       <div className="bg-white shadow-xl rounded-2xl my-12 px-4 md:px-6 py-10">
-        {/* 🔖 Section Header */}
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
             <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10">
               BLOGS & ARTICLES
             </h2>
-            <div
-              className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-2"
-              style={{ width: "25vw", minWidth: "150px" }}
-            ></div>
           </div>
         </div>
 
-        {/* 🖼️ Swiper Carousel */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={24}
@@ -91,10 +104,9 @@ export default function SrAsiaWorkCarousel() {
           autoplay={{ delay: 4500, disableOnInteraction: false }}
           className="max-w-full mx-auto"
         >
-          {workCards.map((card, idx) => (
+          {combinedCards.map((card, idx) => (
             <SwiperSlide key={idx} className="pb-12 h-full">
               <article className="h-full flex flex-col justify-between bg-white overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-xl rounded-lg">
-                {/* Image */}
                 <div className="overflow-hidden h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72">
                   <Image
                     src={card.image}
@@ -104,15 +116,12 @@ export default function SrAsiaWorkCarousel() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                {/* Text */}
                 <div className="p-6 flex flex-col justify-between flex-grow">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-800 line-clamp-2">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-gray-800 line-clamp-2">
                     {card.title}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                    {card.description}
-                  </p>
+                  <p className="text-xs text-gray-500 mb-1">{card.subtitle}</p>
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">{card.description}</p>
                   <Link
                     href={card.link}
                     className="block text-center py-2 px-4 bg-[#072328] text-white font-medium hover:bg-[#A1E3F9] hover:text-[#072328]"
@@ -124,11 +133,6 @@ export default function SrAsiaWorkCarousel() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-
-      {/* 🗺️ The SR Asia Footprint */}
-      <div className="relative mt-8">
-        <div className="flex items-center px-4 md:px-6"></div>
       </div>
     </section>
   );

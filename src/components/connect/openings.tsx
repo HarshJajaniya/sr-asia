@@ -25,18 +25,22 @@ export default function OpeningsPage() {
     ctc: '',
     resume: null as File | null,
   })
+  const [loading, setLoading] = useState(false)
 
   /* -------------------- data load -------------------- */
-  const fetchOpenings = async () => {
-    try {
-      const res = await axios.get(
-        `https://srasia-backend.onrender.com/api/jobs${type ? `?type=${type}` : ''}`,
-      )
-      setOpenings(res.data)
-    } catch (err) {
-      console.error('Error fetching openings:', err)
-    }
+const fetchOpenings = async () => {
+  try {
+    setLoading(true)
+    const res = await axios.get(
+      `https://srasia-backend.onrender.com/api/jobs${type ? `?type=${type}` : ''}&_=${Date.now()}`
+    )
+    setOpenings(res.data)
+  } catch (err) {
+    console.error('Error fetching openings:', err)
+  } finally {
+    setLoading(false)
   }
+}
 
   useEffect(() => {
     fetchOpenings()
