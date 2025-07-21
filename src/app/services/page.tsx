@@ -1,18 +1,28 @@
-import React from 'react'
-import Navbar from '@/components/navbar/navbar';
-import Footer from '@/components/footer/footer';   
-import Work from '@/components/work/hero';
+import Footer from '@/components/footer/footer'
+import Navbar from '@/components/navbar/navbar'
+import Header from '@/components/navbar/header'
+import Hero from '@/components/work/hero'
+import Intro from '@/components/work/intro'
+import Services from '@/components/work/services'
+import Impact from '@/components/work/impact'
+import Insights from '@/components/work/insights'
+import Connect from '@/components/work/connect'
 
 
-const page = () => {
+const assurance = () => {
   return (
     <div>
+        <Header/>
         <Navbar/>
-        <Work/>
-       
+        <Hero/>
+        <Intro/>
+        <Services/>
+        <Impact/>
+        <Insights/>
+        <Connect/>
         <Footer/>
     </div>
   )
 }
 
-export default page
+export default assurance

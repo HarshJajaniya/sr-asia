@@ -27,14 +27,12 @@ export default function Component() {
             Have a question, idea, or opportunity? Let's connect and build
             something impactful together.
           </p>
-          <Link href="/career">
-            <Button
-              size="lg"
-              className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg"
-            >
-              Get in Touch
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg"
+          >
+            <Link href="/career">Get in Touch</Link>
+          </Button>
         </div>
 
         {/* Optional overlay for better contrast */}

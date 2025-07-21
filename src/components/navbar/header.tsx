@@ -49,7 +49,7 @@ export default function Component() {
               <Globe className="w-4 h-4 text-[#14444D]" />
               <div className="flex items-center space-x-1">
                 <button className="px-2 py-1 text-[#14444D] font-medium hover:bg-blue-50 rounded transition-colors">
-                  EN
+                  EN/
                 </button>
                 <button className="px-2 py-1 text-[#14444D] font-medium hover:bg-blue-50 rounded transition-colors">
                   DE
@@ -60,8 +60,9 @@ export default function Component() {
             <Button
               variant="outline"
               className="border-[#14444D] text-[#14444D] hover:bg-blue-50 hover:text-blue-700 hover:border-blue-700 font-medium"
-            >
+            ><a href="/services">
               Products & Services
+              </a>
             </Button>
           </div>
         </div>
