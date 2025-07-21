@@ -59,9 +59,7 @@ export default function Component() {
               {/* Expertise Categories */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="border-2 border-gray-300 p-4 text-center bg-white">
-                  <span className="text-sm font-medium text-gray-700">
-                    ESG
-                  </span>
+                  <span className="text-sm font-medium text-gray-700">ESG</span>
                 </div>
                 <div className="border-2 border-gray-300 p-4 text-center bg-white">
                   <span className="text-sm font-medium text-gray-700">
