@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -20,36 +20,37 @@ export default function Component() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto text-left mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 mt-16 text-[#A1E3F9]">CONNECT WITH US</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 mt-16 text-[#A1E3F9]">
+            CONNECT WITH US
+          </h2>
           <p className="text-lg md:text-lg mb-8 text-gray-200 ">
-            Have a question, idea, or opportunity? Let's connect and build something impactful together.
+            Have a question, idea, or opportunity? Let's connect and build
+            something impactful together.
           </p>
-          <Button size="lg" className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg">
-            <Link href="/connect">
-            Get in Touch
-            </Link>
-            
-          </Button>
+          <Link href="/career">
+            <Button
+              size="lg"
+              className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg"
+            >
+              Get in Touch
+            </Button>
+          </Link>
         </div>
 
         {/* Optional overlay for better contrast */}
-   
       </section>
 
-      
-<div className="mt-16 relative">
-  <div className="absolute top-0 inset-x-8 h-px bg-[#45B6CD]" />
-</div>
-
+      <div className="mt-16 relative">
+        <div className="absolute top-0 inset-x-8 h-px bg-[#45B6CD]" />
+      </div>
 
       {/* Services Section */}
       <section className="mt-16 py-16 px-4">
-
-
-
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm md:text-base text-[#072328]">
-            <span className="whitespace-nowrap">Assurance & Reporting services</span>
+            <span className="whitespace-nowrap">
+              Assurance & Reporting services
+            </span>
             <span className="whitespace-nowrap">CSR project management</span>
             <span className="whitespace-nowrap">Monitoring & Evaluation</span>
             <span className="whitespace-nowrap">Impact Assessment</span>
@@ -58,5 +59,5 @@ export default function Component() {
         </div>
       </section>
     </div>
-  )
+  );
 }
