@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 export default function TeamDisplay() {
-  const [expanded, setExpanded] = useState({});
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
 
-  const toggleExpand = (id) => {
+  const toggleExpand = (id: string) => {
     if (!id) return;
     setExpanded((prev) => ({
       ...prev,
