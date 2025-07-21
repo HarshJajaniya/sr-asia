@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { Roboto_Flex  } from 'next/font/google';
+import { Toaster } from "react-hot-toast";
 
 const robotoFlex = Roboto_Flex({
   subsets: ['latin'],
@@ -26,7 +27,10 @@ export default function RootLayout({
         className={`${robotoFlex.className} ${robotoFlex.className} antialiased bg-[#EEFAFE]`}
       >
  
-      <main>{children}</main>
+      <main>{children}
+         <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
+      </main>
+
         
       </body>
     </html>
