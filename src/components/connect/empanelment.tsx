@@ -32,7 +32,7 @@ const Empanelment = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/empanelment/send", {
+      await axios.post("https://srasia-backend.onrender.com/api/empanelment/send", {
         ...formData,
         category: selectedCategory,
       });

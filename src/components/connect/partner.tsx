@@ -28,7 +28,7 @@ export default function Component() {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/volunteer/send", formData);
+      await axios.post("https://srasia-backend.onrender.com/api/volunteer/send", formData);
       toast.success("Thank you for joining with us. Looking forward to connecting with you!");
       setFormData({ name: "", phone: "" });
       setShowForm(false);
