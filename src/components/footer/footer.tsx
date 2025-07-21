@@ -1,5 +1,12 @@
-import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react"
-import Link from "next/link"
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  MapPin,
+  Mail,
+  Phone,
+} from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -16,22 +23,44 @@ export default function Footer() {
               </div>
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>Email: info@sr-asia.org</span>
+                <Link
+                  href="mailto:info@sr-asia.org"
+                  className="hover:underline"
+                >
+                  info@sr-asia.org
+                </Link>
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>Phone: +91-XXXXXXXXXX</span>
+                <Link href="tel:+91XXXXXXXXXX" className="hover:underline">
+                  +91-XXXXXXXXXX
+                </Link>
               </div>
               <div className="flex space-x-3 mt-2">
-                <Link href="#" className="bg-[#e1306c] p-1.5 rounded-md hover:opacity-80 transition-opacity">
+                <Link
+                  href="https://www.instagram.com/sr_asia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#e1306c] p-1.5 rounded-md hover:opacity-80 transition-opacity"
+                >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link href="#" className="bg-[#0077b5] p-1.5 rounded-md hover:opacity-80 transition-opacity">
+                <Link
+                  href="https://www.linkedin.com/company/sr-asia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#0077b5] p-1.5 rounded-md hover:opacity-80 transition-opacity"
+                >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Link>
-                <Link href="#" className="bg-[#1877f2] p-1.5 rounded-md hover:opacity-80 transition-opacity">
+                <Link
+                  href="https://www.facebook.com/srasia.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#1877f2] p-1.5 rounded-md hover:opacity-80 transition-opacity"
+                >
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </Link>
@@ -44,27 +73,27 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/" className="hover:underline">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/about" className="hover:underline">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/services" className="hover:underline">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/projects-events" className="hover:underline">
                   Projects & Events
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/get-involved" className="hover:underline">
                   Get Involved
                 </Link>
               </li>
@@ -76,22 +105,22 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Get Involved</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/partner" className="hover:underline">
                   Partner With Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/volunteer" className="hover:underline">
                   Volunteer
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/careers" className="hover:underline">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/newsletter" className="hover:underline">
                   Newsletter Signup
                 </Link>
               </li>
@@ -103,17 +132,17 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/privacy-policy" className="hover:underline">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/terms-of-use" className="hover:underline">
                   Terms of Use
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/sitemap" className="hover:underline">
                   Sitemap
                 </Link>
               </li>
@@ -123,9 +152,11 @@ export default function Footer() {
 
         <div className="border-t border-[#006050] mt-8 pt-6 text-center text-sm">
           <p>© 2025 SR Asia | ISO 9001 Certified</p>
-          <p className="mt-1">Member of UNGO • CLI • APO Japan • CTCN • IPLA Japan</p>
+          <p className="mt-1">
+            Member of UNGO • CLI • APO Japan • CTCN • IPLA Japan
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
