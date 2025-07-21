@@ -103,144 +103,62 @@ export default function Home() {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="relative group">
-        <nav className="bg-[#EEFAFE] flex items-center justify-center px-4 md:px-8 py-3 border-b border-gray-100 z-50">
-          <div className="p-4 hidden md:flex space-x-10">
-            {navItems.map((item, index) => (
-              <Link key={index} href={item.href} className={linkStyle}>
-                {item.label}
-              </Link>
-            ))}
+     <div className="bg-[#EEFAFE] border-b border-gray-100 z-50">
+  <nav className="flex items-center justify-center px-4 md:px-8 py-3">
+    <div className="p-4 hidden md:flex space-x-10 relative z-50">
+  {navItems.map((item, index) => {
+    const submenu =
+      item.label === "HOME" ? HomeSubmenu :
+      item.label === "ABOUT" ? AboutSubmenu :
+      item.label === "SERVICES" ? servicesSubmenu :
+      item.label === "PROJECTS" ? reportSubmenu :
+      item.label === "NETWORK" ? networkSubmenu :
+      item.label === "EVENTS" ? mediaSubmenu :
+      item.label === "CAREERS" ? careersSubmenu :
+      null;
+
+    return (
+      <div key={index} className="relative group">
+        <Link
+          href={item.href}
+          className="text-[#14444D] font-bold text-[18px] leading-[100%] transition-colors"
+        >
+          {item.label}
+        </Link>
+
+        {/* Submenu */}
+        {submenu && (
+          <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+            <ul className="space-y-2">
+              {submenu.map((sub, idx) => (
+                <li key={idx}>
+                  <Link
+                    href={sub.href}
+                    className="text-sm text-gray-700 hover:text-blue-600 block"
+                  >
+                    {sub.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleSidebar}
-            className="md:hidden text-[#14444D] focus:outline-none"
-          >
-            <Menu className="w-6 h-6" />
-          </button>
-        </nav>
-
-        {/* Full Width Dropdown on Hover */}
-        <div className="absolute left-0 w-full hidden group-hover:flex bg-[#EEFAFE] border-t shadow-lg z-40 py-6 px-10">
-          <div className="max-w-7xl w-full mx-auto grid grid-cols-5 gap-8">
-             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/">HOME</Link></h3>
-              <ul className="space-y-2">
-                {AboutSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* ABOUT */}
-            <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/about"> ABOUT</Link></h3>
-              <ul className="space-y-2">
-                {HomeSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* SERVICES */}
-            <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/services">SERVICES</Link></h3>
-              <ul className="space-y-2">
-                {servicesSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* REPORT */}
-            <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/report">PROJECTS</Link></h3>
-              <ul className="space-y-2">
-                {reportSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-             <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/network">NETWORK</Link></h3>
-              <ul className="space-y-2">
-                {networkSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* MEDIA */}
-            <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/media">EVENTS</Link></h3>
-              <ul className="space-y-2">
-                {mediaSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* CAREERS */}
-            <div>
-              <h3 className="text-lg font-semibold text-[#14444D] mb-2"><Link href="/career">CAREERS</Link></h3>
-              <ul className="space-y-2">
-                {careersSubmenu.map((item, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-700 hover:text-blue-600 block text-sm"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
+    );
+  })}
+</div>
+
+
+    {/* Mobile menu button */}
+    <button
+      onClick={toggleSidebar}
+      className="md:hidden text-[#14444D] focus:outline-none"
+    >
+      <Menu className="w-6 h-6" />
+    </button>
+  </nav>
+</div>
+
 
       {/* Mobile Sidebar */}
       {isSidebarOpen && (
