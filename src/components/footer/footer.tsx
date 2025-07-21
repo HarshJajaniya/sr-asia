@@ -32,12 +32,13 @@ export default function Footer() {
               </div>
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <Link href="tel:+91XXXXXXXXXX" className="hover:underline">
-                  +91-XXXXXXXXXX
-                </Link>
+                <div className="flex flex-col">
+                  <span>+917827051160</span>
+                  <span>  01204103023</span>
+                </div>
               </div>
               <div className="flex space-x-3 mt-2">
-                <Link
+                {/* <Link
                   href="https://www.instagram.com/sr_asia/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,7 +46,7 @@ export default function Footer() {
                 >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
-                </Link>
+                </Link> */}
                 <Link
                   href="https://www.linkedin.com/company/sr-asia/"
                   target="_blank"
@@ -56,7 +57,7 @@ export default function Footer() {
                   <span className="sr-only">LinkedIn</span>
                 </Link>
                 <Link
-                  href="https://www.facebook.com/srasia.org"
+                  href="https://www.facebook.com/SRAsia.profile?mibextid=rS40aB7S9Ucbxw6v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#1877f2] p-1.5 rounded-md hover:opacity-80 transition-opacity"

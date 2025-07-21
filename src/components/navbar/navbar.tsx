@@ -128,13 +128,13 @@ export default function Home() {
 
         {/* Submenu */}
         {submenu && (
-          <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
+          <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[250px] z-50">
             <ul className="space-y-2">
               {submenu.map((sub, idx) => (
                 <li key={idx}>
                   <Link
                     href={sub.href}
-                    className="text-sm text-gray-700 hover:text-blue-600 block"
+                    className="text-xl text-gray-700 hover:text-blue-600 block"
                   >
                     {sub.label}
                   </Link>
