@@ -40,8 +40,8 @@ export default function PartnerLogosScroll() {
           OUR CLIENTS
         </h1>
       </div>
-      {/* Left Arrow */}
 
+      {/* Left Arrow */}
       <button
         onClick={() => scroll("left")}
         className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow p-2 hover:bg-gray-100"
@@ -50,14 +50,18 @@ export default function PartnerLogosScroll() {
       </button>
 
       {/* Scrollable Partner Logos */}
-      <div ref={scrollRef} className="overflow-x-scroll ">
+      <div ref={scrollRef} className="overflow-x-scroll">
         <div className="flex gap-8 py-4 w-max">
           {partners.map((partner, index) => (
             <div
               key={index}
               className="p-6 flex flex-col items-center h-[128px]"
             >
-              <div className={`relative w-32 h-32`}>
+              <div
+                className={`relative ${
+                  partner.name === "Coal India" ? "w-40 h-40" : "w-32 h-32"
+                }`}
+              >
                 <Image
                   src={partner.src}
                   alt={partner.alt}
