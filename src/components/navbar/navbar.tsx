@@ -34,12 +34,12 @@ const servicesSubmenu = [
 ];
 
 const reportSubmenu = [
-  { label: "NSE", href: "/report/nse" },
-  { label: "Dabur", href: "/report/dabur" },
-  { label: "Nayra", href: "/report/nayra" },
-  { label: "SEWA-THDC", href: "/report/sewa-thdc" },
-  { label: "SEIL", href: "/report/seil" },
-  { label: "Etc", href: "/report/etc" },
+  { label: "NSE", href: "/report" },
+  { label: "Dabur", href: "/report" },
+  { label: "Nayra", href: "/report" },
+  { label: "SEWA-THDC", href: "/report" },
+  { label: "SEIL", href: "/report" },
+  { label: "Etc", href: "/report" },
 ];
 
 const mediaSubmenu = [

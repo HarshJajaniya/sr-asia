@@ -25,7 +25,7 @@ export default function Component() {
             Have a question, idea, or opportunity? Let's connect and build something impactful together.
           </p>
           <Button size="lg" className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg">
-            <Link href="/connect">
+            <Link href="/career">
             Get in Touch
             </Link>
             

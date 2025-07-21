@@ -88,12 +88,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/projects-events" className="hover:underline">
+                <Link href="/report" className="hover:underline">
                   Projects & Events
                 </Link>
               </li>
               <li>
-                <Link href="/get-involved" className="hover:underline">
+                <Link href="/career" className="hover:underline">
                   Get Involved
                 </Link>
               </li>
@@ -105,22 +105,22 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Get Involved</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/partner" className="hover:underline">
+                <Link href="/career" className="hover:underline">
                   Partner With Us
                 </Link>
               </li>
               <li>
-                <Link href="/volunteer" className="hover:underline">
+                <Link href="/career" className="hover:underline">
                   Volunteer
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:underline">
+                <Link href="/career" className="hover:underline">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/newsletter" className="hover:underline">
+                <Link href="/career" className="hover:underline">
                   Newsletter Signup
                 </Link>
               </li>
