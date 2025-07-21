@@ -136,12 +136,14 @@ export default function AboutUsSection() {
 
             {/* Read More Button */}
             <div className="pt-4">
-              <Button
-                variant="link"
-                className="text-blue-600 hover:text-blue-800 p-0 h-auto font-normal"
-              >
-                Read more →
-              </Button>
+              <Link href="/srasia">
+                <Button
+                  variant="link"
+                  className="text-blue-600 hover:text-blue-800 p-0 h-auto font-normal"
+                >
+                  Read more →
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
