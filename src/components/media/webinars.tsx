@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Play, Users, Leaf, TrendingUp, Shield, Calendar } from "lucide-react";
+import { Play, Users, Leaf, TrendingUp, Shield, Calendar, Link } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,6 +20,7 @@ const webinarSlides = [
     type: "WEBINAR",
     title: "ESG Awareness in the Pharmaceutical Industry",
     date: "Dec 22 2023",
+    link:"https://www.linkedin.com/feed/update/urn:li:activity:7146372588250869760/",
     description:
       "The pharmaceutical industry is witnessing a paradigm shift towards greater Environmental, Social, and Governance (ESG) awareness, driven by recent SEBI regulations.",
     backgroundImage: "/esg-bg.png",
@@ -69,6 +70,7 @@ const webinarSlides = [
     type: "WEBINAR",
     title: "ESG Challenges in Pharma: Charting a Sustainable Course",
     date: "Dec 30 2023",
+    link:"https://www.linkedin.com/posts/birendraraturi_activity-7151517073309884416-UROW?utm_source=share&utm_medium=member_desktop",
     description:
       "As the pharmaceutical industry continues to evolve, so do the Environmental, Social, and Governance (ESG) challenges it faces. Join us as we delve into the crucial conversation on ESG Challenges in Pharma: Charting a Sustainable Course.",
     backgroundImage: "/esg-bg.png",
@@ -104,6 +106,7 @@ const webinarSlides = [
     type: "WEBINAR",
     title: "Digital Transformation in Healthcare",
     date: "Jan 15 2024",
+    link:"https://www.linkedin.com/posts/birendraraturi_join-us-for-an-insightful-csr-impact-assessment-activity-7156938439689490432-53Te?utm_source=share&utm_medium=member_desktop",
     description:
       "Explore the latest trends in digital health technologies and their impact on patient care and pharmaceutical operations.",
     backgroundImage: "/esg-bg.png",
@@ -186,7 +189,9 @@ export default function Component() {
                       </p>
                       <Button className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2">
                         <Play className="w-4 h-4 mr-2" />
-                        Watch Recording
+                        <a href={slide.link} target="_blank">
+                          Watch Recording
+                        </a>
                       </Button>
                     </div>
                     <div className="w-full lg:w-80 h-48 bg-green-200 rounded-lg flex items-center justify-center">
@@ -235,7 +240,9 @@ export default function Component() {
                       <p className="text-gray-600 mb-4">{slide.description}</p>
                       <Button className="bg-gray-800 hover:bg-gray-700 text-white">
                         <Play className="w-4 h-4 mr-2" />
-                        Watch Recording
+                        <a href={slide.link} target="_blank">
+                          Watch Recording
+                        </a>
                       </Button>
                     </div>
                     <Card className="bg-teal-700 text-white">
