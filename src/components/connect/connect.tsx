@@ -238,32 +238,33 @@ export function JobListings() {
     : activeTab === "current"
     ? staticCurrentOpenings
     : staticInternships;
+return (
+  <div className="flex min-h-screen bg-gray-50">
+    {/* Sidebar */}
+    <div className="w-48 bg-white border-r border-gray-200 p-4 space-y-4">
+      <Button
+        variant={activeTab === "current" ? "default" : "outline"}
+        className="w-full"
+        onClick={() => setActiveTab("current")}
+      >
+        Current Openings
+      </Button>
+      <Button
+        variant={activeTab === "intern" ? "default" : "outline"}
+        className="w-full"
+        onClick={() => setActiveTab("intern")}
+      >
+        Internships
+      </Button>
+    </div>
 
-  return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Sidebar */}
-      <div className="w-48 bg-white border-r border-gray-200 p-4 space-y-4">
-        <Button
-          variant={activeTab === "current" ? "default" : "outline"}
-          className="w-full"
-          onClick={() => setActiveTab("current")}
-        >
-          Current Openings
-        </Button>
-        <Button
-          variant={activeTab === "intern" ? "default" : "outline"}
-          className="w-full"
-          onClick={() => setActiveTab("intern")}
-        >
-          Internships
-        </Button>
-      </div>
-
-      {/* Main Content */}
-      <div className="flex-1 overflow-hidden">
-        <div className="h-full overflow-y-auto p-4 space-y-6">
-          {jobsToShow.map((job) => (
-            <Card key={job.id || job._id} className="bg-sky-100 border-sky-200">
+    {/* Main Content */}
+    <div className="flex-1 overflow-hidden">
+      <div className="h-full overflow-y-auto p-4 space-y-6">
+        {jobsToShow.map((job) => {
+          const jobId = job._id ?? job.id; // Normalize the job ID once here
+          return (
+            <Card key={jobId} className="bg-sky-100 border-sky-200">
               <CardContent className="p-4">
                 <div className="flex justify-between items-start mb-3">
                   <div className="flex-1">
@@ -280,11 +281,11 @@ export function JobListings() {
                   </div>
                   <Button
                     onClick={() =>
-                      setSelectedJobId(selectedJobId === job.id ? null : job.id)
+                      setSelectedJobId(selectedJobId === jobId ? null : jobId)
                     }
                     className="bg-[#072328] text-white px-4 py-2 text-sm font-medium"
                   >
-                    {selectedJobId === job.id ? "Close Form" : "Apply Now"}
+                    {selectedJobId === jobId ? "Close Form" : "Apply Now"}
                   </Button>
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed">
@@ -292,17 +293,18 @@ export function JobListings() {
                 </p>
 
                 {/* Show Application Form */}
-                {selectedJobId === job.id && (
+                {selectedJobId === jobId && (
                   <ApplicationForm
-                    jobId={job.id || job._id}
+                    jobId={jobId}
                     onClose={() => setSelectedJobId(null)}
                   />
                 )}
               </CardContent>
             </Card>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </div>
-  );
+  </div>
+);
 }
