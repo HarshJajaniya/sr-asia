@@ -12,7 +12,7 @@ export default function Component() {
       name: "IPLA – International Partnership for Expanding Waste Management Services",
       description:
         "UN-backed platform enhancing sustainable waste management through global public-private partnerships.",
-      link: "#",
+      link: "https://www.uncrd.or.jp/?menu=389",
     },
     {
       name: "UNGC – United Nations Global Compact",
@@ -42,13 +42,13 @@ export default function Component() {
       name: "CII – Confederation of Indian Industry",
       description:
         "Fosters India's industrial development through business collaboration, sustainability, and policy engagement.",
-      link: "#",
+      link: "https://www.cii.in/",
     },
   ];
 
   return (
     <section className="w-full px-[20px] mb-[75px]">
-      <h2 className="text-2xl font-bold  sm:text-4xl md:text-[40px] text-center mb-12 md:mb-16">
+      <h2 className="text-2xl font-bold sm:text-4xl md:text-[40px] text-center mb-12 md:mb-16">
         MEMBERSHIPS WITH GLOBAL ORGANIZATIONS
       </h2>
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-t border-gray-200 pt-8">
@@ -61,12 +61,20 @@ export default function Component() {
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
               {org.description}
             </p>
-            <Link
-              href={org.link}
-              className="text-[#007AFF] hover:underline font-medium text-sm"
-            >
-              Read here
-            </Link>
+            {org.link === "#" || org.link.trim() === "" ? (
+              <span className="text-red-500 text-sm font-medium">
+                Website not available
+              </span>
+            ) : (
+              <Link
+                href={org.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#007AFF] hover:underline font-medium text-sm"
+              >
+                Read here
+              </Link>
+            )}
           </div>
         ))}
       </div>
