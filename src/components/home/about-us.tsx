@@ -95,7 +95,7 @@ export default function AboutUsSection() {
     <div className="w-full py-12 px-4 border-b border-gray-200 shadow-lg mb-[75px]">
       {/* Header */}
       <div className="max-w-full mx-auto mb-[40px]" ref={aboutHeaderRef}>
-        <h2 className="text-3xl font-bold text-center text-[#072328] ">
+        <h2 className="text-3xl font-bold text-center text-[#072328] " id="about-us">
           ABOUT US
         </h2>
       </div>

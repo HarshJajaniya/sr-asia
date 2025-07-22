@@ -6,7 +6,7 @@ export default function Component() {
     <div className=" bg-white py-4 px-4">
       <div className="max-w-[1400px] mx-auto mb-[35px] ">
         {/* Heading */}
-        <div className="flex items-center justify-center mb-[75px]">
+        <div className="flex items-center justify-center mb-[75px]" id="insights">
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             INSIGHTS &amp; SPECIALS
           </h1>

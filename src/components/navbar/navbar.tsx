@@ -7,12 +7,12 @@ import gsap from "gsap";
 
 // Submenus
 const HomeSubmenu = [
-  { label: "Who we are", href: "/" },
-  
-  { label: "Our Mission & Vision", href: "/" },
-  { label: "Approach", href: "/" },
-  { label: "Footprints", href: "/" },
-  { label: "Insights", href: "/" },
+  { label: "Who we are", href: "#about-us" },
+
+  { label: "Our Mission & Vision", href: "#mission" },
+  { label: "Approach", href: "#approach" },
+  { label: "Footprints", href: "#stats-title" },
+  { label: "Insights", href: "#insights" },
 ];
 const AboutSubmenu = [
   { label: "Who we are", href: "/about" },

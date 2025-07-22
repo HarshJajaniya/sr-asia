@@ -47,7 +47,7 @@ export default function SrAsiaWorkGrid() {
     <section className="max-w-full bg-gray-50 py-16 px-4 md:px-6 lg:px-8 mb-[35px] border-b border-gray-200 shadow-lg">
       <div className="max-w-full mx-auto">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-[#072328] text-center mb-[35px]">OUR APPROACH</h2>
+        <h2 className="text-3xl font-bold text-[#072328] text-center mb-[35px]" id="approach">OUR APPROACH</h2>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 border-t border-gray-200 pt-4">
