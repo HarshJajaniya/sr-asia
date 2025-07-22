@@ -47,12 +47,12 @@ export default function Component() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm md:text-base text-[#072328]">
             <span className="whitespace-nowrap">
-              Assurance & Reporting services
+              <Link href="/services/assurance">Assurance & Reporting services</Link>
             </span>
-            <span className="whitespace-nowrap">CSR project management</span>
-            <span className="whitespace-nowrap">Monitoring & Evaluation</span>
-            <span className="whitespace-nowrap">Impact Assessment</span>
-            <span className="whitespace-nowrap">Land Survey</span>
+            <span className="whitespace-nowrap"><Link href="/services/csr">CSR project management</Link></span>
+            <span className="whitespace-nowrap"><Link href="/services/monitoring">Monitoring & Evaluation</Link></span>
+            <span className="whitespace-nowrap"><Link href="/services/impact">Impact Assessment</Link></span>
+            <span className="whitespace-nowrap"><Link href="/services/survey">Land Survey</Link></span>
           </div>
         </div>
       </section>
