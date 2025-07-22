@@ -61,7 +61,7 @@ export default function Component() {
 
             {/* Content on Right */}
             <div className="order-1 lg:order-2 space-y-6">
-              <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide">
+              <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide" id="volunteer">
                 Volunteer with us
               </h1>
               <h2 className="text-xl text-gray-700 font-medium">

@@ -81,7 +81,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1 className="text-3xl md:text-[40px] font-bold text-center mb-12 text-gray-800">
+      <h1 className="text-3xl md:text-[40px] font-bold text-center mb-12 text-gray-800" id="institutional">
         INSTITUTIONAL COLLABORATIONS
       </h1>
       <div className="flex mb-[75px] items-center justify-center bg-[#EEFAFE] p-4">

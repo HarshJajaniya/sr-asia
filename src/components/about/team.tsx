@@ -105,7 +105,7 @@ export default function TeamDisplay() {
 
   return (
     <div className="w-full px-2 sm:px-4 mb-[75px]">
-      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800">
+      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800" id="team">
         OUR TEAM
       </p>
 

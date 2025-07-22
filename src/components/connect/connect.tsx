@@ -239,7 +239,7 @@ export function JobListings() {
     ? staticCurrentOpenings
     : staticInternships;
 return (
-  <div className="flex min-h-screen bg-gray-50">
+  <div className="flex min-h-screen bg-gray-50" id="openings">
     {/* Sidebar */}
     <div className="w-48 bg-white border-r border-gray-200 p-4 space-y-4">
       <Button

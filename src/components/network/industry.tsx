@@ -30,7 +30,7 @@ export default function Component() {
   return (
     <div className="mb-[75px] bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-full mx-auto">
-        <h1 className="text-3xl md:text-[40px] font-bold text-center mb-12 text-gray-800">
+        <h1 className="text-3xl md:text-[40px] font-bold text-center mb-12 text-gray-800" id="industrial">
           INDUSTRY NETWORK
         </h1>
         <div className="space-y-8">

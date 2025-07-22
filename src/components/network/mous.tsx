@@ -48,7 +48,7 @@ export default function Component() {
 
   return (
     <section className="w-full px-[20px] mb-[75px]">
-      <h2 className="text-2xl font-bold sm:text-4xl md:text-[40px] text-center mb-12 md:mb-16">
+      <h2 className="text-2xl font-bold sm:text-4xl md:text-[40px] text-center mb-12 md:mb-16" id="membership">
         MEMBERSHIPS WITH GLOBAL ORGANIZATIONS
       </h2>
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-t border-gray-200 pt-8">
