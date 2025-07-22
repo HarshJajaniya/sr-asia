@@ -24,8 +24,8 @@ const AboutSubmenu = [
 ];
 
 const servicesSubmenu = [
-  { label: "Assurance Services", href: "/services/assurance" },
-  { label: "Reporting Services", href: "/services/reporting" },
+  { label: "Advisory Services", href: "/services/assurance" },
+  { label: "Assurance and Reporting", href: "/services/reporting" },
   { label: "CSR Project Management", href: "/services/csr" },
   { label: "Monitoring & Evaluation", href: "/services/monitoring" },
   { label: "Impact Assessment", href: "/services/impact" },
