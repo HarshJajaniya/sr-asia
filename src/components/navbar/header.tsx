@@ -17,7 +17,7 @@ export default function Component() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/srasia_logo.png"
+                src="/flags/7.png"
                 alt="SR Asia Logo"
                 className="w-12 h-12 md:w-16 md:h-16"
                 width={64}
