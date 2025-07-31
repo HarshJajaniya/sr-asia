@@ -76,7 +76,8 @@ export default function SrAsiaWorkGrid() {
                   {card.description}
                 </p>
                 <Link
-                  href="#"
+                  href="/approach.pdf"
+                  target="_blank"
                   className="block text-center py-2 px-4 bg-[#072328] hover:bg-[#A1E3F9] hover:text-[#072328] text-white font-medium"
                 >
                   Read more
