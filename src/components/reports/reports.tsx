@@ -137,15 +137,16 @@ export default function ReportViewer() {
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
       <div className="w-60 bg-white border-r border-gray-200 p-4 space-y-4">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">Projects Categories</h2>
+        <h2 className="text-lg font-semibold text-gray-800 mb-4">Projects Categories </h2>
         {(["brsr", "impact", "social"] as CategoryKey[]).map((key) => (
           <Button
             key={key}
+             id={`${key}`}
             variant={activeTab === key ? "default" : "outline"}
             className="w-full"
             onClick={() => setActiveTab(key)}
           >
-            {key === "brsr" ? "BRSR Assessments" :
+            {key === "brsr" ? "BRSR Assessments"  :
              key === "impact" ? "Impact Assessment" : "Social Impact Assessments"}
           </Button>
         ))}

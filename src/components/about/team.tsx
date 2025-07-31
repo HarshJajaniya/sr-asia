@@ -14,6 +14,14 @@ export default function TeamDisplay() {
   };
 
   const teamMembers = [
+     {
+      id: "Swati-Bhatt",
+      name: "Swati Bhatt",
+      title: "Director",
+      image: "/team/11.jpg",
+      description:
+        "Swati Bhatt brings leadership in sustainability initiatives and operational excellence at SR Asia.",
+    },
     {
       id: "Birendra-Dutt-Raturi",
       name: "Birendra Dutt Raturi",
@@ -31,12 +39,19 @@ export default function TeamDisplay() {
         "Rakesh Khare is a Senior Advisor with significant experience in policy formulation and sustainable development strategies for social impact organizations.",
     },
     {
-      id: "Swati-Bhatt",
-      name: "Swati Bhatt",
-      title: "Director",
-      image: "/team/11.jpg",
+      id: "Jaya-Yadav",
+      name: "Jaya Yadav",
+      title: "Research Analyst",
+      image: "/team/5.JPG",
       description:
-        "Swati Bhatt brings leadership in sustainability initiatives and operational excellence at SR Asia.",
+        "Jaya provides data-driven insights for sustainable research projects.",
+    },
+      {
+      id: "Tanu-Akolia",
+      name: "Tanu Akolia",
+      title: "HR Generalist",
+      image: "/team/9.jpeg",
+      description: "Tanu supports end-to-end HR processes and team wellness.",
     },
     {
       id: "Shruti-Sharma",
@@ -46,6 +61,7 @@ export default function TeamDisplay() {
       description:
         "Shruti handles talent engagement and HR operations at SR Asia.",
     },
+
     {
       id: "Dolly-Pandey",
       name: "Dolly Pandey",
@@ -62,23 +78,7 @@ export default function TeamDisplay() {
       description:
         "Lalvulmawii manages project execution and field operations.",
     },
-    {
-      id: "Kalash-Kesharwani",
-      name: "Kalash Kesharwani",
-      title: "Salesforce Admin",
-      image: "/team/1.JPG",
-      description:
-        "Kalash manages CRM systems and ensures data integrity on Salesforce.",
-    },
-    {
-      id: "Jaya-Yadav",
-      name: "Jaya Yadav",
-      title: "Research Analyst",
-      image: "/team/5.JPG",
-      description:
-        "Jaya provides data-driven insights for sustainable research projects.",
-    },
-    {
+     {
       id: "Sanjukta-Tirkey",
       name: "Sanjukta Tirkey",
       title: "Research Associate",
@@ -87,13 +87,21 @@ export default function TeamDisplay() {
         "Sanjukta contributes to research design and field data collection.",
     },
     {
-      id: "Tanu-Akolia",
-      name: "Tanu Akolia",
-      title: "HR Generalist",
-      image: "/team/9.jpeg",
-      description: "Tanu supports end-to-end HR processes and team wellness.",
+      id: "Kalash-Kesharwani",
+      name: "Kalash Kesharwani",
+      title: "Salesforce Admin",
+      image: "/team/1.JPG",
+      description:
+        "Kalash manages CRM systems and ensures data integrity on Salesforce.",
     },
-    {
+  //  {
+  //     id: "New-Member",
+  //     name: "New Member",
+  //     title: "New Title",
+  //     image: "/team/12.jpg",
+  //     description: "New member description goes here.",
+  //  },
+   {
       id: "Shrabanti-Chakraborty",
       name: "Shrabanti Chakraborty",
       title: "Website Design and Development Lead",
@@ -103,57 +111,58 @@ export default function TeamDisplay() {
     },
   ];
 
-  return (
-    <div className="w-full px-2 sm:px-4 mb-[75px]">
-      <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800" id="team">
-        OUR TEAM
-      </p>
+ return (
+  <div className="w-full px-2 sm:px-4 mb-[75px]">
+    <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800" id="team">
+      OUR TEAM
+    </p>
 
-      <div className="w-full justify-center">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
-          {teamMembers.map((member) => {
-            if (!member.id) return null;
-            const isExpanded = expanded[member.id] || false;
+    <div className="w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
+        {teamMembers.map((member) => {
+          if (!member.id) return null;
+          const isExpanded = expanded[member.id] || false;
 
-            return (
-              <div
-                key={member.id}
-                className="flex flex-col items-center text-center"
-              >
-                <img
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name || "Team member"}
-                  className="object-cover w-32 h-40 rounded-md"
-                />
-                <h3 className="text-sm font-semibold mt-2 text-[#031318]">
-                  {member.name}
-                </h3>
-                <p className="text-xs text-gray-600">{member.title}</p>
+          return (
+            <div
+              key={member.id}
+              className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md h-full max-w-[260px]"
+            >
+              <img
+                src={member.image || "/placeholder.svg"}
+                alt={member.name || "Team member"}
+                className="object-cover w-32 h-40 rounded-md"
+              />
+              <h3 className="text-sm font-semibold mt-3 text-[#031318]">
+                {member.name}
+              </h3>
+              <p className="text-xs text-gray-600">{member.title}</p>
 
-                {member.description && (
-                  <>
-                    <p
-                      className={`text-sm mt-2 text-[#246875] transition-all duration-300 ${
-                        isExpanded ? "" : "line-clamp-2"
-                      }`}
+              {member.description && (
+                <>
+                  <p
+                    className={`text-sm mt-2 text-[#246875] transition-all duration-300 ${
+                      isExpanded ? "" : "line-clamp-2"
+                    }`}
+                  >
+                    {member.description}
+                  </p>
+                  {member.description.length > 60 && (
+                    <button
+                      onClick={() => toggleExpand(member.id)}
+                      className="text-xs text-blue-500 mt-1 underline"
                     >
-                      {member.description}
-                    </p>
-                    {member.description.length > 60 && (
-                      <button
-                        onClick={() => toggleExpand(member.id)}
-                        className="text-xs text-blue-500 mt-1 underline"
-                      >
-                        {isExpanded ? "Read Less" : "Read More"}
-                      </button>
-                    )}
-                  </>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                      {isExpanded ? "Read Less" : "Read More"}
+                    </button>
+                  )}
+                </>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
-  );
+  </div>
+);
+
 }

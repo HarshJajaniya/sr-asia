@@ -34,12 +34,11 @@ const servicesSubmenu = [
 ];
 
 const reportSubmenu = [
-  { label: "NSE", href: "/report" },
-  { label: "Dabur", href: "/report" },
-  { label: "Nayra", href: "/report" },
-  { label: "SEWA-THDC", href: "/report" },
-  { label: "SEIL", href: "/report" },
-  { label: "Etc", href: "/report" },
+  { label: "BRSR Assessment", href: "/report/#brsr" },
+  { label: "Impact Assessment", href: "/report/#impact" },
+  { label: "Social Impact Assessment", href: "/report/#social" },
+  { label: "Certifications", href: "/report/#certifications" },
+
 ];
 
 const mediaSubmenu = [
