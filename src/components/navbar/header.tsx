@@ -6,6 +6,7 @@ import Image from "next/image"
 import { MapPin, Globe, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -38,7 +39,7 @@ export default function Component() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              href="/contacts"
+              href="/#footer"
               className="flex items-center space-x-2 text-[#14444D] hover:text-blue-700 transition-colors"
             >
               <MapPin className="w-4 h-4" />
@@ -71,7 +72,7 @@ export default function Component() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
             <Link
-              href="/contacts"
+              href="/#footer"
               className="flex items-center space-x-2 text-[#14444D] hover:text-blue-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
