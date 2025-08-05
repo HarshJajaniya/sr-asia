@@ -1,28 +1,16 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { workCards } from "@/components/home/data";
+import type { Metadata } from "next";
 
-import {workCards} from "@/components/home/data"; // adjust import path to named export
 
 
-interface WorkDetailParams {
-  slug: string;
-}
-
-export default function WorkDetail({ params }: { params: WorkDetailParams }) {
-interface WorkCard {
-    slug: string;
-    image: string;
-    title: string;
-    longDescription: string;
-    // add other fields if present in workCards
-}
-
-const card: WorkCard | undefined = (workCards as WorkCard[]).find(
-    (item: WorkCard) => item.slug === params.slug
-);
+export default function WorkDetail(props: any) {
+  const { params } = props;
+  const card = workCards.find((item) => item.slug === params.slug);
 
   if (!card) {
-    return notFound();
+    notFound();
   }
 
   return (
@@ -41,3 +29,4 @@ const card: WorkCard | undefined = (workCards as WorkCard[]).find(
     </div>
   );
 }
+

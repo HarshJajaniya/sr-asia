@@ -105,7 +105,7 @@ const driverContent = {
 
 export default function AdvisoryServicesPage() {
 const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Life Cycle Assessment (LCA)"
+  "Sustainability Reporting"
 );
 
 
