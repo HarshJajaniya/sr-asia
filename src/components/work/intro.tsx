@@ -6,32 +6,28 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Alignment with Legal & Policy Frameworks": {
-    title: "Alignment with Legal & Policy Frameworks",
+  "Feasibility Analysis": {
+    title: "Feasibility Analysis",
     description:
-      "Navigate complex regulatory changes with expert guidance. We help organizations stay compliant with evolving standards, ensuring seamless adaptation to new requirements while maintaining operational excellence.",
+      " We conduct in-depth feasibility studies to assess the technical, financial, environmental, and social viability of proposed projects. Our analysis helps organizations determine the feasibility and potential risks associated with project implementation, guiding strategic decision-making processes.Project Scope and Objectives: We define clear project scopes and objectives in the DPR, outlining the goals, deliverables, timelines, and resource requirements of the proposed project. Our detailed project scoping ensures alignment with organizational priorities and stakeholder expectations.Market Research and Analysis: We perform comprehensive market research and analysis to identify market trends, demand-supply dynamics, competitor landscapes, and potential risks and opportunities for the proposed project. Our market insights enable organizations to make informed decisions regarding project positioning, pricing, and market entry strategies.Technical Design and Specifications: We develop detailed technical designs and specifications for the proposed project, outlining the required infrastructure, equipment, technology, and engineering solutions. Our technical expertise ensures that project designs are robust, efficient, and aligned with industry standards and best practices.Financial Projections and Viability: We prepare detailed financial projections and viability assessments for the proposed project, including capital expenditure estimates, revenue forecasts, cost-benefit analyses, and financial risk assessments. Our financial analyses help organizations evaluate the financial feasibility and potential returns on investment of the project.",
   },
-  "Strategic Impact Planning": {
-    title: "Strategic Impact Planning",
+  "Technology Assessments": {
+    title: "Technology Assessments",
     description:
-      "Meet rising environmental, social, and governance expectations from stakeholders. Our comprehensive ESG advisory services help organizations build sustainable practices and transparent reporting frameworks.",
+      "SR Asia offers specialized Technology Assessment services, designed to provide organizations with comprehensive insights into the suitability, feasibility, and impact of adopting specific technologies. Our assessments help organizations make informed decisions regarding technology investments, upgrades, and integrations, ensuring optimal alignment with business goals and objectives.Technology Landscape Analysis: We conduct thorough analyses of the technology landscape relevant to the organization's industry, identifying emerging trends, innovations, and disruptions. Our assessments help organizations stay abreast of technological advancements and assess their potential impact on business operations.Needs Assessment: We collaborate with organizations to understand their specific technology needs, challenges, and objectives. By conducting needs assessments, we tailor our technology recommendations to address unique organizational requirements and priorities effectively.Technology Selection Criteria: We develop clear and concise criteria for evaluating and selecting technology solutions based on organizational priorities, budgetary constraints, technical requirements, and scalability. Our selection criteria ensure that technology investments align with strategic objectives and deliver maximum value.Comparative Analysis: We perform comparative analyses of multiple technology solutions, weighing their respective strengths, weaknesses, features, and costs. Our comparative analyses help organizations make informed decisions by providing a comprehensive overview of available options and their potential implications.Feasibility Assessment: We assess the technical, financial, and operational feasibility of implementing specific technology solutions within the organization's existing infrastructure and ecosystem. Our feasibility assessments help organizations identify potential implementation challenges, risks, and mitigation strategies.",
   },
-  "Efficient Resource Utilization": {
-    title: "Efficient Resource Utilization",
+  "Value Chain Assessments": {
+    title: "Value Chain Assessments",
     description:
-      "Integrate advisory services across all business functions for maximum impact. We provide holistic solutions that align strategic objectives with operational execution and long-term value creation.",
+      "SR Asia specializes in Value Chain Assessments, designed to help organizations identify opportunities for optimization, innovation, and efficiency improvement across their value chains. Our assessments provide organizations with valuable insights into the end-to-end processes, stakeholders, and value-added activities, enabling them to enhance competitiveness, sustainability, and profitability.Key Features of Our Value Chain Assessment Services:End-to-End Analysis: We conduct comprehensive analyses of organizations' value chains, from raw material sourcing to product/service delivery to end customers. Our assessments map out the entire value chain, identifying key processes, stakeholders, and value-added activities at each stage.Stakeholder Engagement: We engage with relevant stakeholders, including suppliers, manufacturers, distributors, retailers, and customers, to gather insights, feedback, and perspectives on value chain dynamics and opportunities. By fostering collaboration and dialogue, we ensure that our assessments capture diverse perspectives and priorities.Process Mapping and Optimization: We map out existing processes within the value chain and identify opportunities for optimization, streamlining, and automation. Our process optimization recommendations aim to reduce costs, eliminate inefficiencies, and enhance productivity across the value chain.Value-Added Analysis: We analyze the value-added activities within the value chain and assess their contribution to overall organizational performance and competitiveness. Our value-added analysis helps organizations identify areas for innovation, differentiation, and value creation.Supply Chain Resilience: We assess the resilience of organizations' supply chains to external shocks, disruptions, and risks, such as natural disasters, geopolitical instability, and supply chain disruptions. Our resilience assessments help organizations identify vulnerabilities and develop strategies to build robust, agile, and sustainable supply chains.",
   },
-  "Monitoring & Risk Mitigation": {
-    title: "Monitoring & Risk Mitigation",
-    description:
-      "Ensure data integrity and reliability across all reporting processes. Our validation services provide confidence in decision-making through rigorous data quality assurance and verification protocols.",
-  },
+
 }
 
 
 export default function AdvisoryServicesPage() {
 const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Alignment with Legal & Policy Frameworks"
+  "Feasibility Analysis"
 );
 
 
@@ -42,7 +38,9 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-            SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+           DPR and feasibility studies are critical components in the early stages of project development, providing a detailed plan and assessing the project's viability. M&E ensures ongoing assessment and improvement during project implementation. PMC services contribute to effective project management, while advisory services bring external expertise to guide decision-making and address specific challenges. Together, these elements form a comprehensive approach to successful project development and execution.
+Detailed Project Report (DPR):
+SR Asia offers specialized services in preparing Detailed Project Reports (DPR), meticulously crafted documents that outline the comprehensive framework and feasibility of proposed projects. Our DPR services are designed to provide organizations with detailed insights, analyses, and recommendations to facilitate informed decision-making and successful project implementation.
 
           </p>
         </section>

@@ -6,33 +6,83 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Alignment with Legal & Policy Frameworks": {
-    title: "Alignment with Legal & Policy Frameworks",
-    description:
-      "Navigate complex regulatory changes with expert guidance. We help organizations stay compliant with evolving standards, ensuring seamless adaptation to new requirements while maintaining operational excellence.",
-  },
-  "Strategic Impact Planning": {
-    title: "Strategic Impact Planning",
-    description:
-      "Meet rising environmental, social, and governance expectations from stakeholders. Our comprehensive ESG advisory services help organizations build sustainable practices and transparent reporting frameworks.",
-  },
-  "Efficient Resource Utilization": {
-    title: "Efficient Resource Utilization",
-    description:
-      "Integrate advisory services across all business functions for maximum impact. We provide holistic solutions that align strategic objectives with operational execution and long-term value creation.",
-  },
-   "Monitoring & Risk Mitigation": {
-    title: "Monitoring & Risk Mitigation",
-    description:
-      "Implement robust monitoring frameworks to track project performance and mitigate risks proactively. Our data-driven insights enable organizations to make informed decisions and adapt strategies in real-time.",
-  },
+"Strategic Planning": {
+  title: "Strategic Planning",
+  description:
+    "We work closely with organizations to develop comprehensive CSR strategies aligned with business objectives, values, and stakeholder expectations. This involves identifying priority areas, setting clear goals, and establishing mechanisms for monitoring and evaluation."
+},
+"Stakeholder Engagement": {
+  title: "Stakeholder Engagement",
+  description:
+    "We facilitate stakeholder engagement processes to gather insights, feedback, and perspectives on CSR priorities and initiatives. This enhances the relevance, credibility, and impact of programs while fostering trust and collaboration."
+},
+"Program Design and Development": {
+  title: "Program Design and Development",
+  description:
+    "We design and develop CSR programs addressing key social, environmental, and economic challenges. From community development to environmental conservation, we help organizations create impactful interventions."
+},
+"Partnership Development": {
+  title: "Partnership Development",
+  description:
+    "We build strategic partnerships with NGOs, government agencies, and community groups to leverage resources, expertise, and networks. Our approach focuses on collaboration, co-creation, and shared value creation."
+},
+"Program/Project Implementation": {
+  title: "Program/Project Implementation",
+  description:
+    "We specialize in translating organizational vision into tangible results through efficient project execution. Our expertise includes project management, stakeholder engagement, and impact assessment."
+},
+"Strategic Alignment": {
+  title: "Strategic Alignment",
+  description:
+    "We ensure that projects align closely with organizational goals, strategies, and priorities, mapping clear objectives and deliverables to achieve desired outcomes."
+},
+"Project Planning and Design": {
+  title: "Project Planning and Design",
+  description:
+    "We develop comprehensive project plans, outlining timelines, budgets, resources, and milestones to ensure projects are well-defined, organized, and executable."
+},
+"Resource Mobilization": {
+  title: "Resource Mobilization",
+  description:
+    "We assist in mobilizing the necessary resources—funding, manpower, equipment, and technology—to ensure projects are adequately supported for success."
+},
+"Monitoring and Evaluation": {
+  title: "Monitoring and Evaluation",
+  description:
+    "We track progress and measure impact through robust frameworks that ensure CSR programs deliver tangible results. Transparency is maintained via regular stakeholder communication, industry benchmarks, and third-party verification."
+},
+"Scientific Framework": {
+  title: "Scientific Framework",
+  description:
+    "We apply a blend of quantitative and qualitative methods to gain a comprehensive understanding of project progress and effectiveness."
+},
+"Performance Indicators": {
+  title: "Performance Indicators",
+  description:
+    "We establish clear indicators at project inception to track progress against benchmarks, enabling timely improvements."
+},
+"Data Collection": {
+  title: "Data Collection",
+  description:
+    "We use surveys, interviews, focus groups, and observations to gather both quantitative and qualitative data for holistic assessments."
+},
+"Logical Framework": {
+  title: "Logical Framework",
+  description:
+    "We employ a structured framework linking goals, activities, outputs, and outcomes to guide monitoring and evaluation activities."
+},
+"Stakeholder Engagement in M&E": {
+  title: "Stakeholder Engagement in M&E",
+  description:
+    "We actively involve stakeholders in the monitoring and evaluation process to ensure findings are relevant, credible, and actionable."
+}
 
 }
 
 
 export default function AdvisoryServicesPage() {
 const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Alignment with Legal & Policy Frameworks"
+  "Strategic Planning"
 );
 
 
@@ -43,7 +93,7 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-           SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+            SR Asia offers specialized services for Corporate Social Responsibility (CSR) implementation, helping organizations create meaningful impact in society and the environment. Our CSR implementation services are designed to support organizations in developing and executing strategic initiatives that align with their values, objectives, and stakeholder expectations.
 
 
           </p>

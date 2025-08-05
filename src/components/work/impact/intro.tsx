@@ -6,28 +6,34 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Evidence-Based Decision Making": {
-    title: "Evidence-Based Decision Making",
-    description:
-      "Navigate complex regulatory changes with expert guidance. We help organizations stay compliant with evolving standards, ensuring seamless adaptation to new requirements while maintaining operational excellence.",
-  },
-  "Measuring Social Return on Investment (SROI)": {
-    title: "Measuring Social Return on Investment (SROI)",
-    description:
-      "Meet rising environmental, social, and governance expectations from stakeholders. Our comprehensive ESG advisory services help organizations build sustainable practices and transparent reporting frameworks.",
-  },
-  "Regulatory & Donor Compliance": {
-    title: "Regulatory & Donor Compliance",
-    description:
-      "Integrate advisory services across all business functions for maximum impact. We provide holistic solutions that align strategic objectives with operational execution and long-term value creation.",
-  },
+ "Impact Assessment": {
+  title: "Impact Assessment",
+  description:
+    "We employ contemporary and innovative methods tailored to each project's vision, goals, and expected outcomes, ensuring accuracy and inclusivity. Our approach uses inclusive tools to capture diverse perspectives from communities, businesses, and government entities, guaranteeing that all voices are heard. We conduct thorough analyses of monitoring and evaluation reports, on-ground assessments, and other relevant documentation, establishing sustainability mapping to recommend simplified, future-focused solutions. Transparency is at the core of our process — we maintain open communication with stakeholders through clear updates, findings, and recommendations."
+},
+"Social Impact Assessment (SIA)": {
+  title: "Social Impact Assessment (SIA)",
+  description:
+    "We evaluate the potential social effects of development projects to mitigate risks and maximize benefits for communities and stakeholders. Our process actively engages communities, incorporating their concerns and aspirations into the assessment. We identify and assess impacts on livelihoods, access to resources, social cohesion, and cultural heritage, and facilitate consultations between developers, government agencies, and affected communities to ensure socially sustainable outcomes. With cultural sensitivity at the forefront, we respect local customs and traditions, fostering trust and cooperation throughout the assessment."
+},
+"Environment & Social Impact Assessment (ESIA)": {
+  title: "Environment & Social Impact Assessment (ESIA)",
+  description:
+    "We conduct integrated assessments addressing both environmental and social factors, providing a holistic view of a project's potential impacts on ecosystems and communities. Our environmental analysis covers air and water quality, biodiversity, and habitat protection, while our social analysis considers livelihoods, resource access, and community dynamics. Throughout the ESIA process, we engage stakeholders to incorporate their input and address their concerns, ensuring that decision-making is inclusive and grounded in both environmental responsibility and social well-being."
+},
+"Environmental Impact Assessment (EIA)": {
+  title: "Environmental Impact Assessment (EIA)",
+  description:
+    "We offer comprehensive EIA services to evaluate the environmental consequences of proposed projects, ensuring planning and execution align with sustainable practices. Our evaluations span sectors such as infrastructure, energy, construction, and manufacturing. We ensure compliance with environmental regulations, guiding clients through permitting and approvals. Using a multidisciplinary approach that integrates environmental science, engineering, ecology, and social sciences, we provide well-rounded assessments. We engage stakeholders from local communities to NGOs, incorporating their perspectives into the process, and develop practical mitigation measures such as pollution prevention, habitat restoration, and ongoing environmental monitoring."
+}
+
 
 }
 
 
 export default function AdvisoryServicesPage() {
 const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Evidence-Based Decision Making"
+  "Impact Assessment"
 );
 
 
@@ -38,7 +44,11 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-           SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+          At SR Asia, we specialize in evaluating the intended or unintended effects of projects, programs, or policies on the environment, economy, and society. Our Impact Assessment service provides invaluable insights to guide decision-making, improve project outcomes, and drive sustainable growth.
+
+Contemporary Methods: We employ contemporary and innovative methods throughout the impact assessment process, ensuring accuracy and inclusivity. Our approach is specific to each project's vision, goals, and real outcomes.
+Inclusive Tools: We utilize inclusive tools to gather data and perspectives from diverse stakeholders, including communities, businesses, and government entities. This comprehensive approach ensures that all voices are heard and considered.
+Thorough Analysis: We conduct thorough analysis of monitoring reports, evaluation reports, and other relevant papers, along with on-ground evaluation. Our team establishes a matrix that enables us to conduct sustainability mapping and recommend simplified solutions for the future.
 
 
           </p>
