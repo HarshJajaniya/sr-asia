@@ -155,7 +155,7 @@ export default function Footer() {
         <div className="border-t border-[#006050] mt-8 pt-6 text-center text-sm">
           <p>© 2025 SR Asia | ISO 9001 Certified</p>
           <p className="mt-1">
-            Member of UNGO • CLI • APO Japan • CTCN • IPLA Japan
+            Membership of CII • APO Japan • CTCN • IPLA Japan
           </p>
         </div>
       </div>
