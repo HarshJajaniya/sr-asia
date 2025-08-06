@@ -7,25 +7,25 @@ import gsap from "gsap";
 
 // Submenus
 const HomeSubmenu = [
-  { label: "Who we are", href: "/" },
-  
-  { label: "Our Mission & Vision", href: "/" },
-  { label: "Approach", href: "/" },
-  { label: "Footprints", href: "/" },
-  { label: "Insights", href: "/" },
+  { label: "Who we are", href: "/#about-us" },
+
+  { label: "Our Mission & Vision", href: "/#mission" },
+  { label: "Approach", href: "/#approach" },
+  { label: "Footprints", href: "/#stats-title" },
+  { label: "Insights", href: "/#insights" },
 ];
 const AboutSubmenu = [
-  { label: "Who we are", href: "/about" },
-  { label: "What we do", href: "/about" },
-  { label: "Our Mission & Vision", href: "/about" },
-  { label: "Certification & Monitoring", href: "/about" },
-  { label: "Team", href: "/about" },
-  { label: "Why Choose us", href: "/about" },
+  { label: "Who we are", href: "/about/#who-we-are" },
+  { label: "What we do", href: "/about/#what-we-do" },
+  { label: "Our Mission & Vision", href: "/#mission" },
+  
+  { label: "Team", href: "/about/#team" },
+  { label: "Why Choose us", href: "/about/#why-choose-us" },
 ];
 
 const servicesSubmenu = [
-  { label: "Assurance Services", href: "/services/assurance" },
-  { label: "Reporting Services", href: "/services/reporting" },
+  { label: "Advisory Services", href: "/services/assurance" },
+  { label: "Assurance and Reporting", href: "/services/reporting" },
   { label: "CSR Project Management", href: "/services/csr" },
   { label: "Monitoring & Evaluation", href: "/services/monitoring" },
   { label: "Impact Assessment", href: "/services/impact" },
@@ -34,31 +34,30 @@ const servicesSubmenu = [
 ];
 
 const reportSubmenu = [
-  { label: "NSE", href: "/report" },
-  { label: "Dabur", href: "/report" },
-  { label: "Nayra", href: "/report" },
-  { label: "SEWA-THDC", href: "/report" },
-  { label: "SEIL", href: "/report" },
-  { label: "Etc", href: "/report" },
+  { label: "BRSR Assessment", href: "/report/#brsr" },
+  { label: "Impact Assessment", href: "/report/#impact" },
+  { label: "Social Impact Assessment", href: "/report/#social" },
+  { label: "Certifications", href: "/report/#certifications" },
+
 ];
 
 const mediaSubmenu = [
-  { label: "Blogs & Articles", href: "/media" },
-  { label: "Conference", href: "/media" },
-  { label: "Webinar", href: "/media" },
+  { label: "Blogs & Articles", href: "/media/#blogs" },
+  { label: "Conference", href: "/media/#conference" },
+  { label: "Webinar", href: "/media/#webinar" },
 ];
 
 const careersSubmenu = [
-  { label: "Current Opening", href: "/career" },
-  { label: "Internship", href: "/career" },
-  { label: "Volunteer", href: "/career" },
-  { label: "Empanelment", href: "/career" },
+  { label: "Current Opening", href: "/career/#openings" },
+  { label: "Internship", href: "/career/#openings" },
+  { label: "Volunteer", href: "/career/#volunteer" },
+  { label: "Empanelment", href: "/career/#empanelment" },
 ];
 const networkSubmenu = [
-  { label: "Country Network", href: "/network" },
-  { label: "Institutional", href: "/network" },
-  { label: "Industrial", href: "/network" },
-  { label: "Membership", href: "/network" },
+  { label: "Country Network", href: "/network/#country-network" },
+  { label: "Institutional", href: "/network/#institutional" },
+  { label: "Industrial", href: "/network/#industrial" },
+  { label: "Membership", href: "/network/#membership" },
   { label: "Partners", href: "/network" },
 ];
 

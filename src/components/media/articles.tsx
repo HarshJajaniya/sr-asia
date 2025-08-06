@@ -85,7 +85,7 @@ export default function SrAsiaWorkCarousel() {
       <div className="bg-white shadow-xl rounded-2xl my-12 px-4 md:px-6 py-10">
         <div className="relative mb-12 max-w-5xl mx-auto">
           <div className="relative flex items-center mb-10 max-w-screen-xl">
-            <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10">
+            <h2 className="text-[32px] font-bold text-[#072328] mx-auto bg-white px-4 z-10" id="blogs">
               BLOGS & ARTICLES
             </h2>
           </div>

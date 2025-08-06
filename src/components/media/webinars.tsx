@@ -159,7 +159,7 @@ export default function Component() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="bg-gradient-to-br from-green-50 to-blue-50 mb-0 pb-0">
+    <div className="bg-gradient-to-br from-green-50 to-blue-50 mb-0 pb-0" id="webinar">
       <Carousel className="w-full max-w-8xl mx-auto">
         <CarouselContent>
           {webinarSlides.map((slide, index) => (

@@ -12,7 +12,7 @@ export default function Component() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#000000] uppercase tracking-wider">
+                <h2 className="text-3xl font-bold text-[#000000] uppercase tracking-wider" id="mission">
                   OUR MISSION & VISION
                 </h2>
                 <div className="space-y-4">

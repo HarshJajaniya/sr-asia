@@ -6,28 +6,37 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Precision in Project Planning": {
-    title: "Precision in Project Planning",
+  " Social Impact Assessment (SIA) - ": {
+    title: "Social Impact Assessment (SIA) - ",
     description:
-      "Navigate complex regulatory changes with expert guidance. We help organizations stay compliant with evolving standards, ensuring seamless adaptation to new requirements while maintaining operational excellence.",
+      "Community Engagement: We actively engage with communities and stakeholders throughout the SIA process, soliciting their input, concerns, and aspirations. This participatory approach ensures that their voices are heard and incorporated into the assessment.Impact Identification: We identify and assess the potential social impacts of development projects, including changes in livelihoods, access to resources, social cohesion, and cultural heritage. This enables project stakeholders to anticipate and address potential challenges proactively.Stakeholder Consultation: We facilitate dialogues and consultations between project developers, government agencies, and affected communities to identify solutions and mitigate potential negative impacts. Our goal is to ensure that development projects are socially sustainable and beneficial for all stakeholders.Cultural Sensitivity: We approach SIA with cultural sensitivity and respect for local customs, traditions, and values. This enables us to build trust and rapport with communities, fostering cooperation and collaboration throughout the assessment process.",
   },
   "State-of-the-Art Technology": {
     title: "State-of-the-Art Technology",
     description:
-      "Meet rising environmental, social, and governance expectations from stakeholders. Our comprehensive ESG advisory services help organizations build sustainable practices and transparent reporting frameworks.",
+      "We utilize state-of-the-art surveying equipment and techniques to deliver precise and detailed land surveys. Our team of experienced surveyors ensures that every inch of land is accurately measured and mapped. Comprehensive Analysis: Our land surveys include detailed analysis of topography, boundaries, and features of the land. This information is essential for making informed decisions and avoiding potential conflicts or challenges during project execution. Customized Solutions: We tailor our land survey services to meet the specific needs and objectives of each project. Whether it's a small-scale development or a large-scale infrastructure project, we provide customized solutions to ensure accurate and reliable results.",
   },
-  "Topographical & Boundary Analysis": {
-    title: "Topographical & Boundary Analysis",
+  "Environment & Social Impact Assessment (ESIA)": {
+    title: "Environment & Social Impact Assessment (ESIA)",
     description:
-      "Integrate advisory services across all business functions for maximum impact. We provide holistic solutions that align strategic objectives with operational execution and long-term value creation.",
+      "Integrated Assessment: We conduct integrated assessments that consider the interactions between environmental and social factors. This ensures a comprehensive understanding of the potential impacts of development projects on ecosystems, biodiversity, and human well-being.Environmental Analysis: We assess the potential environmental impacts of projects, including changes in air and water quality, habitat destruction, and pollution. Our goal is to identify measures to minimize environmental degradation and promote sustainable practices.Social Analysis: We analyze the potential social impacts of projects, including changes in livelihoods, access to resources, and social dynamics. This enables us to anticipate and address potential challenges and maximize positive social outcomes.Stakeholder Engagement: We actively engage with stakeholders throughout the ESIA process, soliciting their input, concerns, and feedback. This participatory approach ensures that the voices of affected communities are heard and considered in decision-making.",
   },
-
+  "Environmental Impact Assessment (EIA)- ": {
+    title: "Environmental Impact Assessment (EIA)- ",
+    description:
+      "Thorough Evaluation: We conduct thorough evaluations to assess the potential environmental impacts of proposed projects across various sectors, including infrastructure development, energy, construction, and manufacturing.Regulatory Compliance: Our team ensures compliance with relevant environmental regulations and standards throughout the EIA process, helping clients navigate complex regulatory requirements and obtain necessary permits and approvals.Multidisciplinary Approach: Our EIA process involves a multidisciplinary approach, integrating expertise in environmental science, engineering, ecology, and social sciences to provide a comprehensive assessment of potential impacts.",
+  },
+  "Resettlement and Rehabilitation (R&R)": {
+    title: "Resettlement and Rehabilitation (R&R)",
+    description:
+      "Comprehensive Planning: We develop comprehensive resettlement and rehabilitation plans that address the needs and concerns of affected communities. Our approach involves extensive stakeholder engagement to ensure that the voices of those impacted are heard and considered. Livelihood Restoration: We prioritize livelihood restoration for displaced individuals and communities, implementing programs that provide alternative income sources and support sustainable development. This includes skills training, access to resources, and assistance in finding new employment opportunities. Social Support: Our R&R initiatives include social support programs that address the psychological and emotional well-being of affected individuals. We recognize the importance of community cohesion and work to rebuild social networks and support systems.",
+  },
 }
 
 
 export default function AdvisoryServicesPage() {
 const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Precision in Project Planning"
+  " Social Impact Assessment (SIA) - "
 );
 
 
@@ -38,7 +47,17 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-           SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+        At SR Asia, we recognize that accurate and reliable land surveying is the foundation of successful development projects. Whether for infrastructure, construction, environmental management, or urban planning, precise survey data is essential for informed decision-making and risk reduction.
+
+Our Land Survey services combine advanced technology with professional expertise to deliver high-precision measurements and comprehensive mapping solutions. Using state-of-the-art equipment such as GPS/GNSS systems, total stations, and drone-based aerial survey tools, we capture detailed spatial data with exceptional accuracy.
+
+We provide a complete range of surveying solutions, including topographic surveys, boundary demarcation, cadastral mapping, construction layout surveys, and land use assessments. Every survey is conducted following strict quality and safety protocols, ensuring compliance with regulatory requirements and industry best practices.
+
+Beyond data collection, our team interprets and analyzes survey results to support project planning, design optimization, and seamless implementation. We work closely with architects, engineers, planners, and developers to ensure the data we deliver is actionable, precise, and tailored to the project’s needs.
+
+With SR Asia’s Land Survey services, clients gain the confidence that their projects are built on a foundation of accuracy, transparency, and reliability — reducing costly errors, preventing disputes, and ensuring long-term project success.
+
+
 
           </p>
         </section>

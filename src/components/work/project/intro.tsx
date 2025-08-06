@@ -38,7 +38,13 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-           SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+         SR Asia offers specialized Program/Project Implementation services, dedicated to translating organizational vision into tangible results. With our expertise in project management, stakeholder engagement, and impact assessment, we support organizations in executing their programs and projects efficiently and effectively.
+Key Features of Our Program/Project Implementation Services:
+Strategic Alignment: We ensure that program/project implementation aligns closely with organizational goals, strategies, and priorities. By mapping out clear objectives and deliverables, we help organizations stay focused and achieve desired outcomes.
+Project Planning and Design: We assist organizations in developing comprehensive project plans and designs, outlining timelines, budgets, resources, and milestones. Our structured approach to planning ensures that projects are well-defined, organized, and executable.
+Stakeholder Engagement: We facilitate stakeholder engagement processes to involve relevant stakeholders in the project implementation process. By soliciting input, feedback, and support from stakeholders, organizations can enhance project relevance, ownership, and impact.
+Resource Mobilization: We help organizations mobilize the necessary resources, including funding, manpower, equipment, and technology, for project implementation. Our resource mobilization strategies ensure that projects are adequately resourced to achieve desired outcomes.
+Monitoring and Evaluation: We implement robust monitoring and evaluation mechanisms to track project progress, assess performance, and measure impact. Our monitoring and evaluation framework enables organizations to make data-driven decisions, identify areas for improvement, and demonstrate results to stakeholders.
 
 
           </p>

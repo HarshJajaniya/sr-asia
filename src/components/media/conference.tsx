@@ -26,7 +26,7 @@ export default function FullScreenNestedCarousel() {
   ];
 
   return (
-    <div className="w-full px-[20px] py-12">
+    <div className="w-full px-[20px] py-12" id="conference">
       <Swiper
         modules={[Navigation, Pagination]}
         navigation

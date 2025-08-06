@@ -55,7 +55,7 @@ export default function PdfAccordion() {
   ]
 
   return (
-    <div className="p-4 max-w-full mx-auto">
+    <div className="p-4 max-w-full mx-auto" id="certifications">
       <Accordion type="single" collapsible className="w-full" value={openItem} onValueChange={setOpenItem}>
         {items.map((item) => (
           <AccordionItem key={item.id} value={item.id} className="border-b-0">

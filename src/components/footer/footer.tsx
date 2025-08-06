@@ -2,6 +2,7 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  Twitter,
   MapPin,
   Mail,
   Phone,
@@ -10,7 +11,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#072328] text-white">
+    <footer className="bg-[#072328] text-white" id="footer">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Contact Us */}
@@ -38,15 +39,15 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex space-x-3 mt-2">
-                {/* <Link
-                  href="https://www.instagram.com/sr_asia/"
+                <Link
+                  href="https://x.com/sr_asia?t=eMp7AJ94upGApdHPZ6r21Q&s=08"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#e1306c] p-1.5 rounded-md hover:opacity-80 transition-opacity"
                 >
-                  <Instagram className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </Link> */}
+                  <Twitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </Link>
                 <Link
                   href="https://www.linkedin.com/company/sr-asia/"
                   target="_blank"
@@ -154,7 +155,7 @@ export default function Footer() {
         <div className="border-t border-[#006050] mt-8 pt-6 text-center text-sm">
           <p>© 2025 SR Asia | ISO 9001 Certified</p>
           <p className="mt-1">
-            Member of UNGO • CLI • APO Japan • CTCN • IPLA Japan
+            Membership of CII • APO Japan • CTCN • IPLA Japan
           </p>
         </div>
       </div>

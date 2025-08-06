@@ -85,19 +85,26 @@ const staticInternships = [
 ];
 
 function ApplicationForm({
-  jobId,
+  jobTitle,
   onClose,
+  isInternship,
 }: {
-  jobId: number;
+  jobTitle: string;
   onClose: () => void;
+  isInternship?: boolean;
 }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
+    previousOrganization: "",
+    institutionName: "",
+    highestQualification: "",
     experience: "",
-    ctc: "",
+    expectedCtc: "",
     resume: null as File | null,
   });
+
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -106,16 +113,22 @@ function ApplicationForm({
     try {
       const data = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
-        if (value) data.append(key, value);
+        if (value) data.append(key, value as string | Blob);
       });
-      data.append("jobId", jobId.toString());
+      data.append("jobTitle", jobTitle);
+
+
       await axios.post("https://srasia-backend.onrender.com/api/apply", data);
       alert("Application submitted successfully!");
       setFormData({
         name: "",
         email: "",
+        phone: "",
+        previousOrganization: "",
+        institutionName: "",
+        highestQualification: "",
         experience: "",
-        ctc: "",
+        expectedCtc: "",
         resume: null,
       });
       onClose();
@@ -136,30 +149,86 @@ function ApplicationForm({
         type="text"
         placeholder="Name"
         required
+        value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         className="w-full p-2 border"
       />
+
       <input
         type="email"
         placeholder="Email"
         required
+        value={formData.email}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         className="w-full p-2 border"
       />
+
+      <input
+        type="text"
+        placeholder="Phone Number"
+        required
+        value={formData.phone}
+        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+        className="w-full p-2 border"
+      />
+
+      {isInternship ? (
+        <input
+          type="text"
+          placeholder="Institution Name"
+          required
+          value={formData.institutionName}
+          onChange={(e) =>
+            setFormData({ ...formData, institutionName: e.target.value })
+          }
+          className="w-full p-2 border"
+        />
+      ) : (
+        <input
+          type="text"
+          placeholder="Previous Organization"
+          required
+          value={formData.previousOrganization}
+          onChange={(e) =>
+            setFormData({ ...formData, previousOrganization: e.target.value })
+          }
+          className="w-full p-2 border"
+        />
+      )}
+
+      <input
+        type="text"
+        placeholder="Highest Qualification"
+        required
+        value={formData.highestQualification}
+        onChange={(e) =>
+          setFormData({ ...formData, highestQualification: e.target.value })
+        }
+        className="w-full p-2 border"
+      />
+
       <input
         type="text"
         placeholder="Years of Experience"
+        required
+        value={formData.experience}
         onChange={(e) =>
           setFormData({ ...formData, experience: e.target.value })
         }
         className="w-full p-2 border"
       />
+
       <input
         type="text"
-        placeholder="Current CTC"
-        onChange={(e) => setFormData({ ...formData, ctc: e.target.value })}
+        placeholder="Expected CTC"
+        required
+        value={formData.expectedCtc}
+        onChange={(e) =>
+          setFormData({ ...formData, expectedCtc: e.target.value })
+        }
         className="w-full p-2 border"
       />
+
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
           Upload Resume
@@ -206,6 +275,7 @@ function ApplicationForm({
   );
 }
 
+
 export function JobListings() {
   const [selectedJobId, setSelectedJobId] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<"current" | "intern">("current");
@@ -239,7 +309,7 @@ export function JobListings() {
     ? staticCurrentOpenings
     : staticInternships;
 return (
-  <div className="flex min-h-screen bg-gray-50">
+  <div className="flex min-h-screen bg-gray-50" id="openings">
     {/* Sidebar */}
     <div className="w-48 bg-white border-r border-gray-200 p-4 space-y-4">
       <Button
@@ -294,10 +364,11 @@ return (
 
                 {/* Show Application Form */}
                 {selectedJobId === jobId && (
-                  <ApplicationForm
-                    jobId={jobId}
-                    onClose={() => setSelectedJobId(null)}
-                  />
+                <ApplicationForm
+  jobTitle={job.title}
+  onClose={() => setSelectedJobId(null)}
+  isInternship={activeTab === "intern"}
+/>
                 )}
               </CardContent>
             </Card>

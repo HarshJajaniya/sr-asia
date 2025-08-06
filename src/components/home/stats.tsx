@@ -8,7 +8,7 @@ export default function StatsSection() {
     <div className="relative w-full py-8 px-[20px] overflow-hidden">
   {/* Stats Grid */}
    <div className="relative z-10 text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-[35px]">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-[35px]" id="stats-title">
                   The SR Asia Footprint 
                 </h2>
       </div>

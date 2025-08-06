@@ -56,7 +56,7 @@ const Empanelment = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
             <div className="space-y-6">
-              <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide">
+              <h1 className="text-4xl font-bold text-gray-900 uppercase tracking-wide" id="empanelment">
                 Empanelment of Experts
               </h1>
               <p className="text-gray-700 font-medium">

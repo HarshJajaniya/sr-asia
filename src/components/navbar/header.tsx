@@ -6,18 +6,19 @@ import Image from "next/image"
 import { MapPin, Globe, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="w-full bg-white border-b border-gray-200">
+    <header className="w-full bg-gray-100 border-b border-gray-200">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/srasia_logo.png"
+                src="/flags/8.jpg"
                 alt="SR Asia Logo"
                 className="w-12 h-12 md:w-16 md:h-16"
                 width={64}
@@ -38,7 +39,7 @@ export default function Component() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              href="/contacts"
+              href="/#footer"
               className="flex items-center space-x-2 text-[#14444D] hover:text-blue-700 transition-colors"
             >
               <MapPin className="w-4 h-4" />
@@ -71,7 +72,7 @@ export default function Component() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
             <Link
-              href="/contacts"
+              href="/#footer"
               className="flex items-center space-x-2 text-[#14444D] hover:text-blue-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
