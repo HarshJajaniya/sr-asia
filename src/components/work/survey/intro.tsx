@@ -47,7 +47,15 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-           At SR Asia, we understand the critical role of accurate land surveying in ensuring the success of development projects. Our Land Survey services offer precision and reliability, providing essential data for project planning, design, and implementation.
+        At SR Asia, we recognize that accurate and reliable land surveying is the foundation of successful development projects. Whether for infrastructure, construction, environmental management, or urban planning, precise survey data is essential for informed decision-making and risk reduction.
+
+Our Land Survey services combine advanced technology with professional expertise to deliver high-precision measurements and comprehensive mapping solutions. Using state-of-the-art equipment such as GPS/GNSS systems, total stations, and drone-based aerial survey tools, we capture detailed spatial data with exceptional accuracy.
+
+We provide a complete range of surveying solutions, including topographic surveys, boundary demarcation, cadastral mapping, construction layout surveys, and land use assessments. Every survey is conducted following strict quality and safety protocols, ensuring compliance with regulatory requirements and industry best practices.
+
+Beyond data collection, our team interprets and analyzes survey results to support project planning, design optimization, and seamless implementation. We work closely with architects, engineers, planners, and developers to ensure the data we deliver is actionable, precise, and tailored to the project’s needs.
+
+With SR Asia’s Land Survey services, clients gain the confidence that their projects are built on a foundation of accuracy, transparency, and reliability — reducing costly errors, preventing disputes, and ensuring long-term project success.
 
 
 

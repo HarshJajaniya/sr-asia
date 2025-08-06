@@ -6,99 +6,39 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Sustainability Reporting": {
-  title: "Sustainability Reporting",
-  description:
-    "SR Asia specializes in providing comprehensive Sustainability Reporting services aimed at helping organizations communicate their environmental, social, and governance (ESG) performance to stakeholders. Our sustainability reports offer transparent insights into organizational practices, impacts, and contributions towards sustainable development goals.",
-  keyFeatures: [
-    "Comprehensive Assessment: We conduct thorough assessments of organizational performance across environmental, social, and governance dimensions, analyzing key indicators and metrics to provide a holistic view of sustainability performance.",
-    "Stakeholder Engagement: We engage with stakeholders throughout the reporting process, soliciting feedback, insights, and priorities to ensure that our sustainability reports address stakeholder expectations and concerns.",
-    "Materiality Analysis: We conduct materiality assessments to identify and prioritize the most relevant sustainability topics and issues for inclusion in the report, focusing on areas most significant to stakeholders and with the greatest impact on organizational performance."
-  ]
+ "Sustainability Reporting": {
+  "title": "Sustainability Reporting",
+  "description": "SR Asia delivers comprehensive Sustainability Reporting solutions that empower organizations to clearly communicate their environmental, social, and governance (ESG) performance. We conduct holistic ESG performance reviews across environmental, social, and governance indicators, benchmarking against industry best practices. Our approach is stakeholder-centric, engaging with key groups to ensure the report reflects the most material issues. Through materiality mapping, we identify and prioritize the sustainability topics most relevant for long-term value creation. All reports are aligned with global frameworks such as GRI, SASB, and the SDGs, and include actionable recommendations to enhance ESG performance and reporting quality."
 },
 "Integrated Reporting": {
-  title: "Integrated Reporting",
-  description:
-    "SR Asia offers Integrated Reporting services designed to help organizations communicate a holistic view of their performance, encompassing financial, environmental, social, and governance (ESG) dimensions. Integrated Reporting goes beyond traditional financial reporting by providing stakeholders with a comprehensive understanding of an organization's value creation process, strategy, and impact.",
-  keyFeatures: [
-    "Comprehensive Performance Assessment: We conduct comprehensive assessments of organizational performance, integrating financial and non-financial data to provide a holistic view of value creation, considering ESG factors alongside financial metrics.",
-    "Stakeholder Engagement: We engage with stakeholders throughout the reporting process to ensure reports address expectations and concerns, enhancing relevance and credibility.",
-    "Strategic Communication: Our reports highlight value creation drivers, risks, opportunities, and long-term sustainability strategies, enhancing transparency, trust, and confidence among stakeholders."
-  ]
+  "title": "Integrated Reporting",
+  "description": "Our Integrated Reporting services merge financial performance with environmental, social, and governance (ESG) disclosures, giving stakeholders a complete picture of how your organization creates value over time. We integrate financial and non-financial metrics seamlessly, creating a unified narrative that tells your value creation story. This includes mapping strategic risks and opportunities, highlighting sustainability drivers, and ensuring clarity for investors. All reports are compliant with the International <IR> Framework, GRI, and other recognized standards, presenting a transparent connection between strategy, performance, and long-term outcomes."
 },
 "Environment & Social Governance (ESG)": {
-  title: "Environment & Social Governance (ESG)",
-  description:
-    "SR Asia specializes in providing comprehensive ESG services aimed at helping organizations integrate environmental, social, and governance factors into their business strategies and operations. Our ESG services enable organizations to enhance sustainability performance, mitigate risks, and capitalize on opportunities for long-term value creation.",
-  keyFeatures: [
-    "ESG Strategy Development: We work closely with organizations to develop tailored ESG strategies that align with their values, goals, and stakeholder expectations.",
-    "ESG Performance Measurement: We help organizations measure and track ESG performance using KPIs and benchmarks to identify areas for improvement.",
-    "Stakeholder Engagement: We facilitate stakeholder engagement processes to gather insights and perspectives on ESG issues, enhancing transparency and trust.",
-    "ESG Reporting and Disclosure: We prepare ESG reports and disclosures adhering to global frameworks such as GRI, SASB, and TCFD.",
-    "ESG Integration: We help integrate ESG considerations into core operations like investment, supply chain, and risk management.",
-    "ESG Assurance: We provide independent assurance and verification services to validate ESG data and disclosures."
-  ]
+  "title": "Environment & Social Governance (ESG)",
+  "description": "SR Asia helps organizations integrate ESG considerations into their core strategies, operations, and decision-making. We develop tailored ESG roadmaps aligned with organizational values and stakeholder priorities, and track performance through KPIs and benchmarking. Our services include preparing ESG disclosures according to global frameworks such as GRI, SASB, and TCFD, embedding ESG principles into investments, supply chains, and governance structures, and providing independent assurance for accuracy and credibility. We also support cultural and operational change to ensure ESG principles are embedded for the long term."
 },
 "BRSR-SEBI Reporting": {
-  title: "BRSR-SEBI Reporting",
-  description:
-    "SR Asia offers specialized services for BRSR-SEBI Reporting to assist organizations in fulfilling reporting obligations and enhancing transparency. BRSR is a crucial SEBI requirement for listed companies to disclose their sustainability performance, initiatives, and impacts.",
-  keyFeatures: [
-    "Compliance Support: We guide organizations through BRSR-SEBI reporting guidelines, deadlines, and methodologies.",
-    "Data Collection and Analysis: We assist in gathering and analyzing ESG performance data to identify trends and improvement areas.",
-    "Report Preparation: We prepare BRSR-SEBI reports in the prescribed format with accurate disclosures.",
-    "Stakeholder Engagement: We gather stakeholder feedback to improve report relevance, credibility, and accountability."
-  ]
+  "title": "BRSR-SEBI Reporting",
+  "description": "We guide listed companies through the SEBI-mandated Business Responsibility and Sustainability Reporting (BRSR) process, ensuring compliance while adding strategic value to disclosures. Our services cover the full process — from navigating SEBI guidelines and timelines, to accurate ESG data gathering and validation, and creating clear, structured reports in the prescribed format. We highlight material ESG issues in alignment with corporate strategy and ensure that disclosures meet the expectations of investors, regulators, and the public."
 },
 "Carbon Disclosure Project (CDP)": {
-  title: "Carbon Disclosure Project (CDP)",
-  description:
-    "SR Asia offers specialized CDP services to help organizations measure, manage, and disclose environmental impacts, particularly carbon emissions and climate change. CDP enables companies to report data, set reduction targets, and show commitment to sustainability.",
-  keyFeatures: [
-    "CDP Reporting Support: We guide organizations through CDP questionnaire preparation and submission.",
-    "Data Collection and Analysis: We analyze greenhouse gas emissions, energy consumption, and related metrics.",
-    "Emission Reduction Strategies: We develop strategies for reducing carbon footprint and transitioning to renewable energy.",
-    "Stakeholder Engagement: We facilitate discussions on climate-related issues to improve disclosure credibility.",
-    "CDP Performance Improvement: We help organizations improve their CDP scores through targeted initiatives."
-  ]
+  "title": "Carbon Disclosure Project (CDP)",
+  "description": "Our CDP services help organizations measure, manage, and disclose environmental data — particularly greenhouse gas emissions — to demonstrate climate leadership. We guide clients through the CDP questionnaire process, measure Scope 1, Scope 2, and Scope 3 emissions, and develop science-based carbon reduction targets. Our team designs strategies for renewable energy adoption, communicates climate risks and opportunities, and implements measures to improve CDP scores, ensuring your climate action commitments are credible and impactful."
 },
 "TCFD Reporting": {
-  title: "TCFD Reporting",
-  description:
-    "SR Asia offers TCFD Reporting services to assist organizations in disclosing climate-related risks and opportunities, enabling stakeholders to assess business resilience in a changing climate.",
-  keyFeatures: [
-    "Comprehensive Assessment: We assess climate-related risks, opportunities, and their impact on business and financial performance.",
-    "Disclosure Strategy Development: We create tailored TCFD disclosure strategies aligned with business objectives and risk profiles.",
-    "Scenario Analysis: We assess potential impacts of various climate scenarios to aid in resilience planning.",
-    "Data Collection and Reporting: We help collect and report data per TCFD recommendations.",
-    "Stakeholder Engagement: We gather stakeholder perspectives to ensure relevant and credible disclosures."
-  ]
+  "title": "TCFD Reporting",
+  "description": "We assist organizations in aligning with the Task Force on Climate-related Financial Disclosures (TCFD) recommendations, enabling better climate risk management and investor confidence. This includes assessing climate-related risks and opportunities, developing tailored disclosure frameworks, and conducting scenario analyses to model both physical and transition risks. We collect and structure climate-related data to meet TCFD requirements and communicate climate resilience strategies transparently to stakeholders."
 },
 "CSRD Reporting": {
-  title: "CSRD Reporting",
-  description:
-    "SR Asia specializes in CSRD Reporting to help organizations communicate sustainability initiatives, impacts, and performance, meeting regulatory requirements and stakeholder expectations.",
-  keyFeatures: [
-    "Regulatory Compliance: We ensure adherence to CSR reporting mandates from government bodies.",
-    "Comprehensive Assessment: We evaluate CSR initiatives and performance across ESG dimensions.",
-    "Stakeholder Engagement: We gather input to enhance report transparency and credibility.",
-    "Data Collection and Analysis: We analyze CSR-related data for trends and improvement areas.",
-    "Reporting Strategy Development: We create CSR reporting strategies aligned with organizational objectives and stakeholder expectations."
-  ]
+  "title": "CSRD Reporting",
+  "description": "Our Corporate Sustainability Reporting Directive (CSRD) services help organizations meet the latest EU sustainability disclosure requirements with accuracy and strategic value. We ensure compliance with CSRD structures, integrate ESG data across environmental, social, and governance domains, and conduct double materiality assessments to evaluate both societal impact and ESG risks to the business. Reports are enriched with stakeholder insights, aligned with business objectives, and designed for digital submission using EU-compliant taxonomies."
 },
 "Annual Reports": {
-  title: "Annual Reports",
-  description:
-    "SR Asia helps organizations deliver engaging, transparent, and strategic annual reports showcasing performance, achievements, and future outlook to stakeholders.",
-  keyFeatures: [
-    "Comprehensive Analysis: We assess financial and non-financial performance for informed decision-making.",
-    "Stakeholder Engagement: We involve stakeholders to ensure reports reflect priorities and build trust.",
-    "Transparent Reporting: We prepare clear and concise annual reports following best practices.",
-    "Customized Solutions: We tailor reporting to highlight sustainability, strategy, and organizational values.",
-    "Compliance Support: We ensure annual reports meet regulatory standards.",
-    "Strategic Impact: We create impactful reports that enhance reputation, attract investors, and inspire confidence."
-  ]
+  "title": "Annual Reports",
+  "description": "We create impactful Annual Reports that combine regulatory compliance with strategic storytelling, offering stakeholders a comprehensive view of performance and future direction. Our process integrates financial and ESG achievements, uses visually engaging layouts, and delivers a compelling narrative that builds brand trust. We ensure alignment with statutory requirements, highlight growth strategies and innovation pathways, and position the organization as transparent, responsible, and future-ready."
 }
+
 
 }
 
@@ -116,7 +56,11 @@ const [selectedDriver, setSelectedDriver] = useState<string>(
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
           <p className="text-[#246875] leading-relaxed ">
-            Assurance and Reporting Content: Reporting and disclosure are fundamental elements of transparency and accountability in various domains, including business, finance, governance, and environmental stewardship. Reporting involves the communication of relevant information, often in a structured format, to internal or external stakeholders. This information may include financial performance, operational metrics, compliance status, or other key indicators. Disclosure, on the other hand, refers to the act of revealing specific details, often mandated by regulations, that could impact the decisions of stakeholders. 
+       Assurance and reporting form the cornerstone of transparency, accountability, and informed decision-making across industries. In today’s interconnected world, stakeholders — including investors, regulators, customers, employees, and the wider community — demand greater clarity and evidence of responsible practices. Reporting is not merely the presentation of facts and figures; it is the structured communication of an organization’s performance, priorities, risks, and achievements. It encompasses financial results, operational metrics, sustainability initiatives, governance practices, and compliance with regulatory frameworks.
+
+Disclosure goes a step further, ensuring that critical details — often mandated by laws, standards, or stakeholder expectations — are openly revealed. These may include climate-related risks, social impact data, governance structures, or forward-looking strategies that could influence decisions. Effective reporting and disclosure empower stakeholders to evaluate an organization’s integrity, resilience, and long-term value creation potential.
+
+High-quality assurance processes validate the accuracy, completeness, and reliability of reported information, building confidence and trust. In the modern business landscape, robust reporting and independent assurance are no longer optional; they are strategic imperatives that strengthen brand reputation, attract investment, foster stakeholder loyalty, and drive sustainable growth.
 
 
           </p>

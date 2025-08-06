@@ -47,7 +47,7 @@ export default function Component() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm md:text-base text-[#072328]">
             <span className="whitespace-nowrap">
-              <Link href="/services/assurance">Assurance & Reporting services</Link>
+              <Link href="/services/reporting">Assurance & Reporting services</Link>
             </span>
             <span className="whitespace-nowrap"><Link href="/services/csr">CSR project management</Link></span>
             <span className="whitespace-nowrap"><Link href="/services/monitoring">Monitoring & Evaluation</Link></span>
