@@ -3,7 +3,7 @@ import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
 import Header from "@/components/navbar/header";
 import Contact from "@/components/form/contact";
-import Connect from "@/components/work/connect";
+
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
       <Header />
       <Navbar />
       <Contact />
-      <Connect />
+      
       <Footer />
     </div>
   );
