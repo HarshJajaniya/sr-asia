@@ -31,7 +31,7 @@ export default function Component() {
             size="lg"
             className="bg-[#A1E3F9] hover:bg-[#A1E3F9] text-slate-900 font-semibold px-8 py-3 text-lg"
           >
-            <Link href="/career">Get in Touch</Link>
+            <Link href="/form">Get in Touch</Link>
           </Button>
         </div>
 
@@ -47,12 +47,22 @@ export default function Component() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm md:text-base text-[#072328]">
             <span className="whitespace-nowrap">
-              <Link href="/services/reporting">Assurance & Reporting services</Link>
+              <Link href="/services/reporting">
+                Assurance & Reporting services
+              </Link>
             </span>
-            <span className="whitespace-nowrap"><Link href="/services/csr">CSR project management</Link></span>
-            <span className="whitespace-nowrap"><Link href="/services/monitoring">Monitoring & Evaluation</Link></span>
-            <span className="whitespace-nowrap"><Link href="/services/impact">Impact Assessment</Link></span>
-            <span className="whitespace-nowrap"><Link href="/services/survey">Land Survey</Link></span>
+            <span className="whitespace-nowrap">
+              <Link href="/services/csr">CSR project management</Link>
+            </span>
+            <span className="whitespace-nowrap">
+              <Link href="/services/monitoring">Monitoring & Evaluation</Link>
+            </span>
+            <span className="whitespace-nowrap">
+              <Link href="/services/impact">Impact Assessment</Link>
+            </span>
+            <span className="whitespace-nowrap">
+              <Link href="/services/survey">Land Survey</Link>
+            </span>
           </div>
         </div>
       </section>
