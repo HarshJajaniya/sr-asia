@@ -122,8 +122,7 @@ const Hero = () => {
                 Building a Sustainable Future for Asia
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-6">
-                Advancing environmental governance, CSR excellence, and
-                inclusive development across the Asian continent.
+               Offering high impact solutions for ESG, BRSR, Assurance and Third Party Assessment
               </p>
             </div>
             <div>
