@@ -2,56 +2,52 @@
 
 import { useEffect, useState } from "react";
 
-const CookiesAndThankYou = () => {
-  const [showCookies, setShowCookies] = useState(false);
-  const [showThankYou, setShowThankYou] = useState(false);
+const CookieConsent = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const cookieTimer = setTimeout(() => {
-      setShowCookies(true);
-    }, 1000); // Show cookies after 1 second
-
-    const thankYouTimer = setTimeout(() => {
-      setShowThankYou(true);
-    }, 2000); // Show thank you after 2 seconds
-
-    return () => {
-      clearTimeout(cookieTimer);
-      clearTimeout(thankYouTimer);
-    };
+    const consent = localStorage.getItem("cookieConsent");
+    if (!consent) {
+      setIsVisible(true);
+    }
   }, []);
 
-  return (
-    <>
-      {/* Cookies Notification */}
-      {showCookies && (
-        <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 bg-white text-black p-4 rounded shadow-lg z-50 flex flex-col md:flex-row items-center justify-between gap-4 max-w-[400px] border">
-          <p className="text-sm">
-            This website uses cookies to ensure you get the best experience.
-          </p>
-          <button
-            onClick={() => setShowCookies(false)}
-            className="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 transition min-w-[80px] whitespace-nowrap"
-          >
-            Got it
-          </button>
-        </div>
-      )}
+  const handleAccept = () => {
+    localStorage.setItem("cookieConsent", "accepted");
+    setIsVisible(false);
+  };
 
-      {/* Thank You Popup */}
-      {showThankYou && (
-        <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-green-700 text-white p-5 rounded shadow-lg z-50 max-w-[90%] w-[320px] text-center border border-green-800 flex items-center justify-between gap-4">
-          <p className="text-sm font-medium">Thank you for visiting!</p>
+  const handleDecline = () => {
+    localStorage.setItem("cookieConsent", "declined");
+    setIsVisible(false);
+  };
+
+  if (!isVisible) return null;
+
+  return (
+    <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 shadow-lg">
+      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p className="text-sm">
+          We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
+        </p>
+        <div className="flex gap-2">
           <button
-            onClick={() => setShowThankYou(false)}
-            className="bg-white text-green-800 px-4 py-1.5 rounded hover:bg-gray-100 transition text-sm font-semibold min-w-[80px] whitespace-nowrap"
+            onClick={handleAccept}
+            className="px-4 py-2 bg-green-600 hover:bg-green-700 rounded text-sm"
           >
-            Close
+            Accept Cookies
+          </button>
+          <button
+            onClick={handleDecline}
+            className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded text-sm"
+          >
+            Decline Cookies
           </button>
         </div>
-      )}
-    </>
+      </div>
+    </div>
   );
 };
 
-export default CookiesAndThankYou;
+export default CookieConsent;
+

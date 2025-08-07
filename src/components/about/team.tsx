@@ -15,8 +15,8 @@ export default function TeamDisplay() {
 
   const teamMembers = [
      {
-      id: "Swati-Bhatt",
-      name: "Swati Bhatt",
+      id: "Dr. Swati-Bhatt",
+      name: "Dr. Swati Bhatt",
       title: "Director",
       image: "/team/11.jpg",
       description:
@@ -126,12 +126,12 @@ export default function TeamDisplay() {
           return (
             <div
               key={member.id}
-              className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md h-full max-w-[290px]"
+              className="flex flex-col items-center text-center rounded-lg h-full max-w-[290px]"
             >
               <img
                 src={member.image || "/placeholder.svg"}
                 alt={member.name || "Team member"}
-                className="object-cover w-32 h-40 rounded-md"
+                className="w-34 h-40"
               />
               <h3 className="text-sm font-semibold mt-3 text-[#031318]">
                 {member.name}
