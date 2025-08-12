@@ -105,7 +105,7 @@ export default function AboutUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {/* Left Column - Image */}
           <div className="relative">
-            <div className="relative h-64 lg:h-[344px] w-full overflow-hidden">
+            <div className="relative h-100 lg:h-[544px] w-full overflow-hidden">
               <Image
                 src="/36.png"
                 alt="Forest background representing sustainable development"
@@ -121,36 +121,113 @@ export default function AboutUsSection() {
             ref={aboutTextRef}
           >
             <p>
-              We are an international not-for-profit organization registered in
-              2012 with a vision of working for Sustainable Asia. The founders
-              are subject experts and certified on subjects by APO Japan, CBI
-              the Netherlands Govt. The ambition of the organization is to
-              promote Responsible Business Conduct (RBG) and Sustainable
-              Development Goals (SDGs) by involving private sectors and
-              government. The activities of SR Asia focus on two major
-              operational frameworks: (1) Innovation Development and (2)
-              Knowledge Management.
-            </p>
+             An International organization promoting sustainability through
+Research, CSR Project Implementation, Development projects,
 
-            <p>
-              We are in six Asian countries (Bangladesh, India, Indonesia,
-              Malaysia, Vietnam, and the Philippines). We work with the
-              Ministries, the Public and private sector, Inter-Governmental, and
-              NGO sectors in India and overseas.
-            </p>
+Project Management, International and National Conferences,
 
-            <p>
-              {/* We are a member of UNGC, IPLA Japan, and Confederation of Indian Industry (CII) No.N7559P and the Alumni
-        of the Asian Productivity Organisation Japan. At SR Asia, we are committed to helping organizations like
-        yours navigate these changes seamlessly. */}
+Integrated and Sustainability Reporting, ESG Reporting,
+
+Capacity Building, and Third-Party Assurance Services.
             </p>
+ <div className="space-y-4">
+              <h3 className="text-xl font-semibold">International offices:</h3>
+              <p className="text-muted-foreground">
+                Bangladesh, Indonesia, India, Malaysia, Philippines, Singapore, Vietnam
+              </p>
+              
+              {/* Country flag images */}
+              <div className="flex flex-wrap gap-4 justify-start">
+               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 w-full">
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/9.png"
+      alt="Bangladesh flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/10.png"
+      alt="Indonesia flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/11.png"
+      alt="India flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/12.png"
+      alt="Malaysia flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/13.png"
+      alt="Philippines flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+  <div className="flex flex-col items-center">
+    <Image
+      src="/flags/14.png"
+      alt="Vietnam flag"
+      width={80}
+      height={40}
+      className="rounded shadow-sm border"
+    />
+  </div>
+</div>
+
+              </div>
+              
+            </div>
+           <div className="px-8">
+                <div className="flex items-center space-x-2 text-gray-600">
+                  <Image
+                    src="/ukas.webp"
+                    alt="UKAS logo"
+                    width={180}
+                    height={80}
+                    className="rounded shadow-sm border"
+                  />
+                   <Image
+                    src="/iso.png"
+                    alt="ISO logo"
+                    width={180}
+                    height={80}
+                    className="rounded shadow-sm border"
+                  />
+                </div>
+              
+  
+
+              </div>
+
+           
 
             {/* Read More Button */}
             <div className="pt-4">
               <Link href="/srasia">
                 <Button
                   variant="link"
-                  className="text-blue-600 hover:text-blue-800 p-0 h-auto font-normal"
+                  className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
                 >
                   Read more →
                 </Button>

@@ -6,14 +6,7 @@ import { Menu, X } from "lucide-react";
 import gsap from "gsap";
 
 // Submenus
-const HomeSubmenu = [
-  { label: "Who we are", href: "/#about-us" },
 
-  { label: "Our Mission & Vision", href: "/#mission" },
-  { label: "Approach", href: "/#approach" },
-  { label: "Footprints", href: "/#stats-title" },
-  { label: "Insights", href: "/#insights" },
-];
 const AboutSubmenu = [
   { label: "Who we are", href: "/about/#who-we-are" },
   { label: "What we do", href: "/about/#what-we-do" },
@@ -107,7 +100,7 @@ export default function Home() {
     <div className="p-4 hidden md:flex space-x-10 relative z-50">
   {navItems.map((item, index) => {
     const submenu =
-      item.label === "HOME" ? HomeSubmenu :
+      item.label === "HOME"  ? null :
       item.label === "ABOUT" ? AboutSubmenu :
       item.label === "SERVICES" ? servicesSubmenu :
       item.label === "PROJECTS" ? reportSubmenu :

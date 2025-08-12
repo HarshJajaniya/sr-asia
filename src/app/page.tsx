@@ -9,13 +9,14 @@ import Header from "@/components/navbar/header";
 import PartnerLogosScroll from "@/components/home/logos";
 import Vision from "@/components/home/vision";
 import Touch from "@/components/home/touch";
-import Cokkies from "@/components/home/CookiesAndThankYou";
+import CookieConsent from "@/components/home/CookiesAndThankYou";
+
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Cokkies />
+      
       <Navbar />
       <Hero />
       <AboutUs />
@@ -26,6 +27,7 @@ export default function Home() {
       <Insights />
       <PartnerLogosScroll />
       <Touch />
+       <CookieConsent />
       <Footer />
     </>
   );
