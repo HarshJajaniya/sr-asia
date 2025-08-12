@@ -14,7 +14,7 @@ export default function TeamDisplay() {
   };
 
   const teamMembers = [
-     {
+    {
       id: "Swati-Bhatt",
       name: "Swati Bhatt",
       title: "Director",
@@ -28,7 +28,7 @@ export default function TeamDisplay() {
       title: "International Director",
       image: "/team/6.JPG",
       description:
-        "Birendra Raturi is the Director of SR Asia and has done MPhil from Delhi University. He has vast 30 years’ experience in the Management functions which includes credit and non-credit needs of MSEs. He has offered consulting services for multiple sectors for a wide range of companies starting from MSME to large scale and government organizations.He has consulted over 200 companies for the various assignment such as sustainability Study, international standards (ISO) certifications, Lean and ZERO-defect Manufacturing, Export coaching and International Trade fair preparation and participation in EU countries, CSR and sustainability –value chain mapping, CSR project design and assessment, CSR and sustainability reporting and Assurances as per AA1000 AS, GRI-G4, OECD and UNGC principles and guidelines."
+        "Birendra Raturi is the Director of SR Asia and has done MPhil from Delhi University. He has vast 30 years’ experience in the Management functions which includes credit and non-credit needs of MSEs. He has offered consulting services for multiple sectors for a wide range of companies starting from MSME to large scale and government organizations.He has consulted over 200 companies for the various assignment such as sustainability Study, international standards (ISO) certifications, Lean and ZERO-defect Manufacturing, Export coaching and International Trade fair preparation and participation in EU countries, CSR and sustainability –value chain mapping, CSR project design and assessment, CSR and sustainability reporting and Assurances as per AA1000 AS, GRI-G4, OECD and UNGC principles and guidelines.",
     },
     {
       id: "Rakesh-Khare",
@@ -46,12 +46,13 @@ export default function TeamDisplay() {
       description:
         "Jaya Yadav holds a Master's degree in Sustainable Management and Design Application from Lady Irwin College, Delhi University. She works as a research analyst and is responsible for proposal making, developing approach and methodology, Sampling techniques, developing research tools using software applications, training of field investigators. She has over two years of experience on CSR project assessment, impact evaluation and in sustainability reporting assurance.",
     },
-      {
+    {
       id: "Tanu-Akolia",
       name: "Tanu Akolia",
       title: "HR Head",
       image: "/team/9.jpeg",
-      description: "Tanu Sati is a postgraduate in Resource Management from Lady Irwin College, Delhi University. She has over four years’ experience in both Human Resources and research activities. She is heading HR and admin function in SR Asia and her responsibilities are day to day administration of people’s management, office care and resource accounting and auditing. She also maintains data and sourcing of recruitment agencies including universities and colleges for placement and internships, Empanelment of Experts, and the recruitment of Field Survey Executives tailored to specific project requirements including all HR related compliances.",
+      description:
+        "Tanu Sati is a postgraduate in Resource Management from Lady Irwin College, Delhi University. She has over four years’ experience in both Human Resources and research activities. She is heading HR and admin function in SR Asia and her responsibilities are day to day administration of people’s management, office care and resource accounting and auditing. She also maintains data and sourcing of recruitment agencies including universities and colleges for placement and internships, Empanelment of Experts, and the recruitment of Field Survey Executives tailored to specific project requirements including all HR related compliances.",
     },
     {
       id: "Shruti-Sharma",
@@ -78,7 +79,7 @@ export default function TeamDisplay() {
       description:
         "Lalvulmawii manages project execution and field operations.",
     },
-     {
+    {
       id: "Sanjukta-Tirkey",
       name: "Sanjukta Tirkey",
       title: "Research Associate",
@@ -94,14 +95,15 @@ export default function TeamDisplay() {
       description:
         "Kalash Kesharwani is a diploma holder in mechanical engineering at GPG and graduate in science from Allahabad University. She has Experience in SAP CPI. She is responsible for sales force implementation- data integration, trend analysis and technical assistance.",
     },
-   {
+    {
       id: "New-Member",
       name: "Eshwar Lawadiya",
       title: "Project Officer",
       image: "/team/15.png",
-      description: "Eshwar Lawadiya is a Project Officer with a focus on sustainable development initiatives.",
-   },
-   {
+      description:
+        "Eshwar Lawadiya is a Project Officer with a focus on sustainable development initiatives.",
+    },
+    {
       id: "Shrabanti-Chakraborty",
       name: "Shrabanti Chakraborty",
       title: "Website Design and Development Lead",
@@ -111,58 +113,60 @@ export default function TeamDisplay() {
     },
   ];
 
- return (
-  <div className="w-full px-2 sm:px-4 mb-[75px]">
-    <p className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800" id="team">
-      OUR TEAM
-    </p>
+  return (
+    <div className="w-full px-2 sm:px-4 mb-[75px]">
+      <p
+        className="text-center text-2xl md:text-3xl mb-[75px] font-bold text-gray-800"
+        id="team"
+      >
+        OUR TEAM
+      </p>
 
-    <div className="w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
-        {teamMembers.map((member) => {
-          if (!member.id) return null;
-          const isExpanded = expanded[member.id] || false;
+      <div className="w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
+          {teamMembers.map((member) => {
+            if (!member.id) return null;
+            const isExpanded = expanded[member.id] || false;
 
-          return (
-            <div
-              key={member.id}
-              className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md h-full max-w-[290px]"
-            >
-              <img
-                src={member.image || "/placeholder.svg"}
-                alt={member.name || "Team member"}
-                className="object-cover w-32 h-40 rounded-md"
-              />
-              <h3 className="text-sm font-semibold mt-3 text-[#031318]">
-                {member.name}
-              </h3>
-              <p className="text-xs text-gray-600">{member.title}</p>
+            return (
+              <div
+                key={member.id}
+                className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md h-full max-w-[290px]"
+              >
+                <img
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name || "Team member"}
+                  className="object-cover w-32 h-40 rounded-md filter saturate-0 hover:saturate-100"
+                />
+                <h3 className="text-sm font-semibold mt-3 text-[#031318]">
+                  {member.name}
+                </h3>
+                <p className="text-xs text-gray-600">{member.title}</p>
 
-              {member.description && (
-                <>
-                  <p
-                    className={`text-sm mt-2 text-[#246875] transition-all duration-300 ${
-                      isExpanded ? "" : "line-clamp-2"
-                    }`}
-                  >
-                    {member.description}
-                  </p>
-                  {member.description.length > 60 && (
-                    <button
-                      onClick={() => toggleExpand(member.id)}
-                      className="text-xs text-blue-500 mt-1 underline"
+                {member.description && (
+                  <>
+                    <p
+                      className={`text-sm mt-2 text-[#246875] transition-all duration-300 ${
+                        isExpanded ? "" : "line-clamp-2"
+                      }`}
                     >
-                      {isExpanded ? "Read Less" : "Read More"}
-                    </button>
-                  )}
-                </>
-              )}
-            </div>
-          );
-        })}
+                      {member.description}
+                    </p>
+                    {member.description.length > 60 && (
+                      <button
+                        onClick={() => toggleExpand(member.id)}
+                        className="text-xs text-blue-500 mt-1 underline"
+                      >
+                        {isExpanded ? "Read Less" : "Read More"}
+                      </button>
+                    )}
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
-  </div>
-);
-
+  );
 }
