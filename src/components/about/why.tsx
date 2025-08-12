@@ -25,7 +25,7 @@ export default function Component() {
       title: "Presence in 6 countries & 26+ Indian states",
       description:
         "A wide geographic footprint enabling local insights and scalable implementation across Asia.",
-      image: "/about/what/4.png",
+      image: "/about/what/7.png",
     },
     {
       title: "Strong field presence with rigorous M&E tools",
@@ -44,7 +44,10 @@ export default function Component() {
   return (
     <div className="w-full max-w-full mx-auto mb-[75px] px-4 ">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-[#072328] mb-2" id="why-choose-us">
+        <h2
+          className="text-3xl font-bold text-[#072328] mb-2"
+          id="why-choose-us"
+        >
           WHY CHOOSE US
         </h2>
       </div>
