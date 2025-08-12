@@ -136,7 +136,7 @@ export default function TeamDisplay() {
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name || "Team member"}
-                  className="w-34 h-40"
+                  className="w-34 h-40 filter saturate-0 hover:saturate-100"
                 />
                 <h3 className="text-sm font-semibold mt-3 text-[#031318]">
                   {member.name}
