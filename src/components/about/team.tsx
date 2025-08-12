@@ -131,7 +131,7 @@ export default function TeamDisplay() {
             return (
               <div
                 key={member.id}
-                className="flex flex-col items-center text-center rounded-lg h-full max-w-[290px]"
+                className="flex flex-col items-center text-center rounded-lg h-full max-w-[290px] bg-white p-4"
               >
                 <img
                   src={member.image || "/placeholder.svg"}
