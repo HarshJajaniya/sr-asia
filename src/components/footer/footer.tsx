@@ -20,7 +20,10 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                <span>New Delhi, India</span>
+                <span>
+                  Corporate Address: 4th Floor Corporate Suite-25 &26 , Ansal
+                  Plaza Mall Sector-1 Vaishali, Ghaziabad,UP-201010 India
+                </span>
               </div>
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
@@ -35,7 +38,7 @@ export default function Footer() {
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
                 <div className="flex flex-col">
                   <span>+917827051160</span>
-                  <span>  01204103023</span>
+                  <span> 01204103023</span>
                 </div>
               </div>
               <div className="flex space-x-3 mt-2">
