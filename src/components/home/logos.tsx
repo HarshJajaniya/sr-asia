@@ -50,7 +50,11 @@ export default function PartnerLogosScroll() {
       </button>
 
       {/* Scrollable Partner Logos */}
-      <div ref={scrollRef} className="overflow-x-scroll">
+      <div
+  ref={scrollRef}
+  className="overflow-x-scroll scrollbar-hide"
+>
+
         <div className="flex gap-8 py-4 w-max">
           {partners.map((partner, index) => (
             <div
