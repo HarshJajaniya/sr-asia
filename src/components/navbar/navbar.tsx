@@ -30,7 +30,7 @@ const servicesSubmenu = [
 ];
 
 const reportSubmenu = [
-  { label: "BRSR Assessment", href: "/report/#brsr" },
+  { label: "BRSR Assurance", href: "/report/#brsr" },
   { label: "Impact Assessment", href: "/report/#impact" },
   { label: "Social Impact Assessment", href: "/report/#social" },
   { label: "Certifications", href: "/report/#certifications" },

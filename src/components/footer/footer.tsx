@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/form" className="hover:underline">
-                  ContactUs
+                  Contact Us
                 </Link>
               </li>
             </ul>
