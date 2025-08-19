@@ -144,7 +144,7 @@ export default function Home() {
                           <li key={idx}>
                             <Link
                               href={sub.href}
-                              className="text-xl text-gray-700 hover:text-blue-600 block"
+                              className="text-base whitespace-nowrap text-gray-700 hover:text-blue-600 block"
                             >
                               {sub.label}
                             </Link>
