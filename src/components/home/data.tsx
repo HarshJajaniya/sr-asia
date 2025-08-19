@@ -11,7 +11,7 @@ export interface WorkCard {
 export const workCards: WorkCard[] = [
   {
     slug: "strategic-impact-services",
-    title: "Third-party Impact assessment",
+    title: "Third Party Impact assessment",
     description:
       "At SR Asia, we drive purpose-led transformation through end-to-end solutions in CSR, sustainability, and compliance.",
     image: "/workk/1.jpg",
@@ -158,7 +158,7 @@ Policy That Works. Governance That Transforms.
   },
   {
     slug: "responsible-land-development",
-    title: "SIA Study for Land Acquisition-RTFCTLARR Act(2013)",
+    title: "SIA Study for Land Acquisition(RTFCTLARR 2013)",
     description:
       "We offer end-to-end land acquisition and impact assessment services under the RTFCTLARR Act.",
     image: "/workk/9.jpg",
@@ -186,7 +186,7 @@ Land is More Than a Resource—It’s a Responsibility.
   },
   {
     slug: "project-success-feasibility",
-    title: "Project Feasibility & DPR",
+    title: "Project Feasibility Report & DPR",
     description:
       "We deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning.",
     image: "/workk/7.PNG",
