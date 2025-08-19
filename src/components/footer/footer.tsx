@@ -95,8 +95,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/career" className="hover:underline">
-                  Get Involved
+                <Link href="/form" className="hover:underline">
+                  ContactUs
                 </Link>
               </li>
             </ul>
