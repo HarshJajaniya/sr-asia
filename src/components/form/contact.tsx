@@ -23,21 +23,18 @@ function Contact() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-       <div className="mb-8  ">
-            <h1 className="text-4xl font-light text-gray-900 mb-4">
-              Request for proposal for services
-            </h1>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-12">
-              How can we support your organization?
-            </h2>
-          </div>
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+      <div className="mb-8  ">
+        <h1 className="text-4xl font-light text-gray-900 mb-4">
+          Request for proposal for services
+        </h1>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-12">
+          How can we support your organization?
+        </h2>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
         {/* Left Content */}
         <div className="lg:col-span-2">
-       
-
           <div className="mb-8">
             <h3 className="text-xl font-medium text-gray-900 mb-6">
               Choose your region to submit a proposal request.
@@ -148,40 +145,39 @@ function Contact() {
                 className="w-full h-12 bg-white border border-gray-300 rounded-none placeholder:text-gray-700"
               />
             </div>
- <div>
+            <div>
               <Input
                 type="text"
                 placeholder="Company name*"
                 className="w-full h-12 bg-white border border-gray-300 rounded-none placeholder:text-gray-700"
               />
             </div>
-             <div>
+            <div>
               <Select>
-              <SelectTrigger className="w-full h-12 bg-white border border-gray-300 rounded-none">
-                <SelectValue placeholder="Desired Services" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="Advisory">Advisory</SelectItem>
-                <SelectItem value="Assurance">Assurance</SelectItem>
-                <SelectItem value="Survey">Survey</SelectItem>
-                <SelectItem value="CSR">CSR</SelectItem>
-                <SelectItem value="Monitoring">Monitoring</SelectItem>
-              </SelectContent>
-            </Select>
+                <SelectTrigger className="w-full h-12 bg-white border border-gray-300 rounded-none">
+                  <SelectValue placeholder="Desired Services" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="Advisory">Advisory</SelectItem>
+                  <SelectItem value="Assurance">Assurance</SelectItem>
+                  <SelectItem value="Survey">Survey</SelectItem>
+                  <SelectItem value="CSR">CSR</SelectItem>
+                  <SelectItem value="Monitoring">Monitoring</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-             <div>
+            <div>
               <Input
                 type="number"
                 placeholder="yearly revenue*"
                 className="w-full h-12 bg-white border border-gray-300 rounded-none placeholder:text-gray-700"
               />
             </div>
-              <div>
-            <textarea
-  className="w-full h-34 bg-white border border-gray-300 rounded-none placeholder:text-gray-700 cursor-text pt-2 mt-0 align-top resize-none"
-  placeholder="Comment and instructions"
-/>
-
+            <div>
+              <textarea
+                className="w-full h-34 bg-white border border-gray-300 rounded-none placeholder:text-gray-700 cursor-text pt-2 mt-0 align-top resize-none"
+                placeholder="Comment and instructions"
+              />
             </div>
             {/* Submit Button */}
             <div>
@@ -203,6 +199,26 @@ function Contact() {
 
           <div className="space-y-6">
             {/* Careers Section */}
+            <Link href="/network">
+              <div className="flex items-start space-x-4 group cursor-pointer pb-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg font-medium text-gray-900 group-hover:text-blue-600">
+                      Partnership and Networking
+                    </h4>
+                    <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600" />
+                  </div>
+                  <p className="text-gray-600 mt-1">
+                    All other inquiries should be directed to our contact us
+                    page.
+                  </p>
+                </div>
+              </div>
+            </Link>
+
             <Link href="/career#openings">
               <div className="flex items-start space-x-4 group cursor-pointer mb-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
@@ -279,26 +295,7 @@ function Contact() {
               </form>
             </div>
 
-              {/* General Inquiries Section */}
-            <Link href="/network">
-              <div className="flex items-start space-x-4 group cursor-pointer">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <Target className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-lg font-medium text-gray-900 group-hover:text-blue-600">
-                      Partnership and Networking
-                    </h4>
-                    <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600" />
-                  </div>
-                  <p className="text-gray-600 mt-1">
-                    All other inquiries should be directed to our contact us
-                    page.
-                  </p>
-                </div>
-              </div>
-            </Link>
+            {/* General Inquiries Section */}
           </div>
         </div>
       </div>
