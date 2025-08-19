@@ -11,7 +11,7 @@ export interface WorkCard {
 export const workCards: WorkCard[] = [
   {
     slug: "strategic-impact-services",
-    title: "Strategic Impact Services for Sustainable Development",
+    title: "Third Party Impact assessment",
     description:
       "At SR Asia, we drive purpose-led transformation through end-to-end solutions in CSR, sustainability, and compliance.",
     image: "/workk/1.jpg",
@@ -57,7 +57,7 @@ Connect with us to explore partnerships, advisory mandates, or leadership opport
   },
   {
     slug: "trusted-assurance-reporting",
-    title: "Trusted Assurance & Transparent Reporting",
+    title: "ESG Assurance & GRI Reporting",
     description:
       "SR Asia strengthens organizational credibility through independent third-party assessments, ESG disclosures, and integrated reporting.",
     image: "/workk/3.jpg",
@@ -101,7 +101,7 @@ Partner with SR Asia for credible reporting, trusted validations, and ESG assura
   },
   {
     slug: "precision-mapping",
-    title: "Precision Mapping for Smarter Decisions",
+    title: "Drone DGPS and Total Station Survey",
     description:
       "At SR Asia, we deliver advanced GIS mapping and remote sensing services to transform spatial data into strategic insights.",
     image: "/workk/8.PNG",
@@ -130,7 +130,7 @@ Map What Matters. Decide with Confidence.
   },
   {
     slug: "policy-intelligence",
-    title: "Policy Intelligence for Impactful Governance",
+    title: "Policy Research & Design",
     description:
       "We empower governments and organizations with data-driven insights, strategic policy research, and on-ground implementation support.",
     image: "/workk/2.jpg",
@@ -158,9 +158,9 @@ Policy That Works. Governance That Transforms.
   },
   {
     slug: "responsible-land-development",
-    title: "Enabling Responsible Land Development",
+    title: "SIA Study for Land Acquisition(RTFCTLARR 2013)",
     description:
-      "We offer end-to-end land acquisition and impact assessment services under the RTFCLARR Act.",
+      "We offer end-to-end land acquisition and impact assessment services under the RTFCTLARR Act.",
     image: "/workk/9.jpg",
     longDescription: `
 Transforming Landscapes Responsibly. Balancing Progress with People and Planet.
@@ -186,7 +186,7 @@ Land is More Than a Resource—It’s a Responsibility.
   },
   {
     slug: "project-success-feasibility",
-    title: "Expert Advisory for Project Success and Feasibility",
+    title: "Project Feasibility Report & DPR",
     description:
       "We deliver end-to-end PMC and advisory services—from DPRs and feasibility studies to M&E and strategic planning.",
     image: "/workk/7.PNG",
