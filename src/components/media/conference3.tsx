@@ -10,7 +10,7 @@ import { Download } from "lucide-react";
 export default function FullScreenNestedCarousel() {
   const slides = [
     {
-      title: "SR Asia – 3st International Conference (2014)",
+      title: "SR Asia – 3rd International Conference (2014)",
       subtitle: "29–30 November 2014| Dhaka, Bangladesh",
       intro:
         "This conference aims to align policies and promote green banking and corporate social responsibility (CSR) as key strategies for sustainable development. It will focus on addressing poverty challenges, especially in remote and underserved communities....",
@@ -22,7 +22,6 @@ export default function FullScreenNestedCarousel() {
       ],
       images: ["/insights/4.png", "/37.jpeg", "/38.jpeg"],
     },
-   
   ];
 
   return (
@@ -98,9 +97,12 @@ export default function FullScreenNestedCarousel() {
                 </div>
 
                 <button className="w-full bg-[#072328] text-white py-3 mt-4">
-                    <a href="https://www.eco-business.com/events/sr-asia-3rd-international-conference-on-responsible-business-conduct-in-poverty-alleviation-financ/" className="text-white">
-                      Highlight
-                    </a>
+                  <a
+                    href="https://www.eco-business.com/events/sr-asia-3rd-international-conference-on-responsible-business-conduct-in-poverty-alleviation-financ/"
+                    className="text-white"
+                  >
+                    Highlight
+                  </a>
                 </button>
               </div>
             </div>
