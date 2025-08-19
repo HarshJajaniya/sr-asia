@@ -22,8 +22,8 @@ export default function PartnerLogosScroll() {
   };
 
   const partners = [
-    { src: "/l1.png", alt: "UNGC", name: "UNGC" },
-    { src: "/l2.jpg", alt: "CII", name: "CII" },
+   
+
     { src: "/l3.png", alt: "APO", name: "APO" },
     { src: "/l4.png", alt: "Coal India", name: "Coal India" },
     { src: "/l5.png", alt: "Dabur", name: "Dabur" },
