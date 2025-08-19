@@ -261,6 +261,7 @@ function Contact() {
             </Link>
 
             {/* Feedback Form */}
+            {/* Feedback Form */}
             <div className="border p-4 rounded-md bg-gray-50 mt-6">
               <div className="flex items-start space-x-4 mb-3">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
@@ -292,6 +293,59 @@ function Contact() {
                 >
                   Submit
                 </button>
+              </form>
+            </div>
+
+            {/* Complaint Form */}
+            <div className="border p-4 rounded-md bg-gray-50 mt-6">
+              <div className="flex items-start space-x-4 mb-3">
+                <div className="flex-shrink-0 w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                  <FileText className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg font-medium text-gray-900">
+                      Complaint
+                    </h4>
+                  </div>
+                  <p className="text-gray-600 mt-1">
+                    Report issues or problems you’ve faced.
+                  </p>
+                </div>
+              </div>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const complaint = (
+                    e.target as HTMLFormElement
+                  ).complaint.value.trim();
+                  if (!complaint) return;
+                  alert(`Complaint submitted: ${complaint}`);
+                  (e.target as HTMLFormElement).reset();
+                }}
+                className="flex gap-2"
+              >
+                <div className="flex flex-col gap-2 w-full">
+                  <input
+                    type="text"
+                    name="complaint"
+                    placeholder="Subject"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm"
+                    required
+                  />
+                  <textarea
+                    name="complaint"
+                    placeholder="Type your complaint..."
+                    className="w-full h-32 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-sm resize-none"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 text-sm"
+                  >
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
 
