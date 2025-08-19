@@ -97,8 +97,7 @@ export default function AboutUsSection() {
       <div className="max-w-full mx-auto mb-[40px]" ref={aboutHeaderRef}>
         <h2
           className="text-3xl font-bold text-center text-[#072328] "
-          id="about-us"
-        >
+          id="about-us">
           ABOUT US
         </h2>
       </div>
