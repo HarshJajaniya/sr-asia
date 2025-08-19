@@ -45,7 +45,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Volunteer Section */}
-      <section className="bg-white mx-[20px] mb-[75px]">
+      <section className="bg-white mx-[20px]">
         <div className="w-full py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image on Left */}
