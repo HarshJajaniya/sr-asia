@@ -136,6 +136,17 @@ export default function AboutUsSection() {
                 Bangladesh, Indonesia, India, Malaysia, Philippines, Singapore,
                 Vietnam
               </p>
+              {/* Read More Button */}
+              <div className="pt-0 pb-4">
+                <Link href="/srasia">
+                  <Button
+                    variant="link"
+                    className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
+                  >
+                    Read more →
+                  </Button>
+                </Link>
+              </div>
 
               {/* Country flag images */}
               <div className="flex flex-wrap gap-4 justify-start">
@@ -171,8 +182,8 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/15.png"
                       alt="Malaysia flag"
-                      width={80}
-                      height={40}
+                      width={85}
+                      height={45}
                       className="rounded shadow-sm border"
                     />
                   </div>
@@ -180,8 +191,8 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/17.png"
                       alt="Philippines flag"
-                      width={80}
-                      height={40}
+                      width={120}
+                      height={100}
                       className="rounded shadow-sm border"
                     />
                   </div>
@@ -189,16 +200,17 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/18.png"
                       alt="Vietnam flag"
-                      width={80}
-                      height={40}
+                      width={120}
+                      height={100}
                       className="rounded shadow-sm border"
                     />
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="px-2">
-              <div className="flex items-center space-x-2 text-gray-600">
+              {/* <div className="flex items-center space-x-2 text-gray-600">
                 <Image
                   src="/ukas1.png"
                   alt="UKAS logo"
@@ -213,19 +225,7 @@ export default function AboutUsSection() {
                   height={60}
                   className="rounded h-[120px] shadow-sm border"
                 />
-              </div>
-            </div>
-
-            {/* Read More Button */}
-            <div className="pt-4">
-              <Link href="/srasia">
-                <Button
-                  variant="link"
-                  className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
-                >
-                  Read more →
-                </Button>
-              </Link>
+              </div> */}
             </div>
           </div>
         </div>
