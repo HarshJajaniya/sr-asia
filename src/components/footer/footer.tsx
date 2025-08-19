@@ -132,7 +132,7 @@ export default function Footer() {
 
               <li>
                 <Link href="/form" className="hover:underline">
-                  ContactUs
+                  Contact Us
                 </Link>
               </li>
             </ul>
