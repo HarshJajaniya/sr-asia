@@ -19,7 +19,7 @@ const AboutSubmenu = [
 const servicesSubmenu = [
   { label: "Policy Research", href: "/services/assurance" },
   { label: "ESG Assurance & Reporting", href: "/services/reporting" },
-  { label: "CSR Project Management", href: "/services/csr" },
+  { label: "CSR-SD Project Management", href: "/services/csr" },
   { label: "Monitoring & Evaluation", href: "/services/monitoring" },
   { label: "Social Impact Assessment", href: "/services/impact" },
   { label: "Socio Economic Survey", href: "/services/survey" },
@@ -129,8 +129,17 @@ export default function Home() {
 
                   {/* Submenu */}
                   {submenu && (
-                    <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[250px] z-50">
-                      <ul className="space-y-2">
+                    <div
+                      className={`absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
+      ${item.label === "SERVICES" ? "min-w-[500px]" : "min-w-[250px]"}`}
+                    >
+                      <ul
+                        className={`${
+                          item.label === "SERVICES"
+                            ? "grid grid-cols-2 gap-x-1 gap-y-2"
+                            : "space-y-1"
+                        }`}
+                      >
                         {submenu.map((sub, idx) => (
                           <li key={idx}>
                             <Link
