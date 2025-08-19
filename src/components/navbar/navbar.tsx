@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useRef } from "react";
 import Link from "next/link";
@@ -11,18 +11,21 @@ const AboutSubmenu = [
   { label: "Who we are", href: "/about/#who-we-are" },
   { label: "What we do", href: "/about/#what-we-do" },
   { label: "Our Mission & Vision", href: "/#mission" },
-  
+
   { label: "Team", href: "/about/#team" },
   { label: "Why Choose us", href: "/about/#why-choose-us" },
 ];
 
 const servicesSubmenu = [
-  { label: "Advisory Services", href: "/services/assurance" },
-  { label: "Assurance and Reporting", href: "/services/reporting" },
+  { label: "Policy Research", href: "/services/assurance" },
+  { label: "ESG Assurance & Reporting", href: "/services/reporting" },
   { label: "CSR Project Management", href: "/services/csr" },
   { label: "Monitoring & Evaluation", href: "/services/monitoring" },
-  { label: "Impact Assessment", href: "/services/impact" },
-  { label: "Survey", href: "/services/survey" },
+  { label: "Social Impact Assessment", href: "/services/impact" },
+  { label: "Socio Economic Survey", href: "/services/survey" },
+  { label: "Land Survey-DGPS", href: "/services/survey" },
+  { label: "GIS Survey", href: "/services/survey" },
+  { label: "RAP and R&R Implementation ", href: "/services/survey" },
   { label: "Project Implementation", href: "/services/project" },
 ];
 
@@ -31,7 +34,6 @@ const reportSubmenu = [
   { label: "Impact Assessment", href: "/report/#impact" },
   { label: "Social Impact Assessment", href: "/report/#social" },
   { label: "Certifications", href: "/report/#certifications" },
-
 ];
 
 const mediaSubmenu = [
@@ -95,62 +97,67 @@ export default function Home() {
   return (
     <>
       {/* Desktop Navbar */}
-     <div className="bg-[#EEFAFE] border-b border-gray-100 z-50">
-  <nav className="flex items-center justify-center px-4 md:px-8 py-3">
-    <div className="p-4 hidden md:flex space-x-10 relative z-50">
-  {navItems.map((item, index) => {
-    const submenu =
-      item.label === "HOME"  ? null :
-      item.label === "ABOUT" ? AboutSubmenu :
-      item.label === "SERVICES" ? servicesSubmenu :
-      item.label === "PROJECTS" ? reportSubmenu :
-      item.label === "NETWORK" ? networkSubmenu :
-      item.label === "EVENTS" ? mediaSubmenu :
-      item.label === "CAREERS" ? careersSubmenu :
-      null;
+      <div className="bg-[#EEFAFE] border-b border-gray-100 z-50">
+        <nav className="flex items-center justify-center px-4 md:px-8 py-3">
+          <div className="p-4 hidden md:flex space-x-10 relative z-50">
+            {navItems.map((item, index) => {
+              const submenu =
+                item.label === "HOME"
+                  ? null
+                  : item.label === "ABOUT"
+                  ? AboutSubmenu
+                  : item.label === "SERVICES"
+                  ? servicesSubmenu
+                  : item.label === "PROJECTS"
+                  ? reportSubmenu
+                  : item.label === "NETWORK"
+                  ? networkSubmenu
+                  : item.label === "EVENTS"
+                  ? mediaSubmenu
+                  : item.label === "CAREERS"
+                  ? careersSubmenu
+                  : null;
 
-    return (
-      <div key={index} className="relative group">
-        <Link
-          href={item.href}
-          className="text-[#14444D] font-bold text-[18px] leading-[100%] transition-colors"
-        >
-          {item.label}
-        </Link>
-
-        {/* Submenu */}
-        {submenu && (
-          <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[250px] z-50">
-            <ul className="space-y-2">
-              {submenu.map((sub, idx) => (
-                <li key={idx}>
+              return (
+                <div key={index} className="relative group">
                   <Link
-                    href={sub.href}
-                    className="text-xl text-gray-700 hover:text-blue-600 block"
+                    href={item.href}
+                    className="text-[#14444D] font-bold text-[18px] leading-[100%] transition-colors"
                   >
-                    {sub.label}
+                    {item.label}
                   </Link>
-                </li>
-              ))}
-            </ul>
+
+                  {/* Submenu */}
+                  {submenu && (
+                    <div className="absolute top-full left-0 mt-2 bg-[#EEFAFE] border rounded-md shadow-md p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[250px] z-50">
+                      <ul className="space-y-2">
+                        {submenu.map((sub, idx) => (
+                          <li key={idx}>
+                            <Link
+                              href={sub.href}
+                              className="text-xl text-gray-700 hover:text-blue-600 block"
+                            >
+                              {sub.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
-        )}
+
+          {/* Mobile menu button */}
+          <button
+            onClick={toggleSidebar}
+            className="md:hidden text-[#14444D] focus:outline-none"
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+        </nav>
       </div>
-    );
-  })}
-</div>
-
-
-    {/* Mobile menu button */}
-    <button
-      onClick={toggleSidebar}
-      className="md:hidden text-[#14444D] focus:outline-none"
-    >
-      <Menu className="w-6 h-6" />
-    </button>
-  </nav>
-</div>
-
 
       {/* Mobile Sidebar */}
       {isSidebarOpen && (
