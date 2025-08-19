@@ -91,12 +91,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/report" className="hover:underline">
-                  Projects & Events
+                  Projects 
                 </Link>
               </li>
               <li>
-                <Link href="/form" className="hover:underline">
-                  ContactUs
+                <Link href="/media" className="hover:underline">
+                  Events
                 </Link>
               </li>
             </ul>
@@ -116,14 +116,20 @@ export default function Footer() {
                   Volunteer
                 </Link>
               </li>
+               <li>
+                <Link href="/career" className="hover:underline">
+                  Empanelment
+                </Link>
+              </li>
               <li>
                 <Link href="/career" className="hover:underline">
                   Careers
                 </Link>
               </li>
-              <li>
-                <Link href="/career" className="hover:underline">
-                  Newsletter Signup
+              
+                <li>
+                <Link href="/form" className="hover:underline">
+                  ContactUs
                 </Link>
               </li>
             </ul>
