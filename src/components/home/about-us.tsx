@@ -124,20 +124,19 @@ export default function AboutUsSection() {
             ref={aboutTextRef}
           >
             <p>
-              An International organization promoting sustainability through
-              Research,{" "}
-              <span className="font-semibold">
-                We are an international not-for-profit organization registered
+             
+           
+                We are an    <span className="font-semibold">international</span> networking organization registered
                 in 2012 with a vision of working for Sustainable Asia. The
-                founders are subject experts and certified on subjects by APO
+                founders are subject experts and certified on subjects by <span className="font-semibold">APO</span>
                 Japan, CBI the Netherlands Govt. The ambition of the
-                organization is to promote Responsible Business Conduct (RBG)
-                and Sustainable Development Goals (SDGs) by involving private
+                organization is to promote Responsible Business Conduct <span className="font-semibold">(RBG)</span>
+                and Sustainable Development Goals <span className="font-semibold">(SDGs)</span> by involving private
                 sectors and government. The activities of SR Asia focus on two
-                major operational frameworks: (1) Innovation Development and (2)
-                Knowledge Management. We are in six Asian countries (Bangladesh,
+                major operational frameworks: (1) <span className="font-semibold">Innovation Development</span> and (2)
+                <span className="font-semibold"> Knowledge Management</span>. We are in six Asian countries (Bangladesh,
                 India, Indonesia, Malaysia, Vietnam, and the Philippines)
-              </span>
+              
             </p>
             {/* Read More Button */}
             <div className="pt-0 pb-4">
