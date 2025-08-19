@@ -95,7 +95,10 @@ export default function AboutUsSection() {
     <div className="w-full py-12 px-4 border-b border-gray-200 shadow-lg mb-[75px]">
       {/* Header */}
       <div className="max-w-full mx-auto mb-[40px]" ref={aboutHeaderRef}>
-        <h2 className="text-3xl font-bold text-center text-[#072328] " id="about-us">
+        <h2
+          className="text-3xl font-bold text-center text-[#072328] "
+          id="about-us"
+        >
           ABOUT US
         </h2>
       </div>
@@ -121,106 +124,97 @@ export default function AboutUsSection() {
             ref={aboutTextRef}
           >
             <p>
-             An International organization promoting sustainability through
-Research, CSR Project Implementation, Development projects,
-
-Project Management, International and National Conferences,
-
-Integrated and Sustainability Reporting, ESG Reporting,
-
-Capacity Building, and Third-Party Assurance Services.
+              An International organization promoting sustainability through
+              Research, CSR Project Implementation, Development projects,
+              Project Management, International and National Conferences,
+              Integrated and Sustainability Reporting, ESG Reporting, Capacity
+              Building, and Third-Party Assurance Services.
             </p>
- <div className="space-y-4">
+            <div className="space-y-4">
               <h3 className="text-xl font-semibold">International offices:</h3>
               <p className="text-muted-foreground">
-                Bangladesh, Indonesia, India, Malaysia, Philippines, Singapore, Vietnam
+                Bangladesh, Indonesia, India, Malaysia, Philippines, Singapore,
+                Vietnam
               </p>
-              
+
               {/* Country flag images */}
               <div className="flex flex-wrap gap-4 justify-start">
-               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 w-full">
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/9.png"
-      alt="Bangladesh flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/10.png"
-      alt="Indonesia flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/11.png"
-      alt="India flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/12.png"
-      alt="Malaysia flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/13.png"
-      alt="Philippines flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-  <div className="flex flex-col items-center">
-    <Image
-      src="/flags/14.png"
-      alt="Vietnam flag"
-      width={80}
-      height={40}
-      className="rounded shadow-sm border"
-    />
-  </div>
-</div>
-
-              </div>
-              
-            </div>
-           <div className="px-8">
-                <div className="flex items-center space-x-2 text-gray-600">
-                  <Image
-                    src="/ukas.webp"
-                    alt="UKAS logo"
-                    width={180}
-                    height={80}
-                    className="rounded shadow-sm border"
-                  />
-                   <Image
-                    src="/iso.png"
-                    alt="ISO logo"
-                    width={180}
-                    height={80}
-                    className="rounded shadow-sm border"
-                  />
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 w-full">
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/16.png"
+                      alt="Bangladesh flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/20.png"
+                      alt="Indonesia flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/19.png"
+                      alt="India flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/15.png"
+                      alt="Malaysia flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/17.png"
+                      alt="Philippines flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <Image
+                      src="/flags/18.png"
+                      alt="Vietnam flag"
+                      width={80}
+                      height={40}
+                      className="rounded shadow-sm border"
+                    />
+                  </div>
                 </div>
-              
-  
-
               </div>
-
-           
+            </div>
+            <div className="px-2">
+              <div className="flex items-center space-x-2 text-gray-600">
+                <Image
+                  src="/ukas1.png"
+                  alt="UKAS logo"
+                  width={180}
+                  height={80}
+                  className="rounded shadow-sm border"
+                />
+                <Image
+                  src="/iso1.png"
+                  alt="ISO logo"
+                  width={150}
+                  height={60}
+                  className="rounded h-[120px] shadow-sm border"
+                />
+              </div>
+            </div>
 
             {/* Read More Button */}
             <div className="pt-4">
