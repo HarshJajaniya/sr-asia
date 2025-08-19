@@ -97,7 +97,8 @@ export default function AboutUsSection() {
       <div className="max-w-full mx-auto mb-[40px]" ref={aboutHeaderRef}>
         <h2
           className="text-3xl font-bold text-center text-[#072328] "
-          id="about-us">
+          id="about-us"
+        >
           ABOUT US
         </h2>
       </div>
@@ -161,7 +162,7 @@ export default function AboutUsSection() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 w-full">
                   <div className="flex flex-col items-center">
                     <Image
-                      src="/flags/16.png"
+                      src="/flags/21.png"
                       alt="Bangladesh flag"
                       width={80}
                       height={40}
@@ -170,7 +171,7 @@ export default function AboutUsSection() {
                   </div>
                   <div className="flex flex-col items-center">
                     <Image
-                      src="/flags/20.png"
+                      src="/flags/22.png"
                       alt="Indonesia flag"
                       width={80}
                       height={40}
@@ -179,7 +180,7 @@ export default function AboutUsSection() {
                   </div>
                   <div className="flex flex-col items-center">
                     <Image
-                      src="/flags/19.png"
+                      src="/flags/23.png"
                       alt="India flag"
                       width={80}
                       height={40}
@@ -190,26 +191,26 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/15.png"
                       alt="Malaysia flag"
-                      width={85}
-                      height={45}
+                      width={80}
+                      height={40}
                       className="rounded shadow-sm border"
                     />
                   </div>
                   <div className="flex flex-col items-center">
                     <Image
-                      src="/flags/17.png"
+                      src="/flags/24.png"
                       alt="Philippines flag"
-                      width={120}
-                      height={100}
+                      width={80}
+                      height={40}
                       className="rounded shadow-sm border"
                     />
                   </div>
                   <div className="flex flex-col items-center">
                     <Image
-                      src="/flags/18.png"
+                      src="/flags/25.png"
                       alt="Vietnam flag"
-                      width={120}
-                      height={100}
+                      width={80}
+                      height={40}
                       className="rounded shadow-sm border"
                     />
                   </div>
