@@ -120,7 +120,7 @@ export default function AboutUsSection() {
 
           {/* Right Column - Text Content */}
           <div
-            className="space-y-4 text-3sm text-gray-700 leading-relaxed"
+            className="space-y-2 text-3sm text-gray-700 leading-relaxed"
             ref={aboutTextRef}
           >
             <p>
@@ -145,16 +145,12 @@ export default function AboutUsSection() {
                   variant="link"
                   className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
                 >
-                  Read more →
+                  Read more
                 </Button>
               </Link>
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">International offices:</h3>
-              <p className="text-muted-foreground">
-                Bangladesh, Indonesia, India, Malaysia, Philippines, Singapore,
-                Vietnam
-              </p>
 
               {/* Country flag images */}
               <div className="flex flex-wrap gap-4 justify-start">
