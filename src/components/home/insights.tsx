@@ -6,7 +6,10 @@ export default function Component() {
     <div className=" bg-white py-4 px-4">
       <div className="max-w-[1400px] mx-auto mb-[35px] ">
         {/* Heading */}
-        <div className="flex items-center justify-center mb-[75px]" id="insights">
+        <div
+          className="flex items-center justify-center mb-[35px] mt-10"
+          id="insights"
+        >
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             INSIGHTS &amp; SPECIALS
           </h1>
@@ -62,7 +65,7 @@ export default function Component() {
         </div>
 
         {/* ---------- 2 ▸ IMAGE ON THE LEFT ---------- */}
-        <div className="bg-white overflow-hidden mb-[35px] border-b border-gray-200 shadow-lg">
+        <div className="bg-white overflow-hidden border-b border-gray-200 shadow-lg">
           <div className="flex flex-col md:flex-row-reverse gap-[106px] p-6">
             {/* text */}
             <div className="flex-1 space-y-4">

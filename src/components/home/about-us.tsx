@@ -107,7 +107,7 @@ export default function AboutUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {/* Left Column - Image */}
           <div className="relative">
-            <div className="relative h-100 lg:h-[344px] w-full overflow-hidden">
+            <div className="relative h-100 lg:h-[500px] w-full overflow-hidden">
               <Image
                 src="/36.png"
                 alt="Forest background representing sustainable development"
@@ -124,11 +124,31 @@ export default function AboutUsSection() {
           >
             <p>
               An International organization promoting sustainability through
-              Research, <span className="font-semibold">CSR Project Implementation, Development projects,
-              Project Management, International and National Conferences,
-              Integrated and Sustainability Reporting, ESG Reporting, Capacity
-              Building, and Third-Party Assurance Services.</span>
+              Research,{" "}
+              <span className="font-semibold">
+                We are an international not-for-profit organization registered
+                in 2012 with a vision of working for Sustainable Asia. The
+                founders are subject experts and certified on subjects by APO
+                Japan, CBI the Netherlands Govt. The ambition of the
+                organization is to promote Responsible Business Conduct (RBG)
+                and Sustainable Development Goals (SDGs) by involving private
+                sectors and government. The activities of SR Asia focus on two
+                major operational frameworks: (1) Innovation Development and (2)
+                Knowledge Management. We are in six Asian countries (Bangladesh,
+                India, Indonesia, Malaysia, Vietnam, and the Philippines)
+              </span>
             </p>
+            {/* Read More Button */}
+            <div className="pt-0 pb-4">
+              <Link href="/srasia">
+                <Button
+                  variant="link"
+                  className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
+                >
+                  Read more →
+                </Button>
+              </Link>
+            </div>
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">International offices:</h3>
               <p className="text-muted-foreground">
@@ -170,8 +190,8 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/15.png"
                       alt="Malaysia flag"
-                      width={80}
-                      height={40}
+                      width={85}
+                      height={45}
                       className="rounded shadow-sm border"
                     />
                   </div>
@@ -179,8 +199,8 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/17.png"
                       alt="Philippines flag"
-                      width={80}
-                      height={40}
+                      width={120}
+                      height={100}
                       className="rounded shadow-sm border"
                     />
                   </div>
@@ -188,29 +208,16 @@ export default function AboutUsSection() {
                     <Image
                       src="/flags/18.png"
                       alt="Vietnam flag"
-                      width={80}
-                      height={40}
+                      width={120}
+                      height={100}
                       className="rounded shadow-sm border"
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-2">
-              
-            </div>
 
-            {/* Read More Button */}
-            <div className="pt-4">
-              <Link href="/srasia">
-                <Button
-                  variant="link"
-                  className="text-blue-800 hover:text-blue-800 p-0 h-auto font-normal"
-                >
-                  Read more →
-                </Button>
-              </Link>
-            </div>
+            <div className="px-2"></div>
           </div>
         </div>
       </div>
