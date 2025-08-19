@@ -2,6 +2,9 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { workCards } from "@/components/home/data";
 import type { Metadata } from "next";
+import Header from "@/components/navbar/header";
+import Footer from "@/components/footer/footer";
+
 
 
 
@@ -14,6 +17,8 @@ export default function WorkDetail(props: any) {
   }
 
   return (
+    <>
+    <Header/>
     <div className="max-w-5xl mx-auto py-10 px-4">
       <Image
         src={card.image}
@@ -27,6 +32,7 @@ export default function WorkDetail(props: any) {
         {card.longDescription}
       </p>
     </div>
+    <Footer/>
+    </>
   );
 }
-

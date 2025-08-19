@@ -55,7 +55,7 @@ function Contact() {
               <p className="text-gray-700">
                 All other inquiries should be directed to the{" "}
                 <Link
-                  href="/career"
+                  href="/career#openings"
                   className="text-blue-600 hover:text-blue-800 underline"
                 >
                   Contact Us
@@ -203,7 +203,7 @@ function Contact() {
 
           <div className="space-y-6">
             {/* Careers Section */}
-            <Link href="/career">
+            <Link href="/career#openings">
               <div className="flex items-start space-x-4 group cursor-pointer mb-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                   <FileText className="w-6 h-6 text-white" />
@@ -224,7 +224,7 @@ function Contact() {
             </Link>
 
             {/* General Inquiries Section */}
-            <Link href="/career">
+            <Link href="/#contact-form">
               <div className="flex items-start space-x-4 group cursor-pointer">
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
                   <Target className="w-6 h-6 text-white" />
