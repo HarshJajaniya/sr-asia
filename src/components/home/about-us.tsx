@@ -108,7 +108,7 @@ export default function AboutUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           {/* Left Column - Image */}
           <div className="relative">
-            <div className="relative h-100 lg:h-[544px] w-full overflow-hidden">
+            <div className="relative h-100 lg:h-[344px] w-full overflow-hidden">
               <Image
                 src="/36.png"
                 alt="Forest background representing sustainable development"
@@ -125,10 +125,10 @@ export default function AboutUsSection() {
           >
             <p>
               An International organization promoting sustainability through
-              Research, CSR Project Implementation, Development projects,
+              Research, <span className="font-semibold">CSR Project Implementation, Development projects,
               Project Management, International and National Conferences,
               Integrated and Sustainability Reporting, ESG Reporting, Capacity
-              Building, and Third-Party Assurance Services.
+              Building, and Third-Party Assurance Services.</span>
             </p>
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">International offices:</h3>
@@ -198,22 +198,7 @@ export default function AboutUsSection() {
               </div>
             </div>
             <div className="px-2">
-              <div className="flex items-center space-x-2 text-gray-600">
-                <Image
-                  src="/ukas1.png"
-                  alt="UKAS logo"
-                  width={180}
-                  height={80}
-                  className="rounded shadow-sm border"
-                />
-                <Image
-                  src="/iso1.png"
-                  alt="ISO logo"
-                  width={150}
-                  height={60}
-                  className="rounded h-[120px] shadow-sm border"
-                />
-              </div>
+              
             </div>
 
             {/* Read More Button */}
