@@ -74,7 +74,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> 
   };
 
   return (
-    <div className="py-12 px-4 mb-0">
+    <div className="py-12 px-4 mb-0" id="contact-form">
       <div className="max-w-full mx-[20px]">
         <div className="bg-white overflow-hidden">
           <div className="grid md:grid-cols-2 min-h-[600px]">
