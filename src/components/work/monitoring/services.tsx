@@ -4,45 +4,45 @@ export default function ServicesSection() {
   const services = [
     {
       image: "/workk/monitoring/1.png",
-      title: " CSR Project",
+      title: "Survey Design & Data Collection",
       description:
-        " CSR Project",
+        "We apply robust sampling methods (random, stratified, cluster, purposive, snowball) with statistically reliable sample sizes. Digital tools like ODK, Kobo, and SurveyCTO ensure accurate, GPS-validated data collection with real-time monitoring for quality assurance.",
     },
     {
       image: "/workk/monitoring/2.png",
-      title: "Contruction projects",
+      title: "Monitoring Frameworks",
       description:
-        "We conduct thorough evaluations to assess the potential environmental impacts of proposed projects across various sectors, including infrastructure development, energy, construction, and manufacturing.",
+        "Our monitoring frameworks use Logical Framework Approach (LFA) and Theory of Change (ToC) to track progress and results. Dashboards powered by Power BI/Tableau provide near real-time insights, ensuring alignment with SDGs and OECD-DAC indicators.",
     },
     {
       image: "/workk/monitoring/3.png",
-      title: "Con-Current monitoring",
+      title: "Concurrent Monitoring",
       description:
-        "At SR Asia, we understand the critical importance of monitoring and evaluation (M&E) in ensuring the success of projects, programs, or policies. Our Concurrent Monitoring and Evaluation service provides real-time insights to inform decision-making, enhance accountability, and maximize impact.",
+        "We provide real-time monitoring of projects and programs, offering continuous insights into implementation fidelity, resource utilization, and impact. This ensures timely decision-making, accountability, and adaptive management.",
     },
     {
       image: "/workk/monitoring/4.png",
-      title: "End line Evaluation",
+      title: "Endline Evaluation",
       description:
-        "SR Asia’s end-line evaluations deliver comprehensive impact assessments at the project’s conclusion. We measure outcomes against baseline indicators to evaluate effectiveness, sustainability, and lessons for future programming. ",
+        "Our endline evaluations compare project outcomes against baseline benchmarks, using methods like Difference-in-Differences (DiD) and Propensity Score Matching (PSM). The findings provide evidence of effectiveness, sustainability, and lessons learned.",
     },
-     {
+    {
       image: "/workk/monitoring/5.png",
-      title: "Baseline ",
+      title: "Baseline Studies",
       description:
-        "SR Asia conducts robust baseline studies to establish data-driven benchmarks at the start of a project. These insights form the foundation for setting targets, designing interventions, and measuring future impact with clarity and precision.",
+        "Baseline studies establish benchmarks through descriptive statistics, indices, and vulnerability scores. These insights form the foundation for setting measurable targets and tracking impact throughout the project lifecycle.",
     },
     {
       image: "/workk/monitoring/6.png",
-      title: "Mid-line ",
+      title: "Midline Evaluations",
       description:
-        "Our mid-line evaluations provide critical progress checks, enabling course correction and strategy refinement. SR Asia ensures that project implementation stays aligned with objectives, timelines, and stakeholder expectations.",
+        "Midline evaluations act as progress checkpoints, assessing performance against planned outcomes. They enable course corrections, improve strategy, and ensure project delivery remains aligned with objectives and stakeholder expectations.",
     },
-     {
+    {
       image: "/workk/monitoring/7.png",
-      title: "Third Party  ",
+      title: "Third-Party Evaluations",
       description:
-        "As an independent evaluator, SR Asia offers impartial third-party assessments to ensure transparency, credibility, and accountability. Our rigorous evaluation methodologies provide stakeholders with trusted insights into project performance and impact.",
+        "As an independent evaluator, SR Asia provides unbiased third-party assessments. Our rigorous methodologies ensure credibility, transparency, and actionable insights, building trust among stakeholders and partners.",
     },
   ]
 

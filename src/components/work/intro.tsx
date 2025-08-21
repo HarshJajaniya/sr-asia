@@ -1,60 +1,77 @@
 "use client"
 
 import { useState } from "react"
-import { Users, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 const driverContent = {
-  "Feasibility Analysis": {
-    title: "Feasibility Analysis",
+  "Evidence-Based Policy Research": {
+    title: "Evidence-Based Policy Research",
     description:
-      " We conduct in-depth feasibility studies to assess the technical, financial, environmental, and social viability of proposed projects. Our analysis helps organizations determine the feasibility and potential risks associated with project implementation, guiding strategic decision-making processes.Project Scope and Objectives: We define clear project scopes and objectives in the DPR, outlining the goals, deliverables, timelines, and resource requirements of the proposed project. Our detailed project scoping ensures alignment with organizational priorities and stakeholder expectations.Market Research and Analysis: We perform comprehensive market research and analysis to identify market trends, demand-supply dynamics, competitor landscapes, and potential risks and opportunities for the proposed project. Our market insights enable organizations to make informed decisions regarding project positioning, pricing, and market entry strategies.Technical Design and Specifications: We develop detailed technical designs and specifications for the proposed project, outlining the required infrastructure, equipment, technology, and engineering solutions. Our technical expertise ensures that project designs are robust, efficient, and aligned with industry standards and best practices.Financial Projections and Viability: We prepare detailed financial projections and viability assessments for the proposed project, including capital expenditure estimates, revenue forecasts, cost-benefit analyses, and financial risk assessments. Our financial analyses help organizations evaluate the financial feasibility and potential returns on investment of the project.",
+      "We design and execute studies that combine quantitative surveys, qualitative assessments, and econometric models. Using global frameworks such as OECD-DAC, UN SDGs, IFC Performance Standards, and ISO 26000, we translate ground realities into actionable insights for public policy, development programs, and business regulations.",
   },
-  "Technology Assessments": {
-    title: "Technology Assessments",
+  "Policy Design & Strategy Advisory": {
+    title: "Policy Design & Strategy Advisory",
     description:
-      "SR Asia offers specialized Technology Assessment services, designed to provide organizations with comprehensive insights into the suitability, feasibility, and impact of adopting specific technologies. Our assessments help organizations make informed decisions regarding technology investments, upgrades, and integrations, ensuring optimal alignment with business goals and objectives.Technology Landscape Analysis: We conduct thorough analyses of the technology landscape relevant to the organization's industry, identifying emerging trends, innovations, and disruptions. Our assessments help organizations stay abreast of technological advancements and assess their potential impact on business operations.Needs Assessment: We collaborate with organizations to understand their specific technology needs, challenges, and objectives. By conducting needs assessments, we tailor our technology recommendations to address unique organizational requirements and priorities effectively.Technology Selection Criteria: We develop clear and concise criteria for evaluating and selecting technology solutions based on organizational priorities, budgetary constraints, technical requirements, and scalability. Our selection criteria ensure that technology investments align with strategic objectives and deliver maximum value.Comparative Analysis: We perform comparative analyses of multiple technology solutions, weighing their respective strengths, weaknesses, features, and costs. Our comparative analyses help organizations make informed decisions by providing a comprehensive overview of available options and their potential implications.Feasibility Assessment: We assess the technical, financial, and operational feasibility of implementing specific technology solutions within the organization's existing infrastructure and ecosystem. Our feasibility assessments help organizations identify potential implementation challenges, risks, and mitigation strategies.",
+      "We develop policy frameworks, guidelines, and roadmaps tailored to national and regional contexts. Our advisory aligns policies with India’s development priorities, ESG requirements, and global sustainability standards, while recommending governance models, institutional arrangements, and regulatory compliance pathways.",
   },
-  "Value Chain Assessments": {
-    title: "Value Chain Assessments",
+  "Sectoral Studies & Knowledge Products": {
+    title: "Sectoral Studies & Knowledge Products",
     description:
-      "SR Asia specializes in Value Chain Assessments, designed to help organizations identify opportunities for optimization, innovation, and efficiency improvement across their value chains. Our assessments provide organizations with valuable insights into the end-to-end processes, stakeholders, and value-added activities, enabling them to enhance competitiveness, sustainability, and profitability.Key Features of Our Value Chain Assessment Services:End-to-End Analysis: We conduct comprehensive analyses of organizations' value chains, from raw material sourcing to product/service delivery to end customers. Our assessments map out the entire value chain, identifying key processes, stakeholders, and value-added activities at each stage.Stakeholder Engagement: We engage with relevant stakeholders, including suppliers, manufacturers, distributors, retailers, and customers, to gather insights, feedback, and perspectives on value chain dynamics and opportunities. By fostering collaboration and dialogue, we ensure that our assessments capture diverse perspectives and priorities.Process Mapping and Optimization: We map out existing processes within the value chain and identify opportunities for optimization, streamlining, and automation. Our process optimization recommendations aim to reduce costs, eliminate inefficiencies, and enhance productivity across the value chain.Value-Added Analysis: We analyze the value-added activities within the value chain and assess their contribution to overall organizational performance and competitiveness. Our value-added analysis helps organizations identify areas for innovation, differentiation, and value creation.Supply Chain Resilience: We assess the resilience of organizations' supply chains to external shocks, disruptions, and risks, such as natural disasters, geopolitical instability, and supply chain disruptions. Our resilience assessments help organizations identify vulnerabilities and develop strategies to build robust, agile, and sustainable supply chains.",
+      "We prepare white papers, discussion notes, policy briefs, and reports for government, donors, and multilaterals. Our in-depth sector studies span healthcare, green economy, livelihoods, digital inclusion, education, and infrastructure, benchmarking global best practices for Indian and South Asian contexts.",
   },
-
+  "Impact & KAP Studies": {
+    title: "Impact & KAP Studies (Knowledge, Attitude, Practice)",
+    description:
+      "We conduct perception and behavioral studies to measure policy effectiveness. Our KAP studies provide actionable recommendations for campaigns, governance reforms, and development interventions, ensuring that policies translate into tangible outcomes for communities.",
+  },
 }
 
-
-export default function AdvisoryServicesPage() {
-const [selectedDriver, setSelectedDriver] = useState<string>(
-  "Feasibility Analysis"
-);
-
+export default function PolicyResearchPage() {
+  const [selectedDriver, setSelectedDriver] = useState<string>(
+    "Evidence-Based Policy Research"
+  )
 
   return (
     <div className="min-h-screen">
-     <div className="max-w-full px-[20px] mb-[75px]">
+      <div className="max-w-full px-[20px] mb-[75px]">
         {/* Introduction Section */}
         <section className="mb-16">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
-          <p className="text-[#246875] leading-relaxed ">
-           DPR and feasibility studies are critical components in the early stages of project development, providing a detailed plan and assessing the project's viability. M&E ensures ongoing assessment and improvement during project implementation. PMC services contribute to effective project management, while advisory services bring external expertise to guide decision-making and address specific challenges. Together, these elements form a comprehensive approach to successful project development and execution.
-Detailed Project Report (DPR):
-SR Asia offers specialized services in preparing Detailed Project Reports (DPR), meticulously crafted documents that outline the comprehensive framework and feasibility of proposed projects. Our DPR services are designed to provide organizations with detailed insights, analyses, and recommendations to facilitate informed decision-making and successful project implementation.
-
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+            🌍 Policy Research & Design
+          </h1>
+          <p className="text-[#246875] leading-relaxed">
+            At <strong>SR Asia</strong>, we believe that sound policies shape sustainable
+            futures. Our Policy Research & Design practice bridges the gap between
+            evidence-based insights and actionable strategies, helping governments,
+            multilaterals, and corporates make informed decisions on ESG,
+            Sustainability, CSR, and development challenges.
+            <br />
+            <br />
+            Through robust methodologies and alignment with global standards, we provide
+            data-driven research, policy analysis, and design frameworks that translate
+            into practical recommendations for inclusive growth, sustainable development,
+            and responsible business practices.
           </p>
         </section>
 
         {/* What's Next Section */}
         <section className="mb-16">
-          <h2 className="text-[tertiary/700] text-3xl font-bold mb-6">What's next for Advisory Services?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">
+            What’s next for Policy Research?
+          </h2>
           <p className="text-[#246875] leading-relaxed mb-8">
-           At SR Asia, we champion CSR as a strategic pathway to social and environmental impact. Our end-to-end CSR program management services help organizations design, implement, and monitor initiatives that align with regulatory mandates and community development goals.
+            At SR Asia, we continue to advance policy research with deep sectoral
+            expertise, AI-driven analytics, and internationally benchmarked methodologies.
+            Our focus is on transforming research insights into scalable, actionable, and
+            future-ready policy solutions.
           </p>
 
           {/* Our Drivers */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Drivers</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Our Core Services
+            </h3>
             <div className="flex flex-wrap gap-3 mb-6">
               {Object.keys(driverContent).map((driver) => (
                 <Button
@@ -76,16 +93,21 @@ SR Asia offers specialized services in preparing Detailed Project Reports (DPR),
             <Card className="bg-white border border-teal-200 shadow-sm">
               <CardContent className="p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                  {driverContent[selectedDriver as keyof typeof driverContent].title}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .title
+                  }
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  {driverContent[selectedDriver as keyof typeof driverContent].description}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .description
+                  }
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-
       </div>
     </div>
   )

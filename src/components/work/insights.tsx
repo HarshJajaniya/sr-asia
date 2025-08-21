@@ -22,7 +22,7 @@ const workCards = [
     subtitle: "Apr 04,2024",
     description:
       "रैपिड रेल प्रोजेक्ट के तहत मेरठ शहर की सीमा क्षेत्र में विभिन्न स्टेशनों के निर्माण के लिए जमीन आपसी सहमति से नहीं मिल पा रही है। लिहाजा आठ स्थानों पर कुल 5.8982 हेक्टेयर भूमि का अधिग्रहण करने का निर्णय लिया गया है।",
-    image: "/resources/3.png",
+    image: "/insights/8.webp",
     link: "https://www.newindianexpress.com/nation/2022/feb/20/ashshash-project-social-responsibility-sr-asia-pledges-solidarity-for-survivors-of-human-trafficking-2428850.html",
   },
   {
