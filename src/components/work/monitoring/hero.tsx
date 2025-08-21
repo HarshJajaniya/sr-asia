@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex items-center mb-6">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-2">
-              Monitoring & Evaluation  
+              Monitoring, Evaluation & Research (MER) Services
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-6">
                Monitoring progress, evaluating outcomes, and empowering programs with data-driven insights that lead to real, lasting impact.
