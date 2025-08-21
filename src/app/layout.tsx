@@ -32,7 +32,7 @@ export default function RootLayout({
          <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
       </main>
 
-        
+        <Analytics/>
       </body>
     </html>
   );

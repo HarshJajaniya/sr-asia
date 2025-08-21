@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex items-center mb-6">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-2">
-                Advisory Services
+                Policy Research
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-6">
                 Delivering Sustainable Development Projects with Precision, Purpose, and Proven Impact on the Ground.
