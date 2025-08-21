@@ -1,71 +1,86 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Users, Target } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const driverContent = {
-"CSR Strategic Planning & Alignment": {
-  "title": "CSR Strategic Planning & Alignment",
-  "description": "We work with organizations to design comprehensive CSR strategies that align with business objectives, core values, and stakeholder expectations. This includes identifying priority social, environmental, and economic focus areas, setting measurable goals, and ensuring initiatives are mapped to broader corporate strategies. Our planning process integrates clear objectives, performance benchmarks, and mechanisms for ongoing monitoring and evaluation to ensure that CSR initiatives drive meaningful, measurable impact."
-},
-"Stakeholder Engagement & Partnerships": {
-  "title": "Stakeholder Engagement & Partnerships",
-  "description": "We facilitate structured engagement processes to gather insights, feedback, and perspectives from employees, communities, customers, and other key stakeholders. By fostering open dialogue, we ensure programs address real needs and build credibility. Additionally, we forge strategic partnerships with NGOs, government agencies, academic institutions, and community groups, leveraging their expertise, resources, and networks to amplify the reach and effectiveness of CSR interventions."
-},
-"Program Design, Development & Implementation": {
-  "title": "Program Design, Development & Implementation",
-  "description": "Our team designs and delivers CSR programs that tackle pressing societal and environmental challenges, from rural development and skill enhancement to renewable energy adoption and biodiversity conservation. We translate organizational vision into action through meticulous project planning, clear timelines, budget allocation, and milestone tracking. Our approach ensures smooth execution, active stakeholder involvement, and continuous alignment with strategic objectives."
-},
-"Resource Mobilization & Management": {
-  "title": "Resource Mobilization & Management",
-  "description": "We assist organizations in securing and managing the resources necessary for program success — including funding, skilled personnel, equipment, and technology. By aligning resources with project needs, we optimize efficiency and ensure that initiatives are fully equipped to achieve their intended outcomes."
-},
-"Monitoring, Evaluation & Learning": {
-  "title": "Monitoring, Evaluation & Learning",
-  "description": "Our robust M&E framework combines quantitative and qualitative methods to assess program progress, effectiveness, and long-term sustainability. We establish clear performance indicators from the outset, track progress against defined benchmarks, and use data-driven insights to guide mid-course corrections. Our methods include surveys, interviews, focus groups, and field observations, supported by logical frameworks linking goals to measurable outcomes. Stakeholders are actively involved throughout the process, ensuring that findings are relevant, transparent, and actionable."
-}
+  "Participatory Rural Appraisal (PRA) & Needs Assessment": {
+    title: "Participatory Rural Appraisal (PRA) & Needs Assessment",
+    description:
+      "We use participatory rural appraisal methods such as social mapping, transect walks, FGDs, and seasonal calendars to identify real community needs. This ensures that CSR projects are demand-driven, inclusive, and aligned with Schedule VII of the Companies Act, giving communities a voice in planning and implementation.",
+  },
+  "Baseline Studies": {
+    title: "Baseline Studies",
+    description:
+      "Baseline studies provide benchmarks for socio-economic, health, livelihood, and environmental indicators. Using surveys, GIS, and OECD-DAC aligned frameworks, we establish reference points that help corporates and NGOs measure progress and accountability throughout project lifecycles.",
+  },
+  "Midline Assessments": {
+    title: "Midline Assessments",
+    description:
+      "At the mid-point of a project, we conduct assessments to track progress against baseline indicators. These evaluations identify gaps, bottlenecks, and required course corrections, while incorporating beneficiary feedback for adaptive management.",
+  },
+  "End-line Studies": {
+    title: "End-line Studies",
+    description:
+      "End-line evaluations measure outcomes and immediate impacts at project completion. By comparing with baseline and midline data, we highlight changes attributable to interventions and capture evidence-based lessons for scaling and replication.",
+  },
+  "Monitoring & Evaluation (M&E)": {
+    title: "Monitoring & Evaluation (M&E)",
+    description:
+      "We design and implement M&E frameworks using LogFrames, Theory of Change, and MIS dashboards. Our services include real-time monitoring, compliance checks, third-party evaluations, and providing corporates with dashboards for decision-making.",
+  },
+  "Impact Assessments": {
+    title: "Impact Assessments",
+    description:
+      "Independent impact assessments are conducted using SROI, cost–benefit analysis, and SDG mapping. These studies evaluate long-term social, economic, and environmental changes, ensuring compliance with CSR Rules and strengthening corporate accountability.",
+  },
+};
 
-
-}
-
-
-export default function AdvisoryServicesPage() {
-const [selectedDriver, setSelectedDriver] = useState<string>(
-  "CSR Strategic Planning & Alignment"
-);
-
+export default function CSRServicesPage() {
+  const [selectedDriver, setSelectedDriver] = useState<string>(
+    "Participatory Rural Appraisal (PRA) & Needs Assessment"
+  );
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-full mx-auto px-6 py-12">
+      <div className="max-w-full mb-[75px] mx-[20px]">
         {/* Introduction Section */}
         <section className="mb-16">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
-          <p className="text-[#246875] leading-relaxed ">
-          SR Asia offers specialized services for Corporate Social Responsibility (CSR) implementation, enabling organizations to create measurable, lasting, and meaningful impact on society and the environment. In today’s evolving socio-economic landscape, CSR is more than a regulatory requirement — it is a strategic opportunity to contribute to sustainable development while strengthening brand reputation and stakeholder trust.
-
-Our CSR implementation services are designed to help organizations develop and execute high-impact initiatives that align with their core values, business objectives, and stakeholder expectations. We provide end-to-end support, from identifying priority focus areas such as education, healthcare, environment, livelihood, and community development, to designing tailored programs that deliver tangible results.
-
-SR Asia emphasizes a data-driven and participatory approach — engaging beneficiaries, local communities, and partners to ensure that initiatives are relevant, inclusive, and scalable. We integrate monitoring and evaluation mechanisms into every program, allowing organizations to track progress, assess impact, and continuously improve outcomes.
-
-Whether it’s building sustainable rural livelihoods, driving environmental conservation projects, enhancing skill development opportunities, or supporting social innovation, we ensure that CSR initiatives are impactful, transparent, and aligned with both regulatory compliance and the organization’s long-term vision for responsible growth.
-
-
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+            Introduction
+          </h1>
+          <p className="text-[#246875] leading-relaxed">
+            Corporate Social Responsibility (CSR) in India is guided by Section
+            135 of the Companies Act, 2013, Schedule VII, and CSR Rules, 2014.
+            Companies with qualifying financial thresholds are required to spend
+            at least 2% of their average profits on approved CSR activities.
+            Governance is board-driven, with implementation through registered
+            agencies, ensuring accountability, transparency, and impact. SR Asia
+            plays a pivotal role in supporting companies to design, implement,
+            and evaluate CSR initiatives that are compliant, impactful, and
+            sustainable.
           </p>
         </section>
 
         {/* What's Next Section */}
         <section className="mb-16">
-          <h2 className="text-[tertiary/700] text-3xl font-bold mb-6">What's next for CSR Project Management?</h2>
+          <h2 className="text-3xl font-bold mb-6">What’s Next for CSR?</h2>
           <p className="text-[#246875] leading-relaxed mb-8">
-         At SR Asia, we champion CSR as a strategic pathway to social and environmental impact. Our end-to-end CSR program management services help organizations design, implement, and monitor initiatives that align with regulatory mandates and community development goals.
+            CSR in India is evolving beyond compliance into strategic alignment
+            with business and sustainability goals. With rising allocations,
+            companies are focusing on education, healthcare, environment, and
+            livelihoods while also exploring emerging areas such as ESG, climate
+            action, and worker-driven models. The future of CSR emphasizes
+            inclusivity, transparency, tech-driven monitoring, and measurable
+            social impact.
           </p>
 
           {/* Our Drivers */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Drivers</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Our CSR Services
+            </h3>
             <div className="flex flex-wrap gap-3 mb-6">
               {Object.keys(driverContent).map((driver) => (
                 <Button
@@ -83,22 +98,26 @@ Whether it’s building sustainable rural livelihoods, driving environmental con
               ))}
             </div>
 
-            {/* Dynamic Content Based on Selected Driver */}
+            {/* Dynamic Content */}
             <Card className="bg-white border border-teal-200 shadow-sm">
               <CardContent className="p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                  {driverContent[selectedDriver as keyof typeof driverContent].title}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .title
+                  }
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  {driverContent[selectedDriver as keyof typeof driverContent].description}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .description
+                  }
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-
-      
       </div>
     </div>
-  )
+  );
 }
