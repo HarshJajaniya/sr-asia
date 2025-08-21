@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
 import "./globals.css";
-import { Roboto_Flex  } from 'next/font/google';
+import { Roboto_Flex } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 const robotoFlex = Roboto_Flex({
-  subsets: ['latin'],
-  weight: ['500'],
+  subsets: ["latin"],
+  weight: ["500"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "sr-asia",
@@ -26,8 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        
- <Script
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-M53CB0JDJ2"
           strategy="afterInteractive"
         />
@@ -43,12 +40,12 @@ export default function RootLayout({
       <body
         className={`${robotoFlex.className} ${robotoFlex.className} antialiased bg-[#EEFAFE]`}
       >
- 
-      <main>{children}
-         <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
-      </main>
+        <main>
+          {children}
+          <Toaster position="top-right" toastOptions={{ duration: 4000 }} />
+        </main>
 
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );

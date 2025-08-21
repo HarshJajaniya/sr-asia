@@ -1,77 +1,86 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Users, Target } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const driverContent = {
-  " Social Impact Assessment (SIA) - ": {
-    title: "Social Impact Assessment (SIA) - ",
+  "DGPS-Based Land Surveying": {
+    title: "DGPS-Based Land Surveying",
     description:
-      "Community Engagement: We actively engage with communities and stakeholders throughout the SIA process, soliciting their input, concerns, and aspirations. This participatory approach ensures that their voices are heard and incorporated into the assessment.Impact Identification: We identify and assess the potential social impacts of development projects, including changes in livelihoods, access to resources, social cohesion, and cultural heritage. This enables project stakeholders to anticipate and address potential challenges proactively.Stakeholder Consultation: We facilitate dialogues and consultations between project developers, government agencies, and affected communities to identify solutions and mitigate potential negative impacts. Our goal is to ensure that development projects are socially sustainable and beneficial for all stakeholders.Cultural Sensitivity: We approach SIA with cultural sensitivity and respect for local customs, traditions, and values. This enables us to build trust and rapport with communities, fostering cooperation and collaboration throughout the assessment process.",
+      "We conduct high-precision land surveys using Differential GPS, Total Station, and GIS-enabled mapping. Our services include boundary demarcation for urban expansion, infrastructure projects, mining, industrial corridors, and agricultural planning with centimeter-level accuracy.",
   },
-  "State-of-the-Art Technology": {
-    title: "State-of-the-Art Technology",
+  "Cadastral Mapping & Record Modernization": {
+    title: "Cadastral Mapping & Record Modernization",
     description:
-      "We utilize state-of-the-art surveying equipment and techniques to deliver precise and detailed land surveys. Our team of experienced surveyors ensures that every inch of land is accurately measured and mapped. Comprehensive Analysis: Our land surveys include detailed analysis of topography, boundaries, and features of the land. This information is essential for making informed decisions and avoiding potential conflicts or challenges during project execution. Customized Solutions: We tailor our land survey services to meet the specific needs and objectives of each project. Whether it's a small-scale development or a large-scale infrastructure project, we provide customized solutions to ensure accurate and reliable results.",
+      "We digitize and update cadastral maps to align with state revenue records. By integrating legacy land records with digital land management systems, we support land reforms, acquisition processes, and dispute resolution with transparent, verifiable data.",
   },
-  "Environment & Social Impact Assessment (ESIA)": {
-    title: "Environment & Social Impact Assessment (ESIA)",
+  "Infrastructure & Development Planning": {
+    title: "Infrastructure & Development Planning",
     description:
-      "Integrated Assessment: We conduct integrated assessments that consider the interactions between environmental and social factors. This ensures a comprehensive understanding of the potential impacts of development projects on ecosystems, biodiversity, and human well-being.Environmental Analysis: We assess the potential environmental impacts of projects, including changes in air and water quality, habitat destruction, and pollution. Our goal is to identify measures to minimize environmental degradation and promote sustainable practices.Social Analysis: We analyze the potential social impacts of projects, including changes in livelihoods, access to resources, and social dynamics. This enables us to anticipate and address potential challenges and maximize positive social outcomes.Stakeholder Engagement: We actively engage with stakeholders throughout the ESIA process, soliciting their input, concerns, and feedback. This participatory approach ensures that the voices of affected communities are heard and considered in decision-making.",
+      "SR Asia provides accurate land data for infrastructure such as roads, railways, industrial parks, SEZs, and renewable energy projects. Using GIS-based analysis, we support urban planners, smart city missions, and industrial development boards with site suitability and compliance mapping.",
   },
-  "Environmental Impact Assessment (EIA)- ": {
-    title: "Environmental Impact Assessment (EIA)- ",
+  "Community & Governance Applications": {
+    title: "Community & Governance Applications",
     description:
-      "Thorough Evaluation: We conduct thorough evaluations to assess the potential environmental impacts of proposed projects across various sectors, including infrastructure development, energy, construction, and manufacturing.Regulatory Compliance: Our team ensures compliance with relevant environmental regulations and standards throughout the EIA process, helping clients navigate complex regulatory requirements and obtain necessary permits and approvals.Multidisciplinary Approach: Our EIA process involves a multidisciplinary approach, integrating expertise in environmental science, engineering, ecology, and social sciences to provide a comprehensive assessment of potential impacts.",
+      "We assist governments in land consolidation, resettlement, and rehabilitation planning. Our community-level mapping supports forestry, rural development, and participatory land governance by making data accessible, transparent, and inclusive.",
   },
-  "Resettlement and Rehabilitation (R&R)": {
-    title: "Resettlement and Rehabilitation (R&R)",
+  "Our Approach & Competitive Edge": {
+    title: "Our Approach & Competitive Edge",
     description:
-      "Comprehensive Planning: We develop comprehensive resettlement and rehabilitation plans that address the needs and concerns of affected communities. Our approach involves extensive stakeholder engagement to ensure that the voices of those impacted are heard and considered. Livelihood Restoration: We prioritize livelihood restoration for displaced individuals and communities, implementing programs that provide alternative income sources and support sustainable development. This includes skills training, access to resources, and assistance in finding new employment opportunities. Social Support: Our R&R initiatives include social support programs that address the psychological and emotional well-being of affected individuals. We recognize the importance of community cohesion and work to rebuild social networks and support systems.",
+      "Our methodology combines DGPS, drone-enabled surveys, GIS analytics, and AI-based land classification aligned with global standards (FGDC, ISO 19115, NLRMP). With proven government experience in Mizoram, we deliver unmatched accuracy, transparency, and scalable solutions for large-scale land surveys.",
   },
-}
-
+};
 
 export default function AdvisoryServicesPage() {
-const [selectedDriver, setSelectedDriver] = useState<string>(
-  " Social Impact Assessment (SIA) - "
-);
-
+  const [selectedDriver, setSelectedDriver] = useState<string>(
+    Object.keys(driverContent)[0] // ✅ Default to first key
+  );
 
   return (
     <div className="min-h-screen">
       <div className="max-w-full mb-[75px] mx-[20px]">
         {/* Introduction Section */}
         <section className="mb-16">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+            Introduction
+          </h1>
           <p className="text-[#246875] leading-relaxed ">
-        At SR Asia, we recognize that accurate and reliable land surveying is the foundation of successful development projects. Whether for infrastructure, construction, environmental management, or urban planning, precise survey data is essential for informed decision-making and risk reduction.
-
-Our Land Survey services combine advanced technology with professional expertise to deliver high-precision measurements and comprehensive mapping solutions. Using state-of-the-art equipment such as GPS/GNSS systems, total stations, and drone-based aerial survey tools, we capture detailed spatial data with exceptional accuracy.
-
-We provide a complete range of surveying solutions, including topographic surveys, boundary demarcation, cadastral mapping, construction layout surveys, and land use assessments. Every survey is conducted following strict quality and safety protocols, ensuring compliance with regulatory requirements and industry best practices.
-
-Beyond data collection, our team interprets and analyzes survey results to support project planning, design optimization, and seamless implementation. We work closely with architects, engineers, planners, and developers to ensure the data we deliver is actionable, precise, and tailored to the project’s needs.
-
-With SR Asia’s Land Survey services, clients gain the confidence that their projects are built on a foundation of accuracy, transparency, and reliability — reducing costly errors, preventing disputes, and ensuring long-term project success.
-
-
-
+            Accurate land records are the foundation of transparent governance,
+            efficient infrastructure planning, and sustainable development. At
+            SR Asia, we specialize in Digital Land Surveying using Differential
+            Global Positioning System (DGPS) and GIS technologies to deliver
+            high-precision, reliable, and verifiable land data for governments,
+            corporates, and community stakeholders.
+            <br />
+            <br />
+            Our work with the Revenue & Land Settlement Department, Government
+            of Mizoram, has demonstrated our ability to carry out large-scale,
+            scientifically robust land surveys that strengthen land governance,
+            support planning, and safeguard the rights of stakeholders.
           </p>
         </section>
 
         {/* What's Next Section */}
         <section className="mb-16">
-          <h2 className="text-[tertiary/700] text-3xl font-bold mb-6">What's next for Land Survey?</h2>
+          <h2 className="text-[tertiary/700] text-3xl font-bold mb-6">
+            What's next for Land Survey?
+          </h2>
           <p className="text-[#246875] leading-relaxed mb-8">
-        At SR Asia, we understand the critical role of accurate land surveying in ensuring the success of development projects. Our Land Survey services offer precision and reliability, providing essential data for project planning, design, and implementation.
+            SR Asia is focused on advancing large-scale DGPS-based surveys,
+            modernizing cadastral records, and integrating legacy land data into
+            digital platforms. We are also expanding our services to support
+            smart cities, renewable energy projects, mining corridors, and
+            community rehabilitation efforts. Our next phase emphasizes
+            transparency, technology-driven governance, and participatory land
+            management for sustainable growth.
           </p>
 
           {/* Our Drivers */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Our Drivers</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Our Drivers
+            </h3>
             <div className="flex flex-wrap gap-3 mb-6">
               {Object.keys(driverContent).map((driver) => (
                 <Button
@@ -93,18 +102,22 @@ With SR Asia’s Land Survey services, clients gain the confidence that their pr
             <Card className="bg-white border border-teal-200 shadow-sm">
               <CardContent className="p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                  {driverContent[selectedDriver as keyof typeof driverContent].title}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .title
+                  }
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  {driverContent[selectedDriver as keyof typeof driverContent].description}
+                  {
+                    driverContent[selectedDriver as keyof typeof driverContent]
+                      .description
+                  }
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
-
-      
       </div>
     </div>
-  )
+  );
 }
