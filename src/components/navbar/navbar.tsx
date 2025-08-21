@@ -24,7 +24,7 @@ const servicesSubmenu = [
   { label: "Social Impact Assessment", href: "/services/impact" },
   { label: "Socio Economic Survey", href: "/services/survey" },
   { label: "Land Survey-DGPS", href: "/services/survey" },
-  { label: "GIS Survey", href: "/services/survey" },
+  { label: "GIS Survey", href: "/services/gissurvey" },
   { label: "RAP and R&R Implementation ", href: "/services/survey" },
   { label: "Project Implementation", href: "/services/project" },
 ];
